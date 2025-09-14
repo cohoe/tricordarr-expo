@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "tricordarr-expo",
-    "slug": "tricordarr-expo",
+    "name": "Tricordarr",
+    "slug": "tricordarr",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,25 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.grantcohoe.tricordarr",
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#ffffff"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c09660fe-4daa-4949-93a8-a3a34cc52a92"
+      }
     }
   }
 }
