@@ -3,7 +3,6 @@ import { useRouter } from "expo-router";
 import React from "react";
 import { Text, Button } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet } from "react-native";
 
 export const IndexScreen = () => {
   const router = useRouter();

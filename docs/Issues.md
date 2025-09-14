@@ -3,3 +3,8 @@
 Incompatible react versions: the react and react-native-renderer
 ```
 https://github.com/facebook/react-native/issues/51387
+
+### Cursor not showing ESLint warnings
+https://stackoverflow.com/questions/79608108/eslint-not-working-in-cursor-editor-ui-but-works-in-terminal-macos-sequoia-15-4
+
+Manually edit `settings.json`
