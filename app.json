@@ -2,7 +2,7 @@
   "expo": {
     "name": "Tricordarr",
     "slug": "tricordarr",
-    "version": "1.0.0",
+    "version": "2026.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -14,7 +14,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.tricordarr"
+      "bundleIdentifier": "com.tricordarr",
+      "buildNumber": "30"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,7 +29,8 @@
         "android.permission.RECEIVE_BOOT_COMPLETED",
         "android.permission.VIBRATE",
         "android.permission.WAKE_LOCK"
-      ]
+      ],
+      "versionCode": 30
     },
     "notification": {
       "icon": "./assets/icon.png",
