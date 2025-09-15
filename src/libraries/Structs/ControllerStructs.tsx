@@ -1,12 +1,12 @@
-import {FezType} from '../Enums/FezType';
-import {UserAccessLevel} from '../Enums/UserAccessLevel';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {UserAccessLevel} from '@tricordarr/Libraries/Enums/UserAccessLevel';
 import {SwiftarrClientApp, SwiftarrFeature} from '../Enums/AppFeatures';
 import EncryptedStorage from 'react-native-encrypted-storage';
 import {StorageKeys} from '../Storage';
 import {HttpStatusCode} from 'axios';
 import {LikeType} from '../Enums/LikeType';
 import pluralize from 'pluralize';
-import {DinnerTeam} from '../Enums/DinnerTeam';
+import {DinnerTeam} from '@tricordarr/Libraries/Enums/DinnerTeam';
 import {QueryKey} from '@tanstack/react-query';
 
 /**
