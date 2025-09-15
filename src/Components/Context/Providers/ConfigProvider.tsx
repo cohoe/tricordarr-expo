@@ -4,7 +4,7 @@ import {ConfigContext} from '@tricordarr/Components/Context/Contexts/ConfigConte
 import {AppConfig, getAppConfig} from '@tricordarr/Libraries/AppConfig';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {StorageKeys} from '@tricordarr/Libraries/Storage';
-import {check as checkPermission, PERMISSIONS, PermissionStatus, RESULTS} from 'react-native-permissions';
+import {checkNotifications, PermissionStatus, RESULTS} from 'react-native-permissions';
 
 export const ConfigProvider = ({children}: PropsWithChildren) => {
   const [appConfig, setAppConfig] = useState<AppConfig>();
@@ -19,7 +19,7 @@ export const ConfigProvider = ({children}: PropsWithChildren) => {
     loadConfig()
       .then(config => setAppConfig(config))
       .finally(() => console.log('[ConfigProvider.tsx] Finished loading app config.'));
-    checkPermission(PERMISSIONS.ANDROID.POST_NOTIFICATIONS).then(status => {
+    checkNotifications().then(({status}) => {
       setHasNotificationPermission(status === RESULTS.GRANTED);
       setNotificationPermissionStatus(status);
     });
