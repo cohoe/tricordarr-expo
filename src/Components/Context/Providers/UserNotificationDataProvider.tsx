@@ -1,7 +1,7 @@
 import React, {useEffect, useState, PropsWithChildren} from 'react';
-import {UserNotificationDataContext} from '@tricordarr/components/Context/Contexts/UserNotificationDataContext';
-import {useAuth} from '@tricordarr/components/Context/Contexts/AuthContext';
-import {useConfig} from '@tricordarr/components/Context/Contexts/ConfigContext';
+import {UserNotificationDataContext} from '../Contexts/UserNotificationDataContext';
+import {useAuth} from '../Contexts/AuthContext';
+import {useConfig} from '../Contexts/ConfigContext';
 
 // https://www.carlrippon.com/typed-usestate-with-typescript/
 // https://www.typescriptlang.org/docs/handbook/jsx.html

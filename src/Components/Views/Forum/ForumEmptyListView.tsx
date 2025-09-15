@@ -1,7 +1,7 @@
-import { RefreshControl, View } from 'react-native';
-import { ScrollingContentView } from '@tricordarr/components/Views/Content/ScrollingContentView';
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import { Text } from 'react-native-paper';
+import {RefreshControl, View} from 'react-native';
+import {ScrollingContentView} from '../Content/ScrollingContentView.tsx';
+import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import {Text} from 'react-native-paper';
 import React from 'react';
 
 interface ForumEmptyListViewProps {
@@ -9,7 +9,7 @@ interface ForumEmptyListViewProps {
   onRefresh: () => void;
 }
 
-export const ForumEmptyListView = ({ refreshing, onRefresh }: ForumEmptyListViewProps) => {
+export const ForumEmptyListView = ({refreshing, onRefresh}: ForumEmptyListViewProps) => {
   return (
     <View>
       <ScrollingContentView

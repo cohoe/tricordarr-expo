@@ -1,8 +1,8 @@
-import React, { PropsWithChildren, useState } from 'react';
-import { SnackbarContext } from '@tricordarr/components/Context/Contexts/SnackbarContext';
-import { SnackbarPayload } from '@tricordarr/libraries/Types/index';
+import React, {PropsWithChildren, useState} from 'react';
+import {SnackbarContext} from '../Contexts/SnackbarContext.ts';
+import {SnackbarPayload} from '../../../libraries/Types';
 
-export const SnackbarProvider = ({ children }: PropsWithChildren) => {
+export const SnackbarProvider = ({children}: PropsWithChildren) => {
   const [snackbarPayload, setSnackbarPayload] = useState<SnackbarPayload>();
-  return <SnackbarContext.Provider value={{ snackbarPayload, setSnackbarPayload }}>{children}</SnackbarContext.Provider>;
+  return <SnackbarContext.Provider value={{snackbarPayload, setSnackbarPayload}}>{children}</SnackbarContext.Provider>;
 };

@@ -1,20 +1,20 @@
-import React, { PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
-import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
-import { asyncStoragePersister, BadResponseFormatError, SwiftarrQueryClient } from '@tricordarr/libraries/Network/APIClient';
-import { SwiftarrQueryClientContext } from '@tricordarr/components/Context/Contexts/SwiftarrQueryClientContext';
-import { Query, QueryKey } from '@tanstack/react-query';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
-import axios, { AxiosRequestConfig, AxiosResponse, isAxiosError } from 'axios';
-import { ErrorResponse } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { useAuth } from '@tricordarr/components/Context/Contexts/AuthContext';
+import React, {PropsWithChildren, useCallback, useEffect, useMemo, useState} from 'react';
+import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
+import {asyncStoragePersister, BadResponseFormatError, SwiftarrQueryClient} from '../../../libraries/Network/APIClient';
+import {SwiftarrQueryClientContext} from '../Contexts/SwiftarrQueryClientContext';
+import {Query, QueryKey} from '@tanstack/react-query';
+import {useConfig} from '../Contexts/ConfigContext';
+import axios, {AxiosRequestConfig, AxiosResponse, isAxiosError} from 'axios';
+import {ErrorResponse} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {useAuth} from '../Contexts/AuthContext.ts';
 import DeviceInfo from 'react-native-device-info';
-import { useSnackbar } from '@tricordarr/components/Context/Contexts/SnackbarContext';
+import {useSnackbar} from '../Contexts/SnackbarContext.ts';
 
-export const SwiftarrQueryClientProvider = ({ children }: PropsWithChildren) => {
-  const { appConfig, oobeCompleted, preRegistrationMode } = useConfig();
+export const SwiftarrQueryClientProvider = ({children}: PropsWithChildren) => {
+  const {appConfig, oobeCompleted, preRegistrationMode} = useConfig();
   const [errorCount, setErrorCount] = useState(0);
-  const { setSnackbarPayload } = useSnackbar();
-  const { tokenData, isLoggedIn } = useAuth();
+  const {setSnackbarPayload} = useSnackbar();
+  const {tokenData, isLoggedIn} = useAuth();
   const serverUrl = useMemo(
     () => (preRegistrationMode ? appConfig.preRegistrationServerUrl : appConfig.serverUrl),
     [appConfig.preRegistrationServerUrl, appConfig.serverUrl, preRegistrationMode],
@@ -27,8 +27,8 @@ export const SwiftarrQueryClientProvider = ({ children }: PropsWithChildren) => 
     const client = axios.create({
       baseURL: `${serverUrl}${appConfig.urlPrefix}`,
       headers: {
-        ...(isLoggedIn && tokenData ? { Authorization: `Bearer ${tokenData.token}` } : undefined),
-        ...(isLoggedIn && tokenData ? { 'X-Swiftarr-User': tokenData.userID } : undefined),
+        ...(isLoggedIn && tokenData ? {Authorization: `Bearer ${tokenData.token}`} : undefined),
+        ...(isLoggedIn && tokenData ? {'X-Swiftarr-User': tokenData.userID} : undefined),
         Accept: 'application/json',
         'X-Swiftarr-Client': `${DeviceInfo.getApplicationName()} ${DeviceInfo.getVersion()}`,
         // https://www.reddit.com/r/reactnative/comments/15frmyb/is_axios_caching/
@@ -158,7 +158,7 @@ export const SwiftarrQueryClientProvider = ({ children }: PropsWithChildren) => 
       console.log('[SwiftarrQueryClientProvider.tsx]', error);
       setErrorCount(errorCount + 1);
       if (!disruptionDetected) {
-        setSnackbarPayload({ message: errorString, messageType: 'error' });
+        setSnackbarPayload({message: errorString, messageType: 'error'});
       }
     },
     onSuccess: (data, query) => {

@@ -1,16 +1,16 @@
-import React, { useState, PropsWithChildren, useCallback, useEffect } from 'react';
-import { SocketContext } from '@tricordarr/components/Context/Contexts/SocketContext';
-import { buildWebSocket, OpenFezSocket } from '@tricordarr/libraries/Network/Websockets';
+import React, {useState, PropsWithChildren, useCallback, useEffect} from 'react';
+import {SocketContext} from '../Contexts/SocketContext';
+import {buildWebSocket, OpenFezSocket} from '../../../libraries/Network/Websockets';
 import ReconnectingWebSocket from 'reconnecting-websocket';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
-import { useAuth } from '@tricordarr/components/Context/Contexts/AuthContext';
-import { useWebSocketStorageReducer, WebSocketStorageActions } from '@tricordarr/components/Reducers/Fez/FezSocketReducer';
+import {useConfig} from '../Contexts/ConfigContext';
+import {useAuth} from '../Contexts/AuthContext';
+import {useWebSocketStorageReducer, WebSocketStorageActions} from '../../Reducers/Fez/FezSocketReducer.ts';
 
-export const SocketProvider = ({ children }: PropsWithChildren) => {
-  const { isLoggedIn } = useAuth();
+export const SocketProvider = ({children}: PropsWithChildren) => {
+  const {isLoggedIn} = useAuth();
   const [notificationSocket, setNotificationSocket] = useState<ReconnectingWebSocket>();
   const [fezSockets, dispatchFezSockets] = useWebSocketStorageReducer({});
-  const { appConfig } = useConfig();
+  const {appConfig} = useConfig();
   const oobeCompleted = appConfig.oobeCompletedVersion === appConfig.oobeExpectedVersion;
 
   // Socket Open

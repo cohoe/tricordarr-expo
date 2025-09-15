@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
-import { View } from 'react-native';
-import { Text } from 'react-native-paper';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { ModalCard } from '@tricordarr/components/Cards/ModalCard';
-import { useModal } from '@tricordarr/components/Context/Contexts/ModalContext';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { useUserNotificationData } from '@tricordarr/components/Context/Contexts/UserNotificationDataContext';
-import { useAuth } from '@tricordarr/components/Context/Contexts/AuthContext';
-import { useLogoutMutation } from '@tricordarr/components/Queries/Auth/LogoutMutations';
-import { useSocket } from '@tricordarr/components/Context/Contexts/SocketContext';
-import { useSettingsStack } from '@tricordarr/components/Navigation/Stacks/SettingsStackNavigator';
-import { usePrivilege } from '@tricordarr/components/Context/Contexts/PrivilegeContext';
-import { useQueryClient } from '@tanstack/react-query';
-import { stopForegroundServiceWorker } from '@tricordarr/libraries/Service';
-import { WebSocketStorageActions } from '@tricordarr/components/Reducers/Fez/FezSocketReducer';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
+import React, {useState} from 'react';
+import {View} from 'react-native';
+import {Text} from 'react-native-paper';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {ModalCard} from '../../Cards/ModalCard';
+import {useModal} from '../../Context/Contexts/ModalContext';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {useAppTheme} from '../../../styles/Theme';
+import {useUserNotificationData} from '../../Context/Contexts/UserNotificationDataContext';
+import {useAuth} from '../../Context/Contexts/AuthContext';
+import {useLogoutMutation} from '../../Queries/Auth/LogoutMutations.ts';
+import {useSocket} from '../../Context/Contexts/SocketContext';
+import {useSettingsStack} from '../../Navigation/Stacks/SettingsStackNavigator.tsx';
+import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
+import {useQueryClient} from '@tanstack/react-query';
+import {stopForegroundServiceWorker} from '../../../libraries/Service';
+import {WebSocketStorageActions} from '../../Reducers/Fez/FezSocketReducer.ts';
+import {useConfig} from '../../Context/Contexts/ConfigContext.ts';
 
 interface LogoutModalContentProps {
   allDevices: boolean;
 }
 
-const LogoutModalContent = ({ allDevices = false }: LogoutModalContentProps) => {
-  const { commonStyles } = useStyles();
+const LogoutModalContent = ({allDevices = false}: LogoutModalContentProps) => {
+  const {commonStyles} = useStyles();
   return (
     <>
       {allDevices && <Text style={[commonStyles.marginBottomSmall]}>Confirm log out all of your devices?</Text>}
@@ -31,23 +31,23 @@ const LogoutModalContent = ({ allDevices = false }: LogoutModalContentProps) => 
   );
 };
 
-export const LogoutDeviceModalView = ({ allDevices = false }: LogoutModalContentProps) => {
-  const { setModalVisible } = useModal();
+export const LogoutDeviceModalView = ({allDevices = false}: LogoutModalContentProps) => {
+  const {setModalVisible} = useModal();
   const theme = useAppTheme();
   const settingsNavigation = useSettingsStack();
 
-  const { setEnableUserNotifications } = useUserNotificationData();
-  const { signOut } = useAuth();
+  const {setEnableUserNotifications} = useUserNotificationData();
+  const {signOut} = useAuth();
   const logoutMutation = useLogoutMutation({
     onSuccess: () => {
       onLogout();
     },
   });
-  const { closeNotificationSocket, dispatchFezSockets } = useSocket();
+  const {closeNotificationSocket, dispatchFezSockets} = useSocket();
   const [loading, setLoading] = useState(false);
-  const { clearPrivileges } = usePrivilege();
+  const {clearPrivileges} = usePrivilege();
   const queryClient = useQueryClient();
-  const { preRegistrationMode } = useConfig();
+  const {preRegistrationMode} = useConfig();
 
   const onLogout = () => {
     setEnableUserNotifications(false);

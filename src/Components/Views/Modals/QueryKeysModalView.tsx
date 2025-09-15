@@ -1,13 +1,13 @@
 import React from 'react';
-import { ScrollView, View } from 'react-native';
-import { Text } from 'react-native-paper';
-import { ModalCard } from '@tricordarr/components/Cards/ModalCard';
-import { useQueryClient } from '@tanstack/react-query';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {ScrollView, View} from 'react-native';
+import {Text} from 'react-native-paper';
+import {ModalCard} from '../../Cards/ModalCard.tsx';
+import {useQueryClient} from '@tanstack/react-query';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
 
 const ModalContent = () => {
   const queryClient = useQueryClient();
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   const contents = queryClient.getQueryCache().getAll();
   return (
     <View>

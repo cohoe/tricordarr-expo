@@ -1,12 +1,12 @@
-import { ListSection } from '@tricordarr/components/Lists/ListSection';
-import { List } from 'react-native-paper';
-import { View } from 'react-native';
-import React, { Dispatch, SetStateAction, useEffect } from 'react';
-import { PERMISSIONS, request as requestPermission } from 'react-native-permissions';
-import ImagePicker, { Image } from 'react-native-image-crop-picker';
-import { useFormikContext } from 'formik';
-import { PostContentData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { useSnackbar } from '@tricordarr/components/Context/Contexts/SnackbarContext';
+import {ListSection} from '../../Lists/ListSection';
+import {List} from 'react-native-paper';
+import {View} from 'react-native';
+import React, {Dispatch, SetStateAction, useEffect} from 'react';
+import {PERMISSIONS, request as requestPermission} from 'react-native-permissions';
+import ImagePicker, {Image} from 'react-native-image-crop-picker';
+import {useFormikContext} from 'formik';
+import {PostContentData} from '../../../libraries/Structs/ControllerStructs';
+import {useSnackbar} from '../../Context/Contexts/SnackbarContext.ts';
 
 interface ContentInsertMenuViewProps {
   visible: boolean;
@@ -25,8 +25,8 @@ export const ContentInsertMenuView = ({
   fieldName = 'images',
   maxPhotos,
 }: ContentInsertMenuViewProps) => {
-  const { setSnackbarPayload } = useSnackbar();
-  const { values, setFieldValue, isSubmitting } = useFormikContext<PostContentData>();
+  const {setSnackbarPayload} = useSnackbar();
+  const {values, setFieldValue, isSubmitting} = useFormikContext<PostContentData>();
   const currentPhotoCount = values.images.length;
 
   const handleInsertEmoji = () => {
@@ -52,7 +52,7 @@ export const ContentInsertMenuView = ({
       processImage(image);
     } catch (err: any) {
       if (err instanceof Error && err.message !== 'User cancelled image selection') {
-        setSnackbarPayload({ message: err.message, messageType: 'error' });
+        setSnackbarPayload({message: err.message, messageType: 'error'});
       }
     }
   };
@@ -66,14 +66,14 @@ export const ContentInsertMenuView = ({
       processImage(image);
     } catch (err: any) {
       if (err instanceof Error && err.message !== 'User cancelled image selection') {
-        setSnackbarPayload({ message: err.message, messageType: 'error' });
+        setSnackbarPayload({message: err.message, messageType: 'error'});
       }
     }
   };
 
   const processImage = (image: Image) => {
     if (image.data) {
-      setFieldValue(fieldName, values.images.concat([{ image: image.data }]));
+      setFieldValue(fieldName, values.images.concat([{image: image.data}]));
       setVisible(false);
     }
   };

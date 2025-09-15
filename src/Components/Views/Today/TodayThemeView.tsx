@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { useDailyThemeQuery } from '@tricordarr/components/Queries/Alert/DailyThemeQueries';
-import { useCruise } from '@tricordarr/components/Context/Contexts/CruiseContext';
-import { DailyThemeData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import { DailyThemeCard } from '@tricordarr/components/Cards/MainScreen/DailyThemeCard';
+import React, {useEffect, useState} from 'react';
+import {useDailyThemeQuery} from '../../Queries/Alert/DailyThemeQueries.ts';
+import {useCruise} from '../../Context/Contexts/CruiseContext.ts';
+import {DailyThemeData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import {DailyThemeCard} from '../../Cards/MainScreen/DailyThemeCard.tsx';
 
 export const TodayThemeView = () => {
-  const { data: dailyThemeData } = useDailyThemeQuery();
-  const { cruiseLength, adjustedCruiseDayIndex } = useCruise();
+  const {data: dailyThemeData} = useDailyThemeQuery();
+  const {cruiseLength, adjustedCruiseDayIndex} = useCruise();
   const [dailyTheme, setDailyTheme] = useState<DailyThemeData>();
 
   useEffect(() => {

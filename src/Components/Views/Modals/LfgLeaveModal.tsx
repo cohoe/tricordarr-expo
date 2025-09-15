@@ -1,18 +1,18 @@
-import { useModal } from '@tricordarr/components/Context/Contexts/ModalContext';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { View } from 'react-native';
-import { ModalCard } from '@tricordarr/components/Cards/ModalCard';
+import {useModal} from '../../Context/Contexts/ModalContext';
+import {useAppTheme} from '../../../styles/Theme';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {View} from 'react-native';
+import {ModalCard} from '../../Cards/ModalCard';
 import React from 'react';
-import { FezData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { Text } from 'react-native-paper';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { useFezMembershipMutation } from '@tricordarr/components/Queries/Fez/FezMembershipQueries';
-import { useQueryClient } from '@tanstack/react-query';
-import { FezType } from '@tricordarr/libraries/Enums/FezType';
+import {FezData} from '../../../libraries/Structs/ControllerStructs';
+import {Text} from 'react-native-paper';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useFezMembershipMutation} from '../../Queries/Fez/FezMembershipQueries';
+import {useQueryClient} from '@tanstack/react-query';
+import {FezType} from '../../../libraries/Enums/FezType.ts';
 
-const ModalContent = ({ fezData }: { fezData: FezData; }) => {
-  const { commonStyles } = useStyles();
+const ModalContent = ({fezData}: {fezData: FezData}) => {
+  const {commonStyles} = useStyles();
   return (
     <Text style={[commonStyles.marginBottomSmall]}>
       Leave {fezData.title}?{' '}
@@ -26,8 +26,8 @@ const ModalContent = ({ fezData }: { fezData: FezData; }) => {
   );
 };
 
-export const LfgLeaveModal = ({ fezData }: { fezData: FezData; }) => {
-  const { setModalVisible } = useModal();
+export const LfgLeaveModal = ({fezData}: {fezData: FezData}) => {
+  const {setModalVisible} = useModal();
   const theme = useAppTheme();
   const membershipMutation = useFezMembershipMutation();
   const queryClient = useQueryClient();

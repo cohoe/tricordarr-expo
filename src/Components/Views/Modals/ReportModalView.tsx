@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FormikHelpers } from 'formik';
+import React, {useState} from 'react';
+import {FormikHelpers} from 'formik';
 import {
   FezData,
   FezPostData,
@@ -8,12 +8,12 @@ import {
   PostData,
   ProfilePublicData,
   ReportData,
-} from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ReportContentForm } from '@tricordarr/components/Forms/ReportContentForm';
-import { useReportMutation } from '@tricordarr/components/Queries/Moderation/ModerationMutations';
-import { ReportContentType } from '@tricordarr/libraries/Enums/ReportContentType';
-import { ReportModalSuccessView } from '@tricordarr/components/Views/Modals/ReportModalSuccessView';
-import { ReportModalErrorView } from '@tricordarr/components/Views/Modals/ReportModalErrorView';
+} from '../../../libraries/Structs/ControllerStructs';
+import {ReportContentForm} from '../../Forms/ReportContentForm';
+import {useReportMutation} from '../../Queries/Moderation/ModerationMutations.ts';
+import {ReportContentType} from '../../../libraries/Enums/ReportContentType';
+import {ReportModalSuccessView} from './ReportModalSuccessView';
+import {ReportModalErrorView} from './ReportModalErrorView';
 
 interface ReportModalViewProps {
   profile?: ProfilePublicData;
@@ -24,7 +24,7 @@ interface ReportModalViewProps {
   photostreamImage?: PhotostreamImageData;
 }
 
-export const ReportModalView = ({ profile, fezPost, fez, forumPost, forum, photostreamImage }: ReportModalViewProps) => {
+export const ReportModalView = ({profile, fezPost, fez, forumPost, forum, photostreamImage}: ReportModalViewProps) => {
   const reportMutation = useReportMutation();
   const [submitted, setSubmitted] = useState(false);
 

@@ -1,18 +1,18 @@
-import React, { Dispatch, SetStateAction, useState } from 'react';
-import { RefreshControl } from 'react-native';
-import { SelectionButtons } from '@tricordarr/components/Buttons/SegmentedButtons/SelectionButtons';
+import React, {Dispatch, SetStateAction, useState} from 'react';
+import {RefreshControl} from 'react-native';
+import {SelectionButtons} from '../../Buttons/SegmentedButtons/SelectionButtons.tsx';
 import {
   CategoryData,
   ErrorResponse,
   ForumListData,
   ForumSearchData,
-} from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ListTitleView } from '@tricordarr/components/Views/ListTitleView';
-import { ForumThreadFlatList } from '@tricordarr/components/Lists/Forums/ForumThreadFlatList';
-import { ForumCategoryFAB } from '@tricordarr/components/Buttons/FloatingActionButtons/ForumCategoryFAB';
-import { useSelection } from '@tricordarr/components/Context/Contexts/SelectionContext';
-import { FetchNextPageOptions, InfiniteQueryObserverResult } from '@tanstack/react-query';
-import { AxiosError } from 'axios';
+} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {ListTitleView} from '../ListTitleView.tsx';
+import {ForumThreadFlatList} from '../../Lists/Forums/ForumThreadFlatList.tsx';
+import {ForumCategoryFAB} from '../../Buttons/FloatingActionButtons/ForumCategoryFAB.tsx';
+import {useSelection} from '../../Context/Contexts/SelectionContext.ts';
+import {FetchNextPageOptions, InfiniteQueryObserverResult} from '@tanstack/react-query';
+import {AxiosError} from 'axios';
 
 interface ForumThreadListViewProps {
   hasNextPage?: boolean;
@@ -51,7 +51,7 @@ export const ForumThreadListView = ({
   forumListData,
   subtitle,
 }: ForumThreadListViewProps) => {
-  const { enableSelection } = useSelection();
+  const {enableSelection} = useSelection();
   const [showFabLabel, setShowFabLabel] = useState(true);
   const onScrollThreshold = (hasScrolled: boolean) => setShowFabLabel(!hasScrolled);
 

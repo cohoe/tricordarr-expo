@@ -1,7 +1,7 @@
-import { Text } from 'react-native-paper';
-import { StyleSheet, TextStyle, View, ViewStyle } from 'react-native';
+import {Text} from 'react-native-paper';
+import {StyleSheet, TextStyle, View, ViewStyle} from 'react-native';
 import React from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
 
 interface Props {
   title: string;
@@ -10,7 +10,7 @@ interface Props {
   textStyle?: TextStyle;
 }
 export const BaseWarningView = (props: Props) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
 
   const styles = StyleSheet.create({
     headerView: {

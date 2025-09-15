@@ -1,13 +1,13 @@
-import React, { useCallback, useEffect, useMemo } from 'react';
-import { PropsWithChildren } from 'react';
-import { AuthContext } from '@tricordarr/components/Context/Contexts/AuthContext';
-import { AuthActions, useAuthReducer } from '@tricordarr/components/Reducers/Auth/AuthReducer';
-import { TokenStringData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
-import { StorageKeys } from '@tricordarr/libraries/Storage';
+import React, {useCallback, useEffect, useMemo} from 'react';
+import {PropsWithChildren} from 'react';
+import {AuthContext} from '../Contexts/AuthContext';
+import {AuthActions, useAuthReducer} from '../../Reducers/Auth/AuthReducer';
+import {TokenStringData} from '../../../libraries/Structs/ControllerStructs';
+import {useConfig} from '../Contexts/ConfigContext.ts';
+import {StorageKeys} from '../../../libraries/Storage';
 
-export const AuthProvider = ({ children }: PropsWithChildren) => {
-  const { preRegistrationMode } = useConfig();
+export const AuthProvider = ({children}: PropsWithChildren) => {
+  const {preRegistrationMode} = useConfig();
   const [authState, dispatchAuthState] = useAuthReducer({
     isLoading: true,
     tokenData: null,

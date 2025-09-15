@@ -1,17 +1,17 @@
-import React, { PropsWithChildren } from 'react';
-import { KeyboardAvoidingView, StyleSheet, View } from 'react-native';
-import { Portal } from 'react-native-paper';
-import { ErrorBanner } from '@tricordarr/components/Banners/ErrorBanner';
-import { AppModal } from '@tricordarr/components/Modals/AppModal';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { ConnectionDisruptedView } from '@tricordarr/components/Views/Warnings/ConnectionDisruptedView';
-import { useSwiftarrQueryClient } from '@tricordarr/components/Context/Contexts/SwiftarrQueryClientContext';
-import { UnsavedChangesView } from '@tricordarr/components/Views/Warnings/UnsavedChangesView';
-import { useErrorHandler } from '@tricordarr/components/Context/Contexts/ErrorHandlerContext';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { AppSnackbar } from '@tricordarr/components/Snackbars/AppSnackbar';
-import { PreRegistrationWarningView } from '@tricordarr/components/Views/Warnings/PreRegistrationWarningView';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
+import React, {PropsWithChildren} from 'react';
+import {KeyboardAvoidingView, StyleSheet, View} from 'react-native';
+import {Portal} from 'react-native-paper';
+import {ErrorBanner} from '@tricordarr/Components/Banners/ErrorBanner';
+import {AppModal} from '@tricordarr/Components/Modals/AppModal';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {ConnectionDisruptedView} from '@tricordarr/Components/Views/Warnings/ConnectionDisruptedView';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
+import {UnsavedChangesView} from '@tricordarr/Components/Views/Warnings/UnsavedChangesView';
+import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {AppSnackbar} from '@tricordarr/Components/Snackbars/AppSnackbar';
+import {PreRegistrationWarningView} from '@tricordarr/Components/Views/Warnings/PreRegistrationWarningView';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 interface AppViewProps extends PropsWithChildren {
   safeEdges?: ('top' | 'bottom' | 'left' | 'right')[];
@@ -21,13 +21,13 @@ interface AppViewProps extends PropsWithChildren {
  * Highest level View container that contains app-specific components that
  * can be utilized by all children. For example, error messages.
  */
-export const AppView = ({ children, safeEdges }: AppViewProps) => {
-  const { commonStyles } = useStyles();
-  const { disruptionDetected } = useSwiftarrQueryClient();
-  const { hasUnsavedWork } = useErrorHandler();
+export const AppView = ({children, safeEdges}: AppViewProps) => {
+  const {commonStyles} = useStyles();
+  const {disruptionDetected} = useSwiftarrQueryClient();
+  const {hasUnsavedWork} = useErrorHandler();
   // https://reactnavigation.org/docs/6.x/handling-safe-area
   const insets = useSafeAreaInsets();
-  const { preRegistrationMode } = useConfig();
+  const {preRegistrationMode} = useConfig();
 
   const styles = StyleSheet.create({
     appView: {

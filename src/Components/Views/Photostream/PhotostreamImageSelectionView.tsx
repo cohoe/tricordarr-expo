@@ -1,24 +1,24 @@
 import React from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import ImagePicker, { Image } from 'react-native-image-crop-picker';
-import { PERMISSIONS, request as requestPermission } from 'react-native-permissions';
-import { useFormikContext } from 'formik';
-import { PhotostreamUploadData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ImageButtons } from '@tricordarr/components/Buttons/ImageButtons';
-import { AppImage } from '@tricordarr/components/Images/AppImage';
-import { ImageQueryData } from '@tricordarr/libraries/Types/index';
-import { View } from 'react-native';
-import { NativeModules } from 'react-native';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import ImagePicker, {Image} from 'react-native-image-crop-picker';
+import {PERMISSIONS, request as requestPermission} from 'react-native-permissions';
+import {useFormikContext} from 'formik';
+import {PhotostreamUploadData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {ImageButtons} from '../../Buttons/ImageButtons.tsx';
+import {AppImage} from '../../Images/AppImage.tsx';
+import {ImageQueryData} from '../../../libraries/Types';
+import {View} from 'react-native';
+import {NativeModules} from 'react-native';
 import RNFS from 'react-native-fs';
-import { ActivityIndicator } from 'react-native-paper';
-import { useSnackbar } from '@tricordarr/components/Context/Contexts/SnackbarContext';
+import {ActivityIndicator} from 'react-native-paper';
+import {useSnackbar} from '../../Context/Contexts/SnackbarContext.ts';
 
-const { ImageTextBlurModule } = NativeModules;
+const {ImageTextBlurModule} = NativeModules;
 
 export const PhotostreamImageSelectionView = () => {
-  const { commonStyles, styleDefaults } = useStyles();
-  const { setSnackbarPayload } = useSnackbar();
-  const { values, setFieldValue } = useFormikContext<PhotostreamUploadData>();
+  const {commonStyles, styleDefaults} = useStyles();
+  const {setSnackbarPayload} = useSnackbar();
+  const {values, setFieldValue} = useFormikContext<PhotostreamUploadData>();
   const [refreshing, setRefreshing] = React.useState(false);
 
   const onBlur = async (newPath: string) => {
@@ -28,7 +28,7 @@ export const PhotostreamImageSelectionView = () => {
       await setFieldValue('image', imageData);
     } catch (err) {
       if (err instanceof Error && err.message !== 'User cancelled image selection') {
-        setSnackbarPayload({ message: err.message, messageType: 'error' });
+        setSnackbarPayload({message: err.message, messageType: 'error'});
       }
     } finally {
       setRefreshing(false);
@@ -55,7 +55,7 @@ export const PhotostreamImageSelectionView = () => {
       processImage(image);
     } catch (err: any) {
       if (err instanceof Error && err.message !== 'User cancelled image selection') {
-        setSnackbarPayload({ message: err.message, messageType: 'error' });
+        setSnackbarPayload({message: err.message, messageType: 'error'});
       }
     }
   };
@@ -74,7 +74,7 @@ export const PhotostreamImageSelectionView = () => {
       processImage(image);
     } catch (err: any) {
       if (err instanceof Error && err.message !== 'User cancelled image selection') {
-        setSnackbarPayload({ message: err.message, messageType: 'error' });
+        setSnackbarPayload({message: err.message, messageType: 'error'});
       }
     }
   };

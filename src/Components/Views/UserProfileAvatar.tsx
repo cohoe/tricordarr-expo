@@ -1,33 +1,33 @@
-import React, { Dispatch, SetStateAction, useEffect } from 'react';
-import { ProfilePublicData, UserHeader } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { StyleSheet, View } from 'react-native';
-import ImagePicker, { Image } from 'react-native-image-crop-picker';
-import { useUserAvatarMutation, useUserImageDeleteMutation } from '@tricordarr/components/Queries/User/UserAvatarMutations';
-import { PERMISSIONS, request as requestPermission } from 'react-native-permissions';
-import { APIImage } from '@tricordarr/components/Images/APIImage';
-import { useFeature } from '@tricordarr/components/Context/Contexts/FeatureContext';
-import { SwiftarrFeature } from '@tricordarr/libraries/Enums/AppFeatures';
-import { ImageButtons } from '@tricordarr/components/Buttons/ImageButtons';
-import { styleDefaults } from '@tricordarr/styles';
-import { useSnackbar } from '@tricordarr/components/Context/Contexts/SnackbarContext';
-import { useUsersProfileQuery } from '@tricordarr/components/Queries/Users/UsersQueries';
-import { useUserProfileQuery } from '@tricordarr/components/Queries/User/UserQueries';
-import { useQueryClient } from '@tanstack/react-query';
+import React, {Dispatch, SetStateAction, useEffect} from 'react';
+import {ProfilePublicData, UserHeader} from '../../libraries/Structs/ControllerStructs';
+import {useStyles} from '../Context/Contexts/StyleContext';
+import {StyleSheet, View} from 'react-native';
+import ImagePicker, {Image} from 'react-native-image-crop-picker';
+import {useUserAvatarMutation, useUserImageDeleteMutation} from '../Queries/User/UserAvatarMutations.ts';
+import {PERMISSIONS, request as requestPermission} from 'react-native-permissions';
+import {APIImage} from '../Images/APIImage';
+import {useFeature} from '../Context/Contexts/FeatureContext';
+import {SwiftarrFeature} from '../../libraries/Enums/AppFeatures';
+import {ImageButtons} from '../Buttons/ImageButtons.tsx';
+import {styleDefaults} from '../../styles';
+import {useSnackbar} from '../Context/Contexts/SnackbarContext.ts';
+import {useUsersProfileQuery} from '../Queries/Users/UsersQueries.ts';
+import {useUserProfileQuery} from '../Queries/User/UserQueries.ts';
+import {useQueryClient} from '@tanstack/react-query';
 
 interface UserProfileAvatarProps {
   user: ProfilePublicData;
   setRefreshing: Dispatch<SetStateAction<boolean>>;
 }
 
-export const UserProfileAvatar = ({ user, setRefreshing }: UserProfileAvatarProps) => {
-  const { commonStyles } = useStyles();
+export const UserProfileAvatar = ({user, setRefreshing}: UserProfileAvatarProps) => {
+  const {commonStyles} = useStyles();
   const avatarDeleteMutation = useUserImageDeleteMutation();
   const avatarMutation = useUserAvatarMutation();
-  const { setSnackbarPayload } = useSnackbar();
+  const {setSnackbarPayload} = useSnackbar();
   const usersProfileQuery = useUsersProfileQuery(user.header.userID);
-  const { data: profilePublicData } = useUserProfileQuery();
-  const { getIsDisabled } = useFeature();
+  const {data: profilePublicData} = useUserProfileQuery();
+  const {getIsDisabled} = useFeature();
   const queryClient = useQueryClient();
 
   const styles = StyleSheet.create({
@@ -49,7 +49,7 @@ export const UserProfileAvatar = ({ user, setRefreshing }: UserProfileAvatarProp
       processImage(image);
     } catch (err: any) {
       if (err instanceof Error && err.message !== 'User cancelled image selection') {
-        setSnackbarPayload({ message: err.message, messageType: 'error' });
+        setSnackbarPayload({message: err.message, messageType: 'error'});
       }
     }
   };
@@ -68,7 +68,7 @@ export const UserProfileAvatar = ({ user, setRefreshing }: UserProfileAvatarProp
       processImage(image);
     } catch (err: any) {
       if (err instanceof Error && err.message !== 'User cancelled image selection') {
-        setSnackbarPayload({ message: err.message, messageType: 'error' });
+        setSnackbarPayload({message: err.message, messageType: 'error'});
       }
     }
   };

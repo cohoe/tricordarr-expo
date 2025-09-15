@@ -1,8 +1,8 @@
-import {useStyles} from '@tricordarr/components/Context/Contexts/StyleContext';
+import {useStyles} from '../Context/Contexts/StyleContext';
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import {PrimaryActionButton} from '@tricordarr/components/Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/styles/Theme';
+import {PrimaryActionButton} from '../Buttons/PrimaryActionButton';
+import {useAppTheme} from '../../styles/Theme';
 
 interface OobeButtonsViewProps {
   leftText?: string;

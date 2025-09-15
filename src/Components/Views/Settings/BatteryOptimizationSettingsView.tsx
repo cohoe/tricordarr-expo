@@ -1,19 +1,19 @@
-import { HelperText, Text } from 'react-native-paper';
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import React, { useCallback, useEffect, useState } from 'react';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { useAppState } from '@react-native-community/hooks';
+import {HelperText, Text} from 'react-native-paper';
+import {PaddedContentView} from '../Content/PaddedContentView';
+import React, {useCallback, useEffect, useState} from 'react';
+import {useAppTheme} from '../../../styles/Theme';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {useAppState} from '@react-native-community/hooks';
 // @ts-ignore
-import { BatteryOptEnabled, RequestDisableOptimization } from 'react-native-battery-optimization-check';
-import { ListSection } from '@tricordarr/components/Lists/ListSection';
-import { ListSubheader } from '@tricordarr/components/Lists/ListSubheader';
-import { View } from 'react-native';
+import {BatteryOptEnabled, RequestDisableOptimization} from 'react-native-battery-optimization-check';
+import {ListSection} from '../../Lists/ListSection.tsx';
+import {ListSubheader} from '../../Lists/ListSubheader.tsx';
+import {View} from 'react-native';
 
 export const BatteryOptimizationSettingsView = () => {
   const theme = useAppTheme();
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   const [optEnabled, setOptEnabled] = useState(false);
   const appStateVisible = useAppState();
 
@@ -47,7 +47,7 @@ export const BatteryOptimizationSettingsView = () => {
           style={[commonStyles.marginTopSmall]}
           disabled={!optEnabled}
         />
-        <HelperText type={'info'} style={{ color: theme.colors.onBackground }}>
+        <HelperText type={'info'} style={{color: theme.colors.onBackground}}>
           Warning: this may cause the app to consume more battery. You can always change this setting by long-pressing
           the app's icon on your home screen and selecting "App Info", then "App battery usage".
         </HelperText>

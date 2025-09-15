@@ -1,22 +1,22 @@
-import { AppView } from '@tricordarr/components/Views/AppView';
-import { View } from 'react-native';
-import { AppIcon } from '@tricordarr/components/Icons/AppIcon';
-import { AppIcons } from '@tricordarr/libraries/Enums/Icons';
-import { ScrollingContentView } from '@tricordarr/components/Views/Content/ScrollingContentView';
+import {AppView} from '../AppView.tsx';
+import {View} from 'react-native';
+import {AppIcon} from '../../Icons/AppIcon.tsx';
+import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {ScrollingContentView} from '../Content/ScrollingContentView.tsx';
 import React from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import { BoldText } from '@tricordarr/components/Text/BoldText';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { useQueryClient } from '@tanstack/react-query';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { Text } from 'react-native-paper';
-import { useAuth } from '@tricordarr/components/Context/Contexts/AuthContext';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
-import { getInitialAppConfig } from '@tricordarr/libraries/AppConfig';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import {BoldText} from '../../Text/BoldText.tsx';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
+import {useQueryClient} from '@tanstack/react-query';
+import {useAppTheme} from '../../../styles/Theme.ts';
+import {Text} from 'react-native-paper';
+import {useAuth} from '../../Context/Contexts/AuthContext.ts';
+import {useConfig} from '../../Context/Contexts/ConfigContext.ts';
+import {getInitialAppConfig} from '../../../libraries/AppConfig.ts';
 import Clipboard from '@react-native-clipboard/clipboard';
-import { HelpTopicView } from '@tricordarr/components/Views/Help/HelpTopicView';
-import { CacheManager } from '@georstat/react-native-image-cache';
+import {HelpTopicView} from '../Help/HelpTopicView.tsx';
+import {CacheManager} from '@georstat/react-native-image-cache';
 
 interface CriticalErrorViewProps {
   error: Error;
@@ -24,12 +24,12 @@ interface CriticalErrorViewProps {
 }
 
 export const CriticalErrorView = (props: CriticalErrorViewProps) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   const theme = useAppTheme();
   const queryClient = useQueryClient();
   const [showStack, setShowStack] = React.useState(false);
-  const { signOut } = useAuth();
-  const { updateAppConfig, preRegistrationMode } = useConfig();
+  const {signOut} = useAuth();
+  const {updateAppConfig, preRegistrationMode} = useConfig();
 
   const styles = {
     outerContainer: [commonStyles.flex, commonStyles.justifyCenter, commonStyles.alignItemsCenter],

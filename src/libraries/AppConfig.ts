@@ -1,10 +1,10 @@
 import Config from 'react-native-config';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { StorageKeys } from '@tricordarr/libraries/Storage';
-import { NotificationTypeData } from '@tricordarr/libraries/Structs/SocketStructs';
-import { defaultCacheTime, defaultImageStaleTime, defaultStaleTime } from '@tricordarr/libraries/Network/APIClient';
-import { ForumSort, ForumSortDirection } from '@tricordarr/libraries/Enums/ForumSortFilter';
-import { LfgStackComponents } from '@tricordarr/components/Navigation/Stacks/LFGStackNavigator';
+import {StorageKeys} from '@tricordarr/Libraries/Storage';
+import {NotificationTypeData} from '@tricordarr/Libraries/Structs/SocketStructs';
+import {defaultCacheTime, defaultImageStaleTime, defaultStaleTime} from '@tricordarr/Libraries/Network/APIClient';
+import {ForumSort, ForumSortDirection} from '@tricordarr/Libraries/Enums/ForumSortFilter';
+// import {LfgStackComponents} from '../components/Navigation/Stacks/LFGStackNavigator.tsx';
 
 export type PushNotificationConfig = {
   [key in keyof typeof NotificationTypeData]: boolean;
@@ -27,7 +27,8 @@ export interface ScheduleConfig {
   eventsShowOpenLfgs: boolean;
   hidePastLfgs: boolean;
   enableLateDayFlip: boolean;
-  defaultLfgScreen: LfgStackComponents;
+  // defaultLfgScreen: LfgStackComponents;
+  defaultLfgScreen: string;
 }
 
 export interface AccessibilityConfig {
@@ -119,7 +120,8 @@ const defaultAppConfig: AppConfig = {
     enableLateDayFlip: true,
     eventsShowJoinedLfgs: true,
     eventsShowOpenLfgs: false,
-    defaultLfgScreen: LfgStackComponents.lfgFindScreen,
+    // defaultLfgScreen: LfgStackComponents.lfgFindScreen,
+    defaultLfgScreen: 'lfgFindScreen',
   },
   portTimeZoneID: 'America/New_York',
   apiClientConfig: {

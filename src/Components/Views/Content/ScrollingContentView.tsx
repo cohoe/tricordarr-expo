@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactElement } from 'react';
+import React, {PropsWithChildren, ReactElement} from 'react';
 import {
   NativeScrollEvent,
   NativeSyntheticEvent,
@@ -8,7 +8,7 @@ import {
   ViewStyle,
   StyleSheet,
 } from 'react-native';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
 
 interface ScrollingContentViewProps {
   isStack?: boolean;
@@ -32,7 +32,7 @@ export const ScrollingContentView = ({
   onScroll,
   style,
 }: PropsWithChildren<ScrollingContentViewProps>) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   const styles = StyleSheet.create({
     scrollView: {
       ...commonStyles.flex,

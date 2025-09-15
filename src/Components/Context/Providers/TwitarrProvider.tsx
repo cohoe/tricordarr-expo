@@ -1,16 +1,16 @@
-import { TwitarrContext } from '@tricordarr/components/Context/Contexts/TwitarrContext';
-import React, { PropsWithChildren } from 'react';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
-import { Linking } from 'react-native';
+import {TwitarrContext} from '../Contexts/TwitarrContext';
+import React, {PropsWithChildren} from 'react';
+import {useConfig} from '../Contexts/ConfigContext';
+import {Linking} from 'react-native';
 import URLParse from 'url-parse';
-import { useSwiftarrQueryClient } from '@tricordarr/components/Context/Contexts/SwiftarrQueryClientContext';
-// import {useAuth} from '@tricordarr/components/Context/Contexts/AuthContext';
-// import {useUserProfileQuery} from '@tricordarr/components/Queries/User/UserQueries';
-// import {useErrorHandler} from '@tricordarr/components/Context/Contexts/ErrorHandlerContext';
+import {useSwiftarrQueryClient} from '../Contexts/SwiftarrQueryClientContext.ts';
+// import {useAuth} from '../Contexts/AuthContext.ts';
+// import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
+// import {useErrorHandler} from '../Contexts/ErrorHandlerContext.ts';
 
-export const TwitarrProvider = ({ children }: PropsWithChildren) => {
-  const { appConfig } = useConfig();
-  const { serverUrl } = useSwiftarrQueryClient();
+export const TwitarrProvider = ({children}: PropsWithChildren) => {
+  const {appConfig} = useConfig();
+  const {serverUrl} = useSwiftarrQueryClient();
   // const {tokenData} = useAuth();
   // const {error: profileQueryError} = useUserProfileQuery({
   //   enabled: !!tokenData,

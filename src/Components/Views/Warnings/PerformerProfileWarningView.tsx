@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListTitleView } from '@tricordarr/components/Views/ListTitleView';
+import {ListTitleView} from '../ListTitleView.tsx';
 
 export const PerformerProfileWarningView = () => {
   return (

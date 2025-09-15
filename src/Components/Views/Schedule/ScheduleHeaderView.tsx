@@ -1,10 +1,10 @@
-import React, { Dispatch, SetStateAction, useRef } from 'react';
-import { View, StyleSheet } from 'react-native';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { ScheduleHeaderDayButton } from '@tricordarr/components/Buttons/ScheduleHeaderDayButton';
-import { useCruise } from '@tricordarr/components/Context/Contexts/CruiseContext';
-import { FlashList } from '@shopify/flash-list';
-import { CruiseDayData } from '@tricordarr/libraries/Types/index';
+import React, {Dispatch, SetStateAction, useRef} from 'react';
+import {View, StyleSheet} from 'react-native';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {ScheduleHeaderDayButton} from '../../Buttons/ScheduleHeaderDayButton.tsx';
+import {useCruise} from '../../Context/Contexts/CruiseContext.ts';
+import {FlashList} from '@shopify/flash-list';
+import {CruiseDayData} from '../../../libraries/Types';
 
 interface ScheduleHeaderViewProps {
   selectedCruiseDay: number;
@@ -13,8 +13,8 @@ interface ScheduleHeaderViewProps {
 }
 
 export const ScheduleHeaderView = (props: ScheduleHeaderViewProps) => {
-  const { commonStyles } = useStyles();
-  const { cruiseDays } = useCruise();
+  const {commonStyles} = useStyles();
+  const {cruiseDays} = useCruise();
   const headerListRef = useRef<FlashList<any>>(null);
 
   const styles = StyleSheet.create({
@@ -25,7 +25,7 @@ export const ScheduleHeaderView = (props: ScheduleHeaderViewProps) => {
     },
   });
 
-  const renderItem = ({ item }: { item: CruiseDayData; }) => {
+  const renderItem = ({item}: {item: CruiseDayData}) => {
     const onPress = () => {
       if (item.cruiseDay === props.selectedCruiseDay && props.scrollToNow) {
         props.scrollToNow();

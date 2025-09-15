@@ -1,28 +1,28 @@
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import { FezData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { View } from 'react-native';
-import React, { useCallback, useState } from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { LfgLeaveModal } from '@tricordarr/components/Views/Modals/LfgLeaveModal';
-import { useQueryClient } from '@tanstack/react-query';
-import { useModal } from '@tricordarr/components/Context/Contexts/ModalContext';
-import { useFezMembershipMutation } from '@tricordarr/components/Queries/Fez/FezMembershipQueries';
-import { StyleSheet } from 'react-native';
-import { FezType } from '@tricordarr/libraries/Enums/FezType';
-import { useUserProfileQuery } from '@tricordarr/components/Queries/User/UserQueries';
+import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import {FezData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
+import {View} from 'react-native';
+import React, {useCallback, useState} from 'react';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {useAppTheme} from '../../../styles/Theme.ts';
+import {LfgLeaveModal} from '../Modals/LfgLeaveModal.tsx';
+import {useQueryClient} from '@tanstack/react-query';
+import {useModal} from '../../Context/Contexts/ModalContext.ts';
+import {useFezMembershipMutation} from '../../Queries/Fez/FezMembershipQueries.ts';
+import {StyleSheet} from 'react-native';
+import {FezType} from '../../../libraries/Enums/FezType.ts';
+import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
 
 interface LFGMembershipViewProps {
   lfg: FezData;
 }
 
-export const LFGMembershipView = ({ lfg }: LFGMembershipViewProps) => {
-  const { commonStyles } = useStyles();
+export const LFGMembershipView = ({lfg}: LFGMembershipViewProps) => {
+  const {commonStyles} = useStyles();
   const theme = useAppTheme();
-  const { data: profilePublicData } = useUserProfileQuery();
+  const {data: profilePublicData} = useUserProfileQuery();
   const queryClient = useQueryClient();
-  const { setModalVisible, setModalContent } = useModal();
+  const {setModalVisible, setModalContent} = useModal();
   const [refreshing, setRefreshing] = useState(false);
   const membershipMutation = useFezMembershipMutation();
 
@@ -71,15 +71,15 @@ export const LFGMembershipView = ({ lfg }: LFGMembershipViewProps) => {
         <PaddedContentView>
           {(FezData.isParticipant(lfg, profilePublicData?.header) ||
             FezData.isWaitlist(lfg, profilePublicData?.header)) && (
-              <PrimaryActionButton
-                buttonText={
-                  FezData.isWaitlist(lfg, profilePublicData.header) ? 'Leave the waitlist' : `Leave this ${lfgNoun}`
-                }
-                onPress={handleMembershipPress}
-                buttonColor={theme.colors.twitarrNegativeButton}
-                isLoading={refreshing}
-              />
-            )}
+            <PrimaryActionButton
+              buttonText={
+                FezData.isWaitlist(lfg, profilePublicData.header) ? 'Leave the waitlist' : `Leave this ${lfgNoun}`
+              }
+              onPress={handleMembershipPress}
+              buttonColor={theme.colors.twitarrNegativeButton}
+              isLoading={refreshing}
+            />
+          )}
           {!FezData.isParticipant(lfg, profilePublicData?.header) &&
             !FezData.isWaitlist(lfg, profilePublicData?.header) && (
               <PrimaryActionButton

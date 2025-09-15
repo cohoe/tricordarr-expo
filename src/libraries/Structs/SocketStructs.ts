@@ -1,4 +1,4 @@
-import {UserHeader} from '@tricordarr/libraries/Structs/ControllerStructs';
+import {UserHeader} from './ControllerStructs';
 
 export interface SocketFezPostData {
   /// PostID of the new post

@@ -1,11 +1,11 @@
 import React from 'react';
 import {RefreshControl, View} from 'react-native';
 import {Text} from 'react-native-paper';
-import {AppView} from '@tricordarr/components/Views/AppView';
-import {useStyles} from '@tricordarr/components/Context/Contexts/StyleContext';
-import {ScrollingContentView} from '@tricordarr/components/Views/Content/ScrollingContentView';
-import {AppIcon} from '@tricordarr/components/Icons/AppIcon';
-import {AppIcons} from '@tricordarr/libraries/Enums/Icons';
+import {AppView} from '../AppView';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {ScrollingContentView} from '../Content/ScrollingContentView';
+import {AppIcon} from '../../Icons/AppIcon';
+import {AppIcons} from '../../../libraries/Enums/Icons';
 
 interface ErrorViewProps {
   refreshing: boolean;

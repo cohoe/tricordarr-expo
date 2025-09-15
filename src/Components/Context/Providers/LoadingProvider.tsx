@@ -1,6 +1,6 @@
 import React, {createContext, PropsWithChildren} from 'react';
 import {useIsRestoring} from '@tanstack/react-query';
-import {LoadingView} from '@tricordarr/components/Views/Static/LoadingView';
+import {LoadingView} from '../../Views/Static/LoadingView';
 
 export const LoadingProvider = ({children}: PropsWithChildren) => {
   const isRestoring = useIsRestoring();

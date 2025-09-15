@@ -1,10 +1,10 @@
-import { Text } from 'react-native-paper';
-import { StyleSheet, View } from 'react-native';
+import {Text} from 'react-native-paper';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
 
 export const PreRegistrationWarningView = () => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
 
   const styles = StyleSheet.create({
     headerView: {

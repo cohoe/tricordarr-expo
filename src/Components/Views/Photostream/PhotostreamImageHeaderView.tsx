@@ -1,21 +1,21 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
-import { UserAvatarImage } from '@tricordarr/components/Images/UserAvatarImage';
-import { UserBylineTag } from '@tricordarr/components/Text/Tags/UserBylineTag';
-import { PhotostreamImageData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { IconButton } from 'react-native-paper';
-import { AppIcons } from '@tricordarr/libraries/Enums/Icons';
-import { PhotostreamImageActionsMenu } from '@tricordarr/components/Menus/Photostream/PhotostreamImageActionsMenu';
-import { RelativeTimeTag } from '@tricordarr/components/Text/Tags/RelativeTimeTag';
-import { CommonStackComponents, useCommonStack } from '@tricordarr/components/Navigation/CommonScreens';
+import {View, StyleSheet, TouchableOpacity} from 'react-native';
+import {UserAvatarImage} from '../../Images/UserAvatarImage.tsx';
+import {UserBylineTag} from '../../Text/Tags/UserBylineTag.tsx';
+import {PhotostreamImageData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {IconButton} from 'react-native-paper';
+import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {PhotostreamImageActionsMenu} from '../../Menus/Photostream/PhotostreamImageActionsMenu.tsx';
+import {RelativeTimeTag} from '../../Text/Tags/RelativeTimeTag.tsx';
+import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
 
 interface PhotostreamAuthorViewProps {
   image: PhotostreamImageData;
 }
 
 export const PhotostreamImageHeaderView = (props: PhotostreamAuthorViewProps) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   const [menuVisible, setMenuVisible] = React.useState(false);
   const openMenu = () => setMenuVisible(true);
   const closeMenu = () => setMenuVisible(false);

@@ -1,7 +1,7 @@
-import { ListSubheader } from '@tricordarr/components/Lists/ListSubheader';
+import {ListSubheader} from '../../Lists/ListSubheader.tsx';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {StyleSheet, View} from 'react-native';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
 
 interface HelpChapterTitleView {
   title: string;
@@ -11,7 +11,7 @@ interface HelpChapterTitleView {
  * Help Chapters are broad chunks of content. This gives a common header for them.
  */
 export const HelpChapterTitleView = (props: HelpChapterTitleView) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
 
   const styles = StyleSheet.create({
     container: commonStyles.marginBottom,

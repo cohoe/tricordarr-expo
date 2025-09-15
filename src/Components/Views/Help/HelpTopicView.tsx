@@ -1,9 +1,9 @@
-import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
-import { IconButton, Text } from 'react-native-paper';
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import React, { PropsWithChildren } from 'react';
-import { IconSource } from 'react-native-paper/lib/typescript/components/Icon';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {StyleProp, StyleSheet, View, ViewStyle} from 'react-native';
+import {IconButton, Text} from 'react-native-paper';
+import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import React, {PropsWithChildren} from 'react';
+import {IconSource} from 'react-native-paper/lib/typescript/components/Icon';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
 
 interface HelpTopicViewProps extends PropsWithChildren {
   title?: string;
@@ -17,7 +17,7 @@ interface HelpTopicViewProps extends PropsWithChildren {
  * The help content is then provided as a child to this element.
  */
 export const HelpTopicView = (props: HelpTopicViewProps) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
 
   const styles = StyleSheet.create({
     titleContainer: {
@@ -47,10 +47,10 @@ export const HelpTopicView = (props: HelpTopicViewProps) => {
         {props.right
           ? props.right
           : props.icon && (
-            <View>
-              <IconButton icon={props.icon} />
-            </View>
-          )}
+              <View>
+                <IconButton icon={props.icon} />
+              </View>
+            )}
         <View style={styles.bodyTextContainer}>
           <Text selectable={true}>{props.children}</Text>
         </View>

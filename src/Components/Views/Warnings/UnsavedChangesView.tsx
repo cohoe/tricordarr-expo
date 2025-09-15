@@ -1,7 +1,7 @@
-import { Text } from 'react-native-paper';
+import {Text} from 'react-native-paper';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {StyleSheet, View} from 'react-native';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
 
 interface UnsavedChangesBannerProps {
   isVisible: boolean;
@@ -16,8 +16,8 @@ interface UnsavedChangesBannerProps {
  * @param isVisible Show this view or not.
  * @constructor
  */
-export const UnsavedChangesView = ({ isVisible = false }: UnsavedChangesBannerProps) => {
-  const { commonStyles } = useStyles();
+export const UnsavedChangesView = ({isVisible = false}: UnsavedChangesBannerProps) => {
+  const {commonStyles} = useStyles();
 
   const styles = StyleSheet.create({
     headerView: {

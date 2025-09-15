@@ -1,10 +1,10 @@
 import {IconButton, Text} from 'react-native-paper';
-import {AppIcons} from '@tricordarr/libraries/Enums/Icons';
+import {AppIcons} from '../../../libraries/Enums/Icons';
 import {StyleSheet, View} from 'react-native';
 import {format} from 'date-fns';
 import React from 'react';
-import {useStyles} from '@tricordarr/components/Context/Contexts/StyleContext';
-import {useCruise} from '@tricordarr/components/Context/Contexts/CruiseContext';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useCruise} from '../../Context/Contexts/CruiseContext';
 
 interface ScheduleDayHeaderViewProps {
   navigatePreviousDay?: () => void;

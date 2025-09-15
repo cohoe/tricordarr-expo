@@ -1,5 +1,5 @@
 import {createContext, useContext} from 'react';
-import {TokenStringData} from '@tricordarr/libraries/Structs/ControllerStructs';
+import {TokenStringData} from '../../../libraries/Structs/ControllerStructs';
 
 interface AuthContextType {
   signIn: (tokenData: TokenStringData, preRegistrationMode?: boolean) => Promise<void>;

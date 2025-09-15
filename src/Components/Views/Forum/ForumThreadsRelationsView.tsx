@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { LoadingView } from '@tricordarr/components/Views/Static/LoadingView';
-import { ForumSort } from '@tricordarr/libraries/Enums/ForumSortFilter';
-import { useFilter } from '@tricordarr/components/Context/Contexts/FilterContext';
-import { ForumRelationQueryType, useForumRelationQuery } from '@tricordarr/components/Queries/Forum/ForumThreadRelationQueries';
-import { NotLoggedInView } from '@tricordarr/components/Views/Static/NotLoggedInView';
-import { useAuth } from '@tricordarr/components/Context/Contexts/AuthContext';
-import { CategoryData, ForumListData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ForumEmptyListView } from '@tricordarr/components/Views/Forum/ForumEmptyListView';
-import { ForumThreadListView } from '@tricordarr/components/Views/Forum/ForumThreadListView';
+import React, {useEffect, useState} from 'react';
+import {LoadingView} from '../Static/LoadingView';
+import {ForumSort} from '../../../libraries/Enums/ForumSortFilter';
+import {useFilter} from '../../Context/Contexts/FilterContext';
+import {ForumRelationQueryType, useForumRelationQuery} from '../../Queries/Forum/ForumThreadRelationQueries.ts';
+import {NotLoggedInView} from '../Static/NotLoggedInView';
+import {useAuth} from '../../Context/Contexts/AuthContext';
+import {CategoryData, ForumListData} from '../../../libraries/Structs/ControllerStructs';
+import {ForumEmptyListView} from './ForumEmptyListView.tsx';
+import {ForumThreadListView} from './ForumThreadListView.tsx';
 import pluralize from 'pluralize';
 
 interface ForumThreadsRelationsViewProps {
@@ -15,8 +15,8 @@ interface ForumThreadsRelationsViewProps {
   category?: CategoryData;
   title?: string;
 }
-export const ForumThreadsRelationsView = ({ relationType, category, title }: ForumThreadsRelationsViewProps) => {
-  const { forumSortOrder, forumSortDirection } = useFilter();
+export const ForumThreadsRelationsView = ({relationType, category, title}: ForumThreadsRelationsViewProps) => {
+  const {forumSortOrder, forumSortDirection} = useFilter();
   const {
     data,
     refetch,
@@ -28,13 +28,13 @@ export const ForumThreadsRelationsView = ({ relationType, category, title }: For
     hasNextPage,
     fetchNextPage,
   } = useForumRelationQuery(relationType, {
-    ...(category ? { cat: category.categoryID } : undefined),
-    ...(forumSortOrder && forumSortOrder !== ForumSort.event ? { sort: forumSortOrder } : undefined),
-    ...(forumSortDirection ? { order: forumSortDirection } : undefined),
+    ...(category ? {cat: category.categoryID} : undefined),
+    ...(forumSortOrder && forumSortOrder !== ForumSort.event ? {sort: forumSortOrder} : undefined),
+    ...(forumSortDirection ? {order: forumSortDirection} : undefined),
   });
   const [refreshing, setRefreshing] = useState(false);
   const [forumListData, setForumListData] = useState<ForumListData[]>([]);
-  const { isLoggedIn } = useAuth();
+  const {isLoggedIn} = useAuth();
 
   const onRefresh = async () => {
     setRefreshing(true);

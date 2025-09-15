@@ -1,13 +1,13 @@
-import { Text } from 'react-native-paper';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import {Text} from 'react-native-paper';
+import {StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { CommonStackComponents, useCommonRoute, useCommonStack } from '@tricordarr/components/Navigation/CommonScreens';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+// import {CommonStackComponents, useCommonRoute, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 
 export const ConnectionDisruptedView = () => {
-  const { commonStyles } = useStyles();
-  const commonNavigation = useCommonStack();
-  const commonRoute = useCommonRoute();
+  const {commonStyles} = useStyles();
+  // const commonNavigation = useCommonStack();
+  // const commonRoute = useCommonRoute();
 
   const styles = StyleSheet.create({
     headerView: {
@@ -22,14 +22,15 @@ export const ConnectionDisruptedView = () => {
   });
 
   const onPress = () => {
-    commonNavigation.push(CommonStackComponents.configServerUrl);
+    console.log('onPress');
+    // commonNavigation.push(CommonStackComponents.configServerUrl);
   };
 
   return (
     <TouchableOpacity
       style={styles.headerView}
-      onPress={onPress}
-      disabled={commonRoute.name === CommonStackComponents.configServerUrl}>
+      onPress={onPress}>
+      {/* // disabled={commonRoute.name === CommonStackComponents.configServerUrl}> */}
       <Text style={styles.headerText}>Connection Disrupted</Text>
       <Text variant={'labelSmall'} style={commonStyles.errorContainer}>
         Tap here for more information

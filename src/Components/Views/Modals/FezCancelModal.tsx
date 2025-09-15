@@ -1,19 +1,19 @@
-import { useModal } from '@tricordarr/components/Context/Contexts/ModalContext';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { View } from 'react-native';
-import { ModalCard } from '@tricordarr/components/Cards/ModalCard';
+import {useModal} from '../../Context/Contexts/ModalContext';
+import {useAppTheme} from '../../../styles/Theme';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {View} from 'react-native';
+import {ModalCard} from '../../Cards/ModalCard';
 import React from 'react';
-import { FezData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { Text } from 'react-native-paper';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { useQueryClient } from '@tanstack/react-query';
-import { useFezCancelMutation } from '@tricordarr/components/Queries/Fez/FezMutations';
-import { useSnackbar } from '@tricordarr/components/Context/Contexts/SnackbarContext';
-import { FezType } from '@tricordarr/libraries/Enums/FezType';
+import {FezData} from '../../../libraries/Structs/ControllerStructs';
+import {Text} from 'react-native-paper';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useQueryClient} from '@tanstack/react-query';
+import {useFezCancelMutation} from '../../Queries/Fez/FezMutations.ts';
+import {useSnackbar} from '../../Context/Contexts/SnackbarContext.ts';
+import {FezType} from '../../../libraries/Enums/FezType.ts';
 
-const ModalContent = ({ fez }: { fez: FezData; }) => {
-  const { commonStyles } = useStyles();
+const ModalContent = ({fez}: {fez: FezData}) => {
+  const {commonStyles} = useStyles();
   const noun = FezType.isLFGType(fez.fezType) ? 'LFG' : 'event';
   return (
     <>
@@ -28,9 +28,9 @@ const ModalContent = ({ fez }: { fez: FezData; }) => {
   );
 };
 
-export const FezCancelModal = ({ fezData }: { fezData: FezData; }) => {
-  const { setSnackbarPayload } = useSnackbar();
-  const { setModalVisible } = useModal();
+export const FezCancelModal = ({fezData}: {fezData: FezData}) => {
+  const {setSnackbarPayload} = useSnackbar();
+  const {setModalVisible} = useModal();
   const theme = useAppTheme();
   const cancelMutation = useFezCancelMutation();
   const queryClient = useQueryClient();
@@ -42,7 +42,7 @@ export const FezCancelModal = ({ fezData }: { fezData: FezData; }) => {
       },
       {
         onSuccess: async () => {
-          setSnackbarPayload({ message: 'Successfully canceled this event.', messageType: 'info' });
+          setSnackbarPayload({message: 'Successfully canceled this event.', messageType: 'info'});
           const invalidations = FezData.getCacheKeys(fezData.fezID).map(key => {
             return queryClient.invalidateQueries(key);
           });

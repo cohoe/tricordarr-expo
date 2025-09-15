@@ -1,21 +1,21 @@
 import React from 'react';
-import { View } from 'react-native';
-import { UserHeader } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ModalCard } from '@tricordarr/components/Cards/ModalCard';
-import { useModal } from '@tricordarr/components/Context/Contexts/ModalContext';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { usePrivilege } from '@tricordarr/components/Context/Contexts/PrivilegeContext';
-import { ModeratorBlockText, UserBlockText } from '@tricordarr/components/Text/UserRelationsText';
-import { useUserBlockMutation } from '@tricordarr/components/Queries/Users/UserBlockMutations';
-import { useQueryClient } from '@tanstack/react-query';
+import {View} from 'react-native';
+import {UserHeader} from '../../../libraries/Structs/ControllerStructs';
+import {ModalCard} from '../../Cards/ModalCard';
+import {useModal} from '../../Context/Contexts/ModalContext';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {useAppTheme} from '../../../styles/Theme';
+import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
+import {ModeratorBlockText, UserBlockText} from '../../Text/UserRelationsText';
+import {useUserBlockMutation} from '../../Queries/Users/UserBlockMutations.ts';
+import {useQueryClient} from '@tanstack/react-query';
 
 interface BlockUserModalViewProps {
   user: UserHeader;
 }
 
 const BlockUserModalContent = () => {
-  const { hasModerator } = usePrivilege();
+  const {hasModerator} = usePrivilege();
   return (
     <>
       <UserBlockText />
@@ -24,9 +24,9 @@ const BlockUserModalContent = () => {
   );
 };
 
-export const BlockUserModalView = ({ user }: BlockUserModalViewProps) => {
+export const BlockUserModalView = ({user}: BlockUserModalViewProps) => {
   const blockMutation = useUserBlockMutation();
-  const { setModalVisible } = useModal();
+  const {setModalVisible} = useModal();
   const theme = useAppTheme();
   const queryClient = useQueryClient();
 

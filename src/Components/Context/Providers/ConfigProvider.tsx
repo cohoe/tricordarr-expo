@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {PropsWithChildren} from 'react';
-import {ConfigContext} from '@tricordarr/components/Context/Contexts/ConfigContext';
-import {AppConfig, getAppConfig} from '@tricordarr/libraries/AppConfig';
+import {ConfigContext} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {AppConfig, getAppConfig} from '@tricordarr/Libraries/AppConfig';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {StorageKeys} from '@tricordarr/libraries/Storage';
+import {StorageKeys} from '@tricordarr/Libraries/Storage';
 import {check as checkPermission, PERMISSIONS, PermissionStatus, RESULTS} from 'react-native-permissions';
 
 export const ConfigProvider = ({children}: PropsWithChildren) => {

@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import { Banner, Text } from 'react-native-paper';
-import { useErrorHandler } from '@tricordarr/components/Context/Contexts/ErrorHandlerContext';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import {StyleSheet} from 'react-native';
+import {Banner, Text} from 'react-native-paper';
+import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 export const ErrorBanner = () => {
-  const { errorBanner, setErrorBanner } = useErrorHandler();
+  const {errorBanner, setErrorBanner} = useErrorHandler();
   const theme = useAppTheme();
   const insets = useSafeAreaInsets();
 

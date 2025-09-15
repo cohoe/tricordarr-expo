@@ -48,11 +48,9 @@
       [
         "react-native-permissions",
         {
-          "iosPermissions": []
+          "ios": {}
         }
-      ],
-      "react-native-video",
-      "react-native-edge-to-edge"
+      ]
     ],
     "experiments": {
       "reactCanary": true

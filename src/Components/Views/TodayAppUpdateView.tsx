@@ -1,12 +1,12 @@
-import { AppUpdateCard } from '@tricordarr/components/Cards/MainScreen/AppUpdateCard';
+import {AppUpdateCard} from '../Cards/MainScreen/AppUpdateCard.tsx';
 import React from 'react';
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import { useClientConfigQuery } from '@tricordarr/components/Queries/Client/ClientQueries';
+import {PaddedContentView} from './Content/PaddedContentView.tsx';
+import {useClientConfigQuery} from '../Queries/Client/ClientQueries.ts';
 import DeviceInfo from 'react-native-device-info';
-import { compareVersions } from 'compare-versions';
+import {compareVersions} from 'compare-versions';
 
 export const TodayAppUpdateView = () => {
-  const { data } = useClientConfigQuery();
+  const {data} = useClientConfigQuery();
 
   if (data && compareVersions(DeviceInfo.getVersion(), data.spec.latestVersion) < 0) {
     return (

@@ -1,17 +1,17 @@
-import { TouchableOpacity, View, StyleSheet } from 'react-native';
-import React, { useState } from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { RelativeTimeTag } from '@tricordarr/components/Text/Tags/RelativeTimeTag';
-import { ForumData, PostData, UserHeader } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ContentText } from '@tricordarr/components/Text/ContentText';
-import { ForumPostActionsMenu } from '@tricordarr/components/Menus/Forum/ForumPostActionsMenu';
-import { AppIcon } from '@tricordarr/components/Icons/AppIcon';
-import { AppIcons } from '@tricordarr/libraries/Enums/Icons';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { UserBylineTag } from '@tricordarr/components/Text/Tags/UserBylineTag';
-import { CommonStackComponents, useCommonStack } from '@tricordarr/components/Navigation/CommonScreens';
+import {TouchableOpacity, View, StyleSheet} from 'react-native';
+import React, {useState} from 'react';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {RelativeTimeTag} from '../../Text/Tags/RelativeTimeTag';
+import {ForumData, PostData, UserHeader} from '../../../libraries/Structs/ControllerStructs';
+import {ContentText} from '../../Text/ContentText';
+import {ForumPostActionsMenu} from '../../Menus/Forum/ForumPostActionsMenu';
+import {AppIcon} from '../../Icons/AppIcon';
+import {AppIcons} from '../../../libraries/Enums/Icons';
+import {useAppTheme} from '../../../styles/Theme';
+import {UserBylineTag} from '../../Text/Tags/UserBylineTag';
+import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens';
 import Clipboard from '@react-native-clipboard/clipboard';
-import { useUserFavoritesQuery } from '@tricordarr/components/Queries/Users/UserFavoriteQueries';
+import {useUserFavoritesQuery} from '../../Queries/Users/UserFavoriteQueries.ts';
 
 interface ForumPostMessageViewProps {
   postData: PostData;
@@ -35,13 +35,13 @@ export const ForumPostMessageView = ({
   enablePinnedPosts,
   forumData,
 }: ForumPostMessageViewProps) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   const [menuVisible, setMenuVisible] = useState(false);
   const openMenu = () => setMenuVisible(true);
   const closeMenu = () => setMenuVisible(false);
   const theme = useAppTheme();
   const commonNavigation = useCommonStack();
-  const { data: favorites } = useUserFavoritesQuery();
+  const {data: favorites} = useUserFavoritesQuery();
 
   const styles = StyleSheet.create({
     messageView: {

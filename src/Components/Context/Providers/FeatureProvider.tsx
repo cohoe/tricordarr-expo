@@ -1,16 +1,16 @@
-import React, { PropsWithChildren, useEffect, useState } from 'react';
-import { SwiftarrClientApp, SwiftarrFeature } from '@tricordarr/libraries/Enums/AppFeatures';
-import { FeatureContext } from '@tricordarr/components/Context/Contexts/FeatureContext';
-import { useUserNotificationDataQuery } from '@tricordarr/components/Queries/Alert/NotificationQueries';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
+import React, {PropsWithChildren, useEffect, useState} from 'react';
+import {SwiftarrClientApp, SwiftarrFeature} from '../../../libraries/Enums/AppFeatures';
+import {FeatureContext} from '../Contexts/FeatureContext';
+import {useUserNotificationDataQuery} from '../../Queries/Alert/NotificationQueries';
+import {useConfig} from '../Contexts/ConfigContext.ts';
 
-export const FeatureProvider = ({ children }: PropsWithChildren) => {
-  const { oobeCompleted } = useConfig();
+export const FeatureProvider = ({children}: PropsWithChildren) => {
+  const {oobeCompleted} = useConfig();
   // Default to disabling images since those queries can fire pretty quickly. Once the state updates
   // from UserNotificationData then the queries will all re-enable and function as expected.
   // Much later on, I don't know why I did that.
   const [disabledFeatures, setDisabledFeatures] = useState<SwiftarrFeature[]>([]);
-  const { data: userNotificationData } = useUserNotificationDataQuery({ enabled: oobeCompleted });
+  const {data: userNotificationData} = useUserNotificationDataQuery({enabled: oobeCompleted});
 
   useEffect(() => {
     if (userNotificationData) {

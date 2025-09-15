@@ -1,5 +1,5 @@
 import {createContext, Dispatch, SetStateAction, useContext} from 'react';
-import {AppConfig} from '@tricordarr/libraries/AppConfig';
+import {AppConfig} from '@tricordarr/Libraries/AppConfig';
 import {PermissionStatus} from 'react-native-permissions';
 
 interface ConfigContextType {

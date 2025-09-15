@@ -1,19 +1,19 @@
-import { useModal } from '@tricordarr/components/Context/Contexts/ModalContext';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { View } from 'react-native';
-import { ModalCard } from '@tricordarr/components/Cards/ModalCard';
+import {useModal} from '../../Context/Contexts/ModalContext';
+import {useAppTheme} from '../../../styles/Theme';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {View} from 'react-native';
+import {ModalCard} from '../../Cards/ModalCard';
 import React from 'react';
-import { FezData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { Text } from 'react-native-paper';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { useQueryClient } from '@tanstack/react-query';
-import { useNavigation } from '@react-navigation/native';
-import { useFezDeleteMutation } from '@tricordarr/components/Queries/Fez/FezMutations';
-import { useSnackbar } from '@tricordarr/components/Context/Contexts/SnackbarContext';
+import {FezData} from '../../../libraries/Structs/ControllerStructs';
+import {Text} from 'react-native-paper';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useQueryClient} from '@tanstack/react-query';
+import {useNavigation} from '@react-navigation/native';
+import {useFezDeleteMutation} from '../../Queries/Fez/FezMutations.ts';
+import {useSnackbar} from '../../Context/Contexts/SnackbarContext.ts';
 
 const ModalContent = () => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   return <Text style={[commonStyles.marginBottomSmall]}>You sure? There is no undo.</Text>;
 };
 
@@ -22,9 +22,9 @@ interface PersonalEventDeleteModalProps {
   handleNavigation?: boolean;
 }
 
-export const PersonalEventDeleteModal = ({ personalEvent, handleNavigation = true }: PersonalEventDeleteModalProps) => {
-  const { setSnackbarPayload } = useSnackbar();
-  const { setModalVisible } = useModal();
+export const PersonalEventDeleteModal = ({personalEvent, handleNavigation = true}: PersonalEventDeleteModalProps) => {
+  const {setSnackbarPayload} = useSnackbar();
+  const {setModalVisible} = useModal();
   const theme = useAppTheme();
   const deleteMutation = useFezDeleteMutation();
   const queryClient = useQueryClient();
@@ -41,7 +41,7 @@ export const PersonalEventDeleteModal = ({ personalEvent, handleNavigation = tru
             navigation.goBack();
           }
           setModalVisible(false);
-          setSnackbarPayload({ message: 'Successfully deleted this event.', messageType: 'info' });
+          setSnackbarPayload({message: 'Successfully deleted this event.', messageType: 'info'});
           const invalidations = FezData.getCacheKeys()
             .map(key => {
               return queryClient.invalidateQueries(key);

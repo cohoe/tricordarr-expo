@@ -1,20 +1,20 @@
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
-import { AppIcon } from '@tricordarr/components/Icons/AppIcon';
-import { AppIcons } from '@tricordarr/libraries/Enums/Icons';
-import { Text } from 'react-native-paper';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import {AppIcon} from '../../Icons/AppIcon.tsx';
+import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {Text} from 'react-native-paper';
 import React from 'react';
-import { PhotostreamImageData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { useMainStack } from '@tricordarr/components/Navigation/Stacks/MainStackNavigator';
-import { CommonStackComponents } from '@tricordarr/components/Navigation/CommonScreens';
-import { guessDeckNumber } from '@tricordarr/libraries/Ship';
+import {PhotostreamImageData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {useMainStack} from '../../Navigation/Stacks/MainStackNavigator.tsx';
+import {CommonStackComponents} from '../../Navigation/CommonScreens.tsx';
+import {guessDeckNumber} from '../../../libraries/Ship.ts';
 
 interface PhotostreamImageBodyViewProps {
   image: PhotostreamImageData;
 }
 
 export const PhotostreamImageBodyView = (props: PhotostreamImageBodyViewProps) => {
-  const { commonStyles } = useStyles();
+  const {commonStyles} = useStyles();
   const navigation = useMainStack();
 
   const onEventPress = () => {

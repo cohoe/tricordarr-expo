@@ -1,8 +1,8 @@
 import {Text} from 'react-native-paper';
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import {useStyles} from '@tricordarr/components/Context/Contexts/StyleContext';
-import {useAppTheme} from '@tricordarr/styles/Theme';
+import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useAppTheme} from '../../../styles/Theme';
 
 interface PostLengthViewProps {
   content: string;

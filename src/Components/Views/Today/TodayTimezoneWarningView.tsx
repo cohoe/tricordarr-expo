@@ -1,10 +1,10 @@
 import React from 'react';
-import { TimezoneWarningCard } from '@tricordarr/components/Cards/MainScreen/TimezoneWarningCard';
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import { useCruise } from '@tricordarr/components/Context/Contexts/CruiseContext';
+import {TimezoneWarningCard} from '../../Cards/MainScreen/TimezoneWarningCard.tsx';
+import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import {useCruise} from '../../Context/Contexts/CruiseContext.ts';
 
 export const TodayTimezoneWarningView = () => {
-  const { showTimeZoneWarning } = useCruise();
+  const {showTimeZoneWarning} = useCruise();
   if (!showTimeZoneWarning) {
     return <></>;
   }

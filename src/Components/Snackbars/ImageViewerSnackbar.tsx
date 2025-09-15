@@ -1,7 +1,7 @@
 import React from 'react';
-import { SnackBarBase, SnackBarBaseProps } from '@tricordarr/components/Snackbars/SnackBarBase';
-import { StyleSheet } from 'react-native';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
+import {SnackBarBase, SnackBarBaseProps} from './SnackBarBase';
+import {StyleSheet} from 'react-native';
+import {useStyles} from '../Context/Contexts/StyleContext.ts';
 
 export const ImageViewerSnackbar = ({
   setMessage,
@@ -9,7 +9,7 @@ export const ImageViewerSnackbar = ({
   duration = 4000,
   messagePrefix = '✅ ',
 }: SnackBarBaseProps) => {
-  const { styleDefaults } = useStyles();
+  const {styleDefaults} = useStyles();
   const styles = StyleSheet.create({
     snackbar: {
       marginBottom: styleDefaults.marginSize * 5,

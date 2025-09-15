@@ -1,15 +1,15 @@
-import { Text } from 'react-native-paper';
+import {Text} from 'react-native-paper';
 import React from 'react';
-import { Linking, StyleSheet, TouchableOpacity } from 'react-native';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { useCruise } from '@tricordarr/components/Context/Contexts/CruiseContext';
-import { CommonStackComponents, useCommonStack } from '@tricordarr/components/Navigation/CommonScreens';
-import { useSwiftarrQueryClient } from '@tricordarr/components/Context/Contexts/SwiftarrQueryClientContext';
+import {Linking, StyleSheet, TouchableOpacity} from 'react-native';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {useCruise} from '../../Context/Contexts/CruiseContext.ts';
+import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
+import {useSwiftarrQueryClient} from '../../Context/Contexts/SwiftarrQueryClientContext.ts';
 
 export const TimezoneWarningView = () => {
-  const { commonStyles } = useStyles();
-  const { showTimeZoneWarning } = useCruise();
-  const { serverUrl } = useSwiftarrQueryClient();
+  const {commonStyles} = useStyles();
+  const {showTimeZoneWarning} = useCruise();
+  const {serverUrl} = useSwiftarrQueryClient();
   const commonStack = useCommonStack();
   const onPress = () => {
     commonStack.push(CommonStackComponents.siteUIScreen, {

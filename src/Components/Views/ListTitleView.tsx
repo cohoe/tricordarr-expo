@@ -1,9 +1,9 @@
-import { Text } from 'react-native-paper';
-import { View, StyleSheet } from 'react-native';
+import {Text} from 'react-native-paper';
+import {View, StyleSheet} from 'react-native';
 import React from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { BoldText } from '@tricordarr/components/Text/BoldText';
-import { MD3TypescaleKey } from 'react-native-paper/src/types';
+import {useStyles} from '../Context/Contexts/StyleContext';
+import {BoldText} from '../Text/BoldText.tsx';
+import {MD3TypescaleKey} from 'react-native-paper/src/types.tsx';
 
 interface ListTitleViewProps {
   title?: string;
@@ -12,8 +12,8 @@ interface ListTitleViewProps {
 }
 
 // @TODO dedupe with BaseWarningView
-export const ListTitleView = ({ title, subtitle, subtitleVariant = 'bodySmall' }: ListTitleViewProps) => {
-  const { commonStyles } = useStyles();
+export const ListTitleView = ({title, subtitle, subtitleVariant = 'bodySmall'}: ListTitleViewProps) => {
+  const {commonStyles} = useStyles();
 
   const styles = StyleSheet.create({
     container: {

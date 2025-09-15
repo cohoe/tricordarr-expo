@@ -1,7 +1,7 @@
 import {createContext, Dispatch, SetStateAction, useContext} from 'react';
-import {FezType} from '@tricordarr/libraries/Enums/FezType';
-import {ForumFilter, ForumSortDirection, ForumSort} from '@tricordarr/libraries/Enums/ForumSortFilter';
-import {ScheduleFilterSettings} from '@tricordarr/libraries/Types';
+import {FezType} from '../../../libraries/Enums/FezType';
+import {ForumFilter, ForumSortDirection, ForumSort} from '../../../libraries/Enums/ForumSortFilter';
+import {ScheduleFilterSettings} from '../../../libraries/Types';
 
 interface ScheduleFilterContextType {
   eventTypeFilter: string;

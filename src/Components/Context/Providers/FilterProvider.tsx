@@ -1,13 +1,13 @@
-import React, { PropsWithChildren, useState } from 'react';
-import { FilterContext } from '@tricordarr/components/Context/Contexts/FilterContext';
-import { FezType } from '@tricordarr/libraries/Enums/FezType';
-import { useConfig } from '@tricordarr/components/Context/Contexts/ConfigContext';
-import { ForumFilter, ForumSortDirection, ForumSort } from '@tricordarr/libraries/Enums/ForumSortFilter';
-import { ScheduleFilterSettings } from '@tricordarr/libraries/Types';
-import { EventType } from '@tricordarr/libraries/Enums/EventType';
+import React, {PropsWithChildren, useState} from 'react';
+import {FilterContext} from '../Contexts/FilterContext';
+import {FezType} from '../../../libraries/Enums/FezType';
+import {useConfig} from '../Contexts/ConfigContext';
+import {ForumFilter, ForumSortDirection, ForumSort} from '../../../libraries/Enums/ForumSortFilter';
+import {ScheduleFilterSettings} from '../../../libraries/Types';
+import {EventType} from '../../../libraries/Enums/EventType.ts';
 
-export const FilterProvider = ({ children }: PropsWithChildren) => {
-  const { appConfig } = useConfig();
+export const FilterProvider = ({children}: PropsWithChildren) => {
+  const {appConfig} = useConfig();
   const [eventTypeFilter, setEventTypeFilter] = useState('');
   const [eventFavoriteFilter, setEventFavoriteFilter] = useState(false);
   const [lfgCruiseDayFilter, setLfgCruiseDayFilter] = useState<number>();

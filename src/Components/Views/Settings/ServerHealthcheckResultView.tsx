@@ -1,20 +1,20 @@
-import { Text } from 'react-native-paper';
+import {Text} from 'react-native-paper';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { AppIcon } from '@tricordarr/components/Icons/AppIcon';
-import { AppIcons } from '@tricordarr/libraries/Enums/Icons';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { useHealthQuery } from '@tricordarr/components/Queries/Client/ClientQueries';
-import { RelativeTimeTag } from '@tricordarr/components/Text/Tags/RelativeTimeTag';
+import {StyleSheet, View} from 'react-native';
+import {AppIcon} from '../../Icons/AppIcon.tsx';
+import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {useAppTheme} from '../../../styles/Theme.ts';
+import {useHealthQuery} from '../../Queries/Client/ClientQueries.ts';
+import {RelativeTimeTag} from '../../Text/Tags/RelativeTimeTag.tsx';
 
 interface ServerHealthcheckResultViewProps {
   serverHealthPassed: boolean;
 }
 
-export const ServerHealthcheckResultView = ({ serverHealthPassed }: ServerHealthcheckResultViewProps) => {
-  const { commonStyles } = useStyles();
-  const { data: serverHealthData, dataUpdatedAt, errorUpdatedAt, isError, isSuccess } = useHealthQuery();
+export const ServerHealthcheckResultView = ({serverHealthPassed}: ServerHealthcheckResultViewProps) => {
+  const {commonStyles} = useStyles();
+  const {data: serverHealthData, dataUpdatedAt, errorUpdatedAt, isError, isSuccess} = useHealthQuery();
   const theme = useAppTheme();
 
   const styles = StyleSheet.create({

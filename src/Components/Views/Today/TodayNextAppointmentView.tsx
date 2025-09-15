@@ -1,11 +1,11 @@
-import { PaddedContentView } from '@tricordarr/components/Views/Content/PaddedContentView';
-import { NextEventCard } from '@tricordarr/components/Cards/MainScreen/NextEventCard';
+import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import {NextEventCard} from '../../Cards/MainScreen/NextEventCard.tsx';
 import React from 'react';
-import { useUserNotificationDataQuery } from '@tricordarr/components/Queries/Alert/NotificationQueries';
-import { NextLFGCard } from '@tricordarr/components/Cards/MainScreen/NextLFGCard';
+import {useUserNotificationDataQuery} from '../../Queries/Alert/NotificationQueries.ts';
+import {NextLFGCard} from '../../Cards/MainScreen/NextLFGCard.tsx';
 
 export const TodayNextAppointmentView = () => {
-  const { data } = useUserNotificationDataQuery();
+  const {data} = useUserNotificationDataQuery();
 
   if (!data) {
     return <></>;

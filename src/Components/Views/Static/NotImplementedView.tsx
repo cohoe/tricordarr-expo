@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text} from 'react-native-paper';
-import {AppView} from '@tricordarr/components/Views/AppView';
-import {ScrollingContentView} from '@tricordarr/components/Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/components/Views/Content/PaddedContentView';
+import {AppView} from '../AppView';
+import {ScrollingContentView} from '../Content/ScrollingContentView';
+import {PaddedContentView} from '../Content/PaddedContentView';
 
 interface NotImplementedViewProps {
   additionalText?: string;

@@ -1,7 +1,7 @@
 import React, {PropsWithChildren, useEffect, useState} from 'react';
-import {PrivilegeContext} from '@tricordarr/components/Context/Contexts/PrivilegeContext';
-import {PrivilegedUserAccounts, UserAccessLevel} from '@tricordarr/libraries/Enums/UserAccessLevel';
-import {useAuth} from '@tricordarr/components/Context/Contexts/AuthContext';
+import {PrivilegeContext} from '../Contexts/PrivilegeContext';
+import {PrivilegedUserAccounts, UserAccessLevel} from '../../../libraries/Enums/UserAccessLevel';
+import {useAuth} from '../Contexts/AuthContext';
 
 /**
  * This provider is used for performing a privileged action as some special user.

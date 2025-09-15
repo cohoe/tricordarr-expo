@@ -1,5 +1,5 @@
 import React, {PropsWithChildren} from 'react';
-import {useStyles} from '@tricordarr/components/Context/Contexts/StyleContext';
+import {useStyles} from '../Context/Contexts/StyleContext';
 import {TouchableOpacity} from 'react-native';
 
 interface MessageAvatarContainerViewProps {

@@ -1,21 +1,21 @@
 import React from 'react';
-import { View } from 'react-native';
-import { UserHeader } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ModalCard } from '@tricordarr/components/Cards/ModalCard';
-import { useModal } from '@tricordarr/components/Context/Contexts/ModalContext';
-import { PrimaryActionButton } from '@tricordarr/components/Buttons/PrimaryActionButton';
-import { useAppTheme } from '@tricordarr/styles/Theme';
-import { usePrivilege } from '@tricordarr/components/Context/Contexts/PrivilegeContext';
-import { ModeratorMuteText, UserMuteText } from '@tricordarr/components/Text/UserRelationsText';
-import { useUserMuteMutation } from '@tricordarr/components/Queries/Users/UserMuteMutations';
-import { useQueryClient } from '@tanstack/react-query';
+import {View} from 'react-native';
+import {UserHeader} from '../../../libraries/Structs/ControllerStructs';
+import {ModalCard} from '../../Cards/ModalCard';
+import {useModal} from '../../Context/Contexts/ModalContext';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {useAppTheme} from '../../../styles/Theme';
+import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
+import {ModeratorMuteText, UserMuteText} from '../../Text/UserRelationsText';
+import {useUserMuteMutation} from '../../Queries/Users/UserMuteMutations.ts';
+import {useQueryClient} from '@tanstack/react-query';
 
 interface MuteUserModalViewProps {
   user: UserHeader;
 }
 
 const MuteUserModalContent = () => {
-  const { hasModerator } = usePrivilege();
+  const {hasModerator} = usePrivilege();
   return (
     <>
       <UserMuteText />
@@ -24,9 +24,9 @@ const MuteUserModalContent = () => {
   );
 };
 
-export const MuteUserModalView = ({ user }: MuteUserModalViewProps) => {
+export const MuteUserModalView = ({user}: MuteUserModalViewProps) => {
   const muteMutation = useUserMuteMutation();
-  const { setModalVisible } = useModal();
+  const {setModalVisible} = useModal();
   const theme = useAppTheme();
   const queryClient = useQueryClient();
 

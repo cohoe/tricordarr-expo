@@ -1,9 +1,9 @@
-import {getAuthHeaders} from '@tricordarr/libraries/Network/APIClient';
+import {getAuthHeaders} from './APIClient';
 import ReconnectingWebSocket from 'reconnecting-websocket';
-import {TokenStringData} from '@tricordarr/libraries/Structs/ControllerStructs';
-import {WebSocketOptions} from '@tricordarr/libraries/Types';
-import {getAppConfig} from '@tricordarr/libraries/AppConfig';
-import {StorageKeys} from '@tricordarr/libraries/Storage';
+import {TokenStringData} from '../Structs/ControllerStructs';
+import {WebSocketOptions} from '../Types';
+import {getAppConfig} from '../AppConfig';
+import {StorageKeys} from '../Storage';
 
 /**
  * This function returns a normalized URL of a WebSocket API endpoint to connect to.

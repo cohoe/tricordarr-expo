@@ -1,4 +1,4 @@
-import { CommonStackComponents } from '@tricordarr/components/Navigation/CommonScreens';
+import {CommonStackComponents} from '../../components/Navigation/CommonScreens.tsx';
 
 /**
  * Lifted from https://github.com/jocosocial/swiftarr/blob/master/Sources/App/Enumerations/FezType.swift

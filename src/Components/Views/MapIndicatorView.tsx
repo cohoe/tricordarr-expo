@@ -1,9 +1,9 @@
 import {StyleSheet, View} from 'react-native';
-import {useStyles} from '@tricordarr/components/Context/Contexts/StyleContext';
+import {useStyles} from '../Context/Contexts/StyleContext';
 import React from 'react';
-import {AppIcons} from '@tricordarr/libraries/Enums/Icons';
-import {AppIcon} from '@tricordarr/components/Icons/AppIcon';
-import {BoldText} from '@tricordarr/components/Text/BoldText';
+import {AppIcons} from '../../libraries/Enums/Icons';
+import {AppIcon} from '../Icons/AppIcon';
+import {BoldText} from '../Text/BoldText';
 
 interface MapIndicatorViewProps {
   direction: 'Forward' | 'Aft';

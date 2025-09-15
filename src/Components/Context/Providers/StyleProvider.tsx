@@ -1,9 +1,8 @@
 import React, {PropsWithChildren} from 'react';
-import {StyleContext} from '@tricordarr/components/Context/Contexts/StyleContext';
-import {useAppTheme} from '@tricordarr/styles/Theme';
-import {commonStyles, styleDefaults} from '@tricordarr/styles';
+import {StyleContext} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {commonStyles, styleDefaults} from '@tricordarr/Styles';
 import {StyleSheet} from 'react-native';
-import {AndroidColor} from '@notifee/react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 export const StyleProvider = ({children}: PropsWithChildren) => {
@@ -80,7 +79,7 @@ export const StyleProvider = ({children}: PropsWithChildren) => {
       color: theme.colors.onTwitarrYellow,
     },
     onTwitarrBanner: {
-      color: AndroidColor.BLACK,
+      color: 'black',
     },
     errorContainer: {
       backgroundColor: theme.colors.errorContainer,
@@ -114,8 +113,8 @@ export const StyleProvider = ({children}: PropsWithChildren) => {
       ...commonStyles.paddingTopSmall,
     },
     imageViewerBackground: {
-      backgroundColor: AndroidColor.BLACK,
-      color: AndroidColor.WHITE,
+      backgroundColor: 'black',
+      color: 'white',
       opacity: 0.7,
     },
     safeMarginTop: {

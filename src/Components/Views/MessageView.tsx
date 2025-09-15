@@ -1,11 +1,11 @@
-import { Text } from 'react-native-paper';
-import { TouchableOpacity, View } from 'react-native';
-import React, { useState } from 'react';
-import { useStyles } from '@tricordarr/components/Context/Contexts/StyleContext';
-import { RelativeTimeTag } from '@tricordarr/components/Text/Tags/RelativeTimeTag';
-import { FezPostActionsMenu } from '@tricordarr/components/Menus/Fez/FezPostActionsMenu';
-import { FezData, FezPostData } from '@tricordarr/libraries/Structs/ControllerStructs';
-import { ContentText } from '@tricordarr/components/Text/ContentText';
+import {Text} from 'react-native-paper';
+import {TouchableOpacity, View} from 'react-native';
+import React, {useState} from 'react';
+import {useStyles} from '../Context/Contexts/StyleContext';
+import {RelativeTimeTag} from '../Text/Tags/RelativeTimeTag';
+import {FezPostActionsMenu} from '../Menus/Fez/FezPostActionsMenu.tsx';
+import {FezData, FezPostData} from '../../libraries/Structs/ControllerStructs';
+import {ContentText} from '../Text/ContentText';
 import Clipboard from '@react-native-clipboard/clipboard';
 
 interface MessageViewProps {
@@ -19,8 +19,8 @@ interface MessageViewProps {
  * This is a View container for a text message in the style of Android Messages or Signal.
  * It only contains the message itself.
  */
-export const MessageView = ({ fezPost, messageOnRight = false, showAuthor, fez }: MessageViewProps) => {
-  const { commonStyles } = useStyles();
+export const MessageView = ({fezPost, messageOnRight = false, showAuthor, fez}: MessageViewProps) => {
+  const {commonStyles} = useStyles();
   const [menuVisible, setMenuVisible] = useState(false);
   const openMenu = () => setMenuVisible(true);
   const closeMenu = () => setMenuVisible(false);

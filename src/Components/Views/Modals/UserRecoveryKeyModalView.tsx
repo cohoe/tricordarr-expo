@@ -1,10 +1,10 @@
 import React from 'react';
 import {TextStyle, View} from 'react-native';
-import {ModalCard} from '@tricordarr/components/Cards/ModalCard';
-import {PrimaryActionButton} from '@tricordarr/components/Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/styles/Theme';
+import {ModalCard} from '../../Cards/ModalCard';
+import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {useAppTheme} from '../../../styles/Theme';
 import {Text} from 'react-native-paper';
-import {useStyles} from '@tricordarr/components/Context/Contexts/StyleContext';
+import {useStyles} from '../../Context/Contexts/StyleContext';
 import Clipboard from '@react-native-clipboard/clipboard';
 
 interface UserRecoveryKeyModalViewProps {
