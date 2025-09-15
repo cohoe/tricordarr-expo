@@ -13,3 +13,6 @@ Manually edit `settings.json`
 https://github.com/lugg/react-native-config/issues/848
 
 Use 1.5.5
+
+### App crashes on startup on iOS
+https://github.com/expo/expo/issues/36908

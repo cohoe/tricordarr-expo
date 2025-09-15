@@ -28,7 +28,8 @@
     "react-native-paper": "^5.14.5",
     "react-native-permissions": "^5.4.2",
     "react-native-safe-area-context": "~5.6.0",
-    "superjson": "^2.2.2"
+    "superjson": "^2.2.2",
+    "expo-build-properties": "~1.0.8"
   },
   "devDependencies": {
     "@react-native/eslint-config": "^0.81.1",

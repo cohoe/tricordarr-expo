@@ -46,9 +46,26 @@
     "plugins": [
       "expo-router",
       [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      [
         "react-native-permissions",
         {
-          "iosPermissions": []
+          "iosPermissions": [
+            "Notifications"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "networkInspector": false
+          }
         }
       ]
     ],
