@@ -7,7 +7,7 @@ export const IndexScreen = () => {
   const router = useRouter();
   console.log('IndexScreen');
   return (
-    <AppView>
+    <AppView safeEdges={['top', 'bottom']}>
       <Text>Home</Text>
       <Button mode="contained" onPress={() => router.push('/about')}>About</Button>
     </AppView>

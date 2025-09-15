@@ -127,8 +127,12 @@ export const StyleProvider = ({children}: PropsWithChildren) => {
   });
 
   const screenOptions = {
-    headerStyle: themedStyles.background,
-    headerTitleStyle: themedStyles.background,
+    headerStyle: {
+      backgroundColor: theme.colors.background,
+    },
+    headerTitleStyle: {
+      color: theme.colors.onBackground,
+    },
     headerTintColor: theme.colors.onBackground,
   };
 
