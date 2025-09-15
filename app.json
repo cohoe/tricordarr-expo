@@ -44,7 +44,15 @@
       }
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "react-native-permissions",
+        {
+          "iosPermissions": []
+        }
+      ],
+      "react-native-video",
+      "react-native-edge-to-edge"
     ],
     "experiments": {
       "reactCanary": true

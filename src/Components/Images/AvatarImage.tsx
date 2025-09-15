@@ -1,0 +1,28 @@
+import React from 'react';
+import {Avatar} from 'react-native-paper';
+import {styleDefaults} from '@tricordarr/styles';
+import {AppIcons} from '@tricordarr/libraries/Enums/Icons';
+import {useImageQuery} from '@tricordarr/components/Queries/ImageQuery';
+import {useFeature} from '@tricordarr/components/Context/Contexts/FeatureContext';
+import {SwiftarrFeature} from '@tricordarr/libraries/Enums/AppFeatures';
+
+type AvatarImageProps = {
+  imageName: string;
+  small?: boolean;
+  icon?: string;
+};
+
+// @TODO resolve this with UserAvatarImage
+export const AvatarImage = ({imageName, small = false, icon = AppIcons.user}: AvatarImageProps) => {
+  const size = small ? styleDefaults.avatarSizeSmall : styleDefaults.avatarSize;
+  const {getIsDisabled} = useFeature();
+  const isDisabled = getIsDisabled(SwiftarrFeature.images);
+
+  const {data} = useImageQuery(`/image/thumb/${imageName}`, !isDisabled && !!imageName);
+
+  if (!data || isDisabled) {
+    return <Avatar.Icon size={size} icon={icon} />;
+  }
+
+  return <Avatar.Image size={size} source={{uri: data.dataURI}} />;
+};
