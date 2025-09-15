@@ -88,7 +88,8 @@
     "reconnecting-websocket": "^4.4.0",
     "superjson": "^2.2.2",
     "url-parse": "^1.5.10",
-    "yup": "^1.7.0"
+    "yup": "^1.7.0",
+    "expo-build-properties": "~1.0.8"
   },
   "devDependencies": {
     "@react-native/eslint-config": "^0.81.1",
