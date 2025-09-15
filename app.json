@@ -48,7 +48,7 @@
       [
         "react-native-permissions",
         {
-          "ios": {}
+          "iosPermissions": []
         }
       ]
     ],

@@ -8,3 +8,8 @@ https://github.com/facebook/react-native/issues/51387
 https://stackoverflow.com/questions/79608108/eslint-not-working-in-cursor-editor-ui-but-works-in-terminal-macos-sequoia-15-4
 
 Manually edit `settings.json`
+
+### Lots of CMake errors in Android build
+https://github.com/lugg/react-native-config/issues/848
+
+Use 1.5.5

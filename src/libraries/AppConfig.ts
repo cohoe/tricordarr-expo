@@ -1,4 +1,4 @@
-import Config from 'react-native-config';
+// import Config from 'react-native-config';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {StorageKeys} from '@tricordarr/Libraries/Storage';
 import {NotificationTypeData} from '@tricordarr/Libraries/Structs/SocketStructs';
@@ -158,36 +158,36 @@ const defaultAppConfig: AppConfig = {
  */
 export const getInitialAppConfig = () => {
   let config = defaultAppConfig;
-  if (Config.SERVER_URL) {
-    config.serverUrl = Config.SERVER_URL;
-  }
-  if (Config.OOBE_VERSION) {
-    config.oobeExpectedVersion = Number(Config.OOBE_VERSION);
-  }
-  if (Config.CRUISE_START_DATE) {
-    const [year, month, day] = Config.CRUISE_START_DATE.split('-').map(Number);
-    // Because Javascript, Fools!
-    config.cruiseStartDate = new Date(year, month - 1, day);
-  }
-  if (Config.CRUISE_LENGTH) {
-    config.cruiseLength = Number(Config.CRUISE_LENGTH);
-  }
-  if (Config.PORT_TIME_ZONE_ID) {
-    config.portTimeZoneID = Config.PORT_TIME_ZONE_ID;
-  }
-  if (Config.SCHED_URL) {
-    config.schedBaseUrl = Config.SCHED_URL;
-  }
-  if (Config.PREREGISTRATION_SERVER_URL) {
-    config.preRegistrationServerUrl = Config.PREREGISTRATION_SERVER_URL;
-  } else {
+  // if (Config.SERVER_URL) {
+  //   config.serverUrl = Config.SERVER_URL;
+  // }
+  // if (Config.OOBE_VERSION) {
+  //   config.oobeExpectedVersion = Number(Config.OOBE_VERSION);
+  // }
+  // if (Config.CRUISE_START_DATE) {
+  //   const [year, month, day] = Config.CRUISE_START_DATE.split('-').map(Number);
+  //   // Because Javascript, Fools!
+  //   config.cruiseStartDate = new Date(year, month - 1, day);
+  // }
+  // if (Config.CRUISE_LENGTH) {
+  //   config.cruiseLength = Number(Config.CRUISE_LENGTH);
+  // }
+  // if (Config.PORT_TIME_ZONE_ID) {
+  //   config.portTimeZoneID = Config.PORT_TIME_ZONE_ID;
+  // }
+  // if (Config.SCHED_URL) {
+  //   config.schedBaseUrl = Config.SCHED_URL;
+  // }
+  // if (Config.PREREGISTRATION_SERVER_URL) {
+  //   config.preRegistrationServerUrl = Config.PREREGISTRATION_SERVER_URL;
+  // } else {
     config.preRegistrationServerUrl = config.serverUrl;
-  }
-  if (Config.PREREGISTRATION_END_DATE) {
-    const [year, month, day] = Config.PREREGISTRATION_END_DATE.split('-').map(Number);
-    // Because Javascript, Fools!
-    config.preRegistrationEndDate = new Date(year, month - 1, day, 23, 59, 59);
-  }
+  // }
+  // if (Config.PREREGISTRATION_END_DATE) {
+  //   const [year, month, day] = Config.PREREGISTRATION_END_DATE.split('-').map(Number);
+  //   // Because Javascript, Fools!
+  //   config.preRegistrationEndDate = new Date(year, month - 1, day, 23, 59, 59);
+  // }
   return config;
 };
 
@@ -205,11 +205,11 @@ export const getAppConfig = async () => {
   // Certain keys should always be loaded from the app environment.
   // I'm becoming less certain about this. Dropped cruise settings because I have screens for that.
   // Avoid putting things from the SwiftarrClientData endpoint in here. It's confusing.
-  if (Config.PREREGISTRATION_END_DATE) {
-    const [year, month, day] = Config.PREREGISTRATION_END_DATE.split('-').map(Number);
-    // Because Javascript, Fools!
-    appConfig.preRegistrationEndDate = new Date(year, month - 1, day, 23, 59, 59);
-  }
+  // if (Config.PREREGISTRATION_END_DATE) {
+  //   const [year, month, day] = Config.PREREGISTRATION_END_DATE.split('-').map(Number);
+  //   // Because Javascript, Fools!
+  //   appConfig.preRegistrationEndDate = new Date(year, month - 1, day, 23, 59, 59);
+  // }
   // Type conversions on a couple of keys. Barf.
   appConfig.cruiseStartDate = new Date(appConfig.cruiseStartDate);
   appConfig.preRegistrationEndDate = new Date(appConfig.preRegistrationEndDate);
