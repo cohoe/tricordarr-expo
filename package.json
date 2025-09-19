@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@d11/react-native-fast-image": "^8.12.0",
@@ -47,6 +48,7 @@
     "javascript-time-ago": "^2.5.12",
     "moment-timezone": "^0.6.0",
     "node-ical": "^0.21.0",
+    "patch-package": "^8.0.0",
     "pluralize": "^8.0.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
