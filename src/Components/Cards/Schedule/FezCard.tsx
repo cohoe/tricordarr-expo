@@ -10,9 +10,6 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
 import {Badge} from 'react-native-paper';
 import pluralize from 'pluralize';
-// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
-// import {AndroidColor} from '@notifee/react-native';
-type AndroidColor = string; // Simple fallback type for migration
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 import {ScheduleItemCardBase} from '@tricordarr/Components/Cards/Schedule/ScheduleItemCardBase';
 
@@ -74,7 +71,7 @@ const FezCardInternal = ({
     }
     if (showIcon) {
       const outputIcon = icon ? icon : FezType.isLFGType(fez.fezType) ? AppIcons.lfg : AppIcons.personalEvent;
-      return <AppIcon color={AndroidColor.WHITE} icon={outputIcon} />;
+      return <AppIcon color={theme.colors.onTwitarrNeutralButton} icon={outputIcon} />;
     }
   };
 

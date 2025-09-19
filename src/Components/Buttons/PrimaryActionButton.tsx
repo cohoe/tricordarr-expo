@@ -2,9 +2,6 @@ import {ActivityIndicator, Button} from 'react-native-paper';
 import React from 'react';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {StyleProp, View, ViewStyle} from 'react-native';
-// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
-// import {AndroidColor} from '@notifee/react-native';
-type AndroidColor = string; // Simple fallback type for migration
 import {IconSource} from 'react-native-paper/lib/typescript/components/Icon';
 
 interface PrimaryActionButtonProps {
@@ -47,7 +44,7 @@ export const PrimaryActionButton = ({
     <View style={viewStyle}>
       <Button
         buttonColor={mode === 'contained' ? buttonColor || theme.colors.twitarrPositiveButton : buttonColor}
-        textColor={textColor || AndroidColor.WHITE}
+        textColor={textColor || theme.colors.onTwitarrPositiveButton}
         style={[buttonStyle, style]}
         mode={mode}
         onPress={onPress}

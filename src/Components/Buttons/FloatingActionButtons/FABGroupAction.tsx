@@ -1,9 +1,6 @@
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {IconSource} from 'react-native-paper/lib/typescript/components/Icon';
 import {GestureResponderEvent} from 'react-native';
-// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
-// import {AndroidColor} from '@notifee/react-native';
-type AndroidColor = string; // Simple fallback type for migration
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {FabGroupActionType} from '@tricordarr/Libraries/Types';
 
@@ -19,7 +16,7 @@ export const FabGroupAction = ({icon, label, onPress, backgroundColor, color}: P
   const theme = useAppTheme();
   const {asPrivilegedUser} = usePrivilege();
 
-  const actionColor = asPrivilegedUser ? AndroidColor.WHITE : color ? color : theme.colors.inverseOnSurface;
+  const actionColor = asPrivilegedUser ? theme.colors.onTwitarrNegativeButton : color ? color : theme.colors.inverseOnSurface;
   const actionBackgroundColor = asPrivilegedUser
     ? theme.colors.twitarrNegativeButton
     : backgroundColor

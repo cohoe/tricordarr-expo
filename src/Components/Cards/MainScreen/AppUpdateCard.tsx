@@ -4,9 +4,7 @@ import {Linking, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
-// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
-// import {AndroidColor} from '@notifee/react-native';
-type AndroidColor = string; // Simple fallback type for migration
+import { useAppTheme } from '@tricordarr/Styles/Theme';
 
 interface AppUpdateCardProps {
   currentVersion: string;
@@ -15,6 +13,7 @@ interface AppUpdateCardProps {
 
 export const AppUpdateCard = (props: AppUpdateCardProps) => {
   const {commonStyles} = useStyles();
+  const theme = useAppTheme();
 
   const styles = StyleSheet.create({
     card: {
@@ -46,7 +45,7 @@ export const AppUpdateCard = (props: AppUpdateCardProps) => {
         <View>
           <Card.Content style={styles.content}>
             <View style={styles.textWrapper}>
-              <AppIcon icon={AppIcons.twitarr} color={AndroidColor.WHITE} />
+              <AppIcon icon={AppIcons.twitarr} color={theme.colors.onTwitarrNegativeButton} />
               <Text style={styles.headerText}>Tricordarr is out of date.</Text>
             </View>
             <View>
