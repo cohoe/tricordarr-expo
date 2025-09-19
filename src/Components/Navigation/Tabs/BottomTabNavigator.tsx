@@ -1,15 +1,16 @@
 import React from 'react';
-import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+// import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
+import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
 import {AppIcon} from '../../Icons/AppIcon';
 import {NavigatorScreenParams, useNavigation} from '@react-navigation/native';
-import {ChatStackNavigator, ChatStackParamList} from '../Stacks/ChatStackNavigator.tsx';
+import {ChatStackNavigator, ChatStackParamList} from '../Stacks/ChatStackNavigator';
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 import {AppIcons} from '../../../Libraries/Enums/Icons';
 import {MainStackNavigator, MainStackParamList} from '../Stacks/MainStackNavigator';
-import {ScheduleStackNavigator, ScheduleStackParamList} from '../Stacks/ScheduleStackNavigator.tsx';
+import {ScheduleStackNavigator, ScheduleStackParamList} from '../Stacks/ScheduleStackNavigator';
 import {LfgStackNavigator, LfgStackParamList} from '../Stacks/LFGStackNavigator';
 import {ForumStackNavigator, ForumStackParamList} from '../Stacks/ForumStackNavigator';
-import {useUserNotificationDataQuery} from '../../Queries/Alert/NotificationQueries';
+import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
 
 function getBadgeDisplayValue(input: number | undefined) {
   if (input === 0) {

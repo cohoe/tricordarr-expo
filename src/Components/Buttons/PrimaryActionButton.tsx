@@ -2,6 +2,7 @@ import {ActivityIndicator, Button} from 'react-native-paper';
 import React from 'react';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {StyleProp, View, ViewStyle} from 'react-native';
+import {AndroidColor} from '@notifee/react-native';
 import {IconSource} from 'react-native-paper/lib/typescript/components/Icon';
 
 interface PrimaryActionButtonProps {
@@ -44,7 +45,7 @@ export const PrimaryActionButton = ({
     <View style={viewStyle}>
       <Button
         buttonColor={mode === 'contained' ? buttonColor || theme.colors.twitarrPositiveButton : buttonColor}
-        textColor={textColor}
+        textColor={textColor || AndroidColor.WHITE}
         style={[buttonStyle, style]}
         mode={mode}
         onPress={onPress}

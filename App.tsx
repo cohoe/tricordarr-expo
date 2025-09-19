@@ -1,14 +1,17 @@
-import { Text, View } from 'react-native';
-import "expo-router/entry";
-import { ExpoRoot } from 'expo-router';
+import { ConfigProvider } from '@tricordarr/Components/Context/Providers/ConfigProvider';
+import { StyleProvider } from '@tricordarr/Components/Context/Providers/StyleProvider';
+import { ThemeProvider } from '@tricordarr/Components/Context/Providers/ThemeProvider';
+import { RootStackNavigator } from '@tricordarr/Components/Navigation/Stacks/RootStackNavigator';
 
 export default function App() {
   console.log('weeeee');
-  const ctx = require.context("./src/app");
   return (
-    <View>
-      <Text>Hello world!</Text>
-      <ExpoRoot context={ctx} />
-    </View>
+    <ConfigProvider>
+      <ThemeProvider>
+        <StyleProvider>
+          <RootStackNavigator />
+        </StyleProvider>
+      </ThemeProvider>
+    </ConfigProvider>
   );
 }

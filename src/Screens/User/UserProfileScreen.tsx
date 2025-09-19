@@ -1,12 +1,12 @@
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {UserProfileScreenBase} from '@tricordarr/UserProfileScreenBase';
-import {useUserMutesQuery} from '@tricordarr/../Queries/Users/UserMuteQueries.ts';
-import {useUserBlocksQuery} from '@tricordarr/../Queries/Users/UserBlockQueries.ts';
-import {useUserFavoritesQuery} from '@tricordarr/../Queries/Users/UserFavoriteQueries.ts';
-import {LoadingView} from '@tricordarr/../Views/Static/LoadingView';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens';
-import {useUsersProfileQuery} from '@tricordarr/../Queries/Users/UsersQueries.ts';
+import {UserProfileScreenBase} from '@tricordarr/Screens/User/UserProfileScreenBase';
+import {useUserMutesQuery} from '@tricordarr/Queries/Users/UserMuteQueries';
+import {useUserBlocksQuery} from '@tricordarr/Queries/Users/UserBlockQueries';
+import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useUsersProfileQuery} from '@tricordarr/Queries/Users/UsersQueries';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.userProfileScreen>;
 

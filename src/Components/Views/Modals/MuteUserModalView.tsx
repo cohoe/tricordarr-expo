@@ -4,10 +4,10 @@ import {UserHeader} from '../../../Libraries/Structs/ControllerStructs';
 import {ModalCard} from '../../Cards/ModalCard';
 import {useModal} from '../../Context/Contexts/ModalContext';
 import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
-import {useAppTheme} from '../../../styles/Theme';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
 import {ModeratorMuteText, UserMuteText} from '../../Text/UserRelationsText';
-import {useUserMuteMutation} from '../../Queries/Users/UserMuteMutations.ts';
+import {useUserMuteMutation} from '@tricordarr/Queries/Users/UserMuteMutations';
 import {useQueryClient} from '@tanstack/react-query';
 
 interface MuteUserModalViewProps {
