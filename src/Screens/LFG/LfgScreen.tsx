@@ -12,7 +12,7 @@ import {useIsFocused} from '@react-navigation/native';
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {NotificationTypeData, SocketNotificationData} from '@tricordarr/Libraries/Structs/SocketStructs';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {ScheduleItemScreenBase} from '@tricordarr/Components/Schedule/ScheduleItemScreenBase';
+import {ScheduleItemScreenBase} from '@tricordarr/Screens/Schedule/ScheduleItemScreenBase';
 import {HeaderEditButton} from '@tricordarr/Components/Buttons/HeaderButtons/HeaderEditButton';
 import {NavHeaderTitle} from '@tricordarr/Components/Text/NavHeaderTitle';
 import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';

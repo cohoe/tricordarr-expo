@@ -8,7 +8,7 @@ import {PerformerActionsMenu} from '@tricordarr/Components/Menus/Performer/Perfo
 import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
-import {PerformerScreenBase} from '@tricordarr/Components/PerformerScreenBase';
+import {PerformerScreenBase} from '@tricordarr/Screens/Performer/PerformerScreenBase';
 import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 

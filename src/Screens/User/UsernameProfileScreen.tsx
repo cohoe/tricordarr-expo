@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {UserProfileScreenBase} from '@tricordarr/Components/UserProfileScreenBase';
+import {UserProfileScreenBase} from '@tricordarr/Screens/User/UserProfileScreenBase';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useUserFindQuery, useUsersProfileQuery} from '@tricordarr/Queries/Users/UsersQueries';
 

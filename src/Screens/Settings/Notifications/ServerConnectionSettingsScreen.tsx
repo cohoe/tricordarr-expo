@@ -9,13 +9,13 @@ import {
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {useUserNotificationData} from '@tricordarr/Components/Context/Contexts/UserNotificationDataContext';
-import {commonStyles} from '@tricordarr/Components/../styles';
+import {commonStyles} from '@tricordarr/Styles';
 import {useBackHandler} from '@react-native-community/hooks';
 import {fgsFailedCounter} from '@tricordarr/Libraries/Service';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,

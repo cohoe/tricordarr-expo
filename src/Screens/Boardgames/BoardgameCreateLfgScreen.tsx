@@ -1,7 +1,7 @@
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
-import {LfgCreateScreenBase} from '@tricordarr/Components/LFG/LfgCreateScreenBase';
+import {LfgCreateScreenBase} from '@tricordarr/Screens/LFG/LfgCreateScreenBase';
 import pluralize from 'pluralize';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 

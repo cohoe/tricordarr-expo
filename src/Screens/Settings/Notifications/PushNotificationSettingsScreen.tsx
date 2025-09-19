@@ -5,7 +5,7 @@ import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedCont
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {DataTable, SegmentedButtons, Text} from 'react-native-paper';
 import {PERMISSIONS, request as requestPermission, RESULTS} from 'react-native-permissions';
 import {Formik} from 'formik';

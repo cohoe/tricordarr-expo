@@ -11,7 +11,7 @@ import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useQueryClient} from '@tanstack/react-query';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {EventScreenActionsMenu} from '@tricordarr/Components/Menus/Events/EventScreenActionsMenu';
-import {ScheduleItemScreenBase} from '@tricordarr/Components/Schedule/ScheduleItemScreenBase';
+import {ScheduleItemScreenBase} from '@tricordarr/Screens/Schedule/ScheduleItemScreenBase';
 import {HeaderFavoriteButton} from '@tricordarr/Components/Buttons/HeaderButtons/HeaderFavoriteButton';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.eventScreen>;

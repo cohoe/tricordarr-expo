@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {LfgListScreen} from '@tricordarr/Components/LfgListScreen';
+import {LfgListScreen} from '@tricordarr/Screens/LFG/LfgListScreen';
 import {useDrawer} from '@tricordarr/Components/Context/Contexts/DrawerContext';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';

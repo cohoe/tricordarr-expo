@@ -7,7 +7,7 @@ import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {CruiseSettingsFormValues, PreRegistrationSettingsFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {useClientConfigQuery} from '@tricordarr/Queries/Client/ClientQueries';
 import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';

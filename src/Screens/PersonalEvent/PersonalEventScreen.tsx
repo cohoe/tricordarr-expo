@@ -8,7 +8,7 @@ import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeade
 import {HeaderEditButton} from '@tricordarr/Components/Buttons/HeaderButtons/HeaderEditButton';
 import {PersonalEventScreenActionsMenu} from '@tricordarr/Components/Menus/PersonalEvents/PersonalEventScreenActionsMenu';
 import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries';
-import {ScheduleItemScreenBase} from '@tricordarr/Components/Schedule/ScheduleItemScreenBase';
+import {ScheduleItemScreenBase} from '@tricordarr/Screens/Schedule/ScheduleItemScreenBase';
 import notifee from '@notifee/react-native';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';

@@ -1,7 +1,7 @@
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {ForumThreadScreenBase} from '@tricordarr/Components/ForumThreadScreenBase';
+import {ForumThreadScreenBase} from '@tricordarr/Screens/Forum/Thread/ForumThreadScreenBase';
 import {View, StyleSheet} from 'react-native';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {Button, Text} from 'react-native-paper';

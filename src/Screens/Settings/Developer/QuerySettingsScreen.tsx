@@ -6,7 +6,7 @@ import {AppView} from '@tricordarr/Components/Views/AppView';
 import {useQueryClient} from '@tanstack/react-query';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag';
 import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
@@ -14,7 +14,7 @@ import {QuerySettingsForm} from '@tricordarr/Components/Forms/Settings/QuerySett
 import {QuerySettingsFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
 import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
-import {commonStyles} from '@tricordarr/Components/../styles';
+import {commonStyles} from '@tricordarr/Styles';
 import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries';
 import {ListSection} from '@tricordarr/Components/Lists/ListSection';
 import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';

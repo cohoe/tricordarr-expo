@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Text} from 'react-native-paper';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {AppView} from '@tricordarr/Components/Views/AppView';
