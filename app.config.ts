@@ -17,7 +17,13 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ios: {
       supportsTablet: true,
       bundleIdentifier: "com.tricordarr",
-      buildNumber: "30"
+      buildNumber: "30",
+      infoPlist: {
+        NSCameraUsageDescription: "This app uses the camera to take pictures for upload to the service.",
+        NSPhotoLibraryUsageDescription: "This app accesses the photo library to select images for upload.",
+        NSMicrophoneUsageDescription: "This app may use the microphone for multimedia features.",
+        UIBackgroundModes: ["remote-notification", "processing"]
+      }
     },
     android: {
       adaptiveIcon: {
@@ -30,7 +36,14 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       permissions: [
         "android.permission.RECEIVE_BOOT_COMPLETED",
         "android.permission.VIBRATE",
-        "android.permission.WAKE_LOCK"
+        "android.permission.WAKE_LOCK",
+        "android.permission.INTERNET",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING",
+        "android.permission.CAMERA",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
       ],
       versionCode: 30
     },
@@ -60,7 +73,10 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         "react-native-permissions",
         {
           iosPermissions: [
-            "Notifications"
+            "Notifications",
+            "Camera",
+            "PhotoLibrary",
+            "Microphone"
           ]
         }
       ],
