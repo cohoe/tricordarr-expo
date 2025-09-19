@@ -13,7 +13,7 @@ import {useSocket} from '../../Context/Contexts/SocketContext';
 import {useSettingsStack} from '../../Navigation/Stacks/SettingsStackNavigator.tsx';
 import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
 import {useQueryClient} from '@tanstack/react-query';
-import {stopForegroundServiceWorker} from '../../../libraries/Service';
+import {stopForegroundServiceWorker} from '../../../Libraries/Service';
 import {WebSocketStorageActions} from '../../Reducers/Fez/FezSocketReducer.ts';
 import {useConfig} from '../../Context/Contexts/ConfigContext.ts';
 

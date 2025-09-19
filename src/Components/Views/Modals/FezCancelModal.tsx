@@ -4,13 +4,13 @@ import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
 import {View} from 'react-native';
 import {ModalCard} from '../../Cards/ModalCard';
 import React from 'react';
-import {FezData} from '../../../libraries/Structs/ControllerStructs';
+import {FezData} from '../../../Libraries/Structs/ControllerStructs';
 import {Text} from 'react-native-paper';
 import {useStyles} from '../../Context/Contexts/StyleContext';
 import {useQueryClient} from '@tanstack/react-query';
 import {useFezCancelMutation} from '../../Queries/Fez/FezMutations.ts';
 import {useSnackbar} from '../../Context/Contexts/SnackbarContext.ts';
-import {FezType} from '../../../libraries/Enums/FezType.ts';
+import {FezType} from '../../../Libraries/Enums/FezType.ts';
 
 const ModalContent = ({fez}: {fez: FezData}) => {
   const {commonStyles} = useStyles();

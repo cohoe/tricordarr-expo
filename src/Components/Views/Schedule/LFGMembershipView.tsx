@@ -1,5 +1,5 @@
 import {PaddedContentView} from '../Content/PaddedContentView.tsx';
-import {FezData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {FezData} from '../../../Libraries/Structs/ControllerStructs.tsx';
 import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
 import {View} from 'react-native';
 import React, {useCallback, useState} from 'react';
@@ -10,7 +10,7 @@ import {useQueryClient} from '@tanstack/react-query';
 import {useModal} from '../../Context/Contexts/ModalContext.ts';
 import {useFezMembershipMutation} from '../../Queries/Fez/FezMembershipQueries.ts';
 import {StyleSheet} from 'react-native';
-import {FezType} from '../../../libraries/Enums/FezType.ts';
+import {FezType} from '../../../Libraries/Enums/FezType.ts';
 import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
 
 interface LFGMembershipViewProps {

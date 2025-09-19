@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import {useStyles} from '../Context/Contexts/StyleContext';
 import {RelativeTimeTag} from '../Text/Tags/RelativeTimeTag';
 import {FezPostActionsMenu} from '../Menus/Fez/FezPostActionsMenu.tsx';
-import {FezData, FezPostData} from '../../libraries/Structs/ControllerStructs';
+import {FezData, FezPostData} from '../../Libraries/Structs/ControllerStructs';
 import {ContentText} from '../Text/ContentText';
 import Clipboard from '@react-native-clipboard/clipboard';
 

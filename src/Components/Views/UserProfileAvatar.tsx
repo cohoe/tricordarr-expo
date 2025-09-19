@@ -1,5 +1,5 @@
 import React, {Dispatch, SetStateAction, useEffect} from 'react';
-import {ProfilePublicData, UserHeader} from '../../libraries/Structs/ControllerStructs';
+import {ProfilePublicData, UserHeader} from '../../Libraries/Structs/ControllerStructs';
 import {useStyles} from '../Context/Contexts/StyleContext';
 import {StyleSheet, View} from 'react-native';
 import ImagePicker, {Image} from 'react-native-image-crop-picker';
@@ -7,7 +7,7 @@ import {useUserAvatarMutation, useUserImageDeleteMutation} from '../Queries/User
 import {PERMISSIONS, request as requestPermission} from 'react-native-permissions';
 import {APIImage} from '../Images/APIImage';
 import {useFeature} from '../Context/Contexts/FeatureContext';
-import {SwiftarrFeature} from '../../libraries/Enums/AppFeatures';
+import {SwiftarrFeature} from '../../Libraries/Enums/AppFeatures';
 import {ImageButtons} from '../Buttons/ImageButtons.tsx';
 import {styleDefaults} from '../../styles';
 import {useSnackbar} from '../Context/Contexts/SnackbarContext.ts';

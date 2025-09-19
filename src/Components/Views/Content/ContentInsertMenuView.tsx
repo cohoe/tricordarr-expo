@@ -5,7 +5,7 @@ import React, {Dispatch, SetStateAction, useEffect} from 'react';
 import {PERMISSIONS, request as requestPermission} from 'react-native-permissions';
 import ImagePicker, {Image} from 'react-native-image-crop-picker';
 import {useFormikContext} from 'formik';
-import {PostContentData} from '../../../libraries/Structs/ControllerStructs';
+import {PostContentData} from '../../../Libraries/Structs/ControllerStructs';
 import {useSnackbar} from '../../Context/Contexts/SnackbarContext.ts';
 
 interface ContentInsertMenuViewProps {

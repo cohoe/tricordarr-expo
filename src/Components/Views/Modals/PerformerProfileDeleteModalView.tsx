@@ -4,7 +4,7 @@ import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
 import {View} from 'react-native';
 import {ModalCard} from '../../Cards/ModalCard';
 import React from 'react';
-import {EventData, PerformerData} from '../../../libraries/Structs/ControllerStructs';
+import {EventData, PerformerData} from '../../../Libraries/Structs/ControllerStructs';
 import {Text} from 'react-native-paper';
 import {useStyles} from '../../Context/Contexts/StyleContext';
 import {useQueryClient} from '@tanstack/react-query';

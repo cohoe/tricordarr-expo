@@ -1,5 +1,5 @@
 import React, {PropsWithChildren, useEffect, useState} from 'react';
-import {SwiftarrClientApp, SwiftarrFeature} from '../../../libraries/Enums/AppFeatures';
+import {SwiftarrClientApp, SwiftarrFeature} from '../../../Libraries/Enums/AppFeatures';
 import {FeatureContext} from '../Contexts/FeatureContext';
 import {useUserNotificationDataQuery} from '../../Queries/Alert/NotificationQueries';
 import {useConfig} from '../Contexts/ConfigContext.ts';

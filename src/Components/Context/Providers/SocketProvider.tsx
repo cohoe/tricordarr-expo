@@ -1,6 +1,6 @@
 import React, {useState, PropsWithChildren, useCallback, useEffect} from 'react';
 import {SocketContext} from '../Contexts/SocketContext';
-import {buildWebSocket, OpenFezSocket} from '../../../libraries/Network/Websockets';
+import {buildWebSocket, OpenFezSocket} from '../../../Libraries/Network/Websockets';
 import ReconnectingWebSocket from 'reconnecting-websocket';
 import {useConfig} from '../Contexts/ConfigContext';
 import {useAuth} from '../Contexts/AuthContext';

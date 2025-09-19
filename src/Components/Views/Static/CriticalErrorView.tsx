@@ -1,7 +1,7 @@
 import {AppView} from '../AppView.tsx';
 import {View} from 'react-native';
 import {AppIcon} from '../../Icons/AppIcon.tsx';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {AppIcons} from '../../../Libraries/Enums/Icons.ts';
 import {ScrollingContentView} from '../Content/ScrollingContentView.tsx';
 import React from 'react';
 import {useStyles} from '../../Context/Contexts/StyleContext.ts';
@@ -13,7 +13,7 @@ import {useAppTheme} from '../../../styles/Theme.ts';
 import {Text} from 'react-native-paper';
 import {useAuth} from '../../Context/Contexts/AuthContext.ts';
 import {useConfig} from '../../Context/Contexts/ConfigContext.ts';
-import {getInitialAppConfig} from '../../../libraries/AppConfig.ts';
+import {getInitialAppConfig} from '../../../Libraries/AppConfig.ts';
 import Clipboard from '@react-native-clipboard/clipboard';
 import {HelpTopicView} from '../Help/HelpTopicView.tsx';
 import {CacheManager} from '@georstat/react-native-image-cache';

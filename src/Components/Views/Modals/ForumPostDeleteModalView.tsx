@@ -4,7 +4,7 @@ import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
 import {View} from 'react-native';
 import {ModalCard} from '../../Cards/ModalCard';
 import React from 'react';
-import {ForumData, PostData} from '../../../libraries/Structs/ControllerStructs';
+import {ForumData, PostData} from '../../../Libraries/Structs/ControllerStructs';
 import {Text} from 'react-native-paper';
 import {useStyles} from '../../Context/Contexts/StyleContext';
 import {useForumPostDeleteMutation} from '../../Queries/Forum/ForumPostMutations.ts';

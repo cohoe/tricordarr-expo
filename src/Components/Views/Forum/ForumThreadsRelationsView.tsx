@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {LoadingView} from '../Static/LoadingView';
-import {ForumSort} from '../../../libraries/Enums/ForumSortFilter';
+import {ForumSort} from '../../../Libraries/Enums/ForumSortFilter';
 import {useFilter} from '../../Context/Contexts/FilterContext';
 import {ForumRelationQueryType, useForumRelationQuery} from '../../Queries/Forum/ForumThreadRelationQueries.ts';
 import {NotLoggedInView} from '../Static/NotLoggedInView';
 import {useAuth} from '../../Context/Contexts/AuthContext';
-import {CategoryData, ForumListData} from '../../../libraries/Structs/ControllerStructs';
+import {CategoryData, ForumListData} from '../../../Libraries/Structs/ControllerStructs';
 import {ForumEmptyListView} from './ForumEmptyListView.tsx';
 import {ForumThreadListView} from './ForumThreadListView.tsx';
 import pluralize from 'pluralize';

@@ -2,8 +2,8 @@ import React from 'react';
 import {Avatar} from 'react-native-paper';
 import {styleDefaults} from '../../styles';
 import {UserAvatarImage} from './UserAvatarImage';
-import {AppIcons} from '../../libraries/Enums/Icons';
-import {FezData} from '../../libraries/Structs/ControllerStructs';
+import {AppIcons} from '../../Libraries/Enums/Icons';
+import {FezData} from '../../Libraries/Structs/ControllerStructs';
 import {useUserProfileQuery} from '../Queries/User/UserQueries.ts';
 
 interface FezAvatarImageProps {

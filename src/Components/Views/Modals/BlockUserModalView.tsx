@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import {UserHeader} from '../../../libraries/Structs/ControllerStructs';
+import {UserHeader} from '../../../Libraries/Structs/ControllerStructs';
 import {ModalCard} from '../../Cards/ModalCard';
 import {useModal} from '../../Context/Contexts/ModalContext';
 import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
