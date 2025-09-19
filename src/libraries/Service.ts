@@ -1,4 +1,5 @@
-import notifee from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee from '@notifee/react-native';
 import {buildWebSocket, wsHealthcheck} from '@tricordarr/Libraries/Network/Websockets';
 import {
   generateFgsShutdownNotification,
@@ -111,16 +112,23 @@ const fgsWorker = async () => {
  * changing in the future. This needs to return a new Promise(task), not just the task. I thought I
  * could get clever but that didn't work.
  * https://notifee.app/react-native/docs/android/foreground-service
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
 export const registerFgsWorker = () => {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[Service.ts] registerFgsWorker() disabled for expo-notifications migration');
+  return;
+  /*
   console.log('[Service.ts] Registering foreground service worker function.');
   notifee.registerForegroundService(() => {
     return new Promise(fgsWorker);
   });
+  */
 };
 
 /**
  * Stop the foreground service worker that was registered in App.tsx.
+ * PARTIALLY DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
 export async function stopForegroundServiceWorker() {
   console.log('[Service.ts] Stopping foreground service worker.');
@@ -130,8 +138,10 @@ export async function stopForegroundServiceWorker() {
       console.log(`[Service.ts] Closing websocket in state ${ws.readyState}`);
       ws.close();
     }
-    await notifee.stopForegroundService();
-    await notifee.cancelNotification(fgsWorkerNotificationIDs.worker);
+    // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+    // await notifee.stopForegroundService();
+    // await notifee.cancelNotification(fgsWorkerNotificationIDs.worker);
+    console.log('[Service.ts] Notifee service calls disabled for expo-notifications migration');
 
     // Clear the healthcheck interval that was started.
     clearInterval(fgsWorkerTimer);

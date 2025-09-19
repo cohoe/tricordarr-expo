@@ -1,10 +1,16 @@
-import notifee from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee from '@notifee/react-native';
 
 /**
  * Sometimes the app is launched from a notification (like if the user pressed one or an action on one).
  * Grab that notification and do exactly nothing with it other than cancel it.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
 export async function setupInitialNotification() {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[InitialNotification.ts] setupInitialNotification() disabled for expo-notifications migration');
+  return;
+  /*
   console.log('[InitialNotification.ts] Processing initial launch notification (if any).');
   const initialNotification = await notifee.getInitialNotification();
 
@@ -16,4 +22,5 @@ export async function setupInitialNotification() {
       await notifee.cancelNotification(initialNotification.notification.id);
     }
   }
+  */
 }

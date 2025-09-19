@@ -10,7 +10,8 @@ import {useSocket} from '@tricordarr/Components/Context/Contexts/SocketContext';
 import {CommonStackComponents, CommonStackParamList, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useQueryClient} from '@tanstack/react-query';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
-import notifee from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee from '@notifee/react-native';
 import {useAppState} from '@react-native-community/hooks';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {AppView} from '@tricordarr/Components/Views/AppView';
@@ -245,8 +246,9 @@ export const FezChatScreen = ({route}: Props) => {
       });
       Promise.all(invalidations);
       if (appConfig.markReadCancelPush) {
-        console.log('[FezChatScreen.tsx] auto canceling notifications.');
-        notifee.cancelDisplayedNotification(fez.fezID);
+        // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+        console.log('[FezChatScreen.tsx] auto canceling notifications (disabled for migration).');
+        // notifee.cancelDisplayedNotification(fez.fezID);
       }
     }
   }, [fez, queryClient, appConfig.markReadCancelPush]);
@@ -257,10 +259,13 @@ export const FezChatScreen = ({route}: Props) => {
   // so some day some debouncing should be implemented.
   useEffect(() => {
     const checkInitial = async () => {
-      const initialNotification = await notifee.getInitialNotification();
-      if (initialNotification && appStateVisible === 'active') {
-        await refetch();
-      }
+      // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+      // const initialNotification = await notifee.getInitialNotification();
+      // if (initialNotification && appStateVisible === 'active') {
+      //   await refetch();
+      // }
+      console.log('[FezChatScreen.tsx] Initial notification check disabled for expo-notifications migration');
+      return;
     };
     console.log('[FezChatScreen.tsx] Triggering appStateVisible useEffect', appStateVisible);
     checkInitial();

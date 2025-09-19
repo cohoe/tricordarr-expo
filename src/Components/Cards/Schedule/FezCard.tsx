@@ -10,7 +10,9 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
 import {Badge} from 'react-native-paper';
 import pluralize from 'pluralize';
-import {AndroidColor} from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import {AndroidColor} from '@notifee/react-native';
+type AndroidColor = string; // Simple fallback type for migration
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 import {ScheduleItemCardBase} from '@tricordarr/Components/Cards/Schedule/ScheduleItemCardBase';
 

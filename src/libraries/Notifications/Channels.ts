@@ -1,6 +1,10 @@
-import notifee, {AndroidChannel} from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee, {AndroidChannel} from '@notifee/react-native';
 import {setupChannelGroups} from '@tricordarr/Libraries/Notifications/ChannelGroups';
 import {systemChannelGroup, contentChannelGroup} from '@tricordarr/Libraries/Notifications/ChannelGroups';
+
+// Define AndroidChannel as any type for migration compatibility
+type AndroidChannel = any;
 
 /**
  * Notification channel for server connection events.
@@ -118,8 +122,13 @@ export const eventChannel: AndroidChannel = {
 
 /**
  * Setup function to ensure that the channels and their groups exist.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
 export async function setupChannels() {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[Channels.ts] setupChannels() disabled for expo-notifications migration');
+  return;
+  /*
   await setupChannelGroups();
   await notifee.createChannel(connectionChannel);
   await notifee.createChannel(serviceChannel);
@@ -130,4 +139,5 @@ export async function setupChannels() {
   await notifee.createChannel(callsChannel);
   await notifee.createChannel(callMgmtChannel);
   await notifee.createChannel(eventChannel);
+  */
 }

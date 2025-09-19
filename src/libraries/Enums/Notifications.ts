@@ -1,4 +1,4 @@
-import {AndroidAction} from '@notifee/react-native';
+// import {AndroidAction} from '@notifee/react-native'; // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
 
 export enum fgsWorkerNotificationIDs {
   worker = 'fgsWorkerNotificationID',
@@ -23,8 +23,9 @@ export enum PressAction {
 /**
  * The standard Mark As Read action. Consumed in generateContentNotification()
  * for content types that can be marked as read.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
-export const markAsReadPressAction: AndroidAction = {
+export const markAsReadPressAction: any = { // Changed from AndroidAction to any for migration
   title: 'Mark as Read',
   pressAction: {
     id: PressAction.markAsRead,
@@ -34,8 +35,9 @@ export const markAsReadPressAction: AndroidAction = {
 /**
  * The standard Content Settings action. Consumed in generateContentNotification()
  * for all content types.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
-export const settingsPressAction: AndroidAction = {
+export const settingsPressAction: any = { // Changed from AndroidAction to any for migration
   title: 'Settings',
   pressAction: {
     id: PressAction.contentSettings,

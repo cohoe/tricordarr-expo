@@ -4,7 +4,9 @@ import {Linking, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
-import {AndroidColor} from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import {AndroidColor} from '@notifee/react-native';
+type AndroidColor = string; // Simple fallback type for migration
 
 interface AppUpdateCardProps {
   currentVersion: string;

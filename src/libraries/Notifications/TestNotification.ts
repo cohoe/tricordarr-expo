@@ -1,11 +1,17 @@
-import notifee from '@notifee/react-native';
-import {callsChannel} from '@tricordarr/Libraries/Notifications/Channels';
-import {PressAction} from '@tricordarr/Libraries/Enums/Notifications';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee from '@notifee/react-native';
+// import {callsChannel} from '@tricordarr/Libraries/Notifications/Channels';
+// import {PressAction} from '@tricordarr/Libraries/Enums/Notifications';
 
 /**
  * Generate a test notification.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
 export async function displayTestNotification() {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[TestNotification.ts] displayTestNotification() disabled for expo-notifications migration');
+  return;
+  /*
   await notifee.displayNotification({
     id: 'abc123',
     title: 'Jonathan Coulton',
@@ -21,11 +27,18 @@ export async function displayTestNotification() {
       smallIcon: 'ic_notification',
     },
   });
+  */
 }
 
 /**
  * Cancel a test notification.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
 export async function cancelTestNotification() {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[TestNotification.ts] cancelTestNotification() disabled for expo-notifications migration');
+  return;
+  /*
   await notifee.cancelNotification('abc123');
+  */
 }

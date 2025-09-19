@@ -1,13 +1,21 @@
-import notifee from '@notifee/react-native';
-import {serviceChannel} from '@tricordarr/Libraries/Notifications/Channels';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee from '@notifee/react-native';
+// import {serviceChannel} from '@tricordarr/Libraries/Notifications/Channels';
 import {twitarrErrorColor, twitarrPrimaryColor} from '@tricordarr/Styles/Theme';
 import {fgsWorkerNotificationIDs, PressAction} from '@tricordarr/Libraries/Enums/Notifications';
 
+/**
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+ */
 export async function generateForegroundServiceNotification(
   body: string | undefined = 'A background worker has been started to maintain a connection to the Twitarr server.',
   color = twitarrPrimaryColor,
   onlyIfShowing = false,
 ) {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[ForegroundService.ts] generateForegroundServiceNotification() disabled for expo-notifications migration');
+  return;
+  /*
   // Kill a shutdown notification if we had one
   await notifee.cancelNotification(fgsWorkerNotificationIDs.shutdown);
 
@@ -46,9 +54,17 @@ export async function generateForegroundServiceNotification(
       },
     });
   }
+  */
 }
 
+/**
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+ */
 export async function generateFgsShutdownNotification() {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[ForegroundService.ts] generateFgsShutdownNotification() disabled for expo-notifications migration');
+  return;
+  /*
   const currentTime = new Date();
   const body = 'Relaunch the app to try again. Connection lost at ' + currentTime.toLocaleTimeString();
   await notifee.displayNotification({
@@ -65,4 +81,5 @@ export async function generateFgsShutdownNotification() {
       smallIcon: 'ic_notification',
     },
   });
+  */
 }

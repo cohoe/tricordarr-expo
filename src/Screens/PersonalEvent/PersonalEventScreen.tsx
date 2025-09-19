@@ -9,7 +9,8 @@ import {HeaderEditButton} from '@tricordarr/Components/Buttons/HeaderButtons/Hea
 import {PersonalEventScreenActionsMenu} from '@tricordarr/Components/Menus/PersonalEvents/PersonalEventScreenActionsMenu';
 import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries';
 import {ScheduleItemScreenBase} from '@tricordarr/Screens/Schedule/ScheduleItemScreenBase';
-import notifee from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee from '@notifee/react-native';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
@@ -64,8 +65,9 @@ export const PersonalEventScreen = ({navigation, route}: Props) => {
       title: eventData?.fezType === FezType.privateEvent ? 'Private Event' : 'Personal Event',
     });
     if (appConfig.markReadCancelPush && eventData) {
-      console.log('[PersonalEventScreen.tsx] auto canceling notifications.');
-      notifee.cancelDisplayedNotification(eventData.fezID);
+      // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+      console.log('[PersonalEventScreen.tsx] auto canceling notifications (disabled for migration).');
+      // notifee.cancelDisplayedNotification(eventData.fezID);
     }
   }, [getNavButtons, navigation, eventData, appConfig.markReadCancelPush]);
 

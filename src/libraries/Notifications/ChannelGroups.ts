@@ -1,4 +1,8 @@
-import notifee, {AndroidChannelGroup} from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee, {AndroidChannelGroup} from '@notifee/react-native';
+
+// Define AndroidChannelGroup as any type for migration compatibility
+type AndroidChannelGroup = any;
 
 /**
  * System channel is for notifications for Tricordarr-specific events.
@@ -24,8 +28,14 @@ export const contentChannelGroup: AndroidChannelGroup = {
 
 /**
  * Setup function to ensure that all expected channel groups exist.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  */
 export async function setupChannelGroups() {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[ChannelGroups.ts] setupChannelGroups() disabled for expo-notifications migration');
+  return;
+  /*
   await notifee.createChannelGroup(systemChannelGroup);
   await notifee.createChannelGroup(contentChannelGroup);
+  */
 }

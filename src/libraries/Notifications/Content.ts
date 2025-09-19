@@ -1,7 +1,12 @@
-import notifee, {AndroidAction, AndroidChannelGroup} from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee, {AndroidAction, AndroidChannelGroup} from '@notifee/react-native';
 import {markAsReadPressAction, PressAction, settingsPressAction} from '@tricordarr/Libraries/Enums/Notifications';
 import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig';
 import {NotificationTypeData} from '@tricordarr/Libraries/Structs/SocketStructs';
+
+// Define types for migration compatibility
+type AndroidAction = any;
+type AndroidChannelGroup = any;
 
 export interface ContentNotificationCategory {
   title: string;
@@ -128,6 +133,9 @@ export const contentNotificationCategories: ContentNotificationCategories = {
   },
 };
 
+/**
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+ */
 export async function generateContentNotification(
   id: string,
   title: string,
@@ -140,6 +148,10 @@ export async function generateContentNotification(
   ongoing: boolean = false,
   markAsReadUrl?: string,
 ) {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[Content.ts] generateContentNotification() disabled for expo-notifications migration. Title:', title, 'Body:', body);
+  return;
+  /*
   console.log('[Content.ts] Displaying notification with pressID', pressActionID);
 
   let actions: AndroidAction[] = [settingsPressAction];
@@ -171,4 +183,5 @@ export async function generateContentNotification(
       actions: actions,
     },
   });
+  */
 }

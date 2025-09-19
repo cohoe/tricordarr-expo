@@ -12,14 +12,27 @@ import {
 import {PressAction} from '@tricordarr/Libraries/Enums/Notifications';
 import {generateContentNotification} from '@tricordarr/Libraries/Notifications/Content';
 import {getAppConfig} from '@tricordarr/Libraries/AppConfig';
-import notifee, {EventType, Notification, NotificationPressAction} from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import notifee, {EventType, Notification, NotificationPressAction} from '@notifee/react-native';
+
+// Define types for migration compatibility
+type EventType = any;
+type Notification = any;
+type NotificationPressAction = any;
+const EventType_PRESS = 'PRESS';
+const EventType_ACTION_PRESS = 'ACTION_PRESS';
 
 /**
  * Generate a Notifee notification from a WebSocket event. This usually means that something
  * has come in from the socket, and we probably want to tell the user about it.
+ * DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
  * @param event WebSocketMessageEvent payload.
  */
 export const generatePushNotificationFromEvent = async (event: WebSocketMessageEvent) => {
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  console.log('[SocketNotification.ts] generatePushNotificationFromEvent() disabled for expo-notifications migration');
+  return;
+  /*
   const appConfig = await getAppConfig();
   const notificationData = JSON.parse(event.data) as SocketNotificationData;
   const notificationType = SocketNotificationData.getType(notificationData);
@@ -177,6 +190,7 @@ export const generatePushNotificationFromEvent = async (event: WebSocketMessageE
     ongoing,
     markAsReadUrl,
   );
+  */
 };
 
 /**
@@ -184,6 +198,7 @@ export const generatePushNotificationFromEvent = async (event: WebSocketMessageE
  * AppEventHandler.tsx when the app receives a foreground or background socket event.
  * Generally if you've made it here you're trying to trigger some navigation to take you
  * somewhere useful based on event.
+ * PARTIALLY DISABLED FOR EXPO-NOTIFICATIONS MIGRATION - cancelNotification calls removed
  */
 export const getUrlForNotificationEvent = (
   type: EventType,
@@ -194,11 +209,13 @@ export const getUrlForNotificationEvent = (
     return;
   }
   console.log('[SocketNotification.ts] Got press action:', pressAction);
-  if (type === EventType.PRESS || type === EventType.ACTION_PRESS) {
+  if (type === EventType_PRESS || type === EventType_ACTION_PRESS) {
     switch (pressAction.id) {
       case PressAction.twitarrTab: {
         if (notification.id) {
-          notifee.cancelNotification(notification.id);
+          // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+          // notifee.cancelNotification(notification.id);
+          console.log('[SocketNotification.ts] Would cancel notification (disabled):', notification.id);
           // The Webview won't reload if the route doesn't change, so we inject the current timestamp
           // as a "key" to make Navigation / Webview think that the value has changed.
           let url = `/twitarrtab/${Date.now()}`;
@@ -224,21 +241,21 @@ export const getUrlForNotificationEvent = (
       // @TODO dedupe these into a single content press type
       case PressAction.seamail: {
         if (notification.id && notification.data) {
-          notifee.cancelNotification(notification.id);
+          // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION\n          // notifee.cancelNotification(notification.id);\n          console.log('[SocketNotification.ts] Would cancel notification (disabled):', notification.id);
           return `${notification.data.url}`;
         }
         return;
       }
       case PressAction.lfg: {
         if (notification.id && notification.data) {
-          notifee.cancelNotification(notification.id);
+          // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION\n          // notifee.cancelNotification(notification.id);\n          console.log('[SocketNotification.ts] Would cancel notification (disabled):', notification.id);
           return `${notification.data.url}`;
         }
         return;
       }
       case PressAction.forum: {
         if (notification.id && notification.data) {
-          notifee.cancelNotification(notification.id);
+          // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION\n          // notifee.cancelNotification(notification.id);\n          console.log('[SocketNotification.ts] Would cancel notification (disabled):', notification.id);
           return `${notification.data.url}`;
         }
         return;
@@ -251,21 +268,21 @@ export const getUrlForNotificationEvent = (
       }
       case PressAction.event: {
         if (notification.id && notification.data) {
-          notifee.cancelNotification(notification.id);
+          // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION\n          // notifee.cancelNotification(notification.id);\n          console.log('[SocketNotification.ts] Would cancel notification (disabled):', notification.id);
           return `${notification.data.url}`;
         }
         return;
       }
       case PressAction.personalEvent: {
         if (notification.id && notification.data) {
-          notifee.cancelNotification(notification.id);
+          // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION\n          // notifee.cancelNotification(notification.id);\n          console.log('[SocketNotification.ts] Would cancel notification (disabled):', notification.id);
           return `${notification.data.url}`;
         }
         return;
       }
       case PressAction.home: {
         if (notification.id && notification.data) {
-          notifee.cancelNotification(notification.id);
+          // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION\n          // notifee.cancelNotification(notification.id);\n          console.log('[SocketNotification.ts] Would cancel notification (disabled):', notification.id);
           // SocketNotifications.ts sets the URL for these to `/home`.
           // return `${notification.data.url}`;
           return '/home';

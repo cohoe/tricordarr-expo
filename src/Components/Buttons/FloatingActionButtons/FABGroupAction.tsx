@@ -1,7 +1,9 @@
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {IconSource} from 'react-native-paper/lib/typescript/components/Icon';
 import {GestureResponderEvent} from 'react-native';
-import {AndroidColor} from '@notifee/react-native';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import {AndroidColor} from '@notifee/react-native';
+type AndroidColor = string; // Simple fallback type for migration
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {FabGroupActionType} from '@tricordarr/Libraries/Types';
 

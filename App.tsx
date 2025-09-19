@@ -6,9 +6,10 @@
 import React, {useEffect} from 'react';
 import {LogBox} from 'react-native';
 import {Portal} from 'react-native-paper';
-import {setupChannels} from '@tricordarr/Libraries/Notifications/Channels';
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import {setupChannels} from '@tricordarr/Libraries/Notifications/Channels';
 import {UserNotificationDataProvider} from '@tricordarr/Components/Context/Providers/UserNotificationDataProvider';
-import {setupInitialNotification} from '@tricordarr/Libraries/Notifications/InitialNotification';
+// import {setupInitialNotification} from '@tricordarr/Libraries/Notifications/InitialNotification';
 import {ErrorHandlerProvider} from '@tricordarr/Components/Context/Providers/ErrorHandlerProvider';
 import {ForegroundService} from '@tricordarr/Components/Libraries/Notifications/ForegroundService';
 import {NotificationDataListener} from '@tricordarr/Components/Libraries/Notifications/NotificationDataListener';
@@ -20,7 +21,8 @@ import {SocketProvider} from '@tricordarr/Components/Context/Providers/SocketPro
 import {AppEventHandler} from '@tricordarr/Components/Navigation/AppEventHandler';
 import {AuthProvider} from '@tricordarr/Components/Context/Providers/AuthProvider';
 import {ConfigProvider} from '@tricordarr/Components/Context/Providers/ConfigProvider';
-import {registerFgsWorker} from '@tricordarr/Libraries/Service';  
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+// import {registerFgsWorker} from '@tricordarr/Libraries/Service';  
 import {RootStackNavigator} from '@tricordarr/Components/Navigation/Stacks/RootStackNavigator';
 import {DrawerProvider} from '@tricordarr/Components/Context/Providers/DrawerProvider';
 import {HeaderButtonsProvider} from 'react-navigation-header-buttons/HeaderButtonsProvider';
@@ -57,10 +59,12 @@ if (__DEV__) {
 }
 
 console.log('[App.tsx] Tricordarr start!');
+// DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
 // Declare what the Foreground Service worker function should be.
 // After the configureAxios() was deprecated and removed, this was acting kinda
 // weird. Moved it further up in this file.
-registerFgsWorker();
+// registerFgsWorker();
+console.log('[App.tsx] registerFgsWorker() disabled for expo-notifications migration');
 
 // Time and locale setup, used in various places within the app.
 registerTranslation('en', paperEn);
@@ -69,13 +73,17 @@ registerTranslation('en', paperEn);
 configureImageCache();
 
 function App(): React.JSX.Element {
-  setupChannels().catch(error => {
-    console.error('Error setting up notification channels:', error);
-  });
+  // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+  // setupChannels().catch(error => {
+  //   console.error('Error setting up notification channels:', error);
+  // });
+  console.log('[App.tsx] setupChannels() disabled for expo-notifications migration');
 
   useEffect(() => {
     console.log('[App.tsx] Calling useEffect from Main App.');
-    setupInitialNotification().catch(console.error);
+    // DISABLED FOR EXPO-NOTIFICATIONS MIGRATION
+    // setupInitialNotification().catch(console.error);
+    console.log('[App.tsx] setupInitialNotification() disabled for expo-notifications migration');
   }, []);
 
   /**
