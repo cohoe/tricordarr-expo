@@ -53,7 +53,7 @@
     "react-dom": "19.1.0",
     "react-native": "0.81.4",
     "react-native-battery-optimization-check": "^1.0.8",
-    "react-native-config": "^1.5.9",
+    "react-native-config": "^1.5.5",
     "react-native-controlled-mentions": "^3.1.0",
     "react-native-crypto": "^2.2.1",
     "react-native-device-info": "^14.0.4",
