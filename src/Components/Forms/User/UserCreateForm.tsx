@@ -2,15 +2,15 @@ import React from 'react';
 import {View} from 'react-native';
 import {Formik, FormikHelpers} from 'formik';
 import {TextInput} from 'react-native-paper';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
-import {UserRegistrationFormValues} from '../../../libraries/Types/FormValues.ts';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {UserRegistrationFormValues} from '@tricordarr/Libraries/Types/FormValues';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import * as Yup from 'yup';
-import {TextField} from '../Fields/TextField.tsx';
-import {PasswordValidation, RecoveryKeyValidation, UsernameValidation} from '../../../libraries/ValidationSchema.ts';
-import {SecureTextField} from '../Fields/SecureTextField.tsx';
-import {DirtyDetectionField} from '../Fields/DirtyDetectionField.tsx';
+import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
+import {PasswordValidation, RecoveryKeyValidation, UsernameValidation} from '@tricordarr/Libraries/ValidationSchema';
+import {SecureTextField} from '@tricordarr/Components/Forms/Fields/SecureTextField';
+import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';
 
 interface UserCreateFormProps {
   onSubmit: (values: UserRegistrationFormValues, helpers: FormikHelpers<UserRegistrationFormValues>) => void;

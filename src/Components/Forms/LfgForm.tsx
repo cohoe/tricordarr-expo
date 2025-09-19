@@ -3,7 +3,7 @@ import {Keyboard, View} from 'react-native';
 import {Formik, FormikHelpers} from 'formik';
 import {TextInput} from 'react-native-paper';
 import {PrimaryActionButton} from '../Buttons/PrimaryActionButton';
-import {AppIcons} from '../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useStyles} from '../Context/Contexts/StyleContext';
 import * as Yup from 'yup';
 import {TextField} from './Fields/TextField';
@@ -12,8 +12,8 @@ import {
   LFGTypeValidation,
   InfoStringValidation,
   NumberValidation,
-} from '../../libraries/ValidationSchema';
-import {FezFormValues} from '../../libraries/Types/FormValues';
+} from '@tricordarr/Libraries/ValidationSchema';
+import {FezFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {useModal} from '../Context/Contexts/ModalContext';
 import {HelpModalView} from '../Views/Modals/HelpModalView';
 import {DurationPickerField} from './Fields/DurationPickerField';
@@ -21,8 +21,8 @@ import {FezTypePickerField} from './Fields/FezTypePickerField';
 import {SuggestedTextField} from './Fields/SuggestedTextField';
 import {DatePickerField} from './Fields/DatePickerField';
 import {TimePickerField} from './Fields/TimePickerField';
-import {DirtyDetectionField} from './Fields/DirtyDetectionField.tsx';
-import {publicLocationSuggestions} from '../../libraries/Ship.ts';
+import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';
+import {publicLocationSuggestions} from '@tricordarr/Libraries/Ship';
 
 interface LfgFormProps {
   onSubmit: (values: FezFormValues, helpers: FormikHelpers<FezFormValues>) => void;

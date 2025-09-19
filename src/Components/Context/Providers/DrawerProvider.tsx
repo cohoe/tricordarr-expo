@@ -1,8 +1,8 @@
 import React, {PropsWithChildren, useCallback} from 'react';
 import {DrawerContext} from '../Contexts/DrawerContext';
-import {AppDrawer} from '../../Drawers/AppDrawer';
+import {AppDrawer} from '@tricordarr/Components/Drawers/AppDrawer';
 import {View} from 'react-native';
-import {commonStyles} from '../../../styles';
+import {commonStyles} from '@tricordarr/Styles';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {MaterialHeaderButton} from '../../Buttons/MaterialHeaderButton';
 import {AppIcons} from '../../../Libraries/Enums/Icons';

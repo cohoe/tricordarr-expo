@@ -3,7 +3,7 @@ import {PropsWithChildren} from 'react';
 import {AuthContext} from '../Contexts/AuthContext';
 import {AuthActions, useAuthReducer} from '../../Reducers/Auth/AuthReducer';
 import {TokenStringData} from '../../../Libraries/Structs/ControllerStructs';
-import {useConfig} from '../Contexts/ConfigContext.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {StorageKeys} from '../../../Libraries/Storage';
 
 export const AuthProvider = ({children}: PropsWithChildren) => {

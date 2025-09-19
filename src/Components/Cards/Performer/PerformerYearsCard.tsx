@@ -1,6 +1,6 @@
 import {Card, Chip} from 'react-native-paper';
 import React from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {StyleSheet} from 'react-native';
 
 interface PerformerYearsCardProps {

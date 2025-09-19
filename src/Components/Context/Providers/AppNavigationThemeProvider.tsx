@@ -1,10 +1,10 @@
 import React, {PropsWithChildren, useCallback} from 'react';
-import {navigationLinking} from '../../../Libraries/Linking.ts';
-import {twitarrTheme, twitarrThemeDark} from '../../../styles/Theme.ts';
+import {navigationLinking} from '@tricordarr/Libraries/Linking';
+import {twitarrTheme, twitarrThemeDark} from '@tricordarr/Styles/Theme';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
 import {adaptNavigationTheme, PaperProvider} from 'react-native-paper';
 import {useColorScheme} from 'react-native';
-import {useConfig} from '../Contexts/ConfigContext.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 // https://callstack.github.io/react-native-paper/docs/guides/theming
 const {LightTheme: navLightTheme} = adaptNavigationTheme({reactNavigationLight: DefaultTheme});

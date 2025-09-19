@@ -1,6 +1,6 @@
 import {PickerField} from './PickerField';
-import {AppIcons} from '../../../libraries/Enums/Icons';
-import {formatMinutesToHumanReadable} from '../../../libraries/DateTime';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {formatMinutesToHumanReadable} from '@tricordarr/Libraries/DateTime';
 import React from 'react';
 
 interface DurationFieldProps {

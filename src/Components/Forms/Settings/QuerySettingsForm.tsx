@@ -2,10 +2,10 @@ import React from 'react';
 import {View} from 'react-native';
 import {Formik, FormikHelpers} from 'formik';
 import * as Yup from 'yup';
-import {QuerySettingsFormValues} from '../../../libraries/Types/FormValues.ts';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
-import {SliderField} from '../Fields/SliderField.tsx';
+import {QuerySettingsFormValues} from '@tricordarr/Libraries/Types/FormValues';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {SliderField} from '@tricordarr/Components/Forms/Fields/SliderField';
 
 interface QuerySettingsFormProps {
   initialValues: QuerySettingsFormValues;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {PropsWithChildren, useState} from 'react';
-import {SelectionContext} from '../Contexts/SelectionContext.ts';
-import {useForumListDataSelectionReducer} from '../../Reducers/Forum/ForumListDataSelectionReducer.ts';
+import {SelectionContext} from '@tricordarr/Components/Context/Contexts/SelectionContext';
+import {useForumListDataSelectionReducer} from '@tricordarr/Components/Reducers/Forum/ForumListDataSelectionReducer';
 
 export const SelectionProvider = ({children}: PropsWithChildren) => {
   // const [selectedItems, setSelectedItems] = useState<unknown[]>([]);

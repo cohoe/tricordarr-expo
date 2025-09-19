@@ -1,11 +1,11 @@
 import React from 'react';
 import {View} from 'react-native';
 import {Formik, FormikHelpers} from 'formik';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
-import {UserNoteFormValues} from '../../../libraries/Types/FormValues.ts';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {UserNoteFormValues} from '@tricordarr/Libraries/Types/FormValues';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import * as Yup from 'yup';
-import {TextField} from '../Fields/TextField.tsx';
+import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
 import {DirtyDetectionField} from '../Fields/DirtyDetectionField.tsx';
 
 interface UserNoteFormProps {

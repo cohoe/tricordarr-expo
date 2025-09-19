@@ -1,6 +1,6 @@
 import {createContext, Dispatch, SetStateAction, useContext} from 'react';
-import {ForumListData} from '../../../Libraries/Structs/ControllerStructs.tsx';
-import {ForumListDataSelectionActionsType} from '../../Reducers/Forum/ForumListDataSelectionReducer.ts';
+import {ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ForumListDataSelectionActionsType} from '@tricordarr/Components/Reducers/Forum/ForumListDataSelectionReducer';
 
 export interface SelectionContextType {
   // selectedItems: TItem[];

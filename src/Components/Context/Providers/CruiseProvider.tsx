@@ -3,7 +3,7 @@ import {CruiseContext} from '../Contexts/CruiseContext';
 import {useConfig} from '../Contexts/ConfigContext';
 import useDateTime, {getCruiseDay, getCruiseDays} from '../../../Libraries/DateTime';
 import {differenceInCalendarDays, differenceInDays} from 'date-fns';
-import {useUserNotificationDataQuery} from '../../Queries/Alert/NotificationQueries.ts';
+import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
 
 export const CruiseProvider = ({children}: PropsWithChildren) => {
   const {appConfig, oobeCompleted} = useConfig();

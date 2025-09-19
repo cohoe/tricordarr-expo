@@ -5,10 +5,10 @@ import {SwiftarrQueryClientContext} from '../Contexts/SwiftarrQueryClientContext
 import {Query, QueryKey} from '@tanstack/react-query';
 import {useConfig} from '../Contexts/ConfigContext';
 import axios, {AxiosRequestConfig, AxiosResponse, isAxiosError} from 'axios';
-import {ErrorResponse} from '../../../Libraries/Structs/ControllerStructs.tsx';
-import {useAuth} from '../Contexts/AuthContext.ts';
+import {ErrorResponse} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import DeviceInfo from 'react-native-device-info';
-import {useSnackbar} from '../Contexts/SnackbarContext.ts';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 
 export const SwiftarrQueryClientProvider = ({children}: PropsWithChildren) => {
   const {appConfig, oobeCompleted, preRegistrationMode} = useConfig();

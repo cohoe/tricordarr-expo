@@ -1,15 +1,15 @@
 import {Formik, FormikHelpers} from 'formik';
 import * as Yup from 'yup';
-import {NumberValidation} from '../../libraries/ValidationSchema.ts';
+import {NumberValidation} from '@tricordarr/Libraries/ValidationSchema';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {useStyles} from '../Context/Contexts/StyleContext.ts';
-import {PrimaryActionButton} from '../Buttons/PrimaryActionButton.tsx';
-import {BoardgameRecommendationData} from '../../libraries/Structs/ControllerStructs.tsx';
-import {BoardgameNumPlayersPickerField} from './Fields/Boardgames/BoardgameNumPlayersPickerField.tsx';
-import {BoardgameAgePickerField} from './Fields/Boardgames/BoardgameAgePickerField.tsx';
-import {BoardgameDurationPickerField} from './Fields/Boardgames/BoardgameDurationPickerField.tsx';
-import {BoardgameComplexityPickerField} from './Fields/Boardgames/BoardgameComplexityPickerField.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {BoardgameRecommendationData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {BoardgameNumPlayersPickerField} from '@tricordarr/Components/Forms/Fields/Boardgames/BoardgameNumPlayersPickerField';
+import {BoardgameAgePickerField} from '@tricordarr/Components/Forms/Fields/Boardgames/BoardgameAgePickerField';
+import {BoardgameDurationPickerField} from '@tricordarr/Components/Forms/Fields/Boardgames/BoardgameDurationPickerField';
+import {BoardgameComplexityPickerField} from '@tricordarr/Components/Forms/Fields/Boardgames/BoardgameComplexityPickerField';
 
 interface PersonalEventFormProps {
   onSubmit: (values: BoardgameRecommendationData, helpers: FormikHelpers<BoardgameRecommendationData>) => void;

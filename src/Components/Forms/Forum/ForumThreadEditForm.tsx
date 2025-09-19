@@ -1,14 +1,14 @@
-import {TextField} from '../Fields/TextField.tsx';
+import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
 import React from 'react';
 import {Formik, FormikHelpers} from 'formik';
-import {ForumData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {ForumData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import * as Yup from 'yup';
-import {InfoStringValidation} from '../../../libraries/ValidationSchema.ts';
+import {InfoStringValidation} from '@tricordarr/Libraries/ValidationSchema';
 import {View} from 'react-native';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
-import {ForumThreadValues} from '../../../libraries/Types/FormValues.ts';
-import {DirtyDetectionField} from '../Fields/DirtyDetectionField.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {ForumThreadValues} from '@tricordarr/Libraries/Types/FormValues';
+import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';
 
 interface ForumThreadEditFormProps {
   forumData: ForumData;

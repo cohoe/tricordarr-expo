@@ -1,14 +1,14 @@
 import React, {useEffect} from 'react';
 import {Formik, FormikHelpers, FormikProps, useFormikContext} from 'formik';
-import {PaddedContentView} from '../../Views/Content/PaddedContentView.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import * as Yup from 'yup';
-import {TextField} from '../Fields/TextField.tsx';
-import {InfoStringValidation} from '../../../libraries/ValidationSchema.ts';
-import {ForumThreadValues} from '../../../libraries/Types/FormValues.ts';
-import {BooleanField} from '../Fields/BooleanField.tsx';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext.ts';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
-import {DirtyDetectionField} from '../Fields/DirtyDetectionField.tsx';
+import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
+import {InfoStringValidation} from '@tricordarr/Libraries/ValidationSchema';
+import {ForumThreadValues} from '@tricordarr/Libraries/Types/FormValues';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';
 
 interface ForumCreateFormProps {
   onSubmit: (values: ForumThreadValues, formikBag: FormikHelpers<ForumThreadValues>) => void;

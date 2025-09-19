@@ -1,8 +1,8 @@
 import React, {PropsWithChildren, useEffect, useState} from 'react';
 import {SwiftarrClientApp, SwiftarrFeature} from '../../../Libraries/Enums/AppFeatures';
 import {FeatureContext} from '../Contexts/FeatureContext';
-import {useUserNotificationDataQuery} from '../../Queries/Alert/NotificationQueries';
-import {useConfig} from '../Contexts/ConfigContext.ts';
+import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 export const FeatureProvider = ({children}: PropsWithChildren) => {
   const {oobeCompleted} = useConfig();

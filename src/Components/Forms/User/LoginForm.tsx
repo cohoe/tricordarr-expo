@@ -2,16 +2,16 @@ import React from 'react';
 import {View} from 'react-native';
 import {Formik, FormikHelpers} from 'formik';
 import {TextInput} from 'react-native-paper';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
-import {LoginFormValues} from '../../../libraries/Types/FormValues.ts';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton'; 
+import {LoginFormValues} from '@tricordarr/Libraries/Types/FormValues';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import * as Yup from 'yup';
-import {TextField} from '../Fields/TextField.tsx';
-import {PasswordValidation, UsernameValidation} from '../../../libraries/ValidationSchema.ts';
-import {useAppTheme} from '../../../styles/Theme.ts';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
-import {SecureTextField} from '../Fields/SecureTextField.tsx';
+import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
+import {PasswordValidation, UsernameValidation} from '@tricordarr/Libraries/ValidationSchema';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {SecureTextField} from '@tricordarr/Components/Forms/Fields/SecureTextField';
 
 interface LoginFormProps {
   onSubmit: (values: LoginFormValues, helpers: FormikHelpers<LoginFormValues>) => void;

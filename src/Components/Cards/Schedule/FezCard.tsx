@@ -1,18 +1,18 @@
-import {FezData} from '../../../libraries/Structs/ControllerStructs.tsx';
-import {ScheduleCardMarkerType} from '../../../libraries/Types';
-import {useAppTheme} from '../../../styles/Theme.ts';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {useModal} from '../../Context/Contexts/ModalContext.ts';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ScheduleCardMarkerType} from '@tricordarr/Libraries/Types';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
 import React, {memo, ReactNode, useCallback} from 'react';
 import {StyleSheet} from 'react-native';
-import {AppIcon} from '../../Icons/AppIcon.tsx';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
-import {ReportModalView} from '../../Views/Modals/ReportModalView.tsx';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
 import {Badge} from 'react-native-paper';
 import pluralize from 'pluralize';
 import {AndroidColor} from '@notifee/react-native';
-import {FezType} from '../../../libraries/Enums/FezType.ts';
-import {ScheduleItemCardBase} from './ScheduleItemCardBase.tsx';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {ScheduleItemCardBase} from './ScheduleItemCardBase';
 
 interface FezCardProps {
   fez: FezData;

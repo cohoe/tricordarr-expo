@@ -3,7 +3,7 @@ import React, {PropsWithChildren} from 'react';
 import {useConfig} from '../Contexts/ConfigContext';
 import {Linking} from 'react-native';
 import URLParse from 'url-parse';
-import {useSwiftarrQueryClient} from '../Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 // import {useAuth} from '../Contexts/AuthContext.ts';
 // import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
 // import {useErrorHandler} from '../Contexts/ErrorHandlerContext.ts';

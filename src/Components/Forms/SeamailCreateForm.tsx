@@ -1,17 +1,16 @@
 import React, {useEffect} from 'react';
 import {Formik, FormikHelpers, FormikProps, useFormikContext} from 'formik';
-import {Text} from 'react-native-paper';
-import {FezContentData} from '../../libraries/Structs/ControllerStructs';
+import {FezContentData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {BooleanField} from './Fields/BooleanField';
-import {AppIcons} from '../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {PaddedContentView} from '../Views/Content/PaddedContentView';
-import {FezType} from '../../libraries/Enums/FezType';
-import {UserChipsField} from './Fields/UserChipsField';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {UserChipsField} from '@tricordarr/Components/Forms/Fields/UserChipsField';
 import {usePrivilege} from '../Context/Contexts/PrivilegeContext';
 import * as Yup from 'yup';
-import {TextField} from './Fields/TextField';
-import {DirtyDetectionField} from './Fields/DirtyDetectionField.tsx';
-import {SeamailFormValues} from '../../libraries/Types/FormValues.ts';
+import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
+import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';
+import {SeamailFormValues} from '@tricordarr/Libraries/Types/FormValues';
 
 interface SeamailCreateFormProps {
   onSubmit: (values: SeamailFormValues, formikBag: FormikHelpers<SeamailFormValues>) => void;

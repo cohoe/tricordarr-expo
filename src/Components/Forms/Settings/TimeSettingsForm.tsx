@@ -1,13 +1,13 @@
-import {CruiseSettingsFormValues, TimeSettingsFormValues} from '../../../libraries/Types/FormValues.ts';
+import {TimeSettingsFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {Formik, FormikHelpers} from 'formik';
 import * as Yup from 'yup';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {View} from 'react-native';
-import {DirtyDetectionField} from '../Fields/DirtyDetectionField.tsx';
-import {TextField} from '../Fields/TextField.tsx';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
+import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';
+import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import React from 'react';
-import {NumberValidation} from '../../../libraries/ValidationSchema.ts';
+import {NumberValidation} from '@tricordarr/Libraries/ValidationSchema';
 
 interface TimeSettingsFormProps {
   initialValues: TimeSettingsFormValues;

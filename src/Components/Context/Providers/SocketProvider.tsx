@@ -4,7 +4,7 @@ import {buildWebSocket, OpenFezSocket} from '../../../Libraries/Network/Websocke
 import ReconnectingWebSocket from 'reconnecting-websocket';
 import {useConfig} from '../Contexts/ConfigContext';
 import {useAuth} from '../Contexts/AuthContext';
-import {useWebSocketStorageReducer, WebSocketStorageActions} from '../../Reducers/Fez/FezSocketReducer.ts';
+import {useWebSocketStorageReducer, WebSocketStorageActions} from '@tricordarr/Components/Reducers/Fez/FezSocketReducer';
 
 export const SocketProvider = ({children}: PropsWithChildren) => {
   const {isLoggedIn} = useAuth();

@@ -4,7 +4,7 @@ import {FezType} from '../../../Libraries/Enums/FezType';
 import {useConfig} from '../Contexts/ConfigContext';
 import {ForumFilter, ForumSortDirection, ForumSort} from '../../../Libraries/Enums/ForumSortFilter';
 import {ScheduleFilterSettings} from '../../../Libraries/Types';
-import {EventType} from '../../../Libraries/Enums/EventType.ts';
+import {EventType} from '@tricordarr/Libraries/Enums/EventType';
 
 export const FilterProvider = ({children}: PropsWithChildren) => {
   const {appConfig} = useConfig();

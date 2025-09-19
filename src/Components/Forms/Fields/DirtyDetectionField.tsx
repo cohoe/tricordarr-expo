@@ -1,4 +1,4 @@
-import {useErrorHandler} from '../../Context/Contexts/ErrorHandlerContext.ts';
+import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
 import {useEffect} from 'react';
 import {useFormikContext} from 'formik';
 

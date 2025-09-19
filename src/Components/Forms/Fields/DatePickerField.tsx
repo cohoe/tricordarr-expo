@@ -4,11 +4,10 @@ import {useCruise} from '../../Context/Contexts/CruiseContext';
 import {useField, useFormikContext} from 'formik';
 import {StyleSheet, View} from 'react-native';
 import {useStyles} from '../../Context/Contexts/StyleContext';
-import {useAppTheme} from '../../../styles/Theme';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {Button} from 'react-native-paper';
 import {format} from 'date-fns';
-import {CalendarDate} from 'react-native-paper-dates/src/Date/Calendar';
-import {ValidRangeType} from 'react-native-paper-dates/src/Date/Calendar.tsx';
+import {CalendarDate, ValidRangeType} from 'react-native-paper-dates/src/Date/Calendar';
 
 interface DatePickerFieldProps {
   name: string;

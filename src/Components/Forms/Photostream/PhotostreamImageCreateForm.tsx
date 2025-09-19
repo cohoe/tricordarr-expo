@@ -1,13 +1,13 @@
 import {Formik, FormikHelpers} from 'formik';
-import {PickerField} from '../Fields/PickerField.tsx';
+import {PickerField} from '@tricordarr/Components/Forms/Fields/PickerField';
 import React from 'react';
-import {PhotostreamCreateFormValues} from '../../../libraries/Types/FormValues.ts';
+import {PhotostreamCreateFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import * as Yup from 'yup';
-import {EventData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {View} from 'react-native';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
-import {PhotostreamImageSelectionView} from '../../Views/Photostream/PhotostreamImageSelectionView.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {PhotostreamImageSelectionView} from '@tricordarr/Components/Views/Photostream/PhotostreamImageSelectionView';
 import {Text} from 'react-native-paper';
 import {StyleSheet} from 'react-native';
 

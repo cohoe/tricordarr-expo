@@ -1,4 +1,4 @@
-import {PickerField} from '../PickerField.tsx';
+import {PickerField} from '@tricordarr/Components/Forms/Fields/PickerField';
 import React from 'react';
 
 const getTitle = (value: number | undefined) => {

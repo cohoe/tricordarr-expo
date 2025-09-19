@@ -1,12 +1,12 @@
 import {StyleSheet, View, Image as NativeImage} from 'react-native';
-import {APIImage} from '../../Images/APIImage.tsx';
+import {APIImage} from '@tricordarr/Components/Images/APIImage';
 import React from 'react';
-import {ImageUploadData} from '../../../libraries/Structs/ControllerStructs.tsx';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {ImageButtons} from '../../Buttons/ImageButtons.tsx';
+import {ImageUploadData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {ImageButtons} from '@tricordarr/Components/Buttons/ImageButtons';
 import ImagePicker, {Image} from 'react-native-image-crop-picker';
-import {styleDefaults} from '../../../styles';
-import {useSnackbar} from '../../Context/Contexts/SnackbarContext.ts';
+import {styleDefaults} from '@tricordarr/Styles';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 import {useField} from 'formik';
 import {PERMISSIONS, request as requestPermission} from 'react-native-permissions';
 
