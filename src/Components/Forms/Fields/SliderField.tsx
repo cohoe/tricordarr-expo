@@ -2,7 +2,7 @@ import React from 'react';
 import {useFormikContext} from 'formik';
 import Slider from '@react-native-community/slider';
 import {HelperText, Text} from 'react-native-paper';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {StyleProp, View, ViewStyle} from 'react-native';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import pluralize from 'pluralize';

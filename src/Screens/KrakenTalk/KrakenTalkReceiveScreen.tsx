@@ -1,14 +1,14 @@
 import React, {useCallback} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {Text} from 'react-native-paper';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/../Navigation/Stacks/ChatStackNavigator.tsx';
-import {usePhoneCallDeclineMutation} from '@tricordarr/../Queries/PhoneCall/PhoneCallMutations';
-import {PrimaryActionButton} from '@tricordarr/../Buttons/PrimaryActionButton';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {useAppTheme} from '@tricordarr/../../styles/Theme';
-import {CommonStackComponents} from '@tricordarr/../Navigation/CommonScreens';
+import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator.tsx';
+import {usePhoneCallDeclineMutation} from '@tricordarr/Queries/PhoneCall/PhoneCallMutations';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
 
 type Props = NativeStackScreenProps<ChatStackParamList, ChatStackScreenComponents.krakenTalkReceiveScreen>;
 export const KrakenTalkReceiveScreen = ({route, navigation}: Props) => {

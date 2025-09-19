@@ -1,6 +1,6 @@
 import {Card, Text} from 'react-native-paper';
 import React from 'react';
-import {useStyles} from '../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {getDayMarker} from '@tricordarr/Libraries/DateTime';
 import {Image} from 'react-native';

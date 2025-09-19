@@ -1,14 +1,14 @@
 import React, {useCallback, useEffect} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {SeamailSearchBar} from '@tricordarr/../Search/SeamailSearchBar';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {SeamailSearchBar} from '@tricordarr/Components/Search/SeamailSearchBar';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/../Navigation/Stacks/ChatStackNavigator.tsx';
-import {NotImplementedView} from '@tricordarr/../Views/Static/NotImplementedView';
+import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator.tsx';
+import {NotImplementedView} from '@tricordarr/Components/Views/Static/NotImplementedView';
 import {View} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/../Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons.ts';
-import {CommonStackComponents} from '@tricordarr/../Navigation/CommonScreens.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
 
 type SeamailSearchScreenProps = NativeStackScreenProps<
   ChatStackParamList,

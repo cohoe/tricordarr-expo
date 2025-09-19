@@ -1,5 +1,5 @@
 import React, {useCallback, useState} from 'react';
-import {ScheduleItemCardBase} from './ScheduleItemCardBase';
+import {ScheduleItemCardBase} from '@tricordarr/Components/Cards/Schedule/ScheduleItemCardBase';
 import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {EventType} from '@tricordarr/Libraries/Enums/EventType';

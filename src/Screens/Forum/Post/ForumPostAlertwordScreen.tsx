@@ -1,13 +1,13 @@
-import {AppView} from '@tricordarr/../../Views/AppView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import {FlatList, RefreshControl, View} from 'react-native';
-import {ForumPostFlatList} from '@tricordarr/../../Lists/Forums/ForumPostFlatList';
+import {ForumPostFlatList} from '@tricordarr/Components/Lists/Forums/ForumPostFlatList';
 import React, {useEffect, useRef, useState} from 'react';
-import {useForumPostSearchQuery} from '@tricordarr/../../Queries/Forum/ForumPostSearchQueries.ts';
-import {useStyles} from '@tricordarr/../../Context/Contexts/StyleContext';
+import {useForumPostSearchQuery} from '@tricordarr/Queries/Forum/ForumPostSearchQueries.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ForumStackComponents, ForumStackParamList} from '@tricordarr/../../Navigation/Stacks/ForumStackNavigator';
-import {PostData} from '@tricordarr/../../../Libraries/Structs/ControllerStructs';
-import {ListTitleView} from '@tricordarr/../../Views/ListTitleView';
+import {ForumStackComponents, ForumStackParamList} from '@tricordarr/Components/Navigation/Stacks/ForumStackNavigator';
+import {PostData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
+import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<ForumStackParamList, ForumStackComponents.forumPostAlertwordScreen>;

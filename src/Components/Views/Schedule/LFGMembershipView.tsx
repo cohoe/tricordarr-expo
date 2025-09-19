@@ -1,17 +1,17 @@
-import {PaddedContentView} from '../Content/PaddedContentView.tsx';
-import {FezData} from '../../../Libraries/Structs/ControllerStructs.tsx';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton.tsx';
 import {View} from 'react-native';
 import React, {useCallback, useState} from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {useAppTheme} from '../../../styles/Theme.ts';
-import {LfgLeaveModal} from '../Modals/LfgLeaveModal.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
+import {LfgLeaveModal} from '@tricordarr/Components/Views/Modals/LfgLeaveModal.tsx';
 import {useQueryClient} from '@tanstack/react-query';
-import {useModal} from '../../Context/Contexts/ModalContext.ts';
-import {useFezMembershipMutation} from '../../Queries/Fez/FezMembershipQueries.ts';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext.ts';
+import {useFezMembershipMutation} from '@tricordarr/Queries/Fez/FezMembershipQueries.ts';
 import {StyleSheet} from 'react-native';
-import {FezType} from '../../../Libraries/Enums/FezType.ts';
-import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 interface LFGMembershipViewProps {
   lfg: FezData;

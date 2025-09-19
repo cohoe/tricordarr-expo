@@ -1,10 +1,10 @@
 import React from 'react';
 import {IconButton, List} from 'react-native-paper';
-import {UserAvatarImage} from '../../Images/UserAvatarImage';
-import {UserHeader} from '../../../libraries/Structs/ControllerStructs';
+import {UserAvatarImage} from '@tricordarr/Components/Images/UserAvatarImage';
+import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {IconSource} from 'react-native-paper/lib/typescript/components/Icon';
 import {View} from 'react-native';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 interface UserListItemProps {
   onPress?: () => void;

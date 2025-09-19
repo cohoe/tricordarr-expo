@@ -1,13 +1,13 @@
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
-import {AppIcon} from '../../Icons/AppIcon.tsx';
-import {AppIcons} from '../../../Libraries/Enums/Icons.ts';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
 import {Text} from 'react-native-paper';
 import React from 'react';
-import {PhotostreamImageData} from '../../../Libraries/Structs/ControllerStructs.tsx';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {useMainStack} from '../../Navigation/Stacks/MainStackNavigator.tsx';
-import {CommonStackComponents} from '../../Navigation/CommonScreens.tsx';
-import {guessDeckNumber} from '../../../Libraries/Ship.ts';
+import {PhotostreamImageData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useMainStack} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {guessDeckNumber} from '@tricordarr/Libraries/Ship.ts';
 
 interface PhotostreamImageBodyViewProps {
   image: PhotostreamImageData;

@@ -1,6 +1,6 @@
 import {ReportData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {ReportContentType} from '@tricordarr/Libraries/Enums/ReportContentType';
-import {useTokenAuthMutation} from '../TokenAuthMutation';
+import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
 import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 interface ModReportMutationProps {

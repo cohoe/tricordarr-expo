@@ -1,6 +1,6 @@
 import React, {PropsWithChildren, useEffect, useState} from 'react';
-import {SwiftarrClientApp, SwiftarrFeature} from '../../../Libraries/Enums/AppFeatures';
-import {FeatureContext} from '../Contexts/FeatureContext';
+import {SwiftarrClientApp, SwiftarrFeature} from '@tricordarr/Libraries/Enums/AppFeatures';
+import {FeatureContext} from '@tricordarr/Components/Context/Contexts/FeatureContext';
 import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 

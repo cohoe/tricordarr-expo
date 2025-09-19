@@ -1,17 +1,17 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import {Keyboard, RefreshControl, View} from 'react-native';
-import {useStyles} from '../Context/Contexts/StyleContext';
-import {CategoryData, ForumListData} from '../../libraries/Structs/ControllerStructs';
-import {useForumSearchQuery} from '../Queries/Forum/ForumThreadSearchQueries.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {CategoryData, ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useForumSearchQuery} from '@tricordarr/Queries/Forum/ForumThreadSearchQueries.ts';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '../Buttons/MaterialHeaderButton';
-import {AppIcons} from '../../libraries/Enums/Icons';
-import {ForumThreadFlatList} from '../Lists/Forums/ForumThreadFlatList';
-import {useFilter} from '../Context/Contexts/FilterContext';
-import {ForumSort} from '../../libraries/Enums/ForumSortFilter';
-import {ForumThreadScreenSortMenu} from '../Menus/Forum/ForumThreadScreenSortMenu';
-import {CommonStackComponents, useCommonStack} from '../Navigation/CommonScreens.tsx';
-import {SearchBarBase} from './SearchBarBase.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {ForumThreadFlatList} from '@tricordarr/Components/Lists/Forums/ForumThreadFlatList';
+import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
+import {ForumSort} from '@tricordarr/Libraries/Enums/ForumSortFilter';
+import {ForumThreadScreenSortMenu} from '@tricordarr/Components/Menus/Forum/ForumThreadScreenSortMenu';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {SearchBarBase} from '@tricordarr/Components/Search/SearchBarBase.tsx';
 
 interface Props {
   category?: CategoryData;

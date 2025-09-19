@@ -1,7 +1,7 @@
 import React from 'react';
 import {Banner, Text} from 'react-native-paper';
-import {usePrivilege} from '../Context/Contexts/PrivilegeContext';
-import {useStyles} from '../Context/Contexts/StyleContext';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {StyleSheet} from 'react-native';
 
 export const PostAsUserBanner = () => {

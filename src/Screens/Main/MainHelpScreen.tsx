@@ -1,13 +1,13 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {FAB} from 'react-native-paper';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {View} from 'react-native';
-import {useAppTheme} from '@tricordarr/../../styles/Theme';
-import {HelpTopicView} from '@tricordarr/../Views/Help/HelpTopicView.tsx';
-import {HelpChapterTitleView} from '@tricordarr/../Views/Help/HelpChapterTitleView.tsx';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {HelpTopicView} from '@tricordarr/Components/Views/Help/HelpTopicView.tsx';
+import {HelpChapterTitleView} from '@tricordarr/Components/Views/Help/HelpChapterTitleView.tsx';
 
 export const MainHelpScreen = () => {
   const {commonStyles} = useStyles();

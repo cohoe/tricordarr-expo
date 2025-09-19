@@ -1,21 +1,21 @@
 import React from 'react';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {ListSection} from '@tricordarr/../../Lists/ListSection';
-import {AppIcons} from '@tricordarr/../../../Libraries/Enums/Icons';
-import {MinorActionListItem} from '@tricordarr/../../Lists/Items/MinorActionListItem';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {AppIcons} from '@tricordarr/Components/../Libraries/Enums/Icons';
+import {MinorActionListItem} from '@tricordarr/Components/Lists/Items/MinorActionListItem';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
   useSettingsStack,
-} from '@tricordarr/../../Navigation/Stacks/SettingsStackNavigator.tsx';
-import {useModal} from '@tricordarr/../../Context/Contexts/ModalContext';
-import {LogoutDeviceModalView} from '@tricordarr/../../Views/Modals/LogoutModal';
-import {ListSubheader} from '@tricordarr/../../Lists/ListSubheader';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {LogoutDeviceModalView} from '@tricordarr/Components/Views/Modals/LogoutModal';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CommonStackComponents} from '@tricordarr/../../Navigation/CommonScreens';
-import {useUserProfileQuery} from '@tricordarr/../../Queries/User/UserQueries.ts';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 type Props = NativeStackScreenProps<SettingsStackParamList, SettingsStackScreenComponents.accountManagement>;
 export const AccountManagementScreen = ({navigation}: Props) => {

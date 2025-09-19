@@ -1,6 +1,6 @@
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
-import {HelpTopicView} from '@tricordarr/../Views/Help/HelpTopicView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
+import {HelpTopicView} from '@tricordarr/Components/Views/Help/HelpTopicView.tsx';
 import React from 'react';
 
 export const TimeZoneHelpScreen = () => {

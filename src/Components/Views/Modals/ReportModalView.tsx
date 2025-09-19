@@ -12,8 +12,8 @@ import {
 import {ReportContentForm} from '@tricordarr/Components/Forms/ReportContentForm';
 import {useReportMutation} from '@tricordarr/Queries/Moderation/ModerationMutations';
 import {ReportContentType} from '@tricordarr/Libraries/Enums/ReportContentType';
-import {ReportModalSuccessView} from './ReportModalSuccessView';
-import {ReportModalErrorView} from './ReportModalErrorView';
+import {ReportModalSuccessView} from '@tricordarr/Components/Views/Modals/ReportModalSuccessView';
+import {ReportModalErrorView} from '@tricordarr/Components/Views/Modals/ReportModalErrorView';
 
 interface ReportModalViewProps {
   profile?: ProfilePublicData;

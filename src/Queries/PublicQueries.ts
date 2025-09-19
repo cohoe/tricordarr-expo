@@ -1,4 +1,4 @@
-import {usePublicQuery} from './OpenQuery.ts';
+import {usePublicQuery} from '@tricordarr/Queries/OpenQuery.ts';
 
 export const useConductQuery = () => {
   return usePublicQuery<string>('/public/codeofconduct.md');

@@ -1,8 +1,8 @@
-import {EventCard} from '../../../Cards/Schedule/EventCard';
+import {EventCard} from '@tricordarr/Components/Cards/Schedule/EventCard';
 import React, {Dispatch, memo, SetStateAction, useState} from 'react';
-import {EventData} from '../../../../libraries/Structs/ControllerStructs';
-import {ScheduleCardMarkerType} from '../../../../libraries/Types';
-import {EventCardActionsMenu} from '../../../Menus/Events/EventCardActionsMenu';
+import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ScheduleCardMarkerType} from '@tricordarr/Libraries/Types';
+import {EventCardActionsMenu} from '@tricordarr/Components/Menus/Events/EventCardActionsMenu';
 
 interface EventCardListItemProps {
   eventData: EventData;

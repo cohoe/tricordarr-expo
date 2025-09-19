@@ -1,19 +1,19 @@
 import React, {useEffect} from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
 import {Formik, FormikHelpers, FormikProps} from 'formik';
-import {useStyles} from '../Context/Contexts/StyleContext';
-import {SubmitIconButton} from '../Buttons/IconButtons/SubmitIconButton';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {SubmitIconButton} from '@tricordarr/Components/Buttons/IconButtons/SubmitIconButton';
 import {PostContentData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {usePrivilege} from '../Context/Contexts/PrivilegeContext';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {IconButton} from 'react-native-paper';
 import {PrivilegedUserAccounts} from '@tricordarr/Libraries/Enums/UserAccessLevel';
 import {ContentInsertMenuView} from '@tricordarr/Components/Views/Content/ContentInsertMenuView';
 import * as Yup from 'yup';
-import {EmojiPickerField} from './Fields/EmojiPickerField';
-import {ContentInsertPhotosView} from '../Views/Content/ContentInsertPhotosView';
-import {ContentPostLengthView} from '../Views/Content/ContentPostLengthView';
-import {MentionTextField} from './Fields/MentionTextField';
+import {EmojiPickerField} from '@tricordarr/Components/Forms/Fields/EmojiPickerField';
+import {ContentInsertPhotosView} from '@tricordarr/Components/Views/Content/ContentInsertPhotosView';
+import {ContentPostLengthView} from '@tricordarr/Components/Views/Content/ContentPostLengthView';
+import {MentionTextField} from '@tricordarr/Components/Forms/Fields/MentionTextField';
 
 interface ContentPostFormProps {
   onSubmit: (values: PostContentData, formikBag: FormikHelpers<PostContentData>) => void;

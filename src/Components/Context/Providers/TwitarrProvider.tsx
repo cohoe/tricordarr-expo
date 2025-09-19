@@ -1,12 +1,12 @@
-import {TwitarrContext} from '../Contexts/TwitarrContext';
+import {TwitarrContext} from '@tricordarr/Components/Context/Contexts/TwitarrContext';
 import React, {PropsWithChildren} from 'react';
-import {useConfig} from '../Contexts/ConfigContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {Linking} from 'react-native';
 import URLParse from 'url-parse';
 import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
-// import {useAuth} from '../Contexts/AuthContext.ts';
-// import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
-// import {useErrorHandler} from '../Contexts/ErrorHandlerContext.ts';
+// import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext.ts';
+// import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+// import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext.ts';
 
 export const TwitarrProvider = ({children}: PropsWithChildren) => {
   const {appConfig} = useConfig();

@@ -1,6 +1,6 @@
 import {View} from 'react-native';
 import React from 'react';
-import {useStyles} from '../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 export const MessageSpacerView = () => {
   const {commonStyles} = useStyles();

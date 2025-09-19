@@ -1,18 +1,18 @@
 import * as React from 'react';
 import {Divider, Menu} from 'react-native-paper';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
-import {FezData} from '../../../libraries/Structs/ControllerStructs.tsx';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext.ts';
 import {Item} from 'react-navigation-header-buttons';
-import {PostAsModeratorMenuItem} from '../Items/PostAsModeratorMenuItem.tsx';
-import {PostAsTwitarrTeamMenuItem} from '../Items/PostAsTwitarrTeamMenuItem.tsx';
-import {useFezMuteMutation} from '../../Queries/Fez/FezMuteMutations.ts';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
-import {ReloadMenuItem} from '../Items/ReloadMenuItem.tsx';
+import {PostAsModeratorMenuItem} from '@tricordarr/Components/Menus/Items/PostAsModeratorMenuItem.tsx';
+import {PostAsTwitarrTeamMenuItem} from '@tricordarr/Components/Menus/Items/PostAsTwitarrTeamMenuItem.tsx';
+import {useFezMuteMutation} from '@tricordarr/Queries/Fez/FezMuteMutations.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {ReloadMenuItem} from '@tricordarr/Components/Menus/Items/ReloadMenuItem.tsx';
 import {useQueryClient} from '@tanstack/react-query';
-import {FezType} from '../../../libraries/Enums/FezType.ts';
-import {AppHeaderMenu} from '../AppHeaderMenu.tsx';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
 
 interface FezChatActionsMenuProps {
   fez: FezData;

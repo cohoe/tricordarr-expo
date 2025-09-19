@@ -1,19 +1,19 @@
 import React, {useCallback, useState} from 'react';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {LoginFormValues, UserRegistrationFormValues} from '@tricordarr/../../../Libraries/Types/FormValues';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {LoginFormValues, UserRegistrationFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {useLoginMutation} from '@tricordarr/../../Queries/Auth/LoginMutations.ts';
-import {useAuth} from '@tricordarr/../../Context/Contexts/AuthContext';
-import {UserCreateForm} from '@tricordarr/../../Forms/User/UserCreateForm.tsx';
-import {useModal} from '@tricordarr/../../Context/Contexts/ModalContext';
-import {UserRecoveryKeyModalView} from '@tricordarr/../../Views/Modals/UserRecoveryKeyModalView';
+import {useLoginMutation} from '@tricordarr/Queries/Auth/LoginMutations.ts';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
+import {UserCreateForm} from '@tricordarr/Components/Forms/User/UserCreateForm.tsx';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {UserRecoveryKeyModalView} from '@tricordarr/Components/Views/Modals/UserRecoveryKeyModalView';
 import {Text} from 'react-native-paper';
 import {useNavigation} from '@react-navigation/native';
 import {RefreshControl} from 'react-native';
-import {useUserCreateQuery} from '@tricordarr/../../Queries/User/UserMutations.ts';
-import {useConfig} from '@tricordarr/../../Context/Contexts/ConfigContext.ts';
+import {useUserCreateQuery} from '@tricordarr/Queries/User/UserMutations.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
 
 const RegisterScreenBase = () => {
   const createMutation = useUserCreateQuery();

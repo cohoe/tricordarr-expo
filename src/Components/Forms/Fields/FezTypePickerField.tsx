@@ -1,4 +1,4 @@
-import {PickerField} from './PickerField';
+import {PickerField} from '@tricordarr/Components/Forms/Fields/PickerField';
 import React from 'react';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 

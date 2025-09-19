@@ -1,9 +1,9 @@
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import React from 'react';
-import {HelpChapterTitleView} from '@tricordarr/../Views/Help/HelpChapterTitleView.tsx';
-import {HelpTopicView} from '@tricordarr/../Views/Help/HelpTopicView.tsx';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons.ts';
+import {HelpChapterTitleView} from '@tricordarr/Components/Views/Help/HelpChapterTitleView.tsx';
+import {HelpTopicView} from '@tricordarr/Components/Views/Help/HelpTopicView.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
 
 export const LfgHelpScreen = () => {
   return (

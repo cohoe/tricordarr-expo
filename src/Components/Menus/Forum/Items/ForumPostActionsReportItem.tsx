@@ -1,9 +1,9 @@
-import {ReportModalView} from '../../../Views/Modals/ReportModalView';
+import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
 import React from 'react';
-import {PostData} from '../../../../libraries/Structs/ControllerStructs';
-import {useModal} from '../../../Context/Contexts/ModalContext';
+import {PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
 import {Menu} from 'react-native-paper';
-import {AppIcons} from '../../../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 
 interface ForumPostActionsReportItemProps {
   closeMenu: () => void;

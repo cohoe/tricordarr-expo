@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {FabGroupAction} from './FABGroupAction';
+import {FabGroupAction} from '@tricordarr/Components/Buttons/FloatingActionButtons/FABGroupAction';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useScheduleStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator';
-import {BaseFABGroup} from './BaseFABGroup';
+import {BaseFABGroup} from '@tricordarr/Components/Buttons/FloatingActionButtons/BaseFABGroup';
 import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
 
 interface ScheduleFABProps {

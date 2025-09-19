@@ -1,14 +1,14 @@
 import {FlashList} from '@shopify/flash-list';
 import React, {ReactElement, useCallback} from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {TimeDivider} from '../Dividers/TimeDivider.tsx';
-import {SpaceDivider} from '../Dividers/SpaceDivider.tsx';
-import {getDayMarker, getTimeMarker} from '../../../libraries/DateTime.ts';
-import {EventData, FezData} from '../../../libraries/Structs/ControllerStructs.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {TimeDivider} from '@tricordarr/Components/Lists/Dividers/TimeDivider.tsx';
+import {SpaceDivider} from '@tricordarr/Components/Lists/Dividers/SpaceDivider.tsx';
+import {getDayMarker, getTimeMarker} from '@tricordarr/Libraries/DateTime.ts';
+import {EventData, FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
 import {NativeScrollEvent, NativeSyntheticEvent, RefreshControlProps} from 'react-native';
-import {getScheduleListTimeSeparatorID} from '../../../libraries/Schedule.ts';
-import {styleDefaults} from '../../../styles';
-import {LoadingNextFooter} from '../Footers/LoadingNextFooter.tsx';
+import {getScheduleListTimeSeparatorID} from '@tricordarr/Libraries/Schedule.ts';
+import {styleDefaults} from '@tricordarr/Styles';
+import {LoadingNextFooter} from '@tricordarr/Components/Lists/Footers/LoadingNextFooter.tsx';
 
 interface ScheduleFlatListBaseProps<TItem> {
   items: TItem[];

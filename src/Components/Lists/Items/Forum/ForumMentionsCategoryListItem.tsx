@@ -1,12 +1,12 @@
-import {ForumNewBadge} from '../../../Badges/ForumNewBadge';
-import {ForumCategoryListItemBase} from './ForumCategoryListItemBase';
+import {ForumNewBadge} from '@tricordarr/Components/Badges/ForumNewBadge';
+import {ForumCategoryListItemBase} from '@tricordarr/Components/Lists/Items/Forum/ForumCategoryListItemBase';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {commonStyles} from '../../../../styles';
+import {commonStyles} from '@tricordarr/Styles';
 import {Text} from 'react-native-paper';
 import pluralize from 'pluralize';
-import {ForumStackComponents, useForumStackNavigation} from '../../../Navigation/Stacks/ForumStackNavigator';
-import {useUserNotificationDataQuery} from '../../../Queries/Alert/NotificationQueries';
+import {ForumStackComponents, useForumStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ForumStackNavigator';
+import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
 
 export const ForumMentionsCategoryListItem = () => {
   const {data: userNotificationData} = useUserNotificationDataQuery();

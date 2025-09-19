@@ -3,7 +3,7 @@ import {TimePickerModal} from 'react-native-paper-dates';
 import {Button} from 'react-native-paper';
 import {useField, useFormikContext} from 'formik';
 import {StyleSheet, View} from 'react-native';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {format} from 'date-fns';
 

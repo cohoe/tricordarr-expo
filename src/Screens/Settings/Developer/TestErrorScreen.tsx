@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 import {Text} from 'react-native-paper';
-import {PrimaryActionButton} from '@tricordarr/../../Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/../../../styles/Theme';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {useErrorHandler} from '@tricordarr/../../Context/Contexts/ErrorHandlerContext';
-import {useStyles} from '@tricordarr/../../Context/Contexts/StyleContext';
-import {useModal} from '@tricordarr/../../Context/Contexts/ModalContext';
-import {HelpModalView} from '@tricordarr/../../Views/Modals/HelpModalView';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {HelpModalView} from '@tricordarr/Components/Views/Modals/HelpModalView';
 import {RefreshControl} from 'react-native';
-import {useSwiftarrQueryClient} from '@tricordarr/../../Context/Contexts/SwiftarrQueryClientContext';
-import {useHealthQuery} from '@tricordarr/../../Queries/Client/ClientQueries.ts';
-import {useOpenQuery} from '@tricordarr/../../Queries/OpenQuery.ts';
-import {useSnackbar} from '@tricordarr/../../Context/Contexts/SnackbarContext.ts';
-import {BaseFABGroup} from '@tricordarr/../../Buttons/FloatingActionButtons/BaseFABGroup.tsx';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
+import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
+import {useOpenQuery} from '@tricordarr/Queries/OpenQuery.ts';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
+import {BaseFABGroup} from '@tricordarr/Components/Buttons/FloatingActionButtons/BaseFABGroup.tsx';
 
 export const TestErrorScreen = () => {
   const theme = useAppTheme();

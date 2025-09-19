@@ -1,4 +1,4 @@
-import {FezData, Paginator} from '../../Libraries/Structs/ControllerStructs';
+import {FezData, Paginator} from '@tricordarr/Libraries/Structs/ControllerStructs';
 
 /**
  * Tells useInfiniteQuery if there's a next page.

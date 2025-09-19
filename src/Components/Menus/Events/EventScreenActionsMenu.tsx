@@ -1,14 +1,14 @@
-import {EventData} from '../../../libraries/Structs/ControllerStructs';
+import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useState} from 'react';
 import {Menu} from 'react-native-paper';
 import {Item} from 'react-navigation-header-buttons';
-import {AppIcons} from '../../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import React from 'react';
-import {EventDownloadMenuItem} from './Items/EventDownloadMenuItem';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
-import {EventType} from '../../../libraries/Enums/EventType.ts';
-import {useConfig} from '../../Context/Contexts/ConfigContext.ts';
-import {AppHeaderMenu} from '../AppHeaderMenu.tsx';
+import {EventDownloadMenuItem} from '@tricordarr/Components/Menus/Events/Items/EventDownloadMenuItem';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {EventType} from '@tricordarr/Libraries/Enums/EventType.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
 
 interface EventScreenActionsMenuProps {
   event: EventData;

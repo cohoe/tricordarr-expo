@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
 import {Formik, FormikHelpers, FormikProps, useFormikContext} from 'formik';
 import {FezContentData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {BooleanField} from './Fields/BooleanField';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {PaddedContentView} from '../Views/Content/PaddedContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 import {UserChipsField} from '@tricordarr/Components/Forms/Fields/UserChipsField';
-import {usePrivilege} from '../Context/Contexts/PrivilegeContext';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import * as Yup from 'yup';
 import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
 import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';

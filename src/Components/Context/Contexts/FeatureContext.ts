@@ -1,5 +1,5 @@
 import {createContext, Dispatch, SetStateAction, useContext} from 'react';
-import {SwiftarrFeature} from '../../../Libraries/Enums/AppFeatures';
+import {SwiftarrFeature} from '@tricordarr/Libraries/Enums/AppFeatures';
 
 export interface FeatureContextType {
   disabledFeatures: SwiftarrFeature[];

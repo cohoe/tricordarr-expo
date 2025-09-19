@@ -1,8 +1,8 @@
-import {AppIcons} from '../../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Menu} from 'react-native-paper';
 import * as React from 'react';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 export const PostAsModeratorMenuItem = ({closeMenu}: {closeMenu: () => void}) => {
   const {asModerator, setAsTwitarrTeam, setAsModerator, hasModerator} = usePrivilege();

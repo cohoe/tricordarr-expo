@@ -1,4 +1,4 @@
-import {PickerField} from './PickerField';
+import {PickerField} from '@tricordarr/Components/Forms/Fields/PickerField';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {formatMinutesToHumanReadable} from '@tricordarr/Libraries/DateTime';
 import React from 'react';

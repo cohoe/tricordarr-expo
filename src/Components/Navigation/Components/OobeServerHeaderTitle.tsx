@@ -1,9 +1,9 @@
 import React from 'react';
-import {useConfig} from '../../Context/Contexts/ConfigContext';
-import {SecretHeaderTitle} from './SecretHeaderTitle';
-import {RootStackComponents, useRootStack} from '../Stacks/RootStackNavigator';
-import {MainStackComponents} from '../Stacks/MainStackNavigator';
-import {BottomTabComponents} from '../Tabs/BottomTabNavigator';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {SecretHeaderTitle} from '@tricordarr/Components/Navigation/Components/SecretHeaderTitle';
+import {RootStackComponents, useRootStack} from '@tricordarr/Components/Navigation/Stacks/RootStackNavigator';
+import {MainStackComponents} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
+import {BottomTabComponents} from '@tricordarr/Components/Navigation/Tabs/BottomTabNavigator';
 
 export const OobeServerHeaderTitle = () => {
   const {appConfig, updateAppConfig} = useConfig();

@@ -1,11 +1,11 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens.tsx';
-import {HelpChapterTitleView} from '@tricordarr/../Views/Help/HelpChapterTitleView.tsx';
-import {HelpTopicView} from '@tricordarr/../Views/Help/HelpTopicView.tsx';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons.ts';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {HelpChapterTitleView} from '@tricordarr/Components/Views/Help/HelpChapterTitleView.tsx';
+import {HelpTopicView} from '@tricordarr/Components/Views/Help/HelpTopicView.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.userProfileHelpScreen>;
 

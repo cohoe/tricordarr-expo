@@ -1,5 +1,5 @@
-import {ForumSearchData} from '../../../Libraries/Structs/ControllerStructs';
-import {useTokenAuthPaginationQuery} from '../TokenAuthQuery';
+import {ForumSearchData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useTokenAuthPaginationQuery} from '@tricordarr/Queries/TokenAuthQuery';
 
 export interface ForumSearchQueryParams {
   search?: string;

@@ -1,11 +1,11 @@
 import React from 'react';
 import {View} from 'react-native';
 import {HelperText, Searchbar} from 'react-native-paper';
-import {UserHeader} from '../../libraries/Structs/ControllerStructs';
-import {ListSection} from '../Lists/ListSection';
-import {UserListItem} from '../Lists/Items/UserListItem';
+import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {UserListItem} from '@tricordarr/Components/Lists/Items/UserListItem';
 
-import {useUserMatchQuery} from '../Queries/Users/UsersQueries.ts';
+import {useUserMatchQuery} from '@tricordarr/Queries/Users/UsersQueries.ts';
 
 interface UserSearchBarProps {
   excludeHeaders?: UserHeader[];

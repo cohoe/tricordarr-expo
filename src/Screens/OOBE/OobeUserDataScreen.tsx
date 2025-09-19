@@ -1,16 +1,16 @@
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
-import {OobeButtonsView} from '@tricordarr/../Views/OobeButtonsView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView.tsx';
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {OobeStackComponents, OobeStackParamList} from '@tricordarr/../Navigation/Stacks/OobeStackNavigator.tsx';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
+import {OobeStackComponents, OobeStackParamList} from '@tricordarr/Components/Navigation/Stacks/OobeStackNavigator.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
 import {Text} from 'react-native-paper';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView.tsx';
-import {useAuth} from '@tricordarr/../Context/Contexts/AuthContext.ts';
-import {PrimaryActionButton} from '@tricordarr/../Buttons/PrimaryActionButton.tsx';
-import {CommonStackComponents} from '@tricordarr/../Navigation/CommonScreens.tsx';
-import {useAppTheme} from '@tricordarr/../../styles/Theme.ts';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext.ts';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext.ts';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton.tsx';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeUserDataScreen>;
 

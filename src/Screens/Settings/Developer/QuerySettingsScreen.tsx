@@ -1,31 +1,31 @@
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {DataTable} from 'react-native-paper';
 import {RefreshControl} from 'react-native';
 import React, {useCallback, useEffect, useState} from 'react';
-import {AppView} from '@tricordarr/../../Views/AppView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import {useQueryClient} from '@tanstack/react-query';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {PrimaryActionButton} from '@tricordarr/../../Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/../../../styles/Theme';
-import {useConfig} from '@tricordarr/../../Context/Contexts/ConfigContext';
-import {RelativeTimeTag} from '@tricordarr/../../Text/Tags/RelativeTimeTag';
-import {useSwiftarrQueryClient} from '@tricordarr/../../Context/Contexts/SwiftarrQueryClientContext';
-import {QuerySettingsForm} from '@tricordarr/../../Forms/Settings/QuerySettingsForm.tsx';
-import {QuerySettingsFormValues} from '@tricordarr/../../../Libraries/Types/FormValues';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
+import {QuerySettingsForm} from '@tricordarr/Components/Forms/Settings/QuerySettingsForm.tsx';
+import {QuerySettingsFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {SettingDataTableRow} from '@tricordarr/../../DataTables/SettingDataTableRow';
-import {commonStyles} from '@tricordarr/../../../styles';
-import {useHealthQuery} from '@tricordarr/../../Queries/Client/ClientQueries.ts';
-import {ListSection} from '@tricordarr/../../Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/../../Lists/ListSubheader.tsx';
+import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
+import {commonStyles} from '@tricordarr/Components/../styles';
+import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
 import {CacheManager} from '@georstat/react-native-image-cache';
-import {getDirSize} from '@tricordarr/../../../Libraries/Storage/ImageStorage.ts';
+import {getDirSize} from '@tricordarr/Components/../Libraries/Storage/ImageStorage.ts';
 import {filesize} from 'filesize';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
-} from '@tricordarr/../../Navigation/Stacks/SettingsStackNavigator.tsx';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
 
 export type Props = NativeStackScreenProps<SettingsStackParamList, SettingsStackScreenComponents.querySettingsScreen>;
 

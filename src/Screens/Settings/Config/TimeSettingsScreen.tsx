@@ -1,10 +1,10 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../../Views/AppView.tsx';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView.tsx';
-import {useConfig} from '@tricordarr/../../Context/Contexts/ConfigContext.ts';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView.tsx';
-import {TimeSettingsForm} from '@tricordarr/../../Forms/Settings/TimeSettingsForm.tsx';
-import {TimeSettingsFormValues} from '@tricordarr/../../../Libraries/Types/FormValues.ts';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {TimeSettingsForm} from '@tricordarr/Components/Forms/Settings/TimeSettingsForm.tsx';
+import {TimeSettingsFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues.ts';
 import {FormikHelpers} from 'formik';
 
 export const TimeSettingsScreen = () => {

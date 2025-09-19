@@ -1,12 +1,12 @@
 import React from 'react';
 import {Card, List} from 'react-native-paper';
-import {ListSection} from '../../Lists/ListSection';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {ProfilePublicData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 
 interface UserContentCardProps {
   user: ProfilePublicData;

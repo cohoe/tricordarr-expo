@@ -10,10 +10,10 @@ import {
   addDays,
 } from 'date-fns';
 import {useEffect, useState, useRef} from 'react';
-import {CruiseDayData, CruiseDayTime, StartEndTime} from './Types';
+import {CruiseDayData, CruiseDayTime, StartEndTime} from '@tricordarr/Libraries/Types';
 import moment from 'moment-timezone';
 import pluralize from 'pluralize';
-import {StartTime} from './Types/FormValues';
+import {StartTime} from '@tricordarr/Libraries/Types/FormValues';
 
 // https://github.com/catamphetamine/javascript-time-ago/issues/9
 // Used to be in App.tsx then I moved here so that tests would work.

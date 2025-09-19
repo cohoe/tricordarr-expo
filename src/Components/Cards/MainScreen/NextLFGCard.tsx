@@ -1,8 +1,8 @@
 import React from 'react';
 import {View} from 'react-native';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries';
-import {FezCard} from '../Schedule/FezCard';
+import {FezCard} from '@tricordarr/Components/Cards/Schedule/FezCard';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 
 export const NextLFGCard = ({lfgID}: {lfgID: string}) => {

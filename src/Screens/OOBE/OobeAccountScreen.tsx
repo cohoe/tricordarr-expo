@@ -1,20 +1,20 @@
 import React from 'react';
 import {Text} from 'react-native-paper';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {OobeStackComponents, OobeStackParamList} from '@tricordarr/../Navigation/Stacks/OobeStackNavigator';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {PrimaryActionButton} from '@tricordarr/../Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/../../styles/Theme';
-import {OobeButtonsView} from '@tricordarr/../Views/OobeButtonsView';
-import {useAuth} from '@tricordarr/../Context/Contexts/AuthContext';
-import {ListSection} from '@tricordarr/../Lists/ListSection';
-import {MinorActionListItem} from '@tricordarr/../Lists/Items/MinorActionListItem';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons';
-import {useModal} from '@tricordarr/../Context/Contexts/ModalContext';
-import {LogoutDeviceModalView} from '@tricordarr/../Views/Modals/LogoutModal';
-import {useUserProfileQuery} from '@tricordarr/../Queries/User/UserQueries.ts';
+import {OobeStackComponents, OobeStackParamList} from '@tricordarr/Components/Navigation/Stacks/OobeStackNavigator';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {MinorActionListItem} from '@tricordarr/Components/Lists/Items/MinorActionListItem';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {LogoutDeviceModalView} from '@tricordarr/Components/Views/Modals/LogoutModal';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeAccountScreen>;
 

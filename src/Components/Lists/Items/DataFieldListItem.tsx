@@ -1,10 +1,10 @@
 import React, {ReactNode, useCallback} from 'react';
 import {List} from 'react-native-paper';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {TextStyle, ViewStyle} from 'react-native';
 import {StyleSheet} from 'react-native';
-import {AppIcon} from '../../Icons/AppIcon.tsx';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon.tsx';
 
 interface DataFieldListItemProps {
   title?: string;

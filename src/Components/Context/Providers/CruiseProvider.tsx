@@ -1,7 +1,7 @@
 import React, {PropsWithChildren} from 'react';
-import {CruiseContext} from '../Contexts/CruiseContext';
-import {useConfig} from '../Contexts/ConfigContext';
-import useDateTime, {getCruiseDay, getCruiseDays} from '../../../Libraries/DateTime';
+import {CruiseContext} from '@tricordarr/Components/Context/Contexts/CruiseContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import useDateTime, {getCruiseDay, getCruiseDays} from '@tricordarr/Libraries/DateTime';
 import {differenceInCalendarDays, differenceInDays} from 'date-fns';
 import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
 

@@ -1,4 +1,4 @@
-import {AppImageViewer} from './AppImageViewer';
+import {AppImageViewer} from '@tricordarr/Components/Images/AppImageViewer';
 import {Image, StyleProp, TouchableOpacity, ImageStyle as RNImageStyle, View} from 'react-native';
 import {ActivityIndicator, Card} from 'react-native-paper';
 import React, {useEffect, useState} from 'react';
@@ -14,8 +14,8 @@ import {HelpModalView} from '@tricordarr/Components/Views/Modals/HelpModalView';
 import {AppFastImage} from '@tricordarr/Components/Images/AppFastImage';
 import {ImageStyle as FastImageStyle} from '@d11/react-native-fast-image';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
-// import {saveImageToLocal} from '../../Libraries/Storage/ImageStorage.ts';
-// import {useErrorHandler} from '../Context/Contexts/ErrorHandlerContext.ts';
+// import {saveImageToLocal} from '@tricordarr/Libraries/Storage/ImageStorage.ts';
+// import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext.ts';
 
 interface APIImageProps {
   thumbPath: string;

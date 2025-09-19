@@ -2,7 +2,7 @@ import {Card, Text} from 'react-native-paper';
 // @ts-ignore
 import twitarrteam from '../../../assets/contributors/twitarrteam.jpg';
 import React from 'react';
-import {useStyles} from '../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {AppImage} from '@tricordarr/Components/Images/AppImage';
 import {Image} from 'react-native';
 import {encode as base64_encode} from 'base-64';

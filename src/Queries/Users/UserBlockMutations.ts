@@ -1,5 +1,5 @@
-import {useSwiftarrQueryClient} from '../../Context/Contexts/SwiftarrQueryClientContext.ts';
-import {useTokenAuthMutation} from '../TokenAuthMutation.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation.ts';
 
 interface UserBlockMutationProps {
   userID: string;

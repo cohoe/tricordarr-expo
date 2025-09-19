@@ -5,34 +5,34 @@ import {
   getSharedWebSocket,
   startForegroundServiceWorker,
   stopForegroundServiceWorker,
-} from '@tricordarr/../../../Libraries/Service';
-import {PrimaryActionButton} from '@tricordarr/../../Buttons/PrimaryActionButton';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {useUserNotificationData} from '@tricordarr/../../Context/Contexts/UserNotificationDataContext';
-import {commonStyles} from '@tricordarr/../../../styles';
+} from '@tricordarr/Libraries/Service';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {useUserNotificationData} from '@tricordarr/Components/Context/Contexts/UserNotificationDataContext';
+import {commonStyles} from '@tricordarr/Components/../styles';
 import {useBackHandler} from '@react-native-community/hooks';
-import {fgsFailedCounter} from '@tricordarr/../../../Libraries/Service';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
+import {fgsFailedCounter} from '@tricordarr/Libraries/Service';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useAppTheme} from '@tricordarr/../../../styles/Theme';
+import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
-} from '@tricordarr/../../Navigation/Stacks/SettingsStackNavigator.tsx';
-import {useConfig} from '@tricordarr/../../Context/Contexts/ConfigContext';
-import {WebSocketState} from '@tricordarr/../../../Libraries/Network/Websockets';
-import {SettingDataTableRow} from '@tricordarr/../../DataTables/SettingDataTableRow';
-import {SocketHealthcheckData} from '@tricordarr/../../../Libraries/Structs/SocketStructs';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {WebSocketState} from '@tricordarr/Components/../Libraries/Network/Websockets';
+import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
+import {SocketHealthcheckData} from '@tricordarr/Components/../Libraries/Structs/SocketStructs';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {StorageKeys} from '@tricordarr/../../../Libraries/Storage';
-import {RelativeTimeTag} from '@tricordarr/../../Text/Tags/RelativeTimeTag';
+import {StorageKeys} from '@tricordarr/Components/../Libraries/Storage';
+import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag';
 import {Formik} from 'formik';
-import {BooleanField} from '@tricordarr/../../Forms/Fields/BooleanField';
-import {SliderField} from '@tricordarr/../../Forms/Fields/SliderField';
-import {BatteryOptimizationSettingsView} from '@tricordarr/../../Views/Settings/BatteryOptimizationSettingsView';
-import {ListSection} from '@tricordarr/../../Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/../../Lists/ListSubheader.tsx';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
+import {SliderField} from '@tricordarr/Components/Forms/Fields/SliderField';
+import {BatteryOptimizationSettingsView} from '@tricordarr/Components/Views/Settings/BatteryOptimizationSettingsView';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
 
 type Props = NativeStackScreenProps<SettingsStackParamList, SettingsStackScreenComponents.serverConnectionSettings>;
 

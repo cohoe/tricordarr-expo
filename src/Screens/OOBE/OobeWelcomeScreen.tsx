@@ -1,20 +1,20 @@
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import React from 'react';
 import {Text} from 'react-native-paper';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {OobeStackComponents, OobeStackParamList} from '@tricordarr/../Navigation/Stacks/OobeStackNavigator';
-import {OobeButtonsView} from '@tricordarr/../Views/OobeButtonsView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
+import {OobeStackComponents, OobeStackParamList} from '@tricordarr/Components/Navigation/Stacks/OobeStackNavigator';
+import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {Image, StyleSheet} from 'react-native';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 // @ts-ignore
-import tricordarr from '@tricordarr/../../../assets/PlayStore/tricordarr.jpg';
-import {AppImage} from '@tricordarr/../Images/AppImage.tsx';
+import tricordarr from '@tricordarr/Components/../assets/PlayStore/tricordarr.jpg';
+import {AppImage} from '@tricordarr/Components/Images/AppImage.tsx';
 import {encode as base64_encode} from 'base-64';
 import DeviceInfo from 'react-native-device-info';
-import {useAppTheme} from '@tricordarr/../../styles/Theme.ts';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext.ts';
+import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
 import {useFocusEffect} from '@react-navigation/native';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeWelcomeScreen>;

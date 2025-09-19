@@ -1,11 +1,11 @@
 import {Item} from 'react-navigation-header-buttons';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
 import {Divider, Menu} from 'react-native-paper';
 import React from 'react';
 import {useState} from 'react';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext.ts';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
-import {AppHeaderMenu} from '../AppHeaderMenu.tsx';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext.ts';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
 
 export const PerformerListActionsMenu = () => {
   const [visible, setVisible] = useState(false);

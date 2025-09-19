@@ -1,19 +1,19 @@
 import React from 'react';
 import {createNativeStackNavigator, NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {SeamailListScreen} from '../../../Screens/Seamail/SeamailListScreen';
+import {SeamailListScreen} from '@tricordarr/Screens/Seamail/SeamailListScreen';
 import {useNavigation} from '@react-navigation/native';
-import {KrakenTalkCreateScreen} from '../../../Screens/KrakenTalk/KrakenTalkCreateScreen';
-import {UserHeader} from '../../../Libraries/Structs/ControllerStructs';
+import {KrakenTalkCreateScreen} from '@tricordarr/Screens/KrakenTalk/KrakenTalkCreateScreen';
+import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {useDrawer} from '@tricordarr/Components/Context/Contexts/DrawerContext';
-import {SeamailSearchScreen} from '../../../Screens/Seamail/SeamailSearchScreen';
+import {SeamailSearchScreen} from '@tricordarr/Screens/Seamail/SeamailSearchScreen';
 import {DisabledView} from '@tricordarr/Components/Views/Static/DisabledView';
 import {useFeature} from '@tricordarr/Components/Context/Contexts/FeatureContext';
-import {SwiftarrFeature} from '../../../Libraries/Enums/AppFeatures';
-import {KrakenTalkReceiveScreen} from '../../../Screens/KrakenTalk/KrakenTalkReceiveScreen';
-import {MainStack} from './MainStackNavigator';
+import {SwiftarrFeature} from '@tricordarr/Libraries/Enums/AppFeatures';
+import {KrakenTalkReceiveScreen} from '@tricordarr/Screens/KrakenTalk/KrakenTalkReceiveScreen';
+import {MainStack} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
 import {CommonScreens, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {SeamailSettingsScreen} from '../../../Screens/Seamail/SeamailSettingsScreen';
+import {SeamailSettingsScreen} from '@tricordarr/Screens/Seamail/SeamailSettingsScreen';
 
 // Beware: https://github.com/react-navigation/react-navigation/issues/10802
 export type ChatStackParamList = CommonStackParamList & {

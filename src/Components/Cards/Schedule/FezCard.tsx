@@ -12,7 +12,7 @@ import {Badge} from 'react-native-paper';
 import pluralize from 'pluralize';
 import {AndroidColor} from '@notifee/react-native';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
-import {ScheduleItemCardBase} from './ScheduleItemCardBase';
+import {ScheduleItemCardBase} from '@tricordarr/Components/Cards/Schedule/ScheduleItemCardBase';
 
 interface FezCardProps {
   fez: FezData;

@@ -1,19 +1,19 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {LfgForm} from '@tricordarr/../Forms/LfgForm';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {FezFormValues} from '@tricordarr/../../Libraries/Types/FormValues';
+import {LfgForm} from '@tricordarr/Components/Forms/LfgForm';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {FezFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
 import {addMinutes, differenceInMinutes} from 'date-fns';
-import {getEventTimezoneOffset, getScheduleItemStartEndTime} from '@tricordarr/../../Libraries/DateTime';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext';
-import {LfgCanceledView} from '@tricordarr/../Views/Static/LfgCanceledView';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens';
+import {getEventTimezoneOffset, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {LfgCanceledView} from '@tricordarr/Components/Views/Static/LfgCanceledView';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useQueryClient} from '@tanstack/react-query';
-import {useFezUpdateMutation} from '@tricordarr/../Queries/Fez/FezMutations.ts';
-import {FezData} from '@tricordarr/../../Libraries/Structs/ControllerStructs.tsx';
+import {useFezUpdateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.lfgEditScreen>;
 export const LfgEditScreen = ({route, navigation}: Props) => {

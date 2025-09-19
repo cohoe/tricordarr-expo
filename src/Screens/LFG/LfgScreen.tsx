@@ -1,21 +1,21 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import {View} from 'react-native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {useFezQuery} from '@tricordarr/../Queries/Fez/FezQueries';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons';
-import {FezData} from '@tricordarr/../../Libraries/Structs/ControllerStructs';
+import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/../Buttons/MaterialHeaderButton';
-import {LfgScreenActionsMenu} from '@tricordarr/../Menus/LFG/LfgScreenActionsMenu.tsx';
-import {useSocket} from '@tricordarr/../Context/Contexts/SocketContext';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {LfgScreenActionsMenu} from '@tricordarr/Components/Menus/LFG/LfgScreenActionsMenu.tsx';
+import {useSocket} from '@tricordarr/Components/Context/Contexts/SocketContext';
 import {useIsFocused} from '@react-navigation/native';
-import {usePrivilege} from '@tricordarr/../Context/Contexts/PrivilegeContext';
-import {NotificationTypeData, SocketNotificationData} from '@tricordarr/../../Libraries/Structs/SocketStructs';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens';
-import {ScheduleItemScreenBase} from '@tricordarr/Schedule/ScheduleItemScreenBase.tsx';
-import {HeaderEditButton} from '@tricordarr/../Buttons/HeaderButtons/HeaderEditButton.tsx';
-import {NavHeaderTitle} from '@tricordarr/../Text/NavHeaderTitle.tsx';
-import {useUserProfileQuery} from '@tricordarr/../Queries/User/UserQueries.ts';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {NotificationTypeData, SocketNotificationData} from '@tricordarr/Libraries/Structs/SocketStructs';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
+import {ScheduleItemScreenBase} from '@tricordarr/Components/Schedule/ScheduleItemScreenBase.tsx';
+import {HeaderEditButton} from '@tricordarr/Components/Buttons/HeaderButtons/HeaderEditButton.tsx';
+import {NavHeaderTitle} from '@tricordarr/Components/Text/NavHeaderTitle.tsx';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.lfgScreen>;
 

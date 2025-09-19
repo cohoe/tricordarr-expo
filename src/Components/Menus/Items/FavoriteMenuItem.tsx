@@ -1,7 +1,7 @@
-import {AppIcons} from '../../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Menu} from 'react-native-paper';
 import React from 'react';
-import {StateLoadingIcon} from '../../Icons/StateLoadingIcon';
+import {StateLoadingIcon} from '@tricordarr/Components/Icons/StateLoadingIcon';
 
 interface FavoriteMenuItemProps {
   isFavorite?: boolean;

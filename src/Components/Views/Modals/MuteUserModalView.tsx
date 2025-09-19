@@ -1,12 +1,12 @@
 import React from 'react';
 import {View} from 'react-native';
-import {UserHeader} from '../../../Libraries/Structs/ControllerStructs';
-import {ModalCard} from '../../Cards/ModalCard';
-import {useModal} from '../../Context/Contexts/ModalContext';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ModalCard} from '@tricordarr/Components/Cards/ModalCard';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
-import {ModeratorMuteText, UserMuteText} from '../../Text/UserRelationsText';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {ModeratorMuteText, UserMuteText} from '@tricordarr/Components/Text/UserRelationsText';
 import {useUserMuteMutation} from '@tricordarr/Queries/Users/UserMuteMutations';
 import {useQueryClient} from '@tanstack/react-query';
 

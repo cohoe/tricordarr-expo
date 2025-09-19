@@ -1,15 +1,15 @@
 import React from 'react';
 // import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import {createMaterialBottomTabNavigator} from 'react-native-paper/react-navigation';
-import {AppIcon} from '../../Icons/AppIcon';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
 import {NavigatorScreenParams, useNavigation} from '@react-navigation/native';
-import {ChatStackNavigator, ChatStackParamList} from '../Stacks/ChatStackNavigator';
+import {ChatStackNavigator, ChatStackParamList} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator';
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
-import {AppIcons} from '../../../Libraries/Enums/Icons';
-import {MainStackNavigator, MainStackParamList} from '../Stacks/MainStackNavigator';
-import {ScheduleStackNavigator, ScheduleStackParamList} from '../Stacks/ScheduleStackNavigator';
-import {LfgStackNavigator, LfgStackParamList} from '../Stacks/LFGStackNavigator';
-import {ForumStackNavigator, ForumStackParamList} from '../Stacks/ForumStackNavigator';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {MainStackNavigator, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
+import {ScheduleStackNavigator, ScheduleStackParamList} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator';
+import {LfgStackNavigator, LfgStackParamList} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator';
+import {ForumStackNavigator, ForumStackParamList} from '@tricordarr/Components/Navigation/Stacks/ForumStackNavigator';
 import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
 
 function getBadgeDisplayValue(input: number | undefined) {

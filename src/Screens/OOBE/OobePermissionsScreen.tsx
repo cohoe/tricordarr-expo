@@ -1,18 +1,18 @@
 import React from 'react';
 import {Text} from 'react-native-paper';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {OobeStackComponents, OobeStackParamList} from '@tricordarr/../Navigation/Stacks/OobeStackNavigator';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {OobeButtonsView} from '@tricordarr/../Views/OobeButtonsView';
-import {PrimaryActionButton} from '@tricordarr/../Buttons/PrimaryActionButton';
+import {OobeStackComponents, OobeStackParamList} from '@tricordarr/Components/Navigation/Stacks/OobeStackNavigator';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {PERMISSIONS, request as requestPermission, RESULTS} from 'react-native-permissions';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext';
-import {BatteryOptimizationSettingsView} from '@tricordarr/../Views/Settings/BatteryOptimizationSettingsView';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext.ts';
-import {ListSection} from '@tricordarr/../Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/../Lists/ListSubheader.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {BatteryOptimizationSettingsView} from '@tricordarr/Components/Views/Settings/BatteryOptimizationSettingsView';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobePermissionsScreen>;
 

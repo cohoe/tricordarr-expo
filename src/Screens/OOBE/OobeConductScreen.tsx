@@ -1,15 +1,15 @@
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {OobeStackComponents, OobeStackParamList} from '@tricordarr/../Navigation/Stacks/OobeStackNavigator';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {OobeButtonsView} from '@tricordarr/../Views/OobeButtonsView';
-import {useConductQuery} from '@tricordarr/../Queries/PublicQueries';
-import {LoadingView} from '@tricordarr/../Views/Static/LoadingView';
+import {OobeStackComponents, OobeStackParamList} from '@tricordarr/Components/Navigation/Stacks/OobeStackNavigator';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
+import {useConductQuery} from '@tricordarr/Queries/PublicQueries';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {RefreshControl} from 'react-native';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext.ts';
-import {ContentText} from '@tricordarr/../Text/ContentText.tsx';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {ContentText} from '@tricordarr/Components/Text/ContentText.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeConductScreen>;
 

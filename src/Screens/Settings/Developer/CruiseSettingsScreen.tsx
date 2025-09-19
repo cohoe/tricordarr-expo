@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 import {RefreshControl} from 'react-native';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {CruiseSettingsForm} from '@tricordarr/../../Forms/Settings/CruiseSettingsForm.tsx';
-import {useConfig} from '@tricordarr/../../Context/Contexts/ConfigContext';
-import {CruiseSettingsFormValues, PreRegistrationSettingsFormValues} from '@tricordarr/../../../Libraries/Types/FormValues';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {CruiseSettingsForm} from '@tricordarr/Components/Forms/Settings/CruiseSettingsForm.tsx';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {CruiseSettingsFormValues, PreRegistrationSettingsFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {PrimaryActionButton} from '@tricordarr/../../Buttons/PrimaryActionButton.tsx';
-import {useAppTheme} from '@tricordarr/../../../styles/Theme.ts';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView.tsx';
-import {useClientConfigQuery} from '@tricordarr/../../Queries/Client/ClientQueries.ts';
-import {ListSubheader} from '@tricordarr/../../Lists/ListSubheader.tsx';
-import {useCruise} from '@tricordarr/../../Context/Contexts/CruiseContext.ts';
-import {SettingDataTableRow} from '@tricordarr/../../DataTables/SettingDataTableRow.tsx';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton.tsx';
+import {useAppTheme} from '@tricordarr/Components/../styles/Theme.ts';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
+import {useClientConfigQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext.ts';
+import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow.tsx';
 import {DataTable} from 'react-native-paper';
-import {PreRegistrationSettingsForm} from '@tricordarr/../../Forms/Settings/PreRegistrationSettingsForm.tsx';
+import {PreRegistrationSettingsForm} from '@tricordarr/Components/Forms/Settings/PreRegistrationSettingsForm.tsx';
 
 export const CruiseSettingsScreen = () => {
   const {appConfig, updateAppConfig} = useConfig();

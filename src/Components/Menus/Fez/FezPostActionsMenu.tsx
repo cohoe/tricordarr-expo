@@ -1,11 +1,11 @@
 import React, {ReactNode} from 'react';
 import {Menu} from 'react-native-paper';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {FezData, FezPostData} from '../../../libraries/Structs/ControllerStructs.tsx';
-import {useModal} from '../../Context/Contexts/ModalContext.ts';
-import {ReportModalView} from '../../Views/Modals/ReportModalView.tsx';
-import {FezType} from '../../../libraries/Enums/FezType.ts';
+import {FezData, FezPostData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext.ts';
+import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView.tsx';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
 
 interface FezPostActionsMenuProps {
   visible: boolean;

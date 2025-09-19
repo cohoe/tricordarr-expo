@@ -1,15 +1,15 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {LfgForm} from '@tricordarr/../Forms/LfgForm';
-import {FezFormValues} from '@tricordarr/../../Libraries/Types/FormValues';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {LfgForm} from '@tricordarr/Components/Forms/LfgForm';
+import {FezFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {FezType} from '@tricordarr/../../Libraries/Enums/FezType';
-import {useCruise} from '@tricordarr/../Context/Contexts/CruiseContext';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/../Navigation/CommonScreens';
-import {getApparentCruiseDate, getScheduleItemStartEndTime} from '@tricordarr/../../Libraries/DateTime.ts';
-import {useFezCreateMutation} from '@tricordarr/../Queries/Fez/FezMutations.ts';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {getApparentCruiseDate, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime.ts';
+import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
 import {useQueryClient} from '@tanstack/react-query';
 
 interface LfgCreateScreenBaseProps {

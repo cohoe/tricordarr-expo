@@ -1,9 +1,9 @@
-import {useAuth} from '../Context/Contexts/AuthContext';
-import {useConfig} from '../Context/Contexts/ConfigContext.ts';
-import {useOpenQuery} from './OpenQuery.ts';
-import {ImageQueryData} from '../../Libraries/Types';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {useOpenQuery} from '@tricordarr/Queries/OpenQuery.ts';
+import {ImageQueryData} from '@tricordarr/Libraries/Types';
 import {CacheManager} from '@georstat/react-native-image-cache';
-import {useSwiftarrQueryClient} from '../Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
 
 /**
  * Handler for retrieving images.

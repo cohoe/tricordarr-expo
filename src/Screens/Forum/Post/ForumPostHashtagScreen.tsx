@@ -1,7 +1,7 @@
 import React from 'react';
-import {ForumPostScreenBase} from '@tricordarr/ForumPostScreenBase';
+import {ForumPostScreenBase} from '@tricordarr/Components/ForumPostScreenBase';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../../Navigation/CommonScreens';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.forumPostHashtagScreen>;
 

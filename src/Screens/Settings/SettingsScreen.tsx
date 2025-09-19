@@ -1,23 +1,23 @@
 import React, {useCallback, useEffect} from 'react';
 import {View} from 'react-native';
 import {Divider} from 'react-native-paper';
-import {SettingsNavigationListItem} from '@tricordarr/../Lists/Items/Settings/SettingsNavigationListItem';
-import {SettingsAccountListItem} from '@tricordarr/../Lists/Items/Settings/SettingsAccountListItem';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {ListSection} from '@tricordarr/../Lists/ListSection';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext';
+import {SettingsNavigationListItem} from '@tricordarr/Components/Lists/Items/Settings/SettingsNavigationListItem';
+import {SettingsAccountListItem} from '@tricordarr/Components/Lists/Items/Settings/SettingsAccountListItem';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
-} from '@tricordarr/../Navigation/Stacks/SettingsStackNavigator.tsx';
-import {SettingsHeaderTitle} from '@tricordarr/../Navigation/Components/SettingsHeaderTitle';
-import {SettingsLoginListItem} from '@tricordarr/../Lists/Items/Settings/SettingsLoginListItem';
-import {useAuth} from '@tricordarr/../Context/Contexts/AuthContext';
-import {SettingsRegistrationListItem} from '@tricordarr/../Lists/Items/Settings/SettingsRegistrationListItem';
-import {ListSubheader} from '@tricordarr/../Lists/ListSubheader';
-import {CommonStackComponents} from '@tricordarr/../Navigation/CommonScreens';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+import {SettingsHeaderTitle} from '@tricordarr/Components/Navigation/Components/SettingsHeaderTitle';
+import {SettingsLoginListItem} from '@tricordarr/Components/Lists/Items/Settings/SettingsLoginListItem';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
+import {SettingsRegistrationListItem} from '@tricordarr/Components/Lists/Items/Settings/SettingsRegistrationListItem';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
 
 export type Props = NativeStackScreenProps<SettingsStackParamList, SettingsStackScreenComponents.settings>;
 

@@ -1,5 +1,5 @@
-import {AppIcons} from '../../../../libraries/Enums/Icons';
-import {CommonStackComponents, CommonStackParamList} from '../../../Navigation/CommonScreens';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import React from 'react';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Item} from 'react-navigation-header-buttons';

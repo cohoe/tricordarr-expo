@@ -1,7 +1,7 @@
-import {AppUpdateCard} from '../Cards/MainScreen/AppUpdateCard.tsx';
+import {AppUpdateCard} from '@tricordarr/Components/Cards/MainScreen/AppUpdateCard.tsx';
 import React from 'react';
-import {PaddedContentView} from './Content/PaddedContentView.tsx';
-import {useClientConfigQuery} from '../Queries/Client/ClientQueries.ts';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {useClientConfigQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
 import DeviceInfo from 'react-native-device-info';
 import {compareVersions} from 'compare-versions';
 

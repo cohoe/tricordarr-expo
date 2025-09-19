@@ -1,9 +1,9 @@
-import {AppIcons} from '../../../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Menu} from 'react-native-paper';
 import React from 'react';
-import {PostData} from '../../../../libraries/Structs/ControllerStructs';
+import {PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {CommonStackComponents, CommonStackParamList} from '../../../Navigation/CommonScreens';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 
 interface ForumPostActionsShowThreadItemProps {
   forumPost: PostData;

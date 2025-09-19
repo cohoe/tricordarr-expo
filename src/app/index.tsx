@@ -3,7 +3,7 @@ import {ScrollingContentView} from '@tricordarr/Components/Views/Content/Scrolli
 import React from 'react';
 import {Text} from 'react-native-paper';
 // import {NativeStackScreenProps} from '@react-navigation/native-stack';
-// import {OobeStackComponents, OobeStackParamList} from '../../Navigation/Stacks/OobeStackNavigator';
+// import {OobeStackComponents, OobeStackParamList} from '@tricordarr/Components/Navigation/Stacks/OobeStackNavigator';
 import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {Image, StyleSheet} from 'react-native';

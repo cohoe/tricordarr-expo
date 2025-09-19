@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import {LfgListScreen} from '@tricordarr/LfgListScreen';
+import {LfgListScreen} from '@tricordarr/Components/LfgListScreen';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {LfgStackComponents, LfgStackParamList} from '@tricordarr/../Navigation/Stacks/LFGStackNavigator';
-import {useDrawer} from '@tricordarr/../Context/Contexts/DrawerContext';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext';
+import {LfgStackComponents, LfgStackParamList} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator';
+import {useDrawer} from '@tricordarr/Components/Context/Contexts/DrawerContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 type Props = NativeStackScreenProps<LfgStackParamList, LfgStackComponents.lfgJoinedScreen>;
 

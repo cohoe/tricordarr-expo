@@ -1,15 +1,15 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {FlatList, Keyboard, RefreshControl, View} from 'react-native';
-import {useErrorHandler} from '../Context/Contexts/ErrorHandlerContext';
-import {useStyles} from '../Context/Contexts/StyleContext';
-import {useForumPostSearchQuery} from '../Queries/Forum/ForumPostSearchQueries.ts';
-import {ForumPostFlatList} from '../Lists/Forums/ForumPostFlatList';
+import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {useForumPostSearchQuery} from '@tricordarr/Queries/Forum/ForumPostSearchQueries.ts';
+import {ForumPostFlatList} from '@tricordarr/Components/Lists/Forums/ForumPostFlatList';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '../Buttons/MaterialHeaderButton';
-import {AppIcons} from '../../libraries/Enums/Icons';
-import {CategoryData, ForumData, ForumListData, PostData} from '../../libraries/Structs/ControllerStructs';
-import {CommonStackComponents, useCommonStack} from '../Navigation/CommonScreens.tsx';
-import {SearchBarBase} from './SearchBarBase.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {CategoryData, ForumData, ForumListData, PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {SearchBarBase} from '@tricordarr/Components/Search/SearchBarBase.tsx';
 
 interface ForumPostSearchBarProps {
   category?: CategoryData;

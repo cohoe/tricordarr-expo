@@ -1,16 +1,16 @@
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {UserHeader, UserProfileUploadData} from '@tricordarr/../../Libraries/Structs/ControllerStructs';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {UserProfileForm} from '@tricordarr/../Forms/User/UserProfileForm.tsx';
-import {UserProfileFormValues} from '@tricordarr/../../Libraries/Types/FormValues';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {UserHeader, UserProfileUploadData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {UserProfileForm} from '@tricordarr/Components/Forms/User/UserProfileForm.tsx';
+import {UserProfileFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {useUserProfileMutation} from '@tricordarr/../Queries/User/UserProfileMutations.ts';
+import {useUserProfileMutation} from '@tricordarr/Queries/User/UserProfileMutations.ts';
 import {useQueryClient} from '@tanstack/react-query';
-import {DinnerTeam} from '@tricordarr/../../Libraries/Enums/DinnerTeam';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens';
+import {DinnerTeam} from '@tricordarr/Libraries/Enums/DinnerTeam';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.userProfileEditScreen>;
 

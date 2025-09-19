@@ -1,26 +1,26 @@
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens.tsx';
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView.tsx';
-import {usePerformerSelfQuery} from '@tricordarr/../Queries/Performer/PerformerQueries.ts';
-import {LoadingView} from '@tricordarr/../Views/Static/LoadingView.tsx';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {usePerformerSelfQuery} from '@tricordarr/Queries/Performer/PerformerQueries.ts';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView.tsx';
 import React from 'react';
 import {Text} from 'react-native-paper';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
 import {RefreshControl} from 'react-native';
-import {PerformerProfileWarningView} from '@tricordarr/../Views/Warnings/PerformerProfileWarningView.tsx';
-import {PrimaryActionButton} from '@tricordarr/../Buttons/PrimaryActionButton.tsx';
-import {useAppTheme} from '@tricordarr/../../styles/Theme.ts';
-import {useModal} from '@tricordarr/../Context/Contexts/ModalContext.ts';
-import {PerformerProfileDeleteModalView} from '@tricordarr/../Views/Modals/PerformerProfileDeleteModalView.tsx';
-import {useEventQuery} from '@tricordarr/../Queries/Events/EventQueries.ts';
+import {PerformerProfileWarningView} from '@tricordarr/Components/Views/Warnings/PerformerProfileWarningView.tsx';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton.tsx';
+import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext.ts';
+import {PerformerProfileDeleteModalView} from '@tricordarr/Components/Views/Modals/PerformerProfileDeleteModalView.tsx';
+import {useEventQuery} from '@tricordarr/Queries/Events/EventQueries.ts';
 import {
   usePerformerUpsertMutation,
   usePerformerDeleteForEventMutation,
-} from '@tricordarr/../Queries/Performer/PerformerMutations.ts';
-import {EventData, PerformerData} from '@tricordarr/../../Libraries/Structs/ControllerStructs.tsx';
+} from '@tricordarr/Queries/Performer/PerformerMutations.ts';
+import {EventData, PerformerData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
 import {useQueryClient} from '@tanstack/react-query';
-import {ListSubheader} from '@tricordarr/../Lists/ListSubheader.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.eventAddPerformerScreen>;
 

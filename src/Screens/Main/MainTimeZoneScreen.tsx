@@ -1,23 +1,23 @@
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView.tsx';
-import {ListTitleView} from '@tricordarr/../Views/ListTitleView.tsx';
-import {useTimeZoneChangesQuery} from '@tricordarr/../Queries/Admin/TimeZoneQueries.ts';
-import {LoadingView} from '@tricordarr/../Views/Static/LoadingView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView.tsx';
+import {useTimeZoneChangesQuery} from '@tricordarr/Queries/Admin/TimeZoneQueries.ts';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView.tsx';
 import {RefreshControl, Linking, View} from 'react-native';
 import React, {useCallback, useEffect, useState} from 'react';
-import {PrimaryActionButton} from '@tricordarr/../Buttons/PrimaryActionButton.tsx';
-import {TimeZoneChangeRecord} from '@tricordarr/../../Libraries/Structs/ControllerStructs.tsx';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton.tsx';
+import {TimeZoneChangeRecord} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
 import {DataTable, Text} from 'react-native-paper';
 import Clipboard from '@react-native-clipboard/clipboard';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/../Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons.ts';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/../Navigation/CommonScreens.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
 import moment from 'moment-timezone';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext.ts';
-import {useUserNotificationDataQuery} from '@tricordarr/../Queries/Alert/NotificationQueries.ts';
-import {DataTableCell} from '@tricordarr/../Tables/DataTableCell.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries.ts';
+import {DataTableCell} from '@tricordarr/Components/Tables/DataTableCell.tsx';
 
 const getCleanISOString = (dateString: string): string => {
   return new Date(dateString).toISOString().split('.')[0] + 'Z';

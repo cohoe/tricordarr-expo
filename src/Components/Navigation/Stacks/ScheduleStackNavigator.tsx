@@ -3,7 +3,7 @@ import {createNativeStackNavigator, NativeStackNavigationProp} from '@react-navi
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {CommonScreens, CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {MainStack} from './MainStackNavigator';
+import {MainStack} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
 
 export type ScheduleStackParamList = CommonStackParamList & {};
 

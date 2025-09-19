@@ -1,12 +1,12 @@
 import {Text} from 'react-native-paper';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {AppIcon} from '../../Icons/AppIcon.tsx';
-import {AppIcons} from '../../../Libraries/Enums/Icons.ts';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
-import {useAppTheme} from '../../../styles/Theme.ts';
-import {useHealthQuery} from '../../Queries/Client/ClientQueries.ts';
-import {RelativeTimeTag} from '../../Text/Tags/RelativeTimeTag.tsx';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
+import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
+import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag.tsx';
 
 interface ServerHealthcheckResultViewProps {
   serverHealthPassed: boolean;

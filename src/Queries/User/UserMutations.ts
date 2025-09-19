@@ -1,13 +1,13 @@
-import {useSwiftarrQueryClient} from '../../Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
 import {
   CreatedUserData,
   KeywordData,
   UserCreateData,
   UserPasswordData,
   UserUsernameData,
-} from '../../../Libraries/Structs/ControllerStructs.tsx';
-import {useTokenAuthMutation} from '../TokenAuthMutation.ts';
-import {KeywordAction, KeywordType} from '../../../Libraries/Types';
+} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation.ts';
+import {KeywordAction, KeywordType} from '@tricordarr/Libraries/Types';
 
 interface KeywordMutationProps {
   action: KeywordAction;

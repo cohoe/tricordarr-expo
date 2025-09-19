@@ -1,9 +1,9 @@
 import {Card, Text} from 'react-native-paper';
 import React from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {DailyThemeData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {APIImage} from '../../Images/APIImage';
-import {MainStackComponents, useMainStack} from '../../Navigation/Stacks/MainStackNavigator';
+import {APIImage} from '@tricordarr/Components/Images/APIImage';
+import {MainStackComponents, useMainStack} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
 
 interface DailyThemeCardProps {
   dailyTheme: DailyThemeData;

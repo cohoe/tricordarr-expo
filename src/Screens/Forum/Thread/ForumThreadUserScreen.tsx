@@ -1,17 +1,17 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {AppView} from '@tricordarr/../../Views/AppView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {LoadingView} from '@tricordarr/../../Views/Static/LoadingView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {RefreshControl} from 'react-native';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {Text} from 'react-native-paper';
-import {ForumThreadFlatList} from '@tricordarr/../../Lists/Forums/ForumThreadFlatList';
-import {useForumSearchQuery} from '@tricordarr/../../Queries/Forum/ForumThreadSearchQueries.ts';
-import {ListTitleView} from '@tricordarr/../../Views/ListTitleView';
-import {getUserBylineString} from '@tricordarr/../../Text/Tags/UserBylineTag';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../../Navigation/CommonScreens';
-import {ForumListData} from '@tricordarr/../../../Libraries/Structs/ControllerStructs';
+import {ForumThreadFlatList} from '@tricordarr/Components/Lists/Forums/ForumThreadFlatList';
+import {useForumSearchQuery} from '@tricordarr/Queries/Forum/ForumThreadSearchQueries.ts';
+import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
+import {getUserBylineString} from '@tricordarr/Components/Text/Tags/UserBylineTag';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
+import {ForumListData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.forumThreadUserScreen>;
 

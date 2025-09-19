@@ -1,8 +1,8 @@
-import {HeaderCard} from '../../Cards/MainScreen/HeaderCard.tsx';
-import {PaddedContentView} from '../Content/PaddedContentView.tsx';
+import {HeaderCard} from '@tricordarr/Components/Cards/MainScreen/HeaderCard.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
 import React from 'react';
-import {EasterEggHeaderCard} from '../../Cards/MainScreen/EasterEggHeaderCard.tsx';
-import {useConfig} from '../../Context/Contexts/ConfigContext.ts';
+import {EasterEggHeaderCard} from '@tricordarr/Components/Cards/MainScreen/EasterEggHeaderCard.tsx';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
 
 export const TodayHeaderView = () => {
   const {appConfig} = useConfig();

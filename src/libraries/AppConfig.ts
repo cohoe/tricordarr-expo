@@ -4,7 +4,7 @@ import {StorageKeys} from '@tricordarr/Libraries/Storage';
 import {NotificationTypeData} from '@tricordarr/Libraries/Structs/SocketStructs';
 import {defaultCacheTime, defaultImageStaleTime, defaultStaleTime} from '@tricordarr/Libraries/Network/APIClient';
 import {ForumSort, ForumSortDirection} from '@tricordarr/Libraries/Enums/ForumSortFilter';
-// import {LfgStackComponents} from '../Components/Navigation/Stacks/LFGStackNavigator.tsx';
+// import {LfgStackComponents} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator.tsx';
 
 export type PushNotificationConfig = {
   [key in keyof typeof NotificationTypeData]: boolean;

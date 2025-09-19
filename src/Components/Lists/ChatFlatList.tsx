@@ -1,14 +1,14 @@
 import {FlatList, ListRenderItemInfo, RefreshControlProps} from 'react-native';
-import {FezData, FezPostData} from '../../libraries/Structs/ControllerStructs.tsx';
-import {PaddedContentView} from '../Views/Content/PaddedContentView.tsx';
-import {LabelDivider} from './Dividers/LabelDivider.tsx';
-import {FezPostListItem} from './Items/FezPostListItem.tsx';
+import {FezData, FezPostData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {LabelDivider} from '@tricordarr/Components/Lists/Dividers/LabelDivider.tsx';
+import {FezPostListItem} from '@tricordarr/Components/Lists/Items/FezPostListItem.tsx';
 import React, {useCallback} from 'react';
-import {AppFlatList} from './AppFlatList.tsx';
-import {LoadingPreviousHeader} from './Headers/LoadingPreviousHeader.tsx';
-import {FezPostListHeader} from './Headers/FezPostListHeader.tsx';
-import {SpaceDivider} from './Dividers/SpaceDivider.tsx';
-import {FloatingScrollButtonPosition} from '../../libraries/Types';
+import {AppFlatList} from '@tricordarr/Components/Lists/AppFlatList.tsx';
+import {LoadingPreviousHeader} from '@tricordarr/Components/Lists/Headers/LoadingPreviousHeader.tsx';
+import {FezPostListHeader} from '@tricordarr/Components/Lists/Headers/FezPostListHeader.tsx';
+import {SpaceDivider} from '@tricordarr/Components/Lists/Dividers/SpaceDivider.tsx';
+import {FloatingScrollButtonPosition} from '@tricordarr/Libraries/Types';
 
 interface ChatFlatListProps {
   fez: FezData;

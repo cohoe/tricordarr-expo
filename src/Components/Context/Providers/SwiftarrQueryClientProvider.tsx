@@ -1,9 +1,9 @@
 import React, {PropsWithChildren, useCallback, useEffect, useMemo, useState} from 'react';
 import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
-import {asyncStoragePersister, BadResponseFormatError, SwiftarrQueryClient} from '../../../Libraries/Network/APIClient';
-import {SwiftarrQueryClientContext} from '../Contexts/SwiftarrQueryClientContext';
+import {asyncStoragePersister, BadResponseFormatError, SwiftarrQueryClient} from '@tricordarr/Libraries/Network/APIClient';
+import {SwiftarrQueryClientContext} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 import {Query, QueryKey} from '@tanstack/react-query';
-import {useConfig} from '../Contexts/ConfigContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import axios, {AxiosRequestConfig, AxiosResponse, isAxiosError} from 'axios';
 import {ErrorResponse} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';

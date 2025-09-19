@@ -1,9 +1,9 @@
 import React from 'react';
 import {Card} from 'react-native-paper';
 import {ProfilePublicData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {ListSection} from '../../Lists/ListSection';
-import {DataFieldListItem} from '../../Lists/Items/DataFieldListItem';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {DataFieldListItem} from '@tricordarr/Components/Lists/Items/DataFieldListItem';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {Linking} from 'react-native';
 import {DinnerTeam} from '@tricordarr/Libraries/Enums/DinnerTeam';
 

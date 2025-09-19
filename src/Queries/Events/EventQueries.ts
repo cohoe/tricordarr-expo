@@ -1,5 +1,5 @@
-import {EventData} from '../../../Libraries/Structs/ControllerStructs';
-import {useTokenAuthQuery} from '../TokenAuthQuery';
+import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useTokenAuthQuery} from '@tricordarr/Queries/TokenAuthQuery';
 
 interface EventsQueryOptions {
   cruiseDay?: number;

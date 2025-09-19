@@ -1,9 +1,9 @@
 import React from 'react';
 import {Linking, View} from 'react-native';
 import {Text} from 'react-native-paper';
-import {AppView} from '../AppView';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 export const NotLoggedInView = () => {
   const {commonStyles} = useStyles();

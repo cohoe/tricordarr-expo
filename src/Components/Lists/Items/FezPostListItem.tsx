@@ -1,16 +1,16 @@
 import React, {memo} from 'react';
-import {FezData, FezPostData} from '../../../libraries/Structs/ControllerStructs';
-import {UserAvatarImage} from '../../Images/UserAvatarImage';
-import {MessageView} from '../../Views/MessageView';
-import {MessageViewContainer} from '../../Views/MessageViewContainer';
-import {MessageSpacerView} from '../../Views/MessageSpacerView';
-import {MessageAvatarContainerView} from '../../Views/MessageAvatarContainerView';
-import {FlatListItemContent} from '../../Views/Content/FlatListItemContent';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
-import {ContentPostImage} from '../../Images/ContentPostImage';
-import {useChatStack} from '../../Navigation/Stacks/ChatStackNavigator.tsx';
-import {CommonStackComponents} from '../../Navigation/CommonScreens';
-import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
+import {FezData, FezPostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {UserAvatarImage} from '@tricordarr/Components/Images/UserAvatarImage';
+import {MessageView} from '@tricordarr/Components/Views/MessageView';
+import {MessageViewContainer} from '@tricordarr/Components/Views/MessageViewContainer';
+import {MessageSpacerView} from '@tricordarr/Components/Views/MessageSpacerView';
+import {MessageAvatarContainerView} from '@tricordarr/Components/Views/MessageAvatarContainerView';
+import {FlatListItemContent} from '@tricordarr/Components/Views/Content/FlatListItemContent';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {ContentPostImage} from '@tricordarr/Components/Images/ContentPostImage';
+import {useChatStack} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator.tsx';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 // https://github.com/akveo/react-native-ui-kitten/issues/1167
 interface FezPostListItemProps {

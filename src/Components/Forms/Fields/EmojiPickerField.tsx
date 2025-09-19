@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {CustomEmoji} from '@tricordarr/Libraries/Enums/Emoji';
-import {Emoji} from '../../Icons/Emoji';
+import {Emoji} from '@tricordarr/Components/Icons/Emoji';
 import {IconButton} from 'react-native-paper';
 import {useFormikContext} from 'formik';
 import {PostContentData} from '@tricordarr/Libraries/Structs/ControllerStructs';

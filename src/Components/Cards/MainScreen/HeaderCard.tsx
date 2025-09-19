@@ -1,7 +1,7 @@
 import {Card} from 'react-native-paper';
 import React from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext';
-import {MainImageCardCover} from './MainImageCardCover';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {MainImageCardCover} from '@tricordarr/Components/Cards/MainScreen/MainImageCardCover';
 
 /**
  * Card for the main screen.

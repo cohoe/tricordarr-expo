@@ -1,19 +1,19 @@
 import React, {useEffect, useState} from 'react';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {useUserKeywordQuery} from '@tricordarr/../../Queries/User/UserQueries.ts';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useUserKeywordQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 import {RefreshControl, View} from 'react-native';
-import {KeywordChip} from '@tricordarr/../../Chips/KeywordChip';
-import {useStyles} from '@tricordarr/../../Context/Contexts/StyleContext';
+import {KeywordChip} from '@tricordarr/Components/Chips/KeywordChip';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {Text} from 'react-native-paper';
-import {KeywordForm} from '@tricordarr/../../Forms/KeywordForm';
-import {KeywordFormValues} from '@tricordarr/../../../Libraries/Types/FormValues';
+import {KeywordForm} from '@tricordarr/Components/Forms/KeywordForm';
+import {KeywordFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {useAuth} from '@tricordarr/../../Context/Contexts/AuthContext';
-import {NotLoggedInView} from '@tricordarr/../../Views/Static/NotLoggedInView';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
+import {NotLoggedInView} from '@tricordarr/Components/Views/Static/NotLoggedInView';
 import {useQueryClient} from '@tanstack/react-query';
-import {useUserKeywordMutation} from '@tricordarr/../../Queries/User/UserMutations.ts';
+import {useUserKeywordMutation} from '@tricordarr/Queries/User/UserMutations.ts';
 
 export const AlertKeywordsSettingsScreen = () => {
   const {isLoggedIn} = useAuth();

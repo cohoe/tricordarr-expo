@@ -1,6 +1,6 @@
 import React from 'react';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
-import {SecretHeaderTitle} from './SecretHeaderTitle';
+import {SecretHeaderTitle} from '@tricordarr/Components/Navigation/Components/SecretHeaderTitle';
 import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 
 /**

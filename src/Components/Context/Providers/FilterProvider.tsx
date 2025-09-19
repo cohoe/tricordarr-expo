@@ -1,9 +1,9 @@
 import React, {PropsWithChildren, useState} from 'react';
-import {FilterContext} from '../Contexts/FilterContext';
-import {FezType} from '../../../Libraries/Enums/FezType';
-import {useConfig} from '../Contexts/ConfigContext';
-import {ForumFilter, ForumSortDirection, ForumSort} from '../../../Libraries/Enums/ForumSortFilter';
-import {ScheduleFilterSettings} from '../../../Libraries/Types';
+import {FilterContext} from '@tricordarr/Components/Context/Contexts/FilterContext';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {ForumFilter, ForumSortDirection, ForumSort} from '@tricordarr/Libraries/Enums/ForumSortFilter';
+import {ScheduleFilterSettings} from '@tricordarr/Libraries/Types';
 import {EventType} from '@tricordarr/Libraries/Enums/EventType';
 
 export const FilterProvider = ({children}: PropsWithChildren) => {

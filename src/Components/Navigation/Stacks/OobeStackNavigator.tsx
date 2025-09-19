@@ -1,20 +1,20 @@
 import React from 'react';
 import {createNativeStackNavigator, NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {useNavigation} from '@react-navigation/native';
-import {useStyles} from '../../Context/Contexts/StyleContext';
-import {OobeWelcomeScreen} from '../../../Screens/OOBE/OobeWelcomeScreen';
-import {OobeServerScreen} from '../../../Screens/OOBE/OobeServerScreen';
-import {OobeConductScreen} from '../../../Screens/OOBE/OobeConductScreen';
-import {OobeFinishScreen} from '../../../Screens/OOBE/OobeFinishScreen';
-import {OobeAccountScreen} from '../../../Screens/OOBE/OobeAccountScreen';
-import {LoginScreen} from '../../../Screens/Settings/Account/LoginScreen';
-import {OobeRegisterScreen} from '../../../Screens/Settings/Account/RegisterScreen';
-import {OobePermissionsScreen} from '../../../Screens/OOBE/OobePermissionsScreen';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {OobeWelcomeScreen} from '@tricordarr/Screens/OOBE/OobeWelcomeScreen';
+import {OobeServerScreen} from '@tricordarr/Screens/OOBE/OobeServerScreen';
+import {OobeConductScreen} from '@tricordarr/Screens/OOBE/OobeConductScreen';
+import {OobeFinishScreen} from '@tricordarr/Screens/OOBE/OobeFinishScreen';
+import {OobeAccountScreen} from '@tricordarr/Screens/OOBE/OobeAccountScreen';
+import {LoginScreen} from '@tricordarr/Screens/Settings/Account/LoginScreen';
+import {OobeRegisterScreen} from '@tricordarr/Screens/Settings/Account/RegisterScreen';
+import {OobePermissionsScreen} from '@tricordarr/Screens/OOBE/OobePermissionsScreen';
 import {CommonScreens, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {MainStack} from './MainStackNavigator';
-import {OobePreregistrationScreen} from '../../../Screens/OOBE/OobePreregistrationScreen';
-import {OobeUserDataScreen} from '../../../Screens/OOBE/OobeUserDataScreen';
-import {ScheduleDayScreen} from '../../../Screens/Schedule/ScheduleDayScreen';
+import {MainStack} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
+import {OobePreregistrationScreen} from '@tricordarr/Screens/OOBE/OobePreregistrationScreen';
+import {OobeUserDataScreen} from '@tricordarr/Screens/OOBE/OobeUserDataScreen';
+import {ScheduleDayScreen} from '@tricordarr/Screens/Schedule/ScheduleDayScreen';
 
 export type OobeStackParamList = CommonStackParamList & {
   OobeWelcomeScreen: undefined;

@@ -1,12 +1,12 @@
-import {ForumCategoryListItemBase} from './ForumCategoryListItemBase';
+import {ForumCategoryListItemBase} from '@tricordarr/Components/Lists/Items/Forum/ForumCategoryListItemBase';
 import React from 'react';
-import {ForumStackComponents, useForumStackNavigation} from '../../../Navigation/Stacks/ForumStackNavigator';
+import {ForumStackComponents, useForumStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ForumStackNavigator';
 import {Text} from 'react-native-paper';
 import {View} from 'react-native';
-import {useStyles} from '../../../Context/Contexts/StyleContext';
-import {ForumNewBadge} from '../../../Badges/ForumNewBadge';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {ForumNewBadge} from '@tricordarr/Components/Badges/ForumNewBadge';
 import pluralize from 'pluralize';
-import {useUserNotificationDataQuery} from '../../../Queries/Alert/NotificationQueries';
+import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
 
 interface ForumAlertwordListItemProps {
   alertword: string;

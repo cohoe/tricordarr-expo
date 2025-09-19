@@ -1,12 +1,12 @@
 import React, {ReactNode} from 'react';
 import {Divider, Menu} from 'react-native-paper';
-import {AppIcons} from '../../../libraries/Enums/Icons';
-import {useModal} from '../../Context/Contexts/ModalContext';
-import {ReportModalView} from '../../Views/Modals/ReportModalView';
-import {PhotostreamImageData} from '../../../libraries/Structs/ControllerStructs.tsx';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext.ts';
-import {ModerateMenuItem} from '../Items/ModerateMenuItem.tsx';
-import {useCommonStack} from '../../Navigation/CommonScreens.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
+import {PhotostreamImageData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext.ts';
+import {ModerateMenuItem} from '@tricordarr/Components/Menus/Items/ModerateMenuItem.tsx';
+import {useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
 
 interface PhotostreamImageActionsMenuProps {
   visible: boolean;

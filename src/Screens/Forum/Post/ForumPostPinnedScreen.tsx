@@ -1,16 +1,16 @@
-import {AppView} from '@tricordarr/../../Views/AppView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import {FlatList, RefreshControl, View} from 'react-native';
-import {ForumPostFlatList} from '@tricordarr/../../Lists/Forums/ForumPostFlatList';
+import {ForumPostFlatList} from '@tricordarr/Components/Lists/Forums/ForumPostFlatList';
 import React, {useRef} from 'react';
-import {useStyles} from '@tricordarr/../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {PostData} from '@tricordarr/../../../Libraries/Structs/ControllerStructs';
-import {LoadingView} from '@tricordarr/../../Views/Static/LoadingView';
-import {TimeDivider} from '@tricordarr/../../Lists/Dividers/TimeDivider';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../../Navigation/CommonScreens';
-import {useForumThreadPinnedPostsQuery, useForumThreadQuery} from '@tricordarr/../../Queries/Forum/ForumThreadQueries.ts';
+import {PostData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
+import {TimeDivider} from '@tricordarr/Components/Lists/Dividers/TimeDivider';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useForumThreadPinnedPostsQuery, useForumThreadQuery} from '@tricordarr/Queries/Forum/ForumThreadQueries.ts';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.forumPostPinnedScreen>;
 

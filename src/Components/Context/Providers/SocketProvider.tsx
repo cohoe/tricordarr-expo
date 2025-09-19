@@ -1,9 +1,9 @@
 import React, {useState, PropsWithChildren, useCallback, useEffect} from 'react';
-import {SocketContext} from '../Contexts/SocketContext';
-import {buildWebSocket, OpenFezSocket} from '../../../Libraries/Network/Websockets';
+import {SocketContext} from '@tricordarr/Components/Context/Contexts/SocketContext';
+import {buildWebSocket, OpenFezSocket} from '@tricordarr/Libraries/Network/Websockets';
 import ReconnectingWebSocket from 'reconnecting-websocket';
-import {useConfig} from '../Contexts/ConfigContext';
-import {useAuth} from '../Contexts/AuthContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {useWebSocketStorageReducer, WebSocketStorageActions} from '@tricordarr/Components/Reducers/Fez/FezSocketReducer';
 
 export const SocketProvider = ({children}: PropsWithChildren) => {

@@ -1,9 +1,9 @@
 import {Menu} from 'react-native-paper';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
 import React, {useState} from 'react';
 import {Item} from 'react-navigation-header-buttons';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
-import {AppHeaderMenu} from '../AppHeaderMenu.tsx';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
 
 export const ForumCategoryScreenActionsMenu = () => {
   const [visible, setVisible] = useState(false);

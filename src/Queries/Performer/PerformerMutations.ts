@@ -1,6 +1,6 @@
-import {useTokenAuthMutation} from '../TokenAuthMutation';
-import {useSwiftarrQueryClient} from '../../Context/Contexts/SwiftarrQueryClientContext.ts';
-import {PerformerUploadData} from '../../../Libraries/Structs/ControllerStructs.tsx';
+import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {PerformerUploadData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
 
 export const usePerformerUpsertMutation = () => {
   const {apiPost} = useSwiftarrQueryClient();

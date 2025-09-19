@@ -1,7 +1,7 @@
-import {APIImage} from './APIImage';
+import {APIImage} from '@tricordarr/Components/Images/APIImage';
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import {useStyles} from '../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 interface FezPostImageProps {
   image: string;

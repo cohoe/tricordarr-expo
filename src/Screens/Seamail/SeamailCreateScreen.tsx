@@ -1,17 +1,17 @@
 import React, {useCallback, useRef, useState} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {FezContentData, FezData, PostContentData} from '@tricordarr/../../Libraries/Structs/ControllerStructs';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {ContentPostForm} from '@tricordarr/../Forms/ContentPostForm';
-import {SeamailCreateForm} from '@tricordarr/../Forms/SeamailCreateForm';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {FezContentData, FezData, PostContentData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {ContentPostForm} from '@tricordarr/Components/Forms/ContentPostForm';
+import {SeamailCreateForm} from '@tricordarr/Components/Forms/SeamailCreateForm';
 import {FormikProps} from 'formik';
-import {useFezPostMutation} from '@tricordarr/../Queries/Fez/FezPostMutations.ts';
+import {useFezPostMutation} from '@tricordarr/Queries/Fez/FezPostMutations.ts';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {FezType} from '@tricordarr/../../Libraries/Enums/FezType';
-import {PostAsUserBanner} from '@tricordarr/../Banners/PostAsUserBanner';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens';
-import {SeamailFormValues} from '@tricordarr/../../Libraries/Types/FormValues.ts';
-import {useFezCreateMutation} from '@tricordarr/../Queries/Fez/FezMutations.ts';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {PostAsUserBanner} from '@tricordarr/Components/Banners/PostAsUserBanner';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
+import {SeamailFormValues} from '@tricordarr/Libraries/Types/FormValues.ts';
+import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.seamailCreateScreen>;

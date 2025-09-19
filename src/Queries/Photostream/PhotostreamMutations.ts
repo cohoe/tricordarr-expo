@@ -1,6 +1,6 @@
-import {useSwiftarrQueryClient} from '../../Context/Contexts/SwiftarrQueryClientContext.ts';
-import {useTokenAuthMutation} from '../TokenAuthMutation.ts';
-import {PhotostreamUploadData} from '../../../Libraries/Structs/ControllerStructs.tsx';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation.ts';
+import {PhotostreamUploadData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
 
 interface PhotostreamImageMutationProps {
   imageUploadData: PhotostreamUploadData;

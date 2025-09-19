@@ -1,16 +1,16 @@
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import React, {useState} from 'react';
-import {UserRecoveryForm} from '@tricordarr/../../Forms/User/UserRecoveryForm.tsx';
-import {UserRegistrationFormValues} from '@tricordarr/../../../Libraries/Types/FormValues';
+import {UserRecoveryForm} from '@tricordarr/Components/Forms/User/UserRecoveryForm.tsx';
+import {UserRegistrationFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {useUserRecoveryMutation} from '@tricordarr/../../Queries/Auth/RecoveryMutations.ts';
-import {TokenStringData} from '@tricordarr/../../../Libraries/Structs/ControllerStructs';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useUserRecoveryMutation} from '@tricordarr/Queries/Auth/RecoveryMutations.ts';
+import {TokenStringData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
 import {Text} from 'react-native-paper';
-import {PrimaryActionButton} from '@tricordarr/../../Buttons/PrimaryActionButton';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../../Navigation/CommonScreens';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.accountRecoveryScreen>;
 

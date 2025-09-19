@@ -1,17 +1,17 @@
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {OobeStackComponents, OobeStackParamList} from '@tricordarr/../Navigation/Stacks/OobeStackNavigator';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext';
-import {RootStackComponents, useRootStack} from '@tricordarr/../Navigation/Stacks/RootStackNavigator';
-import {OobeButtonsView} from '@tricordarr/../Views/OobeButtonsView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {startForegroundServiceWorker} from '@tricordarr/../../Libraries/Service';
-import {OobeNoteCard} from '@tricordarr/../Cards/OobeNoteCard';
-import {MainStackComponents} from '@tricordarr/../Navigation/Stacks/MainStackNavigator.tsx';
-import {BottomTabComponents} from '@tricordarr/../Navigation/Tabs/BottomTabNavigator.tsx';
-import {OobePreRegistrationCompleteCard} from '@tricordarr/../Cards/OobePreRegistrationCompleteCard.tsx';
+import {OobeStackComponents, OobeStackParamList} from '@tricordarr/Components/Navigation/Stacks/OobeStackNavigator';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {RootStackComponents, useRootStack} from '@tricordarr/Components/Navigation/Stacks/RootStackNavigator';
+import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {startForegroundServiceWorker} from '@tricordarr/Libraries/Service';
+import {OobeNoteCard} from '@tricordarr/Components/Cards/OobeNoteCard';
+import {MainStackComponents} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
+import {BottomTabComponents} from '@tricordarr/Components/Navigation/Tabs/BottomTabNavigator.tsx';
+import {OobePreRegistrationCompleteCard} from '@tricordarr/Components/Cards/OobePreRegistrationCompleteCard.tsx';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeFinishScreen>;
 

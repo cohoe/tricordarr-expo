@@ -1,8 +1,8 @@
 import {StyleSheet, TouchableOpacity, View} from 'react-native';
-import {AppIcon} from '../../Icons/AppIcon';
-import {AppIcons} from '../../../Libraries/Enums/Icons';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import React, {PropsWithChildren} from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 interface ContentPostAttachmentImageProps extends PropsWithChildren {
   onIconPress: () => void;

@@ -1,15 +1,15 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {useDailyThemeQuery} from '@tricordarr/../Queries/Alert/DailyThemeQueries.ts';
-import {LoadingView} from '@tricordarr/../Views/Static/LoadingView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {useDailyThemeQuery} from '@tricordarr/Queries/Alert/DailyThemeQueries.ts';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {RefreshControl} from 'react-native';
-import {DailyThemeCard} from '@tricordarr/../Cards/MainScreen/DailyThemeCard';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {useCruise} from '@tricordarr/../Context/Contexts/CruiseContext';
-import {useAuth} from '@tricordarr/../Context/Contexts/AuthContext';
-import {NotLoggedInView} from '@tricordarr/../Views/Static/NotLoggedInView';
-import {ListTitleView} from '@tricordarr/../Views/ListTitleView';
+import {DailyThemeCard} from '@tricordarr/Components/Cards/MainScreen/DailyThemeCard';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
+import {NotLoggedInView} from '@tricordarr/Components/Views/Static/NotLoggedInView';
+import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
 
 export const DailyThemesScreen = () => {
   const {data, refetch, isLoading, isRefetching} = useDailyThemeQuery();

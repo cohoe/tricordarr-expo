@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {MainStackComponents, MainStackParamList} from '@tricordarr/../Navigation/Stacks/MainStackNavigator';
-import {ListSection} from '@tricordarr/../Lists/ListSection';
-import {DataFieldListItem} from '@tricordarr/../Lists/Items/DataFieldListItem';
+import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {DataFieldListItem} from '@tricordarr/Components/Lists/Items/DataFieldListItem';
 import {RefreshControl, StyleSheet, View} from 'react-native';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext';
-import {useDailyThemeQuery} from '@tricordarr/../Queries/Alert/DailyThemeQueries.ts';
-import {APIImage} from '@tricordarr/../Images/APIImage';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {useDailyThemeQuery} from '@tricordarr/Queries/Alert/DailyThemeQueries.ts';
+import {APIImage} from '@tricordarr/Components/Images/APIImage';
 
 type Props = NativeStackScreenProps<MainStackParamList, MainStackComponents.dailyThemeScreen>;
 

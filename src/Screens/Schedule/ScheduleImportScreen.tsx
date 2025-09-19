@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
 import {Text} from 'react-native-paper';
-import {SchedImportForm} from '@tricordarr/../Forms/SchedImportForm.tsx';
-import {SchedImportFormValues} from '@tricordarr/../../Libraries/Types/FormValues.ts';
+import {SchedImportForm} from '@tricordarr/Components/Forms/SchedImportForm.tsx';
+import {SchedImportFormValues} from '@tricordarr/Libraries/Types/FormValues.ts';
 import {FormikHelpers} from 'formik';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext.ts';
-import {useEventsQuery} from '@tricordarr/../Queries/Events/EventQueries.ts';
-import {getCalFeedFromUrl, getEventUid} from '@tricordarr/../../Libraries/Schedule.ts';
-import {useEventFavoriteMutation} from '@tricordarr/../Queries/Events/EventFavoriteMutations.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {useEventsQuery} from '@tricordarr/Queries/Events/EventQueries.ts';
+import {getCalFeedFromUrl, getEventUid} from '@tricordarr/Libraries/Schedule.ts';
+import {useEventFavoriteMutation} from '@tricordarr/Queries/Events/EventFavoriteMutations.ts';
 import pluralize from 'pluralize';
 import {VEvent} from 'node-ical';
-import {HelpTopicView} from '@tricordarr/../Views/Help/HelpTopicView.tsx';
+import {HelpTopicView} from '@tricordarr/Components/Views/Help/HelpTopicView.tsx';
 import {useQueryClient} from '@tanstack/react-query';
-import {useSnackbar} from '@tricordarr/../Context/Contexts/SnackbarContext.ts';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
 
 export const ScheduleImportScreen = () => {
   const {appConfig, updateAppConfig} = useConfig();

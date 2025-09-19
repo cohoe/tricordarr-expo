@@ -1,22 +1,22 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {Card, DataTable, Text} from 'react-native-paper';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 // @ts-ignore
-import grant from '@tricordarr/../../../assets/contributors/grant.jpg';
+import grant from '@tricordarr/Components/../assets/contributors/grant.jpg';
 // @ts-ignore
-import hendu from '@tricordarr/../../../assets/contributors/hendu.jpg';
+import hendu from '@tricordarr/Components/../assets/contributors/hendu.jpg';
 // @ts-ignore
-import cfry from '@tricordarr/../../../assets/contributors/cfry.jpg';
+import cfry from '@tricordarr/Components/../assets/contributors/cfry.jpg';
 // @ts-ignore
-import tricordarr from '@tricordarr/../../../assets/PlayStore/tricordarr.jpg';
-import {ContributorCard} from '@tricordarr/../Cards/ContributorCard';
-import {HyperlinkText} from '@tricordarr/../Text/HyperlinkText';
+import tricordarr from '@tricordarr/Components/../assets/PlayStore/tricordarr.jpg';
+import {ContributorCard} from '@tricordarr/Components/Cards/ContributorCard';
+import {HyperlinkText} from '@tricordarr/Components/Text/HyperlinkText';
 import {Image, View} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
-import {OobeNoteCard} from '@tricordarr/../Cards/OobeNoteCard.tsx';
+import {OobeNoteCard} from '@tricordarr/Components/Cards/OobeNoteCard.tsx';
 import {encode as base64_encode} from 'base-64';
 
 export const AboutTricordarrScreen = () => {

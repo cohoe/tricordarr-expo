@@ -1,17 +1,17 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
-import {SettingSwitch} from '@tricordarr/../Switches/SettingSwitch';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {SettingSwitch} from '@tricordarr/Components/Switches/SettingSwitch';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {DataTable, Text} from 'react-native-paper';
-import {SocketControlView} from '@tricordarr/../Views/SocketControlView';
+import {SocketControlView} from '@tricordarr/Components/Views/SocketControlView';
 import {RefreshControl} from 'react-native';
-import {useSocket} from '@tricordarr/../Context/Contexts/SocketContext';
-import {WebSocketState} from '@tricordarr/../../Libraries/Network/Websockets';
-import {SettingDataTableRow} from '@tricordarr/../DataTables/SettingDataTableRow';
-import {ListSection} from '@tricordarr/../Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/../Lists/ListSubheader.tsx';
+import {useSocket} from '@tricordarr/Components/Context/Contexts/SocketContext';
+import {WebSocketState} from '@tricordarr/Libraries/Network/Websockets';
+import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
 
 export const SocketSettingsScreen = () => {
   const {appConfig, updateAppConfig} = useConfig();

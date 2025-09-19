@@ -1,17 +1,17 @@
 import React, {ReactNode} from 'react';
-import {ForumData, PostData} from '../../../libraries/Structs/ControllerStructs';
+import {ForumData, PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {Divider, Menu} from 'react-native-paper';
-import {AppIcons} from '../../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {ForumPostActionsFavoriteItem} from './Items/ForumPostActionsFavoriteItem';
-import {ForumPostActionsReactionItem} from './Items/ForumPostActionsReactionItem';
-import {ForumPostActionsReportItem} from './Items/ForumPostActionsReportItem';
-import {ForumPostActionsModerateItem} from './Items/ForumPostActionsModerateItem';
-import {ForumPostActionsDeleteItem} from './Items/ForumPostActionsDeleteItem';
-import {ForumPostActionsShowThreadItem} from './Items/ForumPostActionsShowThreadItem';
-import {ForumPostActionsPinItem} from './Items/ForumPostActionsPinItem';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens';
-import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
+import {ForumPostActionsFavoriteItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsFavoriteItem';
+import {ForumPostActionsReactionItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsReactionItem';
+import {ForumPostActionsReportItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsReportItem';
+import {ForumPostActionsModerateItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsModerateItem';
+import {ForumPostActionsDeleteItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsDeleteItem';
+import {ForumPostActionsShowThreadItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsShowThreadItem';
+import {ForumPostActionsPinItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsPinItem';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 interface ForumPostActionsMenuProps {
   visible: boolean;

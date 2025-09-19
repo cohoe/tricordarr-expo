@@ -1,6 +1,6 @@
-import {useTokenAuthPaginationQuery, useTokenAuthQuery} from '../TokenAuthQuery';
-import {CategoryData} from '../../../Libraries/Structs/ControllerStructs';
-import {ForumSort, ForumSortDirection} from '../../../Libraries/Enums/ForumSortFilter';
+import {useTokenAuthPaginationQuery, useTokenAuthQuery} from '@tricordarr/Queries/TokenAuthQuery';
+import {CategoryData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ForumSort, ForumSortDirection} from '@tricordarr/Libraries/Enums/ForumSortFilter';
 
 export const useForumCategoriesQuery = () => {
   return useTokenAuthQuery<CategoryData[]>('/forum/categories');

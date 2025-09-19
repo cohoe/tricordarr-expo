@@ -1,10 +1,10 @@
 import React from 'react';
 import {View} from 'react-native';
 import {Formik, FormikHelpers} from 'formik';
-import {PrimaryActionButton} from '../Buttons/PrimaryActionButton';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {KeywordFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
-import {useStyles} from '../Context/Contexts/StyleContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import * as Yup from 'yup';
 import {KeywordValidation} from '@tricordarr/Libraries/ValidationSchema';
 import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';

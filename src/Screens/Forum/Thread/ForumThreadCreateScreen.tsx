@@ -1,17 +1,17 @@
 import React, {useRef, useState} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ForumStackComponents, ForumStackParamList} from '@tricordarr/../../Navigation/Stacks/ForumStackNavigator';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {ForumCreateForm} from '@tricordarr/../../Forms/Forum/ForumCreateForm.tsx';
+import {ForumStackComponents, ForumStackParamList} from '@tricordarr/Components/Navigation/Stacks/ForumStackNavigator';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {ForumCreateForm} from '@tricordarr/Components/Forms/Forum/ForumCreateForm.tsx';
 import {FormikHelpers, FormikProps} from 'formik';
-import {ForumCreateData, PostContentData} from '@tricordarr/../../../Libraries/Structs/ControllerStructs';
-import {ForumThreadValues} from '@tricordarr/../../../Libraries/Types/FormValues';
-import {ContentPostForm} from '@tricordarr/../../Forms/ContentPostForm';
-import {useForumCreateMutation} from '@tricordarr/../../Queries/Forum/ForumThreadMutationQueries.ts';
-import {PostAsUserBanner} from '@tricordarr/../../Banners/PostAsUserBanner';
+import {ForumCreateData, PostContentData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
+import {ForumThreadValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
+import {ContentPostForm} from '@tricordarr/Components/Forms/ContentPostForm';
+import {useForumCreateMutation} from '@tricordarr/Queries/Forum/ForumThreadMutationQueries.ts';
+import {PostAsUserBanner} from '@tricordarr/Components/Banners/PostAsUserBanner';
 import {replaceMentionValues} from 'react-native-controlled-mentions';
-import {CommonStackComponents} from '@tricordarr/../../Navigation/CommonScreens';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<ForumStackParamList, ForumStackComponents.forumThreadCreateScreen>;

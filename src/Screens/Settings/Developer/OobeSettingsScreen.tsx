@@ -1,14 +1,14 @@
 import React from 'react';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {useConfig} from '@tricordarr/../../Context/Contexts/ConfigContext';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {DataTable, Text} from 'react-native-paper';
-import {SettingDataTableRow} from '@tricordarr/../../DataTables/SettingDataTableRow';
-import {PrimaryActionButton} from '@tricordarr/../../Buttons/PrimaryActionButton';
-import {ListSubheader} from '@tricordarr/../../Lists/ListSubheader.tsx';
-import {RootStackComponents, useRootStack} from '@tricordarr/../../Navigation/Stacks/RootStackNavigator.tsx';
-import {useAppTheme} from '@tricordarr/../../../styles/Theme.ts';
+import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {RootStackComponents, useRootStack} from '@tricordarr/Components/Navigation/Stacks/RootStackNavigator.tsx';
+import {useAppTheme} from '@tricordarr/Components/../styles/Theme.ts';
 
 export const OobeSettingsScreen = () => {
   const {appConfig, updateAppConfig} = useConfig();

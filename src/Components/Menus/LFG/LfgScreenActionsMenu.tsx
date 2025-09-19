@@ -1,16 +1,16 @@
 import React, {ReactNode, useState} from 'react';
 import {Menu} from 'react-native-paper';
-import {AppIcons} from '../../../libraries/Enums/Icons';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Item} from 'react-navigation-header-buttons';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
-import {FezData} from '../../../libraries/Structs/ControllerStructs';
-import {ReportModalView} from '../../Views/Modals/ReportModalView';
-import {useModal} from '../../Context/Contexts/ModalContext';
-import {FezCancelModal} from '../../Views/Modals/FezCancelModal.tsx';
-import {useLFGStackNavigation} from '../../Navigation/Stacks/LFGStackNavigator';
-import {CommonStackComponents} from '../../Navigation/CommonScreens';
-import {AppHeaderMenu} from '../AppHeaderMenu.tsx';
-import {useUserProfileQuery} from '../../Queries/User/UserQueries.ts';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {FezCancelModal} from '@tricordarr/Components/Views/Modals/FezCancelModal.tsx';
+import {useLFGStackNavigation} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 export const LfgScreenActionsMenu = ({fezData}: {fezData: FezData}) => {
   const [visible, setVisible] = useState(false);

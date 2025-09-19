@@ -1,13 +1,13 @@
-import {useModal} from '../../Context/Contexts/ModalContext';
-import {useAppTheme} from '../../../styles/Theme';
-import {PrimaryActionButton} from '../../Buttons/PrimaryActionButton';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {View} from 'react-native';
-import {ModalCard} from '../../Cards/ModalCard';
+import {ModalCard} from '@tricordarr/Components/Cards/ModalCard';
 import React from 'react';
-import {ForumData, PostData} from '../../../Libraries/Structs/ControllerStructs';
+import {ForumData, PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {Text} from 'react-native-paper';
-import {useStyles} from '../../Context/Contexts/StyleContext';
-import {useForumPostDeleteMutation} from '../../Queries/Forum/ForumPostMutations.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {useForumPostDeleteMutation} from '@tricordarr/Queries/Forum/ForumPostMutations.ts';
 import {useQueryClient} from '@tanstack/react-query';
 
 const ModalContent = () => {

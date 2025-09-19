@@ -1,8 +1,8 @@
 import React from 'react';
 import {View} from 'react-native';
 import {Text} from 'react-native-paper';
-import {useStyles} from '../../Context/Contexts/StyleContext';
-import {ModalCard} from '../../Cards/ModalCard';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {ModalCard} from '@tricordarr/Components/Cards/ModalCard';
 
 interface HelpModalViewProps {
   text: string | string[];

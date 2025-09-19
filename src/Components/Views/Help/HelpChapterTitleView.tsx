@@ -1,7 +1,7 @@
-import {ListSubheader} from '../../Lists/ListSubheader.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {useStyles} from '../../Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
 
 interface HelpChapterTitleView {
   title: string;

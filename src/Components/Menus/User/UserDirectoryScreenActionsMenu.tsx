@@ -1,9 +1,9 @@
 import React from 'react';
 import {Divider, Menu} from 'react-native-paper';
 import {Item} from 'react-navigation-header-buttons';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens.tsx';
-import {AppHeaderMenu} from '../AppHeaderMenu.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
 
 export const UserDirectoryScreenActionsMenu = () => {
   const [visible, setVisible] = React.useState(false);

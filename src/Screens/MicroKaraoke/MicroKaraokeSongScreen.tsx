@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {MainStackComponents, MainStackParamList} from '@tricordarr/../Navigation/Stacks/MainStackNavigator.tsx';
-import {useMicroKaraokeSongQuery} from '@tricordarr/../Queries/MicroKaraoke/MicroKaraokeQueries.ts';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
+import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
+import {useMicroKaraokeSongQuery} from '@tricordarr/Queries/MicroKaraoke/MicroKaraokeQueries.ts';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
 import {RefreshControl} from 'react-native';
-import {LoadingView} from '@tricordarr/../Views/Static/LoadingView.tsx';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView.tsx';
 import RNFS from 'react-native-fs';
 import Video from 'react-native-video';
 import VideoPlayer from 'react-native-video-controls';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView.tsx';
-import {PrimaryActionButton} from '@tricordarr/../Buttons/PrimaryActionButton.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton.tsx';
 
 type Props = NativeStackScreenProps<MainStackParamList, MainStackComponents.microKaraokeSongScreen>;
 

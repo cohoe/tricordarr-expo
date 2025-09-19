@@ -1,8 +1,8 @@
 import {Text} from 'react-native-paper';
 import {View} from 'react-native';
 import React from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 
 export const ForumLockedView = () => {
   const {commonStyles} = useStyles();

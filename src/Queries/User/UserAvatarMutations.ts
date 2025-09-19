@@ -1,6 +1,6 @@
-import {useTokenAuthMutation} from '../TokenAuthMutation';
-import {ImageUploadData, UserHeader} from '../../../Libraries/Structs/ControllerStructs';
-import {useSwiftarrQueryClient} from '../../Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
+import {ImageUploadData, UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
 
 export const useUserAvatarMutation = () => {
   const {apiPost} = useSwiftarrQueryClient();

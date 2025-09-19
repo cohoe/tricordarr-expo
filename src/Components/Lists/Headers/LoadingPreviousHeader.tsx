@@ -1,6 +1,6 @@
-import {FlexCenteredContentView} from '../../Views/Content/FlexCenteredContentView.tsx';
+import {FlexCenteredContentView} from '@tricordarr/Components/Views/Content/FlexCenteredContentView.tsx';
 import {Text} from 'react-native-paper';
-import {PaddedContentView} from '../../Views/Content/PaddedContentView.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
 import React from 'react';
 
 export const LoadingPreviousHeader = () => {

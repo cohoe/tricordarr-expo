@@ -1,12 +1,12 @@
 import React, {useCallback, useEffect} from 'react';
-import {AppView} from '@tricordarr/../Views/AppView';
-import {EventSearchBar} from '@tricordarr/../Search/EventSearchBar';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {EventSearchBar} from '@tricordarr/Components/Search/EventSearchBar';
 import {View} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/../Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons.ts';
-import {CommonStackComponents} from '@tricordarr/../Navigation/CommonScreens.tsx';
-import {useScheduleStackNavigation} from '@tricordarr/../Navigation/Stacks/ScheduleStackNavigator.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {useScheduleStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator.tsx';
 
 export const EventSearchScreen = () => {
   const navigation = useScheduleStackNavigation();

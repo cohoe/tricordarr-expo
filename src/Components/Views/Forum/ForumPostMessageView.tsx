@@ -1,17 +1,17 @@
 import {TouchableOpacity, View, StyleSheet} from 'react-native';
 import React, {useState} from 'react';
-import {useStyles} from '../../Context/Contexts/StyleContext';
-import {RelativeTimeTag} from '../../Text/Tags/RelativeTimeTag';
-import {ForumData, PostData, UserHeader} from '../../../Libraries/Structs/ControllerStructs';
-import {ContentText} from '../../Text/ContentText';
-import {ForumPostActionsMenu} from '../../Menus/Forum/ForumPostActionsMenu';
-import {AppIcon} from '../../Icons/AppIcon';
-import {AppIcons} from '../../../Libraries/Enums/Icons';
-import {useAppTheme} from '../../../styles/Theme';
-import {UserBylineTag} from '../../Text/Tags/UserBylineTag';
-import {CommonStackComponents, useCommonStack} from '../../Navigation/CommonScreens';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag';
+import {ForumData, PostData, UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ContentText} from '@tricordarr/Components/Text/ContentText';
+import {ForumPostActionsMenu} from '@tricordarr/Components/Menus/Forum/ForumPostActionsMenu';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {UserBylineTag} from '@tricordarr/Components/Text/Tags/UserBylineTag';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {useUserFavoritesQuery} from '../../Queries/Users/UserFavoriteQueries.ts';
+import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries.ts';
 
 interface ForumPostMessageViewProps {
   postData: PostData;

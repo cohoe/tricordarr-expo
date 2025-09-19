@@ -1,6 +1,6 @@
 import React from 'react';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext.ts';
-import {SiteUIScreenBase} from '@tricordarr/SiteUI/SiteUIScreenBase.tsx';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {SiteUIScreenBase} from '@tricordarr/Components/SiteUI/SiteUIScreenBase.tsx';
 
 export const OobePreregistrationScreen = () => {
   const {appConfig} = useConfig();

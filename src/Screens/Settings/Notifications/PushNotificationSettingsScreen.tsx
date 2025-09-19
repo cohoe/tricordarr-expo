@@ -1,23 +1,23 @@
 import React, {useState} from 'react';
-import {AppView} from '@tricordarr/../../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../../Views/Content/PaddedContentView';
-import {useConfig} from '@tricordarr/../../Context/Contexts/ConfigContext';
-import {PushNotificationConfig} from '@tricordarr/../../../Libraries/AppConfig';
-import {PrimaryActionButton} from '@tricordarr/../../Buttons/PrimaryActionButton';
-import {useAppTheme} from '@tricordarr/../../../styles/Theme';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {PushNotificationConfig} from '@tricordarr/Components/../Libraries/AppConfig';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
 import {DataTable, SegmentedButtons, Text} from 'react-native-paper';
 import {PERMISSIONS, request as requestPermission, RESULTS} from 'react-native-permissions';
 import {Formik} from 'formik';
 import {View} from 'react-native';
-import {BooleanField} from '@tricordarr/../../Forms/Fields/BooleanField';
-import {contentNotificationCategories} from '@tricordarr/../../../Libraries/Notifications/Content';
-import {startForegroundServiceWorker} from '@tricordarr/../../../Libraries/Service';
-import {ListSection} from '@tricordarr/../../Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/../../Lists/ListSubheader.tsx';
-import {SegmentedButtonType} from '@tricordarr/../../../Libraries/Types';
-import {SettingDataTableRow} from '@tricordarr/../../DataTables/SettingDataTableRow.tsx';
-import {RelativeTimeTag} from '@tricordarr/../../Text/Tags/RelativeTimeTag.tsx';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
+import {contentNotificationCategories} from '@tricordarr/Components/../Libraries/Notifications/Content';
+import {startForegroundServiceWorker} from '@tricordarr/Libraries/Service';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {SegmentedButtonType} from '@tricordarr/Components/../Libraries/Types';
+import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow.tsx';
+import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag.tsx';
 
 export const PushNotificationSettingsScreen = () => {
   const {

@@ -1,19 +1,19 @@
 import React, {useCallback, useEffect} from 'react';
 import {View} from 'react-native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/../Navigation/CommonScreens';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/../Buttons/MaterialHeaderButton.tsx';
-import {HeaderEditButton} from '@tricordarr/../Buttons/HeaderButtons/HeaderEditButton.tsx';
-import {PersonalEventScreenActionsMenu} from '@tricordarr/../Menus/PersonalEvents/PersonalEventScreenActionsMenu.tsx';
-import {useFezQuery} from '@tricordarr/../Queries/Fez/FezQueries.ts';
-import {ScheduleItemScreenBase} from '@tricordarr/Schedule/ScheduleItemScreenBase.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
+import {HeaderEditButton} from '@tricordarr/Components/Buttons/HeaderButtons/HeaderEditButton.tsx';
+import {PersonalEventScreenActionsMenu} from '@tricordarr/Components/Menus/PersonalEvents/PersonalEventScreenActionsMenu.tsx';
+import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries.ts';
+import {ScheduleItemScreenBase} from '@tricordarr/Components/Schedule/ScheduleItemScreenBase.tsx';
 import notifee from '@notifee/react-native';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext.ts';
-import {FezType} from '@tricordarr/../../Libraries/Enums/FezType.ts';
-import {FezData} from '@tricordarr/../../Libraries/Structs/ControllerStructs.tsx';
-import {useUserProfileQuery} from '@tricordarr/../Queries/User/UserQueries.ts';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.personalEventScreen>;
 

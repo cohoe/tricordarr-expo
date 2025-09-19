@@ -1,21 +1,21 @@
-import {AppView} from '@tricordarr/../Views/AppView';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import React, {useState} from 'react';
 import {Formik} from 'formik';
-import {useConfig} from '@tricordarr/../Context/Contexts/ConfigContext';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {View} from 'react-native';
-import {useFilter} from '@tricordarr/../Context/Contexts/FilterContext';
-import {BooleanField} from '@tricordarr/../Forms/Fields/BooleanField';
+import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
 import {HelperText, SegmentedButtons, Text} from 'react-native-paper';
-import {SegmentedButtonType} from '@tricordarr/../../Libraries/Types';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons';
-import {ListSubheader} from '@tricordarr/../Lists/ListSubheader.tsx';
-import {ListSection} from '@tricordarr/../Lists/ListSection.tsx';
-import {PushNotificationConfig} from '@tricordarr/../../Libraries/AppConfig.ts';
-import {contentNotificationCategories} from '@tricordarr/../../Libraries/Notifications/Content.ts';
-import {LfgStackComponents} from '@tricordarr/../Navigation/Stacks/LFGStackNavigator.tsx';
+import {SegmentedButtonType} from '@tricordarr/Libraries/Types';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
+import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig.ts';
+import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content.ts';
+import {LfgStackComponents} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator.tsx';
 
 export const LfgSettingsScreen = () => {
   const {appConfig, updateAppConfig, hasNotificationPermission} = useConfig();

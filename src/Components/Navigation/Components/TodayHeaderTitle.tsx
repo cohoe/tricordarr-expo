@@ -1,6 +1,6 @@
-import {SecretHeaderTitle} from './SecretHeaderTitle';
+import {SecretHeaderTitle} from '@tricordarr/Components/Navigation/Components/SecretHeaderTitle';
 import React from 'react';
-import {useConfig} from '../../Context/Contexts/ConfigContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 export const TodayHeaderTitle = () => {
   const {appConfig, updateAppConfig} = useConfig();

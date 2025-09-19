@@ -1,4 +1,4 @@
-import {NotificationTypeData, SocketNotificationData} from '../Structs/SocketStructs';
+import {NotificationTypeData, SocketNotificationData} from '@tricordarr/Libraries/Structs/SocketStructs';
 import {
   announcementsChannel,
   callMgmtChannel,
@@ -8,10 +8,10 @@ import {
   lfgChannel,
   seamailChannel,
   serviceChannel,
-} from './Channels';
-import {PressAction} from '../Enums/Notifications';
-import {generateContentNotification} from './Content';
-import {getAppConfig} from '../AppConfig';
+} from '@tricordarr/Libraries/Notifications/Channels';
+import {PressAction} from '@tricordarr/Libraries/Enums/Notifications';
+import {generateContentNotification} from '@tricordarr/Libraries/Notifications/Content';
+import {getAppConfig} from '@tricordarr/Libraries/AppConfig';
 import notifee, {EventType, Notification, NotificationPressAction} from '@notifee/react-native';
 
 /**

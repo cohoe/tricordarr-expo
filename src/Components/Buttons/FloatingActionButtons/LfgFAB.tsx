@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {FabGroupAction} from './FABGroupAction';
+import {FabGroupAction} from '@tricordarr/Components/Buttons/FloatingActionButtons/FABGroupAction';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {LfgStackComponents, useLFGStackNavigation, useLFGStackRoute} from '../../Navigation/Stacks/LFGStackNavigator';
-import {BaseFABGroup} from './BaseFABGroup';
+import {LfgStackComponents, useLFGStackNavigation, useLFGStackRoute} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator';
+import {BaseFABGroup} from '@tricordarr/Components/Buttons/FloatingActionButtons/BaseFABGroup';
 
 interface LfgFABProps {
   showLabel?: boolean;

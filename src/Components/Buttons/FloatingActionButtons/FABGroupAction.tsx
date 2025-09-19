@@ -2,7 +2,7 @@ import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {IconSource} from 'react-native-paper/lib/typescript/components/Icon';
 import {GestureResponderEvent} from 'react-native';
 import {AndroidColor} from '@notifee/react-native';
-import {usePrivilege} from '../../Context/Contexts/PrivilegeContext';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {FabGroupActionType} from '@tricordarr/Libraries/Types';
 
 interface Props {

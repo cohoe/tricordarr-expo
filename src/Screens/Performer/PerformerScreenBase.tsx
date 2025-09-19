@@ -1,20 +1,20 @@
 import {Card, Text} from 'react-native-paper';
-import {AppView} from '@tricordarr/../Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
 import React from 'react';
-import {ScrollingContentView} from '@tricordarr/../Views/Content/ScrollingContentView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
 import {RefreshControl, StyleProp, StyleSheet, View, ViewStyle} from 'react-native';
-import {LoadingView} from '@tricordarr/../Views/Static/LoadingView.tsx';
-import {useStyles} from '@tricordarr/../Context/Contexts/StyleContext.ts';
-import {APIImage} from '@tricordarr/../Images/APIImage.tsx';
-import {PaddedContentView} from '@tricordarr/../Views/Content/PaddedContentView.tsx';
-import {AppIcons} from '@tricordarr/../../Libraries/Enums/Icons.ts';
-import {LinkIconButton} from '@tricordarr/../Buttons/IconButtons/LinkIconButton.tsx';
-import {PerformerYearsCard} from '@tricordarr/../Cards/Performer/PerformerYearsCard.tsx';
-import {PerformerBioCard} from '@tricordarr/../Cards/Performer/PerformerBioCard.tsx';
-import {EventCard} from '@tricordarr/../Cards/Schedule/EventCard.tsx';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/../Navigation/CommonScreens.tsx';
-import {PerformerData} from '@tricordarr/../../Libraries/Structs/ControllerStructs.tsx';
-import {AppIcon} from '@tricordarr/../Icons/AppIcon.tsx';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {APIImage} from '@tricordarr/Components/Images/APIImage.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {LinkIconButton} from '@tricordarr/Components/Buttons/IconButtons/LinkIconButton.tsx';
+import {PerformerYearsCard} from '@tricordarr/Components/Cards/Performer/PerformerYearsCard.tsx';
+import {PerformerBioCard} from '@tricordarr/Components/Cards/Performer/PerformerBioCard.tsx';
+import {EventCard} from '@tricordarr/Components/Cards/Schedule/EventCard.tsx';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {PerformerData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon.tsx';
 
 interface PerformerScreenBaseProps {
   performerData: PerformerData;

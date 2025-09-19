@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {Menu} from 'react-native-paper';
-import {AppIcons} from '../../../libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
 import {Item} from 'react-navigation-header-buttons';
-import {useScheduleStackNavigation} from '../../Navigation/Stacks/ScheduleStackNavigator.tsx';
-import {ReloadMenuItem} from '../Items/ReloadMenuItem.tsx';
-import {CommonStackComponents} from '../../Navigation/CommonScreens.tsx';
-import {AppHeaderMenu} from '../AppHeaderMenu.tsx';
-import {useConfig} from '../../Context/Contexts/ConfigContext.ts';
+import {useScheduleStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator.tsx';
+import {ReloadMenuItem} from '@tricordarr/Components/Menus/Items/ReloadMenuItem.tsx';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
 
 interface ScheduleDayScreenActionsMenuProps {
   onRefresh?: () => void;

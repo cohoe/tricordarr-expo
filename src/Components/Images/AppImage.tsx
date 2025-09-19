@@ -1,4 +1,4 @@
-import {AppImageViewer} from './AppImageViewer';
+import {AppImageViewer} from '@tricordarr/Components/Images/AppImageViewer';
 import {Image, StyleProp, TouchableOpacity, ImageStyle as RNImageStyle, View, ImageURISource} from 'react-native';
 import {Card} from 'react-native-paper';
 import React, {useState} from 'react';
