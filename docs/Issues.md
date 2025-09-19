@@ -16,3 +16,5 @@ Use 1.5.5
 
 ### App crashes on startup on iOS
 https://github.com/expo/expo/issues/36908
+
+Try `npx expo prebuild --clean`, that seems to make it happier

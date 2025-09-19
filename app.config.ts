@@ -73,8 +73,5 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         }
       ]
     ],
-    experiments: {
-      reactCanary: true
-    },
     scheme: "tricordarr"
 });
