@@ -5,7 +5,7 @@ import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {getDayMarker} from '@tricordarr/Libraries/DateTime';
 import {Image} from 'react-native';
 // @ts-ignore
-import preregistration from '../../../assets/preregistration.jpg';
+import preregistration from '#assets/preregistration.jpg';
 import {encode as base64_encode} from 'base-64';
 import {AppImage} from '@tricordarr/Components/Images/AppImage';
 

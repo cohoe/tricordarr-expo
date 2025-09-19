@@ -6,7 +6,7 @@ import {ScrollingContentView} from '@tricordarr/Components/Views/Content/Scrolli
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {LoginFormValues} from '@tricordarr/Libraries/Types/FormValues';
-import {commonStyles} from '@tricordarr/Components/../styles';
+import {commonStyles} from '@tricordarr/Styles';
 import {useLoginMutation} from '@tricordarr/Queries/Auth/LoginMutations';
 import {FormikHelpers} from 'formik';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';

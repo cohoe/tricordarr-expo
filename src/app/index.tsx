@@ -8,7 +8,7 @@ import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {Image, StyleSheet} from 'react-native';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
-const tricordarr = require('../../assets/PlayStore/tricordarr.jpg');
+const tricordarr = require('#assets/PlayStore/tricordarr.jpg');
 import {AppImage} from '@tricordarr/Components/Images/AppImage';
 import {encode as base64_encode} from 'base-64';
 import DeviceInfo from 'react-native-device-info';

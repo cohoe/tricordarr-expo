@@ -5,13 +5,13 @@ import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedCont
 import {Card, DataTable, Text} from 'react-native-paper';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 // @ts-ignore
-import grant from '@tricordarr/Components/../assets/contributors/grant.jpg';
+import grant from '#assets/contributors/grant.jpg';
 // @ts-ignore
-import hendu from '@tricordarr/Components/../assets/contributors/hendu.jpg';
+import hendu from '#assets/contributors/hendu.jpg';
 // @ts-ignore
-import cfry from '@tricordarr/Components/../assets/contributors/cfry.jpg';
+import cfry from '#assets/contributors/cfry.jpg';
 // @ts-ignore
-import tricordarr from '@tricordarr/Components/../assets/PlayStore/tricordarr.jpg';
+import tricordarr from '#assets/PlayStore/tricordarr.jpg';
 import {ContributorCard} from '@tricordarr/Components/Cards/ContributorCard';
 import {HyperlinkText} from '@tricordarr/Components/Text/HyperlinkText';
 import {Image, View} from 'react-native';

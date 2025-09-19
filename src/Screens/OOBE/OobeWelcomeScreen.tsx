@@ -9,7 +9,7 @@ import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedCont
 import {Image, StyleSheet} from 'react-native';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 // @ts-ignore
-import tricordarr from '@tricordarr/Components/../assets/PlayStore/tricordarr.jpg';
+import tricordarr from '#assets/PlayStore/tricordarr.jpg';
 import {AppImage} from '@tricordarr/Components/Images/AppImage';
 import {encode as base64_encode} from 'base-64';
 import DeviceInfo from 'react-native-device-info';

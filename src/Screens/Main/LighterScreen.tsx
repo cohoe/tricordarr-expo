@@ -1,7 +1,7 @@
 import React from 'react';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 // @ts-ignore
-import LighterVideo from '../../../assets/RockBalladMode.mp4';
+import LighterVideo from '#assets/RockBalladMode.mp4';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import VideoPlayer from 'react-native-video-controls';
 import {useNavigation} from '@react-navigation/native';
