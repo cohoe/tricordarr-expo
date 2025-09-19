@@ -1,14 +1,14 @@
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import React, {useState} from 'react';
-import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {View} from 'react-native';
-import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField.tsx';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
 import {Formik} from 'formik';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 export const AccessibilitySettingsScreen = () => {
   const {commonStyles} = useStyles();

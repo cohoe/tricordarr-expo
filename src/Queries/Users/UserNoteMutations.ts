@@ -1,6 +1,6 @@
 import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
 import {NoteCreateData, NoteData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 interface UserNoteCreateMutationProps {
   userID: string;

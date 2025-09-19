@@ -1,6 +1,6 @@
 import {useQueryClient} from '@tanstack/react-query';
 import {HealthResponse, SwiftarrClientConfig} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {useOpenQuery, usePublicQuery} from '@tricordarr/Queries/OpenQuery.ts';
+import {useOpenQuery, usePublicQuery} from '@tricordarr/Queries/OpenQuery';
 
 export const useHealthQuery = (options = {}) => {
   const client = useQueryClient();

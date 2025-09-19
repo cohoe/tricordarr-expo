@@ -14,7 +14,7 @@ import {MinorActionListItem} from '@tricordarr/Components/Lists/Items/MinorActio
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
 import {LogoutDeviceModalView} from '@tricordarr/Components/Views/Modals/LogoutModal';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeAccountScreen>;
 

@@ -3,10 +3,10 @@ import React from 'react';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ForumThreadEditForm} from '@tricordarr/Components/Forms/Forum/ForumThreadEditForm.tsx';
-import {ForumThreadValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
+import {ForumThreadEditForm} from '@tricordarr/Components/Forms/Forum/ForumThreadEditForm';
+import {ForumThreadValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {useForumRenameMutation} from '@tricordarr/Queries/Forum/ForumThreadMutationQueries.ts';
+import {useForumRenameMutation} from '@tricordarr/Queries/Forum/ForumThreadMutationQueries';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useQueryClient} from '@tanstack/react-query';
 

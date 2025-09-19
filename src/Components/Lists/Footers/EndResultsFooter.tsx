@@ -1,8 +1,8 @@
-import {FlexCenteredContentView} from '@tricordarr/Components/Views/Content/FlexCenteredContentView.tsx';
+import {FlexCenteredContentView} from '@tricordarr/Components/Views/Content/FlexCenteredContentView';
 import {Divider, Text} from 'react-native-paper';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 export const EndResultsFooter = () => {
   const {commonStyles} = useStyles();

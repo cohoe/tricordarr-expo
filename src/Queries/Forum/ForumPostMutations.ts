@@ -1,6 +1,6 @@
 import {PostContentData, PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 export const useForumPostDeleteMutation = () => {
   const {apiDelete} = useSwiftarrQueryClient();

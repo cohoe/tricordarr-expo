@@ -1,7 +1,7 @@
 import {Text} from 'react-native-paper';
 import {StyleSheet, TextStyle, View, ViewStyle} from 'react-native';
 import React from 'react';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 interface Props {
   title: string;

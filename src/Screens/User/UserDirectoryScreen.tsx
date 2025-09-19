@@ -11,8 +11,8 @@ import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScr
 import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
 import {View} from 'react-native';
 import {HeaderButtons} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
-import {UserDirectoryScreenActionsMenu} from '@tricordarr/Components/Menus/User/UserDirectoryScreenActionsMenu.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {UserDirectoryScreenActionsMenu} from '@tricordarr/Components/Menus/User/UserDirectoryScreenActionsMenu';
 
 type Props = NativeStackScreenProps<MainStackParamList, MainStackComponents.userDirectoryScreen>;
 export const UserDirectoryScreen = ({navigation}: Props) => {

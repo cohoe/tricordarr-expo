@@ -3,7 +3,7 @@ import {ScrollView, View} from 'react-native';
 import {DataTable} from 'react-native-paper';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 const toSecureString = (originalText?: string) => {
   if (!originalText) {

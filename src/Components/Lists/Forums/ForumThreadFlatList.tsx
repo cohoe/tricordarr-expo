@@ -4,11 +4,11 @@ import React, {useCallback, useRef} from 'react';
 import {ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {Divider} from 'react-native-paper';
 import {SpaceDivider} from '@tricordarr/Components/Lists/Dividers/SpaceDivider';
-import {useSelection} from '@tricordarr/Components/Context/Contexts/SelectionContext.ts';
-import {LoadingPreviousHeader} from '@tricordarr/Components/Lists/Headers/LoadingPreviousHeader.tsx';
-import {LoadingNextFooter} from '@tricordarr/Components/Lists/Footers/LoadingNextFooter.tsx';
-import {EndResultsFooter} from '@tricordarr/Components/Lists/Footers/EndResultsFooter.tsx';
-import {AppFlashList} from '@tricordarr/Components/Lists/AppFlashList.tsx';
+import {useSelection} from '@tricordarr/Components/Context/Contexts/SelectionContext';
+import {LoadingPreviousHeader} from '@tricordarr/Components/Lists/Headers/LoadingPreviousHeader';
+import {LoadingNextFooter} from '@tricordarr/Components/Lists/Footers/LoadingNextFooter';
+import {EndResultsFooter} from '@tricordarr/Components/Lists/Footers/EndResultsFooter';
+import {AppFlashList} from '@tricordarr/Components/Lists/AppFlashList';
 import {FlashList} from '@shopify/flash-list';
 
 interface ForumThreadFlatListProps {

@@ -1,6 +1,6 @@
 import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
-import {BoardgameRecommendationData, BoardgameResponseData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
+import {BoardgameRecommendationData, BoardgameResponseData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 
 interface BoardgameFavoriteMutationProps {
   boardgameID: string;

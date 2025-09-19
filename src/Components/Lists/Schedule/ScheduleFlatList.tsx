@@ -1,18 +1,18 @@
-import {EventData, FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {EventData, FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import React, {Dispatch, ReactElement, SetStateAction, useCallback} from 'react';
 import {RefreshControlProps} from 'react-native';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {getScheduleItemMarker} from '@tricordarr/Libraries/Schedule.ts';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
-import {EventCardListItem} from '@tricordarr/Components/Lists/Items/Event/EventCardListItem.tsx';
-import {PersonalEventCardListItem} from '@tricordarr/Components/Lists/Items/PersonalEvent/PersonalEventCardListItem.tsx';
-import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext.ts';
-import useDateTime from '@tricordarr/Libraries/DateTime.ts';
-import {ScheduleFlatListBase} from '@tricordarr/Components/Lists/Schedule/ScheduleFlatListBase.tsx';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {getScheduleItemMarker} from '@tricordarr/Libraries/Schedule';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {EventCardListItem} from '@tricordarr/Components/Lists/Items/Event/EventCardListItem';
+import {PersonalEventCardListItem} from '@tricordarr/Components/Lists/Items/PersonalEvent/PersonalEventCardListItem';
+import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext';
+import useDateTime from '@tricordarr/Libraries/DateTime';
+import {ScheduleFlatListBase} from '@tricordarr/Components/Lists/Schedule/ScheduleFlatListBase';
 import {ScheduleFlatListSeparator} from '@tricordarr/Libraries/Types';
 import {FlashList} from '@shopify/flash-list';
-import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
-import {FezCard} from '@tricordarr/Components/Cards/Schedule/FezCard.tsx';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {FezCard} from '@tricordarr/Components/Cards/Schedule/FezCard';
 
 interface ScheduleFlatListProps<TItem> {
   items: TItem[];

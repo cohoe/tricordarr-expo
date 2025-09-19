@@ -6,8 +6,8 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {View} from 'react-native';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
-import {HelpTopicView} from '@tricordarr/Components/Views/Help/HelpTopicView.tsx';
-import {HelpChapterTitleView} from '@tricordarr/Components/Views/Help/HelpChapterTitleView.tsx';
+import {HelpTopicView} from '@tricordarr/Components/Views/Help/HelpTopicView';
+import {HelpChapterTitleView} from '@tricordarr/Components/Views/Help/HelpChapterTitleView';
 
 export const MainHelpScreen = () => {
   const {commonStyles} = useStyles();

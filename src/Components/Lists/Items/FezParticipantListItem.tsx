@@ -2,7 +2,7 @@ import React from 'react';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {FezData, UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {UserListItem} from '@tricordarr/Components/Lists/Items/UserListItem';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 interface FezParticipantListItemProps {
   user: UserHeader;

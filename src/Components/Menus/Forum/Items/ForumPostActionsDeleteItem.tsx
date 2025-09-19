@@ -4,7 +4,7 @@ import React from 'react';
 import {ForumData, PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
 import {ForumPostDeleteModalView} from '@tricordarr/Components/Views/Modals/ForumPostDeleteModalView';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 interface ForumPostActionsDeleteItemProps {
   forumPost: PostData;

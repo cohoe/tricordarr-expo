@@ -1,16 +1,16 @@
 import React, {useCallback, useEffect} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
-import {usePerformerQuery} from '@tricordarr/Queries/Performer/PerformerQueries.ts';
+import {MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
+import {usePerformerQuery} from '@tricordarr/Queries/Performer/PerformerQueries';
 import {View} from 'react-native';
-import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView.tsx';
-import {PerformerActionsMenu} from '@tricordarr/Components/Menus/Performer/PerformerActionsMenu.tsx';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
+import {PerformerActionsMenu} from '@tricordarr/Components/Menus/Performer/PerformerActionsMenu';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {PerformerScreenBase} from '@tricordarr/Components/PerformerScreenBase.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {PerformerScreenBase} from '@tricordarr/Components/PerformerScreenBase';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 
 type Props = NativeStackScreenProps<MainStackParamList, CommonStackComponents.performerScreen>;
 

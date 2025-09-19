@@ -2,12 +2,12 @@ import React, {useEffect, useState} from 'react';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {ForumSort} from '@tricordarr/Libraries/Enums/ForumSortFilter';
 import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
-import {ForumRelationQueryType, useForumRelationQuery} from '@tricordarr/Queries/Forum/ForumThreadRelationQueries.ts';
+import {ForumRelationQueryType, useForumRelationQuery} from '@tricordarr/Queries/Forum/ForumThreadRelationQueries';
 import {NotLoggedInView} from '@tricordarr/Components/Views/Static/NotLoggedInView';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {CategoryData, ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {ForumEmptyListView} from '@tricordarr/Components/Views/Forum/ForumEmptyListView.tsx';
-import {ForumThreadListView} from '@tricordarr/Components/Views/Forum/ForumThreadListView.tsx';
+import {ForumEmptyListView} from '@tricordarr/Components/Views/Forum/ForumEmptyListView';
+import {ForumThreadListView} from '@tricordarr/Components/Views/Forum/ForumThreadListView';
 import pluralize from 'pluralize';
 
 interface ForumThreadsRelationsViewProps {

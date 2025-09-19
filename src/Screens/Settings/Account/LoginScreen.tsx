@@ -1,19 +1,19 @@
 import React, {useCallback} from 'react';
 import {Text} from 'react-native-paper';
-import {LoginForm} from '@tricordarr/Components/Forms/User/LoginForm.tsx';
+import {LoginForm} from '@tricordarr/Components/Forms/User/LoginForm';
 import {useNavigation} from '@react-navigation/native';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
-import {LoginFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
+import {LoginFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {commonStyles} from '@tricordarr/Components/../styles';
-import {useLoginMutation} from '@tricordarr/Queries/Auth/LoginMutations.ts';
+import {useLoginMutation} from '@tricordarr/Queries/Auth/LoginMutations';
 import {FormikHelpers} from 'formik';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {startForegroundServiceWorker} from '@tricordarr/Libraries/Service';
-import {useClientConfigQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useClientConfigQuery} from '@tricordarr/Queries/Client/ClientQueries';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 export const LoginScreen = () => {
   const navigation = useNavigation();

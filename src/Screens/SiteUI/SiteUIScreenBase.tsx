@@ -1,13 +1,13 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react';
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import {WebView, WebViewNavigation} from 'react-native-webview';
 import {View} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useBackHandler} from '@react-native-community/hooks';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 interface SiteUIScreenBaseProps {
   initialUrl: string;

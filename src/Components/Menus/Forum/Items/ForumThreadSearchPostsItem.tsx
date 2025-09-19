@@ -3,7 +3,7 @@ import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Component
 import React from 'react';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {Item} from 'react-navigation-header-buttons';
-import {ForumData, ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {ForumData, ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 
 interface ForumThreadSearchPostsItemProps {
   navigation: NativeStackNavigationProp<CommonStackParamList>;

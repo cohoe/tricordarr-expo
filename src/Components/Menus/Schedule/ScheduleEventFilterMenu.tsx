@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {Divider} from 'react-native-paper';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
-import {EventType} from '@tricordarr/Libraries/Enums/EventType.ts';
-import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext.ts';
-import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem.tsx';
-import {MenuAnchor} from '@tricordarr/Components/Menus/MenuAnchor.tsx';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {EventType} from '@tricordarr/Libraries/Enums/EventType';
+import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
+import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem';
+import {MenuAnchor} from '@tricordarr/Components/Menus/MenuAnchor';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 export const ScheduleEventFilterMenu = () => {
   const [visible, setVisible] = useState(false);

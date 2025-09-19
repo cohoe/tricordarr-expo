@@ -2,7 +2,7 @@ import {Menu} from 'react-native-paper';
 import React, {Dispatch, SetStateAction} from 'react';
 import {StateLoadingIcon} from '@tricordarr/Components/Icons/StateLoadingIcon';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {useForumPinMutation} from '@tricordarr/Queries/Forum/ForumThreadPinMutations.ts';
+import {useForumPinMutation} from '@tricordarr/Queries/Forum/ForumThreadPinMutations';
 import {QueryKey, useQueryClient} from '@tanstack/react-query';
 
 interface ForumThreadPinItemProps {

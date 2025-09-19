@@ -3,10 +3,10 @@ import {AppView} from '@tricordarr/Components/Views/AppView';
 import {EventSearchBar} from '@tricordarr/Components/Search/EventSearchBar';
 import {View} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
-import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {useScheduleStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useScheduleStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator';
 
 export const EventSearchScreen = () => {
   const navigation = useScheduleStackNavigation();

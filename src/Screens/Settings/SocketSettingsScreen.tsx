@@ -10,8 +10,8 @@ import {RefreshControl} from 'react-native';
 import {useSocket} from '@tricordarr/Components/Context/Contexts/SocketContext';
 import {WebSocketState} from '@tricordarr/Libraries/Network/Websockets';
 import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
 
 export const SocketSettingsScreen = () => {
   const {appConfig, updateAppConfig} = useConfig();

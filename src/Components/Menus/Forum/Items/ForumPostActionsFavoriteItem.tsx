@@ -1,7 +1,7 @@
 import {Menu} from 'react-native-paper';
 import React from 'react';
 import {ForumData, PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {useForumPostBookmarkMutation} from '@tricordarr/Queries/Forum/ForumPostBookmarkMutations.ts';
+import {useForumPostBookmarkMutation} from '@tricordarr/Queries/Forum/ForumPostBookmarkMutations';
 import {StateLoadingIcon} from '@tricordarr/Components/Icons/StateLoadingIcon';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useQueryClient} from '@tanstack/react-query';

@@ -1,17 +1,17 @@
 import React from 'react';
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import {FlashList} from '@shopify/flash-list';
 import {Query, useQueryClient} from '@tanstack/react-query';
 import {useCallback, useEffect, useState} from 'react';
 import {RefreshControl, View, StyleSheet, TouchableOpacity} from 'react-native';
 import {Divider, Text} from 'react-native-paper';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import Clipboard from '@react-native-clipboard/clipboard';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
-} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator';
 
 export type Props = NativeStackScreenProps<
   SettingsStackParamList,

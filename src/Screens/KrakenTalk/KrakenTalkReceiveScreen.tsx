@@ -3,7 +3,7 @@ import {AppView} from '@tricordarr/Components/Views/AppView';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {Text} from 'react-native-paper';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator.tsx';
+import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator';
 import {usePhoneCallDeclineMutation} from '@tricordarr/Queries/PhoneCall/PhoneCallMutations';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';

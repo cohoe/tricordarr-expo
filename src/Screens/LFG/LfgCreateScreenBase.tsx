@@ -8,8 +8,8 @@ import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedCont
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext';
 import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
-import {getApparentCruiseDate, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime.ts';
-import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
+import {getApparentCruiseDate, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime';
+import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations';
 import {useQueryClient} from '@tanstack/react-query';
 
 interface LfgCreateScreenBaseProps {

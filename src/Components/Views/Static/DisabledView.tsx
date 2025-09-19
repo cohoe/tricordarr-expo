@@ -4,7 +4,7 @@ import {Text} from 'react-native-paper';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 export const DisabledView = () => {
   const {commonStyles} = useStyles();

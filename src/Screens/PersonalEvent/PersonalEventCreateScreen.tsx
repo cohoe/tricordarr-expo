@@ -1,18 +1,18 @@
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
-import {PersonalEventForm} from '@tricordarr/Components/Forms/PersonalEventForm.tsx';
-import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {PersonalEventForm} from '@tricordarr/Components/Forms/PersonalEventForm';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import React from 'react';
-import {FezFormValues} from '@tricordarr/Libraries/Types/FormValues.ts';
+import {FezFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {useQueryClient} from '@tanstack/react-query';
 import {FormikHelpers} from 'formik';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext.ts';
-import {getApparentCruiseDate, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime.ts';
-import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
-import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
-import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext';
+import {getApparentCruiseDate, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.personalEventCreateScreen>;
 export const PersonalEventCreateScreen = ({navigation, route}: Props) => {

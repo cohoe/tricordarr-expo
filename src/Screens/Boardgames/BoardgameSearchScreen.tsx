@@ -1,10 +1,10 @@
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import React, {useEffect} from 'react';
-import {SearchBarBase} from '@tricordarr/Components/Search/SearchBarBase.tsx';
-import {useBoardgamesQuery} from '@tricordarr/Queries/Boardgames/BoardgameQueries.ts';
-import {BoardgameFlatList} from '@tricordarr/Components/Lists/BoardgameFlatList.tsx';
+import {SearchBarBase} from '@tricordarr/Components/Search/SearchBarBase';
+import {useBoardgamesQuery} from '@tricordarr/Queries/Boardgames/BoardgameQueries';
+import {BoardgameFlatList} from '@tricordarr/Components/Lists/BoardgameFlatList';
 import {RefreshControl} from 'react-native';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 export const BoardgameSearchScreen = () => {
   const {commonStyles} = useStyles();

@@ -6,7 +6,7 @@ import {PERMISSIONS, request as requestPermission} from 'react-native-permission
 import ImagePicker, {Image} from 'react-native-image-crop-picker';
 import {useFormikContext} from 'formik';
 import {PostContentData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 
 interface ContentInsertMenuViewProps {
   visible: boolean;

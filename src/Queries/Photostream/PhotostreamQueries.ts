@@ -1,5 +1,5 @@
-import {useTokenAuthPaginationQuery, useTokenAuthQuery} from '@tricordarr/Queries/TokenAuthQuery.ts';
-import {PhotostreamListData, PhotostreamLocationData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useTokenAuthPaginationQuery, useTokenAuthQuery} from '@tricordarr/Queries/TokenAuthQuery';
+import {PhotostreamListData, PhotostreamLocationData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 
 export const usePhotostreamQuery = () => {
   return useTokenAuthPaginationQuery<PhotostreamListData>('/photostream');

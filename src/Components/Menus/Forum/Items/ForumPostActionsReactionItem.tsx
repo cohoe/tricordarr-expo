@@ -1,4 +1,4 @@
-import {useForumPostReactionMutation} from '@tricordarr/Queries/Forum/ForumPostBookmarkMutations.ts';
+import {useForumPostReactionMutation} from '@tricordarr/Queries/Forum/ForumPostBookmarkMutations';
 import {PostData, PostDetailData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {LikeType} from '@tricordarr/Libraries/Enums/LikeType';
 import {ActivityIndicator, Text} from 'react-native-paper';
@@ -6,10 +6,10 @@ import {LaughReaction, LoveReaction, LikeReaction} from '@tricordarr/Components/
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
-import {useForumPostQuery} from '@tricordarr/Queries/Forum/ForumPostQueries.ts';
+import {useForumPostQuery} from '@tricordarr/Queries/Forum/ForumPostQueries';
 import {SubmitIconButton} from '@tricordarr/Components/Buttons/IconButtons/SubmitIconButton';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 interface ForumPostActionsReactionItemProps {
   forumPost: PostData;

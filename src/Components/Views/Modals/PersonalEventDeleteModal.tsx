@@ -9,8 +9,8 @@ import {Text} from 'react-native-paper';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {useQueryClient} from '@tanstack/react-query';
 import {useNavigation} from '@react-navigation/native';
-import {useFezDeleteMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
+import {useFezDeleteMutation} from '@tricordarr/Queries/Fez/FezMutations';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 
 const ModalContent = () => {
   const {commonStyles} = useStyles();

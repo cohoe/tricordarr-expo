@@ -1,16 +1,16 @@
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 import React from 'react';
-import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {Formik} from 'formik';
 import {View} from 'react-native';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content.ts';
-import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField.tsx';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
-import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig.ts';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig';
 
 export const SeamailSettingsScreen = () => {
   const {appConfig, hasNotificationPermission, updateAppConfig} = useConfig();

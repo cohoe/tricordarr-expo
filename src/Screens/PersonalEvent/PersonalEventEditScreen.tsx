@@ -1,19 +1,19 @@
 import React, {useEffect} from 'react';
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
-import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {PersonalEventForm} from '@tricordarr/Components/Forms/PersonalEventForm.tsx';
-import {FezFormValues} from '@tricordarr/Libraries/Types/FormValues.ts';
+import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
+import {PersonalEventForm} from '@tricordarr/Components/Forms/PersonalEventForm';
+import {FezFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
 import {addMinutes, differenceInMinutes} from 'date-fns';
-import {getEventTimezoneOffset, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime.ts';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {getEventTimezoneOffset, getScheduleItemStartEndTime} from '@tricordarr/Libraries/DateTime';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {useQueryClient} from '@tanstack/react-query';
-import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
-import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
-import {useFezUpdateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useFezUpdateMutation} from '@tricordarr/Queries/Fez/FezMutations';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.personalEventEditScreen>;
 export const PersonalEventEditScreen = ({navigation, route}: Props) => {

@@ -3,9 +3,9 @@ import {FlatList, RefreshControlProps} from 'react-native';
 import {SeamailListItem} from '@tricordarr/Components/Lists/Items/SeamailListItem';
 import React, {useCallback, useRef} from 'react';
 import {Divider} from 'react-native-paper';
-import {EndResultsFooter} from '@tricordarr/Components/Lists/Footers/EndResultsFooter.tsx';
-import {NoResultsFooter} from '@tricordarr/Components/Lists/Footers/NoResultsFooter.tsx';
-import {AppFlatList} from '@tricordarr/Components/Lists/AppFlatList.tsx';
+import {EndResultsFooter} from '@tricordarr/Components/Lists/Footers/EndResultsFooter';
+import {NoResultsFooter} from '@tricordarr/Components/Lists/Footers/NoResultsFooter';
+import {AppFlatList} from '@tricordarr/Components/Lists/AppFlatList';
 
 interface SeamailFlatListProps {
   fezList: FezData[];

@@ -11,7 +11,7 @@ import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {UserBylineTag} from '@tricordarr/Components/Text/Tags/UserBylineTag';
 import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries.ts';
+import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries';
 
 interface ForumPostMessageViewProps {
   postData: PostData;

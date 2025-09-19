@@ -12,8 +12,8 @@ import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {LfgCanceledView} from '@tricordarr/Components/Views/Static/LfgCanceledView';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useQueryClient} from '@tanstack/react-query';
-import {useFezUpdateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
-import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useFezUpdateMutation} from '@tricordarr/Queries/Fez/FezMutations';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.lfgEditScreen>;
 export const LfgEditScreen = ({route, navigation}: Props) => {

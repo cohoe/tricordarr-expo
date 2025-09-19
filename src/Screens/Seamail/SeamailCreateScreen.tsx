@@ -5,13 +5,13 @@ import {ScrollingContentView} from '@tricordarr/Components/Views/Content/Scrolli
 import {ContentPostForm} from '@tricordarr/Components/Forms/ContentPostForm';
 import {SeamailCreateForm} from '@tricordarr/Components/Forms/SeamailCreateForm';
 import {FormikProps} from 'formik';
-import {useFezPostMutation} from '@tricordarr/Queries/Fez/FezPostMutations.ts';
+import {useFezPostMutation} from '@tricordarr/Queries/Fez/FezPostMutations';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 import {PostAsUserBanner} from '@tricordarr/Components/Banners/PostAsUserBanner';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {SeamailFormValues} from '@tricordarr/Libraries/Types/FormValues.ts';
-import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
+import {SeamailFormValues} from '@tricordarr/Libraries/Types/FormValues';
+import {useFezCreateMutation} from '@tricordarr/Queries/Fez/FezMutations';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.seamailCreateScreen>;

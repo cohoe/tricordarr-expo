@@ -9,13 +9,13 @@ import {RefreshControl} from 'react-native';
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {UserListItem} from '@tricordarr/Components/Lists/Items/UserListItem';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {useUserBlocksQuery} from '@tricordarr/Queries/Users/UserBlockQueries.ts';
+import {useUserBlocksQuery} from '@tricordarr/Queries/Users/UserBlockQueries';
 import {ModeratorBlockText, UserBlockText} from '@tricordarr/Components/Text/UserRelationsText';
 import {ItalicText} from '@tricordarr/Components/Text/ItalicText';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useUserBlockMutation} from '@tricordarr/Queries/Users/UserBlockMutations.ts';
+import {useUserBlockMutation} from '@tricordarr/Queries/Users/UserBlockMutations';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.blockUsers>;

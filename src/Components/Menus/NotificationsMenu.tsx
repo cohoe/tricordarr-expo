@@ -3,11 +3,11 @@ import {Divider, Menu} from 'react-native-paper';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Item} from 'react-navigation-header-buttons';
 import {useState} from 'react';
-import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries.ts';
-import {UserNotificationData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
+import {UserNotificationData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import pluralize from 'pluralize';
 import {Linking} from 'react-native';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
 
 export const NotificationsMenu = () => {
   const [visible, setVisible] = useState(false);

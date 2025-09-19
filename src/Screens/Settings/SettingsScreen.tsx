@@ -11,7 +11,7 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
-} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator';
 import {SettingsHeaderTitle} from '@tricordarr/Components/Navigation/Components/SettingsHeaderTitle';
 import {SettingsLoginListItem} from '@tricordarr/Components/Lists/Items/Settings/SettingsLoginListItem';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';

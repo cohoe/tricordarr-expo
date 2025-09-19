@@ -1,19 +1,19 @@
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
-import {BoardgameFlatList} from '@tricordarr/Components/Lists/BoardgameFlatList.tsx';
-import {useBoardgameExpansionsQuery, useBoardgamesQuery} from '@tricordarr/Queries/Boardgames/BoardgameQueries.ts';
-import {NotLoggedInView} from '@tricordarr/Components/Views/Static/NotLoggedInView.tsx';
-import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {BoardgameFlatList} from '@tricordarr/Components/Lists/BoardgameFlatList';
+import {useBoardgameExpansionsQuery, useBoardgamesQuery} from '@tricordarr/Queries/Boardgames/BoardgameQueries';
+import {NotLoggedInView} from '@tricordarr/Components/Views/Static/NotLoggedInView';
+import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import React, {useCallback, useEffect, useState} from 'react';
-import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext.ts';
+import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {RefreshControl, View} from 'react-native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
+import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
-import {MenuAnchor} from '@tricordarr/Components/Menus/MenuAnchor.tsx';
-import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView.tsx';
-import {BoardgameGuideFAB} from '@tricordarr/Components/Buttons/FloatingActionButtons/BoardgameGuideFAB.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {MenuAnchor} from '@tricordarr/Components/Menus/MenuAnchor';
+import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
+import {BoardgameGuideFAB} from '@tricordarr/Components/Buttons/FloatingActionButtons/BoardgameGuideFAB';
 
 type Props = NativeStackScreenProps<MainStackParamList, MainStackComponents.boardgameExpansionsScreen>;
 

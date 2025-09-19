@@ -4,8 +4,8 @@ import {AppView} from '@tricordarr/Components/Views/AppView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {FormikHelpers} from 'formik';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
-import {NotificationPollingSettingsForm} from '@tricordarr/Components/Forms/Settings/NotificationPollingSettingsForm.tsx';
-import {NotificationPollingSettingsFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
+import {NotificationPollingSettingsForm} from '@tricordarr/Components/Forms/Settings/NotificationPollingSettingsForm';
+import {NotificationPollingSettingsFormValues} from '@tricordarr/Libraries/Types/FormValues';
 
 export const NotificationPollerSettingsScreen = () => {
   const {appConfig, updateAppConfig} = useConfig();

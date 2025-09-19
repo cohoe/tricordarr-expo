@@ -5,11 +5,11 @@ import {ScrollingContentView} from '@tricordarr/Components/Views/Content/Scrolli
 import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {UserSearchBar} from '@tricordarr/Components/Search/UserSearchBar';
-import {useFezParticipantMutation} from '@tricordarr/Queries/Fez/Management/FezManagementUserMutations.ts';
+import {useFezParticipantMutation} from '@tricordarr/Queries/Fez/Management/FezManagementUserMutations';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {RefreshControl} from 'react-native';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries.ts';
+import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.lfgAddParticipantScreen>;

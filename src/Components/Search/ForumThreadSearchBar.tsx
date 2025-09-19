@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {Keyboard, RefreshControl, View} from 'react-native';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {CategoryData, ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {useForumSearchQuery} from '@tricordarr/Queries/Forum/ForumThreadSearchQueries.ts';
+import {useForumSearchQuery} from '@tricordarr/Queries/Forum/ForumThreadSearchQueries';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
@@ -10,8 +10,8 @@ import {ForumThreadFlatList} from '@tricordarr/Components/Lists/Forums/ForumThre
 import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
 import {ForumSort} from '@tricordarr/Libraries/Enums/ForumSortFilter';
 import {ForumThreadScreenSortMenu} from '@tricordarr/Components/Menus/Forum/ForumThreadScreenSortMenu';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {SearchBarBase} from '@tricordarr/Components/Search/SearchBarBase.tsx';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {SearchBarBase} from '@tricordarr/Components/Search/SearchBarBase';
 
 interface Props {
   category?: CategoryData;

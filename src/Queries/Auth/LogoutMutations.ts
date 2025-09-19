@@ -1,5 +1,5 @@
 import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 export const useLogoutMutation = (options = {}) => {
   const {apiPost} = useSwiftarrQueryClient();

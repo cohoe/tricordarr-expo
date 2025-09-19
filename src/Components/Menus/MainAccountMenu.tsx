@@ -6,9 +6,9 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {MainStackComponents, useMainStack} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
 import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
-import {SettingsStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {SettingsStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 export const MainAccountMenu = () => {
   const {data: profilePublicData} = useUserProfileQuery();

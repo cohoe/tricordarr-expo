@@ -8,12 +8,12 @@ import {SpaceDivider} from '@tricordarr/Components/Lists/Dividers/SpaceDivider';
 import {timeAgo} from '@tricordarr/Libraries/DateTime';
 import {LabelDivider} from '@tricordarr/Components/Lists/Dividers/LabelDivider';
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
-import {AppFlatList} from '@tricordarr/Components/Lists/AppFlatList.tsx';
+import {AppFlatList} from '@tricordarr/Components/Lists/AppFlatList';
 import {FlatListSeparatorProps, FloatingScrollButtonPosition} from '@tricordarr/Libraries/Types';
-import {ForumPostListHeader} from '@tricordarr/Components/Lists/Headers/ForumPostListHeader.tsx';
-import {LoadingPreviousHeader} from '@tricordarr/Components/Lists/Headers/LoadingPreviousHeader.tsx';
-import {LoadingNextFooter} from '@tricordarr/Components/Lists/Footers/LoadingNextFooter.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {ForumPostListHeader} from '@tricordarr/Components/Lists/Headers/ForumPostListHeader';
+import {LoadingPreviousHeader} from '@tricordarr/Components/Lists/Headers/LoadingPreviousHeader';
+import {LoadingNextFooter} from '@tricordarr/Components/Lists/Footers/LoadingNextFooter';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 interface ForumPostFlatListProps {
   postList: PostData[];

@@ -6,9 +6,9 @@ import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {DataTable, Text} from 'react-native-paper';
 import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
-import {RootStackComponents, useRootStack} from '@tricordarr/Components/Navigation/Stacks/RootStackNavigator.tsx';
-import {useAppTheme} from '@tricordarr/Components/../styles/Theme.ts';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
+import {RootStackComponents, useRootStack} from '@tricordarr/Components/Navigation/Stacks/RootStackNavigator';
+import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
 
 export const OobeSettingsScreen = () => {
   const {appConfig, updateAppConfig} = useConfig();

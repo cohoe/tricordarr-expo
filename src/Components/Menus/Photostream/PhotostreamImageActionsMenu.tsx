@@ -3,10 +3,10 @@ import {Divider, Menu} from 'react-native-paper';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
 import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
-import {PhotostreamImageData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
-import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext.ts';
-import {ModerateMenuItem} from '@tricordarr/Components/Menus/Items/ModerateMenuItem.tsx';
-import {useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {PhotostreamImageData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {ModerateMenuItem} from '@tricordarr/Components/Menus/Items/ModerateMenuItem';
+import {useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 
 interface PhotostreamImageActionsMenuProps {
   visible: boolean;

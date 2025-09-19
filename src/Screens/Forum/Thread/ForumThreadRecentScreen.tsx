@@ -1,7 +1,7 @@
 import React from 'react';
-import {ForumRelationQueryType} from '@tricordarr/Queries/Forum/ForumThreadRelationQueries.ts';
+import {ForumRelationQueryType} from '@tricordarr/Queries/Forum/ForumThreadRelationQueries';
 import {ForumThreadsRelationsView} from '@tricordarr/Components/Views/Forum/ForumThreadsRelationsView';
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 
 export const ForumThreadRecentScreen = () => {
   return (

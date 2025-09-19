@@ -1,19 +1,19 @@
 import React, {useState} from 'react';
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
-import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {View} from 'react-native';
-import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField.tsx';
+import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
 import {Formik} from 'formik';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
-import {PickerField} from '@tricordarr/Components/Forms/Fields/PickerField.tsx';
-import {ForumSort, ForumSortDirection} from '@tricordarr/Components/../Libraries/Enums/ForumSortFilter.ts';
-import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext.ts';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {contentNotificationCategories} from '@tricordarr/Components/../Libraries/Notifications/Content.ts';
-import {PushNotificationConfig} from '@tricordarr/Components/../Libraries/AppConfig.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {PickerField} from '@tricordarr/Components/Forms/Fields/PickerField';
+import {ForumSort, ForumSortDirection} from '@tricordarr/Libraries/Enums/ForumSortFilter';
+import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content';
+import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig';
 
 export const ForumSettingsScreen = () => {
   const {commonStyles} = useStyles();

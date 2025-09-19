@@ -1,7 +1,7 @@
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Menu} from 'react-native-paper';
 import React from 'react';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {IconSource} from 'react-native-paper/src/components/Icon.tsx';
 
 interface SelectableMenuItemProps {

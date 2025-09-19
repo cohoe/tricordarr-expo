@@ -9,12 +9,12 @@ import {RefreshControl} from 'react-native';
 import {UserListItem} from '@tricordarr/Components/Lists/Items/UserListItem';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {UserFavoriteText} from '@tricordarr/Components/Text/UserRelationsText';
-import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries.ts';
+import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries';
 import {ItalicText} from '@tricordarr/Components/Text/ItalicText';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useUserFavoriteMutation} from '@tricordarr/Queries/Users/UserFavoriteMutations.ts';
+import {useUserFavoriteMutation} from '@tricordarr/Queries/Users/UserFavoriteMutations';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.favoriteUsers>;

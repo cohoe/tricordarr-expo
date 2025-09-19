@@ -12,11 +12,11 @@ import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
 import {MapIndicatorView} from '@tricordarr/Components/Views/MapIndicatorView';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {encode as base64_encode} from 'base-64';
-import {AppImage} from '@tricordarr/Components/Images/AppImage.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
-import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton.tsx';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
-import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem.tsx';
+import {AppImage} from '@tricordarr/Components/Images/AppImage';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem';
 import {Menu} from 'react-native-paper';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.mapScreen>;

@@ -7,10 +7,10 @@ import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {View} from 'react-native';
 import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
-import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig.ts';
-import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content.ts';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
+import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig';
+import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content';
 
 export const EventSettingsScreen = () => {
   const {appConfig, updateAppConfig, hasNotificationPermission} = useConfig();

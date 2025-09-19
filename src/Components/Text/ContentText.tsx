@@ -7,8 +7,8 @@ import Markdown from '@ronradtke/react-native-markdown-display';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {HyperlinkText} from '@tricordarr/Components/Text/HyperlinkText';
 import {VariantProp} from 'react-native-paper/lib/typescript/components/Typography/types';
-import {useUserKeywordQuery} from '@tricordarr/Queries/User/UserQueries.ts';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {useUserKeywordQuery} from '@tricordarr/Queries/User/UserQueries';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 interface ContentTextProps {
   textStyle?: StyleProp<TextStyle>;

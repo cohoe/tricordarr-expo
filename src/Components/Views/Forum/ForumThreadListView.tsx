@@ -1,16 +1,16 @@
 import React, {Dispatch, SetStateAction, useState} from 'react';
 import {RefreshControl} from 'react-native';
-import {SelectionButtons} from '@tricordarr/Components/Buttons/SegmentedButtons/SelectionButtons.tsx';
+import {SelectionButtons} from '@tricordarr/Components/Buttons/SegmentedButtons/SelectionButtons';
 import {
   CategoryData,
   ErrorResponse,
   ForumListData,
   ForumSearchData,
-} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
-import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView.tsx';
-import {ForumThreadFlatList} from '@tricordarr/Components/Lists/Forums/ForumThreadFlatList.tsx';
-import {ForumCategoryFAB} from '@tricordarr/Components/Buttons/FloatingActionButtons/ForumCategoryFAB.tsx';
-import {useSelection} from '@tricordarr/Components/Context/Contexts/SelectionContext.ts';
+} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
+import {ForumThreadFlatList} from '@tricordarr/Components/Lists/Forums/ForumThreadFlatList';
+import {ForumCategoryFAB} from '@tricordarr/Components/Buttons/FloatingActionButtons/ForumCategoryFAB';
+import {useSelection} from '@tricordarr/Components/Context/Contexts/SelectionContext';
 import {FetchNextPageOptions, InfiniteQueryObserverResult} from '@tanstack/react-query';
 import {AxiosError} from 'axios';
 

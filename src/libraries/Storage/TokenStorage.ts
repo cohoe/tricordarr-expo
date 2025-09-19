@@ -1,6 +1,6 @@
-import {TokenStringData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {TokenStringData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import EncryptedStorage from 'react-native-encrypted-storage';
-import {StorageKeys} from '@tricordarr/Libraries/Storage/index.ts';
+import {StorageKeys} from '@tricordarr/Libraries/Storage/index';
 
 export type TokenStorageData = TokenStringData[];
 

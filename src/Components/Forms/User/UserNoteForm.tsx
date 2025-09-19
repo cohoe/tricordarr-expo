@@ -6,7 +6,7 @@ import {UserNoteFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import * as Yup from 'yup';
 import {TextField} from '@tricordarr/Components/Forms/Fields/TextField';
-import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField.tsx';
+import {DirtyDetectionField} from '@tricordarr/Components/Forms/Fields/DirtyDetectionField';
 
 interface UserNoteFormProps {
   onSubmit: (values: UserNoteFormValues, helpers: FormikHelpers<UserNoteFormValues>) => void;

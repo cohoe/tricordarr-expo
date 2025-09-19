@@ -3,8 +3,8 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Item} from 'react-navigation-header-buttons';
 import {Dispatch, SetStateAction, useState} from 'react';
 import {DeckData, ShipDecks} from '@tricordarr/Libraries/Ship';
-import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem.tsx';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
 
 interface DeckMapMenuProps {
   shipDeck: DeckData;

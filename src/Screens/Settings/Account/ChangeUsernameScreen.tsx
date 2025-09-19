@@ -5,14 +5,14 @@ import {AppView} from '@tricordarr/Components/Views/AppView';
 import React from 'react';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {useNavigation} from '@react-navigation/native';
-import {ChangeUsernameFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
+import {ChangeUsernameFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {ChangeUsernameForm} from '@tricordarr/Components/Forms/User/ChangeUsernameForm.tsx';
-import {useUserUsernameMutation} from '@tricordarr/Queries/User/UserMutations.ts';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
-import {UserHeader} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs.tsx';
+import {ChangeUsernameForm} from '@tricordarr/Components/Forms/User/ChangeUsernameForm';
+import {useUserUsernameMutation} from '@tricordarr/Queries/User/UserMutations';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
+import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useQueryClient} from '@tanstack/react-query';
 
 export const ChangeUsernameScreen = () => {

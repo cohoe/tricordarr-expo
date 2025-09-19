@@ -3,15 +3,15 @@ import React, {ReactNode, useState} from 'react';
 import {Menu} from 'react-native-paper';
 import {Item} from 'react-navigation-header-buttons';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView.tsx';
-import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext.ts';
-import {PersonalEventDeleteModal} from '@tricordarr/Components/Views/Modals/PersonalEventDeleteModal.tsx';
-import {useScheduleStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator.tsx';
-import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
-import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
-import {FezCancelModal} from '@tricordarr/Components/Views/Modals/FezCancelModal.tsx';
+import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {PersonalEventDeleteModal} from '@tricordarr/Components/Views/Modals/PersonalEventDeleteModal';
+import {useScheduleStackNavigation} from '@tricordarr/Components/Navigation/Stacks/ScheduleStackNavigator';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {FezCancelModal} from '@tricordarr/Components/Views/Modals/FezCancelModal';
 
 interface PersonalEventScreenActionsMenuProps {
   event: FezData;

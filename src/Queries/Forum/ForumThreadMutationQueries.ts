@@ -1,6 +1,6 @@
 import {ForumCreateData, ForumData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 interface ForumCreateMutationProps {
   categoryId: string;

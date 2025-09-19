@@ -1,12 +1,12 @@
 import {List} from 'react-native-paper';
 import React from 'react';
-import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {View, StyleSheet, TextStyle, ViewStyle} from 'react-native';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
-import {UserChip} from '@tricordarr/Components/Chips/UserChip.tsx';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
-import {AppIcon} from '@tricordarr/Components/Icons/AppIcon.tsx';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {UserChip} from '@tricordarr/Components/Chips/UserChip';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {AppIcon} from '@tricordarr/Components/Icons/AppIcon';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 
 interface UserChipsListItemProps {
   users?: UserHeader[];

@@ -5,7 +5,7 @@ import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {ListSection} from '@tricordarr/Components/Lists/ListSection';
 import {UserListItem} from '@tricordarr/Components/Lists/Items/UserListItem';
 
-import {useUserMatchQuery} from '@tricordarr/Queries/Users/UsersQueries.ts';
+import {useUserMatchQuery} from '@tricordarr/Queries/Users/UsersQueries';
 
 interface UserSearchBarProps {
   excludeHeaders?: UserHeader[];

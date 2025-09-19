@@ -15,10 +15,10 @@ import {MuteMenuItem} from '@tricordarr/Components/Menus/Items/MuteMenuItem';
 import {QueryKey, useQueryClient} from '@tanstack/react-query';
 import {ModerateMenuItem} from '@tricordarr/Components/Menus/Items/ModerateMenuItem';
 import {ReloadMenuItem} from '@tricordarr/Components/Menus/Items/ReloadMenuItem';
-import {useForumRelationMutation} from '@tricordarr/Queries/Forum/ForumThreadRelationMutations.ts';
+import {useForumRelationMutation} from '@tricordarr/Queries/Forum/ForumThreadRelationMutations';
 import {ForumThreadPinItem} from '@tricordarr/Components/Menus/Forum/Items/ForumThreadPinItem';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 interface ForumThreadActionsMenuProps {
   forumData: ForumData;

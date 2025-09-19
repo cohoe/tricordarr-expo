@@ -3,22 +3,22 @@ import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedCont
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
-import {ServerUrlFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
+import {ServerUrlFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {Text} from 'react-native-paper';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {useQueryClient} from '@tanstack/react-query';
 import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
-import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
+import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries';
 import {RefreshControl} from 'react-native';
-import {ServerUrlSettingForm} from '@tricordarr/Components/Forms/Settings/ServerUrlSettingForm.tsx';
-import {ServerChoices} from '@tricordarr/Components/../Libraries/Network/ServerChoices.ts';
-import {ServerHealthcheckResultView} from '@tricordarr/Components/Views/Settings/ServerHealthcheckResultView.tsx';
+import {ServerUrlSettingForm} from '@tricordarr/Components/Forms/Settings/ServerUrlSettingForm';
+import {ServerChoices} from '@tricordarr/Libraries/Network/ServerChoices';
+import {ServerHealthcheckResultView} from '@tricordarr/Components/Views/Settings/ServerHealthcheckResultView';
 import {HttpStatusCode} from 'axios';
 import {FormikHelpers} from 'formik';
-import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext.ts';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
+import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 import {CacheManager} from '@georstat/react-native-image-cache';
 
 export const ConfigServerUrlScreen = () => {

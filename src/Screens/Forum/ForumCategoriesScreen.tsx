@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
-import {useForumCategoriesQuery} from '@tricordarr/Queries/Forum/ForumCategoryQueries.ts';
+import {useForumCategoriesQuery} from '@tricordarr/Queries/Forum/ForumCategoryQueries';
 import {RefreshControl, View} from 'react-native';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {Divider} from 'react-native-paper';
@@ -18,11 +18,11 @@ import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeCon
 import {ForumCategoriesScreenActionsMenu} from '@tricordarr/Components/Menus/Forum/ForumCategoriesScreenActionsMenu';
 import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
 import {HeaderButtons} from 'react-navigation-header-buttons';
-import {useUserKeywordQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserKeywordQuery} from '@tricordarr/Queries/User/UserQueries';
 import {ForumAlertwordListItem} from '@tricordarr/Components/Lists/Items/Forum/ForumAlertwordListItem';
 import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
 import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
-import {ForumCategoriesScreenSearchMenu} from '@tricordarr/Components/Menus/Forum/ForumCategoriesScreenSearchMenu.tsx';
+import {ForumCategoriesScreenSearchMenu} from '@tricordarr/Components/Menus/Forum/ForumCategoriesScreenSearchMenu';
 
 type Props = NativeStackScreenProps<ForumStackParamList, ForumStackComponents.forumCategoriesScreen>;
 export const ForumCategoriesScreen = ({navigation}: Props) => {

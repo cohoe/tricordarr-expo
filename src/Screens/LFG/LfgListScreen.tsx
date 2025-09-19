@@ -4,10 +4,10 @@ import {useLfgListQuery} from '@tricordarr/Queries/Fez/FezQueries';
 import {RefreshControl, View} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
-import {LfgFilterMenu} from '@tricordarr/Components/Menus/LFG/LfgFilterMenu.tsx';
+import {LfgFilterMenu} from '@tricordarr/Components/Menus/LFG/LfgFilterMenu';
 import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
-import {LfgCruiseDayFilterMenu} from '@tricordarr/Components/Menus/LFG/LfgCruiseDayFilterMenu.tsx';
-import {LfgListActionsMenu} from '@tricordarr/Components/Menus/LFG/LfgListActionsMenu.tsx';
+import {LfgCruiseDayFilterMenu} from '@tricordarr/Components/Menus/LFG/LfgCruiseDayFilterMenu';
+import {LfgListActionsMenu} from '@tricordarr/Components/Menus/LFG/LfgListActionsMenu';
 import {LfgFAB} from '@tricordarr/Components/Buttons/FloatingActionButtons/LfgFAB';
 import {useIsFocused} from '@react-navigation/native';
 import {useSocket} from '@tricordarr/Components/Context/Contexts/SocketContext';
@@ -16,13 +16,13 @@ import {NotLoggedInView} from '@tricordarr/Components/Views/Static/NotLoggedInVi
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {NotificationTypeData, SocketNotificationData} from '@tricordarr/Libraries/Structs/SocketStructs';
-import {LFGFlatList} from '@tricordarr/Components/Lists/Schedule/LFGFlatList.tsx';
-import {TimezoneWarningView} from '@tricordarr/Components/Views/Warnings/TimezoneWarningView.tsx';
-import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {LFGFlatList} from '@tricordarr/Components/Lists/Schedule/LFGFlatList';
+import {TimezoneWarningView} from '@tricordarr/Components/Views/Warnings/TimezoneWarningView';
+import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {FlashList} from '@shopify/flash-list';
 import {FezListEndpoints} from '@tricordarr/Libraries/Types';
 import {useQueryClient} from '@tanstack/react-query';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 
 interface LfgJoinedScreenProps {
   endpoint: FezListEndpoints;

@@ -6,8 +6,8 @@ import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeade
 import {HeaderButtons} from 'react-navigation-header-buttons';
 import {ForumThreadScreenSortMenu} from '@tricordarr/Components/Menus/Forum/ForumThreadScreenSortMenu';
 import {ForumThreadsRelationsView} from '@tricordarr/Components/Views/Forum/ForumThreadsRelationsView';
-import {ForumRelationQueryType} from '@tricordarr/Queries/Forum/ForumThreadRelationQueries.ts';
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
+import {ForumRelationQueryType} from '@tricordarr/Queries/Forum/ForumThreadRelationQueries';
+import {AppView} from '@tricordarr/Components/Views/AppView';
 
 type Props = NativeStackScreenProps<ForumStackParamList, ForumStackComponents.forumMutesScreen>;
 

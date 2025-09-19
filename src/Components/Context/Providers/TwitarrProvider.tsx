@@ -4,9 +4,9 @@ import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {Linking} from 'react-native';
 import URLParse from 'url-parse';
 import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
-// import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext.ts';
-// import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
-// import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext.ts';
+// import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
+// import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
+// import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
 
 export const TwitarrProvider = ({children}: PropsWithChildren) => {
   const {appConfig} = useConfig();

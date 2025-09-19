@@ -2,13 +2,13 @@ import React, {useCallback, useEffect} from 'react';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {SeamailSearchBar} from '@tricordarr/Components/Search/SeamailSearchBar';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator.tsx';
+import {ChatStackParamList, ChatStackScreenComponents} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator';
 import {NotImplementedView} from '@tricordarr/Components/Views/Static/NotImplementedView';
 import {View} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
-import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
 
 type SeamailSearchScreenProps = NativeStackScreenProps<
   ChatStackParamList,

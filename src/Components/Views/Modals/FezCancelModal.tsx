@@ -8,9 +8,9 @@ import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {Text} from 'react-native-paper';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {useQueryClient} from '@tanstack/react-query';
-import {useFezCancelMutation} from '@tricordarr/Queries/Fez/FezMutations.ts';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
-import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
+import {useFezCancelMutation} from '@tricordarr/Queries/Fez/FezMutations';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 
 const ModalContent = ({fez}: {fez: FezData}) => {
   const {commonStyles} = useStyles();

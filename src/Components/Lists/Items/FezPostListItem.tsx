@@ -8,9 +8,9 @@ import {MessageAvatarContainerView} from '@tricordarr/Components/Views/MessageAv
 import {FlatListItemContent} from '@tricordarr/Components/Views/Content/FlatListItemContent';
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {ContentPostImage} from '@tricordarr/Components/Images/ContentPostImage';
-import {useChatStack} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator.tsx';
+import {useChatStack} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator';
 import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 // https://github.com/akveo/react-native-ui-kitten/issues/1167
 interface FezPostListItemProps {

@@ -4,13 +4,13 @@ import {ForumPostFlatList} from '@tricordarr/Components/Lists/Forums/ForumPostFl
 import React, {useRef} from 'react';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {PostData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
+import {PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {TimeDivider} from '@tricordarr/Components/Lists/Dividers/TimeDivider';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useForumThreadPinnedPostsQuery, useForumThreadQuery} from '@tricordarr/Queries/Forum/ForumThreadQueries.ts';
+import {useForumThreadPinnedPostsQuery, useForumThreadQuery} from '@tricordarr/Queries/Forum/ForumThreadQueries';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.forumPostPinnedScreen>;
 

@@ -1,20 +1,20 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react';
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
-import {usePhotostreamQuery} from '@tricordarr/Queries/Photostream/PhotostreamQueries.ts';
-import {PhotostreamImageData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {usePhotostreamQuery} from '@tricordarr/Queries/Photostream/PhotostreamQueries';
+import {PhotostreamImageData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {FlatList, RefreshControl, View} from 'react-native';
-import {PhotostreamListItem} from '@tricordarr/Components/Lists/Items/PhotostreamListItem.tsx';
-import {PhotostreamFAB} from '@tricordarr/Components/Buttons/FloatingActionButtons/PhotostreamFAB.tsx';
+import {PhotostreamListItem} from '@tricordarr/Components/Lists/Items/PhotostreamListItem';
+import {PhotostreamFAB} from '@tricordarr/Components/Buttons/FloatingActionButtons/PhotostreamFAB';
 import {HeaderButtons} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
-import {PhotostreamActionsMenu} from '@tricordarr/Components/Menus/Photostream/PhotostreamActionsMenu.tsx';
-import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView.tsx';
+import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
+import {PhotostreamActionsMenu} from '@tricordarr/Components/Menus/Photostream/PhotostreamActionsMenu';
+import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {Text} from 'react-native-paper';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
-import {AppFlatList} from '@tricordarr/Components/Lists/AppFlatList.tsx';
-import {EndResultsFooter} from '@tricordarr/Components/Lists/Footers/EndResultsFooter.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {AppFlatList} from '@tricordarr/Components/Lists/AppFlatList';
+import {EndResultsFooter} from '@tricordarr/Components/Lists/Footers/EndResultsFooter';
 
 export type Props = NativeStackScreenProps<MainStackParamList, MainStackComponents.photostreamScreen>;
 

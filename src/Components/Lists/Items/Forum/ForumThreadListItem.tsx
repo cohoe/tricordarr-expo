@@ -13,9 +13,9 @@ import {ForumNewBadge} from '@tricordarr/Components/Badges/ForumNewBadge';
 import {getEventTimeString} from '@tricordarr/Libraries/DateTime';
 import {UserBylineTag} from '@tricordarr/Components/Text/Tags/UserBylineTag';
 import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
-import {ForumThreadListItemSwipeable} from '@tricordarr/Components/Swipeables/ForumThreadListItemSwipeable.tsx';
-import {useSelection} from '@tricordarr/Components/Context/Contexts/SelectionContext.ts';
-import {ForumListDataSelectionActions} from '@tricordarr/Components/Reducers/Forum/ForumListDataSelectionReducer.ts';
+import {ForumThreadListItemSwipeable} from '@tricordarr/Components/Swipeables/ForumThreadListItemSwipeable';
+import {useSelection} from '@tricordarr/Components/Context/Contexts/SelectionContext';
+import {ForumListDataSelectionActions} from '@tricordarr/Components/Reducers/Forum/ForumListDataSelectionReducer';
 
 interface ForumThreadListItemProps {
   forumListData: ForumListData;

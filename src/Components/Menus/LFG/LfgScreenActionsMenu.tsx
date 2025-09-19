@@ -6,11 +6,11 @@ import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeCon
 import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
 import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
-import {FezCancelModal} from '@tricordarr/Components/Views/Modals/FezCancelModal.tsx';
+import {FezCancelModal} from '@tricordarr/Components/Views/Modals/FezCancelModal';
 import {useLFGStackNavigation} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator';
 import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 export const LfgScreenActionsMenu = ({fezData}: {fezData: FezData}) => {
   const [visible, setVisible] = useState(false);

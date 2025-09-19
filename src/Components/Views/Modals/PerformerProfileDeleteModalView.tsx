@@ -8,7 +8,7 @@ import {EventData, PerformerData} from '@tricordarr/Libraries/Structs/Controller
 import {Text} from 'react-native-paper';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {useQueryClient} from '@tanstack/react-query';
-import {usePerformerDeleteMutation} from '@tricordarr/Queries/Performer/PerformerMutations.ts';
+import {usePerformerDeleteMutation} from '@tricordarr/Queries/Performer/PerformerMutations';
 
 const ModalContent = () => {
   const {commonStyles} = useStyles();

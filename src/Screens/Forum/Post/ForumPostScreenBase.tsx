@@ -1,17 +1,17 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {AppView} from '@tricordarr/Components/Views/AppView';
-import {ForumPostSearchQueryParams, useForumPostSearchQuery} from '@tricordarr/Queries/Forum/ForumPostSearchQueries.ts';
+import {ForumPostSearchQueryParams, useForumPostSearchQuery} from '@tricordarr/Queries/Forum/ForumPostSearchQueries';
 import {FlatList, RefreshControl, View} from 'react-native';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {ForumPostFlatList} from '@tricordarr/Components/Lists/Forums/ForumPostFlatList';
-import {PostData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
+import {PostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
-import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries.ts';
+import {useUserFavoritesQuery} from '@tricordarr/Queries/Users/UserFavoriteQueries';
 import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
 import {useUserNotificationDataQuery} from '@tricordarr/Queries/Alert/NotificationQueries';
-import {AppIcons} from '@tricordarr/Components/../Libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import pluralize from 'pluralize';
 
 interface ForumPostScreenBaseProps {

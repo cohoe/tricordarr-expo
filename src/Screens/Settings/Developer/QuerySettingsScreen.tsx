@@ -10,22 +10,22 @@ import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag';
 import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
-import {QuerySettingsForm} from '@tricordarr/Components/Forms/Settings/QuerySettingsForm.tsx';
-import {QuerySettingsFormValues} from '@tricordarr/Components/../Libraries/Types/FormValues';
+import {QuerySettingsForm} from '@tricordarr/Components/Forms/Settings/QuerySettingsForm';
+import {QuerySettingsFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
 import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
 import {commonStyles} from '@tricordarr/Components/../styles';
-import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
 import {CacheManager} from '@georstat/react-native-image-cache';
-import {getDirSize} from '@tricordarr/Components/../Libraries/Storage/ImageStorage.ts';
+import {getDirSize} from '@tricordarr/Libraries/Storage/ImageStorage';
 import {filesize} from 'filesize';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
-} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator';
 
 export type Props = NativeStackScreenProps<SettingsStackParamList, SettingsStackScreenComponents.querySettingsScreen>;
 

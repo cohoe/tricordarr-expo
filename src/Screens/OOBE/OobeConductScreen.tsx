@@ -7,9 +7,9 @@ import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
 import {useConductQuery} from '@tricordarr/Queries/PublicQueries';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {RefreshControl} from 'react-native';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
-import {ContentText} from '@tricordarr/Components/Text/ContentText.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {ContentText} from '@tricordarr/Components/Text/ContentText';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeConductScreen>;
 

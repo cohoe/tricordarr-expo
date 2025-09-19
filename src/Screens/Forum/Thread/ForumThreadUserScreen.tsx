@@ -7,11 +7,11 @@ import {RefreshControl} from 'react-native';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {Text} from 'react-native-paper';
 import {ForumThreadFlatList} from '@tricordarr/Components/Lists/Forums/ForumThreadFlatList';
-import {useForumSearchQuery} from '@tricordarr/Queries/Forum/ForumThreadSearchQueries.ts';
+import {useForumSearchQuery} from '@tricordarr/Queries/Forum/ForumThreadSearchQueries';
 import {ListTitleView} from '@tricordarr/Components/Views/ListTitleView';
 import {getUserBylineString} from '@tricordarr/Components/Text/Tags/UserBylineTag';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {ForumListData} from '@tricordarr/Components/../Libraries/Structs/ControllerStructs';
+import {ForumListData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.forumThreadUserScreen>;
 

@@ -1,17 +1,17 @@
-import {AppView} from '@tricordarr/Components/Views/AppView.tsx';
-import {BoardgameRecommendationForm} from '@tricordarr/Components/Forms/BoardgameRecommendationForm.tsx';
-import {BoardgameData, BoardgameRecommendationData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {AppView} from '@tricordarr/Components/Views/AppView';
+import {BoardgameRecommendationForm} from '@tricordarr/Components/Forms/BoardgameRecommendationForm';
+import {BoardgameData, BoardgameRecommendationData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {FormikHelpers} from 'formik';
 import React, {useCallback, useEffect, useState} from 'react';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
-import {useBoardgameRecommendMutation} from '@tricordarr/Queries/Boardgames/BoardgameMutations.ts';
-import {BoardgameFlatList} from '@tricordarr/Components/Lists/BoardgameFlatList.tsx';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
+import {useBoardgameRecommendMutation} from '@tricordarr/Queries/Boardgames/BoardgameMutations';
+import {BoardgameFlatList} from '@tricordarr/Components/Lists/BoardgameFlatList';
 import {Divider} from 'react-native-paper';
 import {View} from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
-import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton.tsx';
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
-import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
+import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
+import {MainStackComponents, MainStackParamList} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 const defaultValues: BoardgameRecommendationData = {

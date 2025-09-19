@@ -19,20 +19,20 @@ import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
 import {
   SettingsStackParamList,
   SettingsStackScreenComponents,
-} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
-import {WebSocketState} from '@tricordarr/Components/../Libraries/Network/Websockets';
+import {WebSocketState} from '@tricordarr/Libraries/Network/Websockets';
 import {SettingDataTableRow} from '@tricordarr/Components/DataTables/SettingDataTableRow';
-import {SocketHealthcheckData} from '@tricordarr/Components/../Libraries/Structs/SocketStructs';
+import {SocketHealthcheckData} from '@tricordarr/Libraries/Structs/SocketStructs';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {StorageKeys} from '@tricordarr/Components/../Libraries/Storage';
+import {StorageKeys} from '@tricordarr/Libraries/Storage';
 import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag';
 import {Formik} from 'formik';
 import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
 import {SliderField} from '@tricordarr/Components/Forms/Fields/SliderField';
 import {BatteryOptimizationSettingsView} from '@tricordarr/Components/Views/Settings/BatteryOptimizationSettingsView';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
 
 type Props = NativeStackScreenProps<SettingsStackParamList, SettingsStackScreenComponents.serverConnectionSettings>;
 

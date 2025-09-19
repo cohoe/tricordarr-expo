@@ -1,15 +1,15 @@
 import React from 'react';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
-import {cancelTestNotification, displayTestNotification} from '@tricordarr/Components/../Libraries/Notifications/TestNotification';
+import {cancelTestNotification, displayTestNotification} from '@tricordarr/Libraries/Notifications/TestNotification';
 import {useAppTheme} from '@tricordarr/Components/../styles/Theme';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {AppView} from '@tricordarr/Components/Views/AppView';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
-import {generateContentNotification} from '@tricordarr/Components/../Libraries/Notifications/Content';
-import {eventChannel} from '@tricordarr/Components/../Libraries/Notifications/Channels';
-import {NotificationTypeData} from '@tricordarr/Components/../Libraries/Structs/SocketStructs';
-import {PressAction} from '@tricordarr/Components/../Libraries/Enums/Notifications';
+import {generateContentNotification} from '@tricordarr/Libraries/Notifications/Content';
+import {eventChannel} from '@tricordarr/Libraries/Notifications/Channels';
+import {NotificationTypeData} from '@tricordarr/Libraries/Structs/SocketStructs';
+import {PressAction} from '@tricordarr/Libraries/Enums/Notifications';
 
 export const TestNotificationScreen = () => {
   const theme = useAppTheme();

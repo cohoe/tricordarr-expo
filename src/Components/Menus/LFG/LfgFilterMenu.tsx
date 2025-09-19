@@ -4,9 +4,9 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {useFilter} from '@tricordarr/Components/Context/Contexts/FilterContext';
 import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
-import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem.tsx';
-import {MenuAnchor} from '@tricordarr/Components/Menus/MenuAnchor.tsx';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {SelectableMenuItem} from '@tricordarr/Components/Menus/Items/SelectableMenuItem';
+import {MenuAnchor} from '@tricordarr/Components/Menus/MenuAnchor';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
 
 interface LfgFilterMenuProps {
   showTypes?: boolean;

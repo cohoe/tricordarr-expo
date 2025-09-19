@@ -2,11 +2,11 @@ import React, {Dispatch, ReactNode, SetStateAction} from 'react';
 import {Divider, Menu} from 'react-native-paper';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {PersonalEventDeleteModal} from '@tricordarr/Components/Views/Modals/PersonalEventDeleteModal.tsx';
-import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView.tsx';
-import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext.ts';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {PersonalEventDeleteModal} from '@tricordarr/Components/Views/Modals/PersonalEventDeleteModal';
+import {ReportModalView} from '@tricordarr/Components/Views/Modals/ReportModalView';
+import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 interface PersonalEventCardActionsMenuProps {
   anchor: React.JSX.Element;

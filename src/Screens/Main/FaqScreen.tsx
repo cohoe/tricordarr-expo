@@ -4,8 +4,8 @@ import {ScrollingContentView} from '@tricordarr/Components/Views/Content/Scrolli
 import {useFaqQuery} from '@tricordarr/Queries/PublicQueries';
 import {RefreshControl} from 'react-native';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
-import {ContentText} from '@tricordarr/Components/Text/ContentText.tsx';
-import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView.tsx';
+import {ContentText} from '@tricordarr/Components/Text/ContentText';
+import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 
 export const FaqScreen = () => {
   const {data, refetch, isFetching} = useFaqQuery();

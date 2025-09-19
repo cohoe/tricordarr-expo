@@ -3,17 +3,17 @@ import {ScrollingContentView} from '@tricordarr/Components/Views/Content/Scrolli
 import React from 'react';
 import {Text} from 'react-native-paper';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import {UserNoteForm} from '@tricordarr/Components/Forms/User/UserNoteForm.tsx';
+import {UserNoteForm} from '@tricordarr/Components/Forms/User/UserNoteForm';
 import {UserNoteFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
-import {useUserNoteCreateMutation, useUserNoteDeleteMutation} from '@tricordarr/Queries/Users/UserNoteMutations.ts';
+import {useUserNoteCreateMutation, useUserNoteDeleteMutation} from '@tricordarr/Queries/Users/UserNoteMutations';
 import {useQueryClient} from '@tanstack/react-query';
 import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionButton';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
+import {UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.userPrivateNoteScreen>;
 

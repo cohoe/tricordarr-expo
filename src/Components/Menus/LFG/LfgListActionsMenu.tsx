@@ -3,8 +3,8 @@ import {Divider, Menu} from 'react-native-paper';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Item} from 'react-navigation-header-buttons';
 import {LfgStackComponents, useLFGStackNavigation, useLFGStackRoute} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator';
-import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
 
 export const LfgListActionsMenu = () => {
   const [visible, setVisible] = useState(false);

@@ -10,9 +10,9 @@ import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionB
 import {PERMISSIONS, request as requestPermission, RESULTS} from 'react-native-permissions';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {BatteryOptimizationSettingsView} from '@tricordarr/Components/Views/Settings/BatteryOptimizationSettingsView';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobePermissionsScreen>;
 

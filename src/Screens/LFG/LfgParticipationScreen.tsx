@@ -9,7 +9,7 @@ import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {ListSection} from '@tricordarr/Components/Lists/ListSection';
 import {FezParticipantListItem} from '@tricordarr/Components/Lists/Items/FezParticipantListItem';
 import {useFezQuery} from '@tricordarr/Queries/Fez/FezQueries';
-import {useFezParticipantMutation} from '@tricordarr/Queries/Fez/Management/FezManagementUserMutations.ts';
+import {useFezParticipantMutation} from '@tricordarr/Queries/Fez/Management/FezManagementUserMutations';
 import {FezParticipantAddItem} from '@tricordarr/Components/Lists/Items/FezParticipantAddItem';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
@@ -20,9 +20,9 @@ import {LfgLeaveModal} from '@tricordarr/Components/Views/Modals/LfgLeaveModal';
 import {useFezMembershipMutation} from '@tricordarr/Queries/Fez/FezMembershipQueries';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useQueryClient} from '@tanstack/react-query';
-import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
-import {DataFieldListItem} from '@tricordarr/Components/Lists/Items/DataFieldListItem.tsx';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
+import {DataFieldListItem} from '@tricordarr/Components/Lists/Items/DataFieldListItem';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.lfgParticipationScreen>;
 

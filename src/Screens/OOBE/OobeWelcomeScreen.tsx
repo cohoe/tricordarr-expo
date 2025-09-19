@@ -10,11 +10,11 @@ import {Image, StyleSheet} from 'react-native';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 // @ts-ignore
 import tricordarr from '@tricordarr/Components/../assets/PlayStore/tricordarr.jpg';
-import {AppImage} from '@tricordarr/Components/Images/AppImage.tsx';
+import {AppImage} from '@tricordarr/Components/Images/AppImage';
 import {encode as base64_encode} from 'base-64';
 import DeviceInfo from 'react-native-device-info';
-import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {useFocusEffect} from '@react-navigation/native';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeWelcomeScreen>;

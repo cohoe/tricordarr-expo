@@ -7,7 +7,7 @@ import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionB
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {ModeratorBlockText, UserBlockText} from '@tricordarr/Components/Text/UserRelationsText';
-import {useUserBlockMutation} from '@tricordarr/Queries/Users/UserBlockMutations.ts';
+import {useUserBlockMutation} from '@tricordarr/Queries/Users/UserBlockMutations';
 import {useQueryClient} from '@tanstack/react-query';
 
 interface BlockUserModalViewProps {

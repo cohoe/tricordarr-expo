@@ -3,7 +3,7 @@ import {TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {RelativeTimeTag} from '@tricordarr/Components/Text/Tags/RelativeTimeTag';
-import {FezPostActionsMenu} from '@tricordarr/Components/Menus/Fez/FezPostActionsMenu.tsx';
+import {FezPostActionsMenu} from '@tricordarr/Components/Menus/Fez/FezPostActionsMenu';
 import {FezData, FezPostData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {ContentText} from '@tricordarr/Components/Text/ContentText';
 import Clipboard from '@react-native-clipboard/clipboard';

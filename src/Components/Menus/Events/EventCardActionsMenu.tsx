@@ -4,7 +4,7 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
 import {EventDownloadMenuItem} from '@tricordarr/Components/Menus/Events/Items/EventDownloadMenuItem';
-import {EventType} from '@tricordarr/Libraries/Enums/EventType.ts';
+import {EventType} from '@tricordarr/Libraries/Enums/EventType';
 
 interface EventCardActionsMenuProps {
   anchor: React.JSX.Element;

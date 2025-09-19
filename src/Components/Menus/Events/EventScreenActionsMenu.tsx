@@ -5,10 +5,10 @@ import {Item} from 'react-navigation-header-buttons';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import React from 'react';
 import {EventDownloadMenuItem} from '@tricordarr/Components/Menus/Events/Items/EventDownloadMenuItem';
-import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {EventType} from '@tricordarr/Libraries/Enums/EventType.ts';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
+import {EventType} from '@tricordarr/Libraries/Enums/EventType';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
 
 interface EventScreenActionsMenuProps {
   event: EventData;

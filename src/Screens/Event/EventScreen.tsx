@@ -1,18 +1,18 @@
 import React, {useCallback, useEffect} from 'react';
-import {useEventQuery} from '@tricordarr/Queries/Events/EventQueries.ts';
+import {useEventQuery} from '@tricordarr/Queries/Events/EventQueries';
 import {View} from 'react-native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {MaterialHeaderButton} from '@tricordarr/Components/Buttons/MaterialHeaderButton';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {useEventFavoriteMutation} from '@tricordarr/Queries/Events/EventFavoriteMutations.ts';
+import {useEventFavoriteMutation} from '@tricordarr/Queries/Events/EventFavoriteMutations';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {useQueryClient} from '@tanstack/react-query';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {EventScreenActionsMenu} from '@tricordarr/Components/Menus/Events/EventScreenActionsMenu';
-import {ScheduleItemScreenBase} from '@tricordarr/Components/Schedule/ScheduleItemScreenBase.tsx';
-import {HeaderFavoriteButton} from '@tricordarr/Components/Buttons/HeaderButtons/HeaderFavoriteButton.tsx';
+import {ScheduleItemScreenBase} from '@tricordarr/Components/Schedule/ScheduleItemScreenBase';
+import {HeaderFavoriteButton} from '@tricordarr/Components/Buttons/HeaderButtons/HeaderFavoriteButton';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.eventScreen>;
 

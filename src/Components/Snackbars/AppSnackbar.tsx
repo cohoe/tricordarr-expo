@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 import {Snackbar, Text} from 'react-native-paper';
 import {useAppTheme} from '@tricordarr/Styles/Theme';
-// import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+// import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 export const AppSnackbar = () => {
   const {snackbarPayload, setSnackbarPayload} = useSnackbar();

@@ -7,8 +7,8 @@ import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionB
 import {useAppState} from '@react-native-community/hooks';
 // @ts-ignore
 import {BatteryOptEnabled, RequestDisableOptimization} from 'react-native-battery-optimization-check';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
 import {View} from 'react-native';
 
 export const BatteryOptimizationSettingsView = () => {

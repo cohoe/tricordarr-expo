@@ -8,20 +8,20 @@ import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedCont
 import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import {ServerUrlFormValues} from '@tricordarr/Libraries/Types/FormValues';
 import {FormikHelpers} from 'formik';
-import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
+import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries';
 import {HttpStatusCode} from 'axios';
 import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
 import {OobeServerHeaderTitle} from '@tricordarr/Components/Navigation/Components/OobeServerHeaderTitle';
-import {ServerHealthcheckResultView} from '@tricordarr/Components/Views/Settings/ServerHealthcheckResultView.tsx';
-import {ServerUrlSettingForm} from '@tricordarr/Components/Forms/Settings/ServerUrlSettingForm.tsx';
+import {ServerHealthcheckResultView} from '@tricordarr/Components/Views/Settings/ServerHealthcheckResultView';
+import {ServerUrlSettingForm} from '@tricordarr/Components/Forms/Settings/ServerUrlSettingForm';
 import {RefreshControl} from 'react-native';
-import {ServerChoices} from '@tricordarr/Libraries/Network/ServerChoices.ts';
-import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext.ts';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {ServerChoices} from '@tricordarr/Libraries/Network/ServerChoices';
+import {useErrorHandler} from '@tricordarr/Components/Context/Contexts/ErrorHandlerContext';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 import {CacheManager} from '@georstat/react-native-image-cache';
 import {useQueryClient} from '@tanstack/react-query';
-import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext.ts';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeServerScreen>;
 

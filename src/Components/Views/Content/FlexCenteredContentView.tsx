@@ -1,5 +1,5 @@
 import React, {PropsWithChildren} from 'react';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {View} from 'react-native';
 
 export const FlexCenteredContentView = (props: PropsWithChildren) => {

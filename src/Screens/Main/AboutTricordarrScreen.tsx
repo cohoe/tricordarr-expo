@@ -16,7 +16,7 @@ import {ContributorCard} from '@tricordarr/Components/Cards/ContributorCard';
 import {HyperlinkText} from '@tricordarr/Components/Text/HyperlinkText';
 import {Image, View} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
-import {OobeNoteCard} from '@tricordarr/Components/Cards/OobeNoteCard.tsx';
+import {OobeNoteCard} from '@tricordarr/Components/Cards/OobeNoteCard';
 import {encode as base64_encode} from 'base-64';
 
 export const AboutTricordarrScreen = () => {

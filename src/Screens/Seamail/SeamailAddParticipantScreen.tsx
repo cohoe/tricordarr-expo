@@ -5,7 +5,7 @@ import {ScrollingContentView} from '@tricordarr/Components/Views/Content/Scrolli
 import {FezData, UserHeader} from '@tricordarr/Libraries/Structs/ControllerStructs';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {UserSearchBar} from '@tricordarr/Components/Search/UserSearchBar';
-import {useFezParticipantMutation} from '@tricordarr/Queries/Fez/Management/FezManagementUserMutations.ts';
+import {useFezParticipantMutation} from '@tricordarr/Queries/Fez/Management/FezManagementUserMutations';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
 import {useQueryClient} from '@tanstack/react-query';
 

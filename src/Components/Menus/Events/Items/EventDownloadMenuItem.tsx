@@ -3,7 +3,7 @@ import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import React from 'react';
 import {Linking} from 'react-native';
 import {EventData} from '@tricordarr/Libraries/Structs/ControllerStructs';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 interface EventDownloadMenuItemProps {
   closeMenu: () => void;

@@ -11,11 +11,11 @@ import {BooleanField} from '@tricordarr/Components/Forms/Fields/BooleanField';
 import {HelperText, SegmentedButtons, Text} from 'react-native-paper';
 import {SegmentedButtonType} from '@tricordarr/Libraries/Types';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
-import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader.tsx';
-import {ListSection} from '@tricordarr/Components/Lists/ListSection.tsx';
-import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig.ts';
-import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content.ts';
-import {LfgStackComponents} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator.tsx';
+import {ListSubheader} from '@tricordarr/Components/Lists/ListSubheader';
+import {ListSection} from '@tricordarr/Components/Lists/ListSection';
+import {PushNotificationConfig} from '@tricordarr/Libraries/AppConfig';
+import {contentNotificationCategories} from '@tricordarr/Libraries/Notifications/Content';
+import {LfgStackComponents} from '@tricordarr/Components/Navigation/Stacks/LFGStackNavigator';
 
 export const LfgSettingsScreen = () => {
   const {appConfig, updateAppConfig, hasNotificationPermission} = useConfig();

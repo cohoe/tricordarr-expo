@@ -5,7 +5,7 @@ import {ForumThreadScreenBase} from '@tricordarr/Components/ForumThreadScreenBas
 import {View, StyleSheet} from 'react-native';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {Button, Text} from 'react-native-paper';
-import {useForumThreadQuery} from '@tricordarr/Queries/Forum/ForumThreadQueries.ts';
+import {useForumThreadQuery} from '@tricordarr/Queries/Forum/ForumThreadQueries';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.forumThreadPostScreen>;
 

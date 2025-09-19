@@ -11,7 +11,7 @@ import {ForumPostActionsDeleteItem} from '@tricordarr/Components/Menus/Forum/Ite
 import {ForumPostActionsShowThreadItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsShowThreadItem';
 import {ForumPostActionsPinItem} from '@tricordarr/Components/Menus/Forum/Items/ForumPostActionsPinItem';
 import {CommonStackComponents, useCommonStack} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 
 interface ForumPostActionsMenuProps {
   visible: boolean;

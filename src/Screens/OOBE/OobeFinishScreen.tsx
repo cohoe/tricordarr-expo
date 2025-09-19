@@ -9,9 +9,9 @@ import {OobeButtonsView} from '@tricordarr/Components/Views/OobeButtonsView';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {startForegroundServiceWorker} from '@tricordarr/Libraries/Service';
 import {OobeNoteCard} from '@tricordarr/Components/Cards/OobeNoteCard';
-import {MainStackComponents} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator.tsx';
-import {BottomTabComponents} from '@tricordarr/Components/Navigation/Tabs/BottomTabNavigator.tsx';
-import {OobePreRegistrationCompleteCard} from '@tricordarr/Components/Cards/OobePreRegistrationCompleteCard.tsx';
+import {MainStackComponents} from '@tricordarr/Components/Navigation/Stacks/MainStackNavigator';
+import {BottomTabComponents} from '@tricordarr/Components/Navigation/Tabs/BottomTabNavigator';
+import {OobePreRegistrationCompleteCard} from '@tricordarr/Components/Cards/OobePreRegistrationCompleteCard';
 
 type Props = NativeStackScreenProps<OobeStackParamList, OobeStackComponents.oobeFinishScreen>;
 

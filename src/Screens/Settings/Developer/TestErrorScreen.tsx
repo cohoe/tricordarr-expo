@@ -11,10 +11,10 @@ import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
 import {HelpModalView} from '@tricordarr/Components/Views/Modals/HelpModalView';
 import {RefreshControl} from 'react-native';
 import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
-import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries.ts';
-import {useOpenQuery} from '@tricordarr/Queries/OpenQuery.ts';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
-import {BaseFABGroup} from '@tricordarr/Components/Buttons/FloatingActionButtons/BaseFABGroup.tsx';
+import {useHealthQuery} from '@tricordarr/Queries/Client/ClientQueries';
+import {useOpenQuery} from '@tricordarr/Queries/OpenQuery';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
+import {BaseFABGroup} from '@tricordarr/Components/Buttons/FloatingActionButtons/BaseFABGroup';
 
 export const TestErrorScreen = () => {
   const theme = useAppTheme();

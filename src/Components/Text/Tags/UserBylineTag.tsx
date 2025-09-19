@@ -3,9 +3,9 @@ import React from 'react';
 import {Text} from 'react-native-paper';
 import {StyleProp, TextStyle, StyleSheet} from 'react-native';
 import {MD3TypescaleKey} from 'react-native-paper/lib/typescript/types';
-import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext.ts';
-import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 interface UserBylineTagProps {
   user: UserHeader;

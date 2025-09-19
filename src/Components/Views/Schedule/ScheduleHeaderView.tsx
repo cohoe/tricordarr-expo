@@ -1,8 +1,8 @@
 import React, {Dispatch, SetStateAction, useRef} from 'react';
 import {View, StyleSheet} from 'react-native';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
-import {ScheduleHeaderDayButton} from '@tricordarr/Components/Buttons/ScheduleHeaderDayButton.tsx';
-import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
+import {ScheduleHeaderDayButton} from '@tricordarr/Components/Buttons/ScheduleHeaderDayButton';
+import {useCruise} from '@tricordarr/Components/Context/Contexts/CruiseContext';
 import {FlashList} from '@shopify/flash-list';
 import {CruiseDayData} from '@tricordarr/Libraries/Types';
 

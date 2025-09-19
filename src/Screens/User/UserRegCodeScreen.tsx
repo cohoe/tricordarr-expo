@@ -2,7 +2,7 @@ import {AppView} from '@tricordarr/Components/Views/AppView';
 import {ScrollingContentView} from '@tricordarr/Components/Views/Content/ScrollingContentView';
 import {Card, Text} from 'react-native-paper';
 import React from 'react';
-import {useRegCodeForUserQuery} from '@tricordarr/Queries/Admin/RegCodeQueries.ts';
+import {useRegCodeForUserQuery} from '@tricordarr/Queries/Admin/RegCodeQueries';
 import {useModal} from '@tricordarr/Components/Context/Contexts/ModalContext';
 import {PaddedContentView} from '@tricordarr/Components/Views/Content/PaddedContentView';
 import {UserListItem} from '@tricordarr/Components/Lists/Items/UserListItem';

@@ -1,7 +1,7 @@
 import React from 'react';
 import {SnackBarBase, SnackBarBaseProps} from '@tricordarr/Components/Snackbars/SnackBarBase';
 import {StyleSheet} from 'react-native';
-import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext.ts';
+import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 
 export const ImageViewerSnackbar = ({
   setMessage,

@@ -8,14 +8,14 @@ import {PrimaryActionButton} from '@tricordarr/Components/Buttons/PrimaryActionB
 import {useAppTheme} from '@tricordarr/Styles/Theme';
 import {useUserNotificationData} from '@tricordarr/Components/Context/Contexts/UserNotificationDataContext';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
-import {useLogoutMutation} from '@tricordarr/Queries/Auth/LogoutMutations.ts';
+import {useLogoutMutation} from '@tricordarr/Queries/Auth/LogoutMutations';
 import {useSocket} from '@tricordarr/Components/Context/Contexts/SocketContext';
-import {useSettingsStack} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator.tsx';
+import {useSettingsStack} from '@tricordarr/Components/Navigation/Stacks/SettingsStackNavigator';
 import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeContext';
 import {useQueryClient} from '@tanstack/react-query';
 import {stopForegroundServiceWorker} from '@tricordarr/Libraries/Service';
-import {WebSocketStorageActions} from '@tricordarr/Components/Reducers/Fez/FezSocketReducer.ts';
-import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext.ts';
+import {WebSocketStorageActions} from '@tricordarr/Components/Reducers/Fez/FezSocketReducer';
+import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 
 interface LogoutModalContentProps {
   allDevices: boolean;

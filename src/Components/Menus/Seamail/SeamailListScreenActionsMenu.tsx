@@ -2,9 +2,9 @@ import {Item} from 'react-navigation-header-buttons';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Menu} from 'react-native-paper';
 import * as React from 'react';
-import {ChatStackScreenComponents, useChatStack} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator.tsx';
-import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens.tsx';
-import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu.tsx';
+import {ChatStackScreenComponents, useChatStack} from '@tricordarr/Components/Navigation/Stacks/ChatStackNavigator';
+import {CommonStackComponents} from '@tricordarr/Components/Navigation/CommonScreens';
+import {AppHeaderMenu} from '@tricordarr/Components/Menus/AppHeaderMenu';
 
 export const SeamailListScreenActionsMenu = () => {
   const [visible, setVisible] = React.useState(false);

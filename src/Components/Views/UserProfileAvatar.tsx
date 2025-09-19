@@ -3,16 +3,16 @@ import {ProfilePublicData, UserHeader} from '@tricordarr/Libraries/Structs/Contr
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {StyleSheet, View} from 'react-native';
 import ImagePicker, {Image} from 'react-native-image-crop-picker';
-import {useUserAvatarMutation, useUserImageDeleteMutation} from '@tricordarr/Queries/User/UserAvatarMutations.ts';
+import {useUserAvatarMutation, useUserImageDeleteMutation} from '@tricordarr/Queries/User/UserAvatarMutations';
 import {PERMISSIONS, request as requestPermission} from 'react-native-permissions';
 import {APIImage} from '@tricordarr/Components/Images/APIImage';
 import {useFeature} from '@tricordarr/Components/Context/Contexts/FeatureContext';
 import {SwiftarrFeature} from '@tricordarr/Libraries/Enums/AppFeatures';
-import {ImageButtons} from '@tricordarr/Components/Buttons/ImageButtons.tsx';
+import {ImageButtons} from '@tricordarr/Components/Buttons/ImageButtons';
 import {styleDefaults} from '@tricordarr/Styles';
-import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext.ts';
-import {useUsersProfileQuery} from '@tricordarr/Queries/Users/UsersQueries.ts';
-import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries.ts';
+import {useSnackbar} from '@tricordarr/Components/Context/Contexts/SnackbarContext';
+import {useUsersProfileQuery} from '@tricordarr/Queries/Users/UsersQueries';
+import {useUserProfileQuery} from '@tricordarr/Queries/User/UserQueries';
 import {useQueryClient} from '@tanstack/react-query';
 
 interface UserProfileAvatarProps {

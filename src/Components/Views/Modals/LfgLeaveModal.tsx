@@ -9,7 +9,7 @@ import {Text} from 'react-native-paper';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import {useFezMembershipMutation} from '@tricordarr/Queries/Fez/FezMembershipQueries';
 import {useQueryClient} from '@tanstack/react-query';
-import {FezType} from '@tricordarr/Libraries/Enums/FezType.ts';
+import {FezType} from '@tricordarr/Libraries/Enums/FezType';
 
 const ModalContent = ({fezData}: {fezData: FezData}) => {
   const {commonStyles} = useStyles();

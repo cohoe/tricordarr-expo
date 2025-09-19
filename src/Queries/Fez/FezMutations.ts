@@ -1,6 +1,6 @@
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
-import {FezContentData, FezData} from '@tricordarr/Libraries/Structs/ControllerStructs.tsx';
-import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
+import {FezContentData, FezData} from '@tricordarr/Libraries/Structs/ControllerStructs';
+import {useTokenAuthMutation} from '@tricordarr/Queries/TokenAuthMutation';
 import {WithFezID} from '@tricordarr/Libraries/Types';
 
 interface FezCreateMutationProps {

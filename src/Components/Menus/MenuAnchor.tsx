@@ -1,7 +1,7 @@
-import {AppIcons} from '@tricordarr/Libraries/Enums/Icons.ts';
+import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {Item} from 'react-navigation-header-buttons';
 import React from 'react';
-import {useAppTheme} from '@tricordarr/Styles/Theme.ts';
+import {useAppTheme} from '@tricordarr/Styles/Theme';
 
 interface MenuAnchorProps {
   active?: boolean;

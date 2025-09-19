@@ -10,12 +10,12 @@ import {usePrivilege} from '@tricordarr/Components/Context/Contexts/PrivilegeCon
 import {UserListItem} from '@tricordarr/Components/Lists/Items/UserListItem';
 import {AppIcons} from '@tricordarr/Libraries/Enums/Icons';
 import {ModeratorMuteText, UserMuteText} from '@tricordarr/Components/Text/UserRelationsText';
-import {useUserMutesQuery} from '@tricordarr/Queries/Users/UserMuteQueries.ts';
+import {useUserMutesQuery} from '@tricordarr/Queries/Users/UserMuteQueries';
 import {ItalicText} from '@tricordarr/Components/Text/ItalicText';
 import {LoadingView} from '@tricordarr/Components/Views/Static/LoadingView';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {CommonStackComponents, CommonStackParamList} from '@tricordarr/Components/Navigation/CommonScreens';
-import {useUserMuteMutation} from '@tricordarr/Queries/Users/UserMuteMutations.ts';
+import {useUserMuteMutation} from '@tricordarr/Queries/Users/UserMuteMutations';
 import {useQueryClient} from '@tanstack/react-query';
 
 type Props = NativeStackScreenProps<CommonStackParamList, CommonStackComponents.muteUsers>;

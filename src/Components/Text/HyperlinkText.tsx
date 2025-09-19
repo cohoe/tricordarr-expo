@@ -6,7 +6,7 @@ import {useConfig} from '@tricordarr/Components/Context/Contexts/ConfigContext';
 import URLParse from 'url-parse';
 import {useStyles} from '@tricordarr/Components/Context/Contexts/StyleContext';
 import Clipboard from '@react-native-clipboard/clipboard';
-import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext.ts';
+import {useSwiftarrQueryClient} from '@tricordarr/Components/Context/Contexts/SwiftarrQueryClientContext';
 
 // https://github.com/jocosocial/swiftarr/blob/master/Sources/App/Site/Utilities/CustomLeafTags.swift
 const urlPathLabelMappings = [
