@@ -15,7 +15,7 @@ export const LighterScreen = () => {
       <VideoPlayer
         source={LighterVideo}
         style={commonStyles.backgroundVideo}
-        repeat={true}
+        repeat={true} 
         disableTimer={true}
         disableVolume={true}
         disableSeekbar={true}

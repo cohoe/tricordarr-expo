@@ -4,6 +4,7 @@ import {
   UseInfiniteQueryOptions,
   UseQueryOptions,
   UseQueryResult,
+  QueryKey,
 } from '@tanstack/react-query';
 import {useAuth} from '@tricordarr/Components/Context/Contexts/AuthContext';
 import {AxiosError} from 'axios';
@@ -65,9 +66,9 @@ export function useTokenAuthPaginationQuery<
   const {disruptionDetected, apiGet, queryKeyExtraData} = useSwiftarrQueryClient();
   const {appConfig} = useConfig();
 
-  return useInfiniteQuery<TData, TError, TData>(
-    [endpoint, queryParams, ...queryKeyExtraData],
-    options?.queryFn
+  return useInfiniteQuery<TData, TError, TData, QueryKey, PageParam>({
+    queryKey: [endpoint, queryParams, ...queryKeyExtraData],
+    queryFn: options?.queryFn
       ? options.queryFn
       : async ({pageParam = {start: undefined, limit: appConfig.apiClientConfig.defaultPageSize}}) => {
           const {data: responseData} = await apiGet<TData, PageParam>(endpoint, {
@@ -77,11 +78,9 @@ export function useTokenAuthPaginationQuery<
           });
           return responseData;
         },
-    {
-      getNextPageParam: lastPage => getNextPageParam(lastPage),
-      getPreviousPageParam: firstPage => getPreviousPageParam(firstPage),
-      ...options,
-      enabled: shouldQueryEnable(isLoggedIn, disruptionDetected, options?.enabled),
-    },
-  );
+    getNextPageParam: lastPage => getNextPageParam(lastPage),
+    getPreviousPageParam: firstPage => getPreviousPageParam(firstPage),
+    enabled: shouldQueryEnable(isLoggedIn, disruptionDetected, options?.enabled),
+    ...options,
+  });
 }

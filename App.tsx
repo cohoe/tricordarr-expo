@@ -125,9 +125,9 @@ function App(): React.JSX.Element {
                                               <FilterProvider>
                                                 <SelectionProvider>
                                                   <AppEventHandler />
-                                                  <ForegroundService />
-                                                  <NotificationDataListener />
-                                                  <NotificationDataPoller />
+                                                  {/* <ForegroundService /> */}
+                                                  {/* <NotificationDataListener /> */}
+                                                  {/* <NotificationDataPoller /> */}
                                                   <RootStackNavigator />
                                                 </SelectionProvider>
                                               </FilterProvider>
